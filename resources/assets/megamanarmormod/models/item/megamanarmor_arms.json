@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "megamanarmormod:item/megamanarmor_boots",
+    "layer1": "megamanarmormod:item/megamanarmor_boots_overlay"
+  }
+}

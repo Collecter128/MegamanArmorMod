@@ -1,0 +1,62 @@
+{
+	"parent": "minecraft:block/block",
+	"credit": "Made with Blockbench",
+	"texture_size": [23, 12],
+	"textures": {
+		"0": "megamanarmormod:item/xbuster",
+		"particle": "megamanarmormod:item/xbuster"
+	},
+	"elements": [
+		{
+			"from": [0.22, 14.22, 5.22],
+			"to": [4.78, 18.78, 7.78],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 23, 14]},
+			"scale": [ 1, 1, 1 ],
+			"faces": {
+				"north": {"uv": [0, 4, 2.08696, 8], "texture": "#0"},
+				"east": {"uv": [2.08696, 0, 2.78261, 4], "texture": "#0"},
+				"south": {"uv": [0, 4, 2.08696, 8], "texture": "#0"},
+				"west": {"uv": [2.08696, 0, 2.78261, 4], "texture": "#0"},
+				"up": {"uv": [2.08696, 0, 2.78261, 4], "texture": "#0"},
+				"down": {"uv": [2.08696, 0, 2.78261, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-0.78, 13.22, 7.22],
+			"to": [5.78, 19.78, 14.78],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 22, 16]},
+			"scale": [ 1, 1, 1 ],
+			"faces": {
+				"north": {"uv": [5.56522, 1.33333, 9.04348, 8], "texture": "#0"},
+				"east": {"uv": [9.04348, 8, 12.52174, 16], "texture": "#0"},
+				"south": {"uv": [9.04348, 1.33333, 12.52174, 8], "texture": "#0"},
+				"west": {"uv": [2.08696, 8, 5.56522, 16], "texture": "#0"},
+				"up": {"uv": [5.56522, 8, 9.04348, 16], "texture": "#0"},
+				"down": {"uv": [12.52174, 8, 16, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [5.25, -10.25, -1.5]
+		},
+        "thirdperson_lefthand": {
+        	"translation": [-5.25, -10.25, -1.5]
+        },
+        "firstperson_righthand": {
+        	"rotation": [ 0, -10, 0 ],
+        	"translation": [4, -8, 0]
+        },
+        "firstperson_lefthand": {
+        	"rotation": [ 0, -10, 0 ],
+        	"translation": [-2, -8, 0]
+        },
+        "gui": {
+            "rotation": [ 20, 90, 7 ],
+            "translation": [ -1, -8, 0 ],
+            
+            "scale": [ 1.2 , 1.2 , 1.2 ]
+        }
+		
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "megamanarmormod:item/dopplerbg2_banner_pattern"
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "megamanarmormod:item/wily_banner_pattern"
+  }
+}
