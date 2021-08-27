@@ -1,0 +1,127 @@
+{
+	"item.megamanarmormod.alloy_trial_production": "Trial Production Alloy",
+	"item.megamanarmormod.alloy_prototype": "Prototype Alloy",
+	"item.megamanarmormod.alloy_basic": "Basic Alloy Ingot",
+	"item.megamanarmormod.circuit_trialproduction": "Trial Production Circuit",
+	"item.megamanarmormod.circuit_prototype": "Prototype Circuit",
+	"item.megamanarmormod.circuit_basic": "Basic Circuit",
+	"item.megamanarmormod.shock_absorber": "Shock Absorber",
+	"item.megamanarmormod.core_trialproduction": "Trial Production Core",
+	"item.megamanarmormod.core_prototype": "Prototype Core",
+	"item.megamanarmormod.gear_trialproduction": "Trial Production Gear",
+	
+	"item.megamanarmormod.colorizerdefault": "Default Colorizer",
+	"item.megamanarmormod.colorizerrush": "Rush Colorizer",
+	"item.megamanarmormod.colorizerstormtornado": "Storm Tornado Colorizer",
+	"item.megamanarmormod.colorizerspeedburner": "Speed Burner Colorizer",
+	"item.megamanarmormod.colorizerhyperchip": "Hyper Chip Colorizer",
+	"item.megamanarmormod.colorizerdrained": "Drained Colorizer",
+	"item.megamanarmormod.colorizernegative": "Negative Colorizer",
+	"item.megamanarmormod.colorizerrandom": "Random Colorizer",
+	
+	"item.megamanarmormod.logocircle_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.logocircle_banner_pattern.desc": "Circle Background",
+		
+	"item.megamanarmormod.drlight_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.drlight_banner_pattern.desc": "Dr. Light",
+		
+	"item.megamanarmormod.wily_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.wily_banner_pattern.desc": "Dr. Wily",
+		
+	"item.megamanarmormod.king_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.king_banner_pattern.desc": "King",
+		
+	"item.megamanarmormod.kingstar_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.kingstar_banner_pattern.desc": "King Star",
+		
+	"item.megamanarmormod.kingbg_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.kingbg_banner_pattern.desc": "King Background",
+		
+	"item.megamanarmormod.cossack_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.cossack_banner_pattern.desc": "Dr. Cossack",
+		
+	"item.megamanarmormod.cossackstar_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.cossackstar_banner_pattern.desc": "Dr. Cossack Star",
+		
+	"item.megamanarmormod.doppler_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.doppler_banner_pattern.desc": "Doppler",
+		
+	"item.megamanarmormod.dopplerbg_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.dopplerbg_banner_pattern.desc": "Doppler Background",
+		
+	"item.megamanarmormod.dopplerbg2_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.dopplerbg2_banner_pattern.desc": "Doppler Background2",
+		
+	"item.megamanarmormod.maverickhunterv_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.maverickhunterv_banner_pattern.desc": "Maverick Hunter Bottom",
+		
+	"item.megamanarmormod.maverickhuntertop_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.maverickhuntertop_banner_pattern.desc": "Maverick Hunter Top",
+		
+	"item.megamanarmormod.mrx_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.mrx_banner_pattern.desc": "Mr. X Logo",
+		
+	"item.megamanarmormod.sigma_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.sigma_banner_pattern.desc": "Sigma",
+		
+	"item.megamanarmormod.sigmawolf_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.sigmawolf_banner_pattern.desc": "Sigma Wolf",
+		
+	"item.megamanarmormod.logotriangle_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.logotriangle_banner_pattern.desc": "Triangle Background",
+		
+	"item.megamanarmormod.repliforce_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.repliforce_banner_pattern.desc": "Repliforce",
+		
+	"item.megamanarmormod.repliforceoutline_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.repliforceoutline_banner_pattern.desc": "Repliforce Outline",
+		
+	"item.megamanarmormod.repliforcestar_banner_pattern": "Banner Pattern",
+		"item.megamanarmormod.repliforcestar_banner_pattern.desc": "Repliforce Star",
+		
+	"item.megamanarmormod.armor_parts": "Armor Parts",
+	"item.megamanarmormod.bassnium": "Bassnium Ingot",
+	"item.megamanarmormod.ceratanium": "Ceratanium Ingot",
+	"item.megamanarmormod.fortenium": "Fortenium Ingot",
+	"item.megamanarmormod.titanium": "Titanium Ingot",
+	"item.megamanarmormod.titaniumx": "Titanium X Ingot",
+	"item.megamanarmormod.megamanarmor_head": "Megaman Head Armor",
+	"item.megamanarmormod.megamanarmor_arms": "Megaman Boots Armor",
+	"item.megamanarmormod.megamanarmor_body": "Megaman Body Armor",
+	"item.megamanarmormod.megamanarmor_legs": "Megaman Legs Armor",
+	"item.megamanarmormod.protomanarmor_head": "Protoman Head Armor",
+	"item.megamanarmormod.protomanarmor_arms": "Protoman Boots Armor",
+	"item.megamanarmormod.protomanarmor_body": "Protoman Body Armor",
+	"item.megamanarmormod.protomanarmor_legs": "Protoman Legs Armor",
+	"item.megamanarmormod.wily_labcoat": "Evil Wily Labcoat",
+	"item.megamanarmormod.drlightlabcoat": "Dr Light Labcoat",
+	"item.megamanarmormod.bassarmor_head": "Bass Head Armor",
+	"item.megamanarmormod.bassarmor_arms": "Bass Boots Armor",
+	"item.megamanarmormod.bassarmor_body": "Bass Body Armor",
+	"item.megamanarmormod.bassarmor_legs": "Bass Legs Armor",
+	"item.megamanarmormod.xarmor_head": "X Head Armor",
+	"item.megamanarmormod.xbuster": "X Buster",
+	"item.megamanarmormod.xarmor_arms": "X Boots Armor",
+	"item.megamanarmormod.xarmor_body": "X Body Armor",
+	"item.megamanarmormod.xarmor_legs": "X Legs Armor",
+	"item.megamanarmormod.xtransparentarmor_head": "Transparent X Head Armor",
+	"item.megamanarmormod.xtransparentarmor_arms": "Transparent X Boots Armor",
+	"item.megamanarmormod.xtransparentarmor_body": "Transparent X Body Armor",
+	"item.megamanarmormod.xtransparentarmor_legs": "Transparent X Legs Armor",
+	"item.megamanarmormod.zeroarmor_head": "Zero Head Armor",
+	"item.megamanarmormod.zeroarmor_arms": "Zero Boots Armor",
+	"item.megamanarmormod.zeroarmor_body": "Zero Body Armor",
+	"item.megamanarmormod.zeroarmor_legs": "Zero Legs Armor",
+	"item.megamanarmormod.zsaber": "Z Saber",
+	"item.megamanarmormod.zsaberplus1": "Z Saber +1",
+	"item.megamanarmormod.zsaberplus2": "Z Saber +2",
+	"item.megamanarmormod.sigmaarmor_head": "Sigma Head Armor",
+	"item.megamanarmormod.sigmaarmor_arms": "Sigma Boots Armor",
+	"item.megamanarmormod.sigmaarmor_body": "Sigma Body Armor",
+	"item.megamanarmormod.sigmaarmor_legs": "Sigma Legs Armor",
+	"item.megamanarmormod.sigmasaber": "Sigma Beam Sword",
+	"block.megamanarmormod.ceratanium_ore": "Ceratanium Ore",
+	"block.megamanarmormod.titanium_ore": "Titianium Ore",
+	"itemGroup.MegamanTab": "Megaman Armor Mod",
+	"itemGroup.MMBannerMatsTab": "Megaman Banner Patterns"
+}
