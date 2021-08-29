@@ -126,7 +126,6 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   ItemStack ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
 		   CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
 		   //if(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.MegamanArmor_Head.get()) {
-			   
 		   
 		   	Random random = new Random(16777215);
 		//   	Random random2 = new Random(16777215);
@@ -279,4 +278,15 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		         return  342773;
 		      }
 		   }
+//	   @OnlyIn(Dist.CLIENT)
+//	   public int createnbttogetcolorfrom(ItemStack itemStackIn) {
+//		      CompoundNBT compoundnbt = itemStackIn.getTag();
+//		      itemStackIn.getOrCreateChildTag("displaymm").putInt("MainColor", colorvalue);
+////		      if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+////		         return compoundnbt.getInt("MainColor");
+////		      } else {
+////		         return  342773;
+////		      }
+//		      itemStackIn.MainColorDefault;
+//		   }
 }
