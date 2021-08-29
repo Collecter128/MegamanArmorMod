@@ -25,7 +25,8 @@ public enum ArmorMaterials implements IArmorMaterial{
 	XTransparentArmor("xtransparentarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
 	
 	ZeroArmor("zeroarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
-	SigmaArmor("sigmaarmor", 7, new int[] {3, 6, 8, 4}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2f, 0.2f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),;
+	SigmaArmor("sigmaarmor", 7, new int[] {3, 6, 8, 4}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2f, 0.2f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
+	VileArmor("vilearmor", 6, new int[] {2, 5, 7, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2f, 0.2f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),;
 	
 	public static final int[] basedurability = {128, 144, 160, 112};
 	private final String name;
