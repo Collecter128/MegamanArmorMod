@@ -191,9 +191,9 @@ public class megamanarmor_bootscolor extends BipedModel {
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
-		RightLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
-		LeftLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

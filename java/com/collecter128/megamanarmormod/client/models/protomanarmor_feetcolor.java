@@ -148,7 +148,7 @@ public class protomanarmor_feetcolor extends BipedModel {
 		LeftLeg2 = new ModelRenderer(this);
 		LeftLeg2.setRotationPoint(0.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg2, -0.1745F, 0.0F, -0.0349F);
-		LeftLeg2.setTextureOffset(8, 51).addBox(0.0296F, 12.9684F, -1.153F, 2.0F, 1.0F, 2.0F, 0.75F, true);
+		LeftLeg2.setTextureOffset(8, 51).addBox(0.0296F, 11.9684F, -2.153F, 2.0F, 1.0F, 2.0F, 0.75F, true);
 	}
 
 //	@Override
@@ -212,9 +212,9 @@ public class protomanarmor_feetcolor extends BipedModel {
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLeg2.copyModelAngles(this.bipedRightLeg);
-		RightLeg2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLeg2.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLeg2.copyModelAngles(this.bipedLeftLeg);
-		LeftLeg2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLeg2.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

@@ -94,7 +94,7 @@ public class xarmor_chestcolor extends BipedModel {
 
 		Body = new ModelRenderer(this);
 		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.9F, false);
 
 		Body2 = new ModelRenderer(this);
 		Body2.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -106,7 +106,7 @@ public class xarmor_chestcolor extends BipedModel {
 
 		Body4 = new ModelRenderer(this);
 		Body4.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body4.setTextureOffset(0, 98).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Body4.setTextureOffset(0, 98).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.9F, false);
 
 		RightArm = new ModelRenderer(this);
 		RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);

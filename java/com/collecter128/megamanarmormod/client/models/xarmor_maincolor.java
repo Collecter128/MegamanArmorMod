@@ -7,6 +7,7 @@ import net.minecraft.client.renderer.entity.layers.LayerRenderer;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 
@@ -238,7 +239,8 @@ public class xarmor_maincolor extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyModelAngles(this.bipedHead);
-		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		//OverlayTexture.NO_OVERLAY alpha
+		Headglow.render(matrixStack, buffer, 15728640, OverlayTexture.NO_OVERLAY, fred, fgreen, fblue, 1.0F);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);

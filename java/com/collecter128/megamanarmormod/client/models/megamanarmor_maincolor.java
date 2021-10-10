@@ -72,7 +72,7 @@ public class megamanarmor_maincolor extends BipedModel {
 		Head2.setTextureOffset(0, 64).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 		Head2.setTextureOffset(61, 58).addBox(-1.0F, -7.4829F, -5.54F, 2.0F, 2.0F, 1.0F, 0.25F, false);
 		Head2.setTextureOffset(48, 65).addBox(-0.6552F, -9.5707F, -4.5F, 2.0F, 6.0F, 10.0F, 0.25F, false);
-		Head2.setTextureOffset(37, 66).addBox(5.0643F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head2.setTextureOffset(37, 66).addBox(5.0643F, -3.9451F, -1.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 		Head2.setTextureOffset(37, 74).addBox(-5.8938F, -3.8448F, -1.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 
 		Head3 = new ModelRenderer(this);
@@ -189,7 +189,8 @@ public class megamanarmor_maincolor extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyModelAngles(this.bipedHead);
-		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		//15728640
+		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);

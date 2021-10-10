@@ -16,7 +16,7 @@ public class vilearmor_chestplate extends BipedModel {
 //	private final ModelRenderer Headsilver;
 //	private final ModelRenderer Headgold;
 //	private final ModelRenderer Headglow;
-//	private final ModelRenderer Bodymain;
+	private final ModelRenderer Bodymain;
 	private final ModelRenderer Bodysilver;
 	private final ModelRenderer Bodywhite;
 	private final ModelRenderer Bodygold;
@@ -96,9 +96,9 @@ public class vilearmor_chestplate extends BipedModel {
 //		Headglow.setTextureOffset(45, 112).addBox(-4.0F, -4.8263F, -2.0631F, 8.0F, 3.0F, 3.0F, 0.75F, false);
 //		Headglow.setTextureOffset(25, 2).addBox(-1.5F, -8.8F, -5.0F, 3.0F, 3.0F, 1.0F, 0.1F, false);
 //
-//		Bodymain = new ModelRenderer(this);
-//		Bodymain.setRotationPoint(0.0F, 0.0F, 0.0F);
-//		Bodymain.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodymain = new ModelRenderer(this);
+		Bodymain.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Bodymain.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
 
 		Bodysilver = new ModelRenderer(this);
 		Bodysilver.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -232,8 +232,8 @@ public class vilearmor_chestplate extends BipedModel {
         float fblue = (float)(this.MainColor & 255) / 255.0F;
 //		this.Headmain.copyModelAngles(this.bipedHead);
 //		Headmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-//		this.Bodymain.copyModelAngles(this.bipedBody);
-//		Bodymain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.Bodymain.copyModelAngles(this.bipedBody);
+		Bodymain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightArmmain.copyModelAngles(this.bipedRightArm);
 		RightArmmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmmain.copyModelAngles(this.bipedLeftArm);
@@ -299,7 +299,7 @@ public class vilearmor_chestplate extends BipedModel {
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.Bodyglow.copyModelAngles(this.bipedBody);
-		Bodyglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightArmglow.copyModelAngles(this.bipedRightArm);
 		RightArmglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmglow.copyModelAngles(this.bipedLeftArm);

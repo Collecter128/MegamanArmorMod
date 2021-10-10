@@ -152,8 +152,10 @@ public class megamanarmor_leggingscolor extends BipedModel {
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		RightLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		LeftLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+        this.RightLegglow.copyModelAngles(this.bipedRightLeg);
+		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
+		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
