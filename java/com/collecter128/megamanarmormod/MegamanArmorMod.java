@@ -2,10 +2,14 @@ package com.collecter128.megamanarmormod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.color.BlockColors;
+import net.minecraft.data.CustomRecipeBuilder;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -24,6 +28,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.collecter128.megamanarmormod.core.BlockInit;
+import com.collecter128.megamanarmormod.core.CustomItemColors;
+import com.collecter128.megamanarmormod.core.EntityTypesInit;
 import com.collecter128.megamanarmormod.core.FeatureInit;
 import com.collecter128.megamanarmormod.core.ItemInit;
 
@@ -40,7 +46,9 @@ public class MegamanArmorMod
     
     public static ItemGroup MMTab = new MegamanGroup("MegamanTab");
     public static ItemGroup MMBannerMats = new BannerMatGroup("MMBannerMatsTab");
+    public static ItemGroup ArmorColorizer = new ArmorColorizerGroup("ColorizerTab");
     
+    //private final static BlockColors blockColorsC = BlockColors.init();
 
     public MegamanArmorMod() {
     	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -48,7 +56,9 @@ public class MegamanArmorMod
     	
     	ItemInit.Items.register(bus);
     	BlockInit.Blocks.register(bus);
+    	EntityTypesInit.EntityTypes.register(bus);
     	MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
+    	// CustomRecipeBuilder.customRecipe(IRecipeSerializer.CRAFTING_SPECIAL_ARMORDYE).build(consumer, "armorcolorizer_dye");
     	
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -114,6 +124,13 @@ public class MegamanArmorMod
         	BlockInit.Blocks.getEntries().stream().map(RegistryObject:: get).forEach(block-> {
         		blockRegistryEvent.getRegistry().register(new BlockItem(block, new Item.Properties().group(MegamanArmorMod.MMTab)).setRegistryName(block.getRegistryName()));
         	});;
+        	//net.minecraft.client.renderer.color.ItemColors.register(itemColor, itemsIn);
+        	//CustomItemColors.init(blockColorsC);
+        	//Minecraft.blockColors = BlockColors.init();
+        	//newblockColors = BlockColors.init();
+        	//Object CustomitemColors = 
+        	CustomItemColors.init(BlockColors.init());
+        	//ColorRegistry.
         }
     }
     
@@ -142,6 +159,32 @@ public class MegamanArmorMod
 		}
     	
     }
+    
+    public static class ArmorColorizerGroup extends ItemGroup{
+
+		public ArmorColorizerGroup(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack createIcon() {
+			return ItemInit.ShotgunIceColorizer.get().getDefaultInstance();
+		}
+    	
+    }
+    
+//    public static class ArmorColorizerGroup extends ItemGroup{
+//
+//		public BannerMatGroup(String label) {
+//			super(label);
+//		}
+//
+//		@Override
+//		public ItemStack createIcon() {
+//			return ItemInit.ShotgunIceColorizer.get().getDefaultInstance();
+//		}
+//    	
+//    }
     
     
     
