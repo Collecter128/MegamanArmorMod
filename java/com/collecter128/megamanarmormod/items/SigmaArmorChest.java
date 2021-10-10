@@ -2,6 +2,7 @@ package com.collecter128.megamanarmormod.items;
 
 
 
+import com.collecter128.megamanarmormod.client.models.sigma_chestcolor;
 import com.collecter128.megamanarmormod.client.models.sigmaarmor_chestplate;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
@@ -22,7 +23,7 @@ public class SigmaArmorChest extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		sigmaarmor_chestplate model = new sigmaarmor_chestplate(1.0f);
+		sigma_chestcolor model = new sigma_chestcolor(1.0f);
 		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 
         model.isChild = _default.isChild;
@@ -43,7 +44,7 @@ public class SigmaArmorChest extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/sigmaarmor_layer_1.png";
+        return "megamanarmormod:textures/armor/sigma1.png";
     }
 	
 }

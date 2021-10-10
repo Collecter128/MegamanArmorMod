@@ -46,7 +46,8 @@ public class XArmorClearChest extends ArmorItem{
         model.rightArmPose = _default.rightArmPose;
         model.leftArmPose = _default.leftArmPose;
         //model.getRenderType();
-        RenderType.getTranslucent();
+        //RenderType.getTranslucent();
+        RenderType.getArmorEntityGlint();
         return (A) model;
 	}
 	

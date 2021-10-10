@@ -18,6 +18,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.DyeColor;
+import net.minecraft.item.DyeableArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.Item;
@@ -41,7 +42,7 @@ import net.minecraft.world.spawner.AbstractSpawner;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem{
+public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 
 //	public int primaryColor = 0;
 //	public int secondaryColor= 0;
@@ -57,8 +58,12 @@ public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem
 //	public int GrayColorDefault = 12105912;
 	String colortype;
 	
-	public ArmorColorizerCustom(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties, int[]colors, String type) {
-		super(materialIn, slot, properties.defaultMaxDamage(materialIn.getDurability(slot)));
+	//I learned how to do this from Customizable Elytra by Hidoni
+	
+	public ArmorColorizerCustom(Properties properties, int[]colors, String type) {
+//	public ArmorColorizerCustom(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties, int[]colors, String type) {
+//		super(materialIn, slot, properties.defaultMaxDamage(materialIn.getDurability(slot)));
+		super(properties);
 //		this.MainColorDefault = colors[0];
 //		this.SecondaryColorDefault = colors[1];
 //		this.ThirdColorDefault = colors[2];
@@ -77,7 +82,7 @@ public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem
 	/**
 	    * Called when this item is used when targetting a Block
 	    */
-//	   public ActionResultType onItemUse(ItemUseContext context) {
+	   public ActionResultType onItemUse(ItemUseContext context) {
 		   
 //	      World world = context.getWorld();
 //	      if (!(world instanceof ServerWorld)) {
@@ -112,15 +117,18 @@ public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem
 //	            itemstack.shrink(1);
 //	         }
 //
-//	         return ActionResultType.SUCCESS;
+	         return ActionResultType.SUCCESS;
 //	      }
-//	   }
+	   }
 	
 	//0-??? Color
 	//-1 Does not color
 	//-2 Return to default
 	//-3 random???
 	//-4 Negative
+	   
+	//-6 Rainbow
+	//-7 Negative Rainbow
 
 	   /**
 	    * Called to trigger the item's "innate" right click behavior. To handle when this item is used on a Block, see
@@ -133,7 +141,7 @@ public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem
 		   ItemStack ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
 		   CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
 		   
-		   CompoundNBT compoundnbtdye = playerIn.getHeldItem(handIn).getChildTag("displaymm");
+		   //CompoundNBT compoundnbtdye = playerIn.getHeldItem(handIn).getChildTag("display");
 		  
    	
 //		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
@@ -174,10 +182,10 @@ public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem
 	   
 	   public void ProcessColorization(PlayerEntity player, ItemStack helditem, EquipmentSlotType slotype, CompoundNBT nbt, String colorchanged) {
 
-		   	CompoundNBT compoundnbtdye = helditem.getChildTag("displaymm");
+		   	CompoundNBT compoundnbtdye = helditem.getChildTag("display");//displaymm
 			   
-		   	if(nbt != null && compoundnbtdye.contains("MainColor", 99)) {
-		   		int color = compoundnbtdye.getInt("MainColor");
+		   	if(nbt != null && compoundnbtdye.contains("color", 99)) {
+		   		int color = compoundnbtdye.getInt("color");
 		   		player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, color);
 		   	}
 		   		
@@ -199,15 +207,17 @@ public class ArmorColorizerCustom extends ArmorItem implements IDyeableArmorItem
 //	      return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
 //	   }
 	   
-	   @OnlyIn(Dist.CLIENT)
-	   public int getColor(ItemStack itemStackIn) {
-		      CompoundNBT compoundnbt = itemStackIn.getTag();
-		      if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-		         return compoundnbt.getInt("MainColor");
-		      } else {
-		         return  342773;
-		      }
-		   }
+//	   @OnlyIn(Dist.CLIENT)
+//	   @Override
+//	   public int getColor(ItemStack itemStackIn) {
+//		      CompoundNBT compoundnbt = itemStackIn.getTag();
+//		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//"MainColor"
+//		         return compoundnbt.getInt("color");//"MainColor"
+//		      } //else {
+//		         return  342773;
+//		      //}
+//		   }
+	   
 //	   @OnlyIn(Dist.CLIENT)
 //	   public int createnbttogetcolorfrom(ItemStack itemStackIn) {
 //		      CompoundNBT compoundnbt = itemStackIn.getTag();

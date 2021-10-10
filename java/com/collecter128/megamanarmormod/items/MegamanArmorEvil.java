@@ -1,7 +1,6 @@
 package com.collecter128.megamanarmormod.items;
 
-import java.awt.Color;
-
+import com.collecter128.megamanarmormod.client.models.MegamanEvil;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_Boots;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_bootscolor;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestcolor;
@@ -16,7 +15,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.item.DyeableArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.ItemStack;
@@ -26,13 +24,13 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 //implements Imorecolorfularmor
-public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//ArmorItem
+public class MegamanArmorEvil extends ArmorItem{//ArmorItem
 	
 
 	public int MainColorDefault = 342773;
 	public int SecondaryColorDefault = 379125;
 	public int WhiteColorDefault = 16777215;
-	public int ThirdColorDefault = 14105660;
+	public int ThirdColorDefault = 12922588;
 	public int GlowyColorDefault = 16728361;
 	public int GrayColorDefault = 12105912;
 	public int MainColor = MainColorDefault;
@@ -42,7 +40,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 
-	public MegamanArmorColor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public MegamanArmorEvil(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -50,131 +48,8 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		if(slot == EquipmentSlotType.HEAD) {
-			megamanarmor_maincolor model = new megamanarmor_maincolor(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
-        
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
-			
-			int armorcolorer;
-			
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
-		     // compoundnbt != null && compoundnbt.contains("MainColor", 99);
-		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-		    	  //armorcolorer = compoundnbt.getInt("MainColor");
-//		    	  if(compoundnbt.getInt("MainColor") == -7) {
-//		    		  	int time = (int)entityLiving.world.getDayTime();
-//		    		  	//24,000 max 8 x 3
-//		    		  	//0 - 8,000
-//		    		  	// 9,000 - 16,000
-//		    		  	// 17,000 - 24,000
-//		    		  	//0 - 255
-//		    		  	//256 - 510
-//		    		  	//511 - 765
-//		    		  	//redcolor ->255 blue -> 0 greencolor ->255 redcolor ->0 Blue ->255 Green ->0
-//			   			Color color = new Color(compoundnbt.getInt("MainColor"));
-//			   			int nred = 255 - color.getRed();
-//			   			int ngreen = 255 - color.getGreen();
-//			   			int nblue = 255 - color.getBlue();
-//			   			int negativevalue = (int) ((nred * 65536) + (ngreen * 256) + nblue);
-//		    	  }
-		    	  model.MainColor = compoundnbt.getInt("MainColor");
-
-		      }
-		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
-		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
-
-		      }
-		      
-		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
-
-		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
-
-		      }
-		      
-		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
-		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
-
-		      }
-
-		      //if(this.MainColor == null) {
-		    	//  model.MainColor = MainColor;
-		      //}
-			
-//			if(hasMainColor(itemStack)) {
-//				CompoundNBT compoundnbt = itemStack.getChildTag("MainColor");
-//				model.MainColor = compoundnbt.getInt("color");
-//			}
-//			if(hasSecondaryColor(itemStack)) {
-//				CompoundNBT compoundnbt = itemStack.getChildTag("MainColor");
-//				model.SecondaryColor = compoundnbt.getInt("color");
-//			}
-//			if(hasGlowyColor(itemStack)) {
-//				CompoundNBT compoundnbt = itemStack.getChildTag("MainColor");
-//				model.GlowyColor = compoundnbt.getInt("color");
-//			}
-//			if(hasGrayColor(itemStack)) {
-//				CompoundNBT compoundnbt = itemStack.getChildTag("MainColor");
-//				model.GrayColor = compoundnbt.getInt("color");
-//			}
-			//model.MainColor = 15404288;
-			
-			this.MainColor = model.MainColor;
-			this.SecondaryColor = model.SecondaryColor;
-			this.ThirdColor = model.ThirdColor;
-			this.WhiteColor = model.WhiteColor;
-			this.GlowyColor = model.GlowyColor;
-			this.GrayColor = model.GrayColor;
-
-			return (A) model;
-		}
-		if(slot == EquipmentSlotType.CHEST) {
-			megamanarmor_chestcolor model = new megamanarmor_chestcolor(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
-			
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
-
-		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-		    	  //armorcolorer = compoundnbt.getInt("MainColor");
-		    	  model.MainColor = compoundnbt.getInt("MainColor");
-
-		      }
-		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
-		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
-
-		      }
-		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
-		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
-
-		      }
-        
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
-			
-			this.MainColor = model.MainColor;
-			this.SecondaryColor = model.SecondaryColor;
-			this.WhiteColor = model.WhiteColor;
-			this.ThirdColor = model.ThirdColor;
-			this.GlowyColor = model.GlowyColor;
-			this.GrayColor = model.GrayColor;
-
-			return (A) model;
-		}
-//		if(slot == EquipmentSlotType.LEGS) {
-//			megamanarmor_leggings model = new megamanarmor_leggings(1.0f);
+//		if(slot == EquipmentSlotType.HEAD) {
+//			megamanarmor_maincolor model = new megamanarmor_maincolor(1.0f);
 //			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
 //        
 //			model.isChild = _default.isChild;
@@ -182,24 +57,74 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 //			model.isSitting = _default.isSitting;
 //			model.rightArmPose = _default.rightArmPose;
 //			model.leftArmPose = _default.leftArmPose;
+//			
+//			int armorcolorer;
+//			
+//			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+//		     // compoundnbt != null && compoundnbt.contains("MainColor", 99);
+//		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+//		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+//		    	  //armorcolorer = compoundnbt.getInt("MainColor");
+//		    	  model.MainColor = compoundnbt.getInt("MainColor");
+//					//model.MainColor = maincompund.getInt("MainColor");
+//		      }
+//		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+//
+//		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+//
+//		      }
+//		      
+//		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+//
+//		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+//
+//		      }
+//		      
+//		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+//
+//		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+//
+//		      }
+//			
+//			this.MainColor = model.MainColor;
+//			this.SecondaryColor = model.SecondaryColor;
+//			this.ThirdColor = model.ThirdColor;
+//			this.WhiteColor = model.WhiteColor;
+//			this.GlowyColor = model.GlowyColor;
+//			this.GrayColor = model.GrayColor;
 //
 //			return (A) model;
 //		}
-		else {
-			megamanarmor_bootscolor model = new megamanarmor_bootscolor(1.0f);
+//		if(slot == EquipmentSlotType.CHEST) {
+			MegamanEvil model = new MegamanEvil(1.0f);
 			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
 			
 			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
-		     // compoundnbt != null && compoundnbt.contains("MainColor", 99);
+
 		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
 		    	  //armorcolorer = compoundnbt.getInt("MainColor");
 		    	  model.MainColor = compoundnbt.getInt("MainColor");
-					//model.MainColor = maincompund.getInt("MainColor");
+
 		      }
 		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
 
 		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+
+		    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
+
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+
+		    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+
+		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 		      }
         
@@ -217,7 +142,52 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 			this.GrayColor = model.GrayColor;
 
 			return (A) model;
-		}
+//		}
+////		if(slot == EquipmentSlotType.LEGS) {
+////			megamanarmor_leggings model = new megamanarmor_leggings(1.0f);
+////			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+////        
+////			model.isChild = _default.isChild;
+////			model.isSneak = _default.isSneak;
+////			model.isSitting = _default.isSitting;
+////			model.rightArmPose = _default.rightArmPose;
+////			model.leftArmPose = _default.leftArmPose;
+////
+////			return (A) model;
+////		}
+//		else {
+//			megamanarmor_bootscolor model = new megamanarmor_bootscolor(1.0f);
+//			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+//			
+//			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+//		     // compoundnbt != null && compoundnbt.contains("MainColor", 99);
+//		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+//		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+//		    	  //armorcolorer = compoundnbt.getInt("MainColor");
+//		    	  model.MainColor = compoundnbt.getInt("MainColor");
+//					//model.MainColor = maincompund.getInt("MainColor");
+//		      }
+//		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+//
+//		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+//
+//		      }
+//        
+//			model.isChild = _default.isChild;
+//			model.isSneak = _default.isSneak;
+//			model.isSitting = _default.isSitting;
+//			model.rightArmPose = _default.rightArmPose;
+//			model.leftArmPose = _default.leftArmPose;
+//			
+//			this.MainColor = model.MainColor;
+//			this.SecondaryColor = model.SecondaryColor;
+//			this.WhiteColor = model.WhiteColor;
+//			this.ThirdColor = model.ThirdColor;
+//			this.GlowyColor = model.GlowyColor;
+//			this.GrayColor = model.GrayColor;
+//
+//			return (A) model;
+//		}
 		
 	}
 	
@@ -282,7 +252,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 //	      return tintIndex == 0 ? this.MainColor : this.SecondaryColor;
 //	   }
 	   
-	   public int getColor(ItemStack itemStackIn) {
+	   public static int getColor(ItemStack itemStackIn) {
 	      CompoundNBT compoundnbt = itemStackIn.getTag();
 	      if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	         return compoundnbt.getInt("MainColor");
@@ -290,13 +260,11 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 	         return  342773;
 	      }
 	   }
-	   
-	   
 
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/megamanarmor_layer_1.png";
+        return "megamanarmormod:textures/armor/megamanevil1.png";
     }
 	
 }

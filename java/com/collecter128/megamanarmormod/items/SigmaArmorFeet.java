@@ -1,6 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
 
+import com.collecter128.megamanarmormod.client.models.sigma_bootscolor;
 import com.collecter128.megamanarmormod.client.models.sigmaarmor_boots;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
@@ -23,7 +24,7 @@ public class SigmaArmorFeet extends ArmorItem{
 		
 		//model
 		
-		sigmaarmor_boots model = new sigmaarmor_boots(1.0f);
+		sigma_bootscolor model = new sigma_bootscolor(1.0f);
 		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
 //		if(slot == EquipmentSlotType.HEAD) {
 //			protomanarmor_main model = new protomanarmor_main(1.0f);
@@ -52,7 +53,7 @@ public class SigmaArmorFeet extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/sigmaarmor_layer_1.png";
+        return "megamanarmormod:textures/armor/sigma1.png";
     }
 	
 }

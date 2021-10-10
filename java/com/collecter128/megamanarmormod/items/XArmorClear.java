@@ -29,7 +29,6 @@ public class XArmorClear extends ArmorItem{
 		
 		xarmor_main model = new xarmor_main(1.0f);
 		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
-
         model.isChild = _default.isChild;
         model.isSneak = _default.isSneak;
         model.isSitting = _default.isSitting;

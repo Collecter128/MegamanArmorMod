@@ -3,6 +3,7 @@ package com.collecter128.megamanarmormod.items;
 
 
 import com.collecter128.megamanarmormod.client.models.sigmaarmor_leggings;
+import com.collecter128.megamanarmormod.client.models.sigmaarmor_legs;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -22,7 +23,7 @@ public class SigmaArmorLegs extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		sigmaarmor_leggings model = new sigmaarmor_leggings(1.0f);
+		sigmaarmor_legs model = new sigmaarmor_legs(1.0f);
 		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.LEGS;
 
         model.isChild = _default.isChild;
@@ -43,7 +44,7 @@ public class SigmaArmorLegs extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/sigmaarmor_layer_2.png";
+        return "megamanarmormod:textures/armor/sigma2.png";
     }
 	
 }

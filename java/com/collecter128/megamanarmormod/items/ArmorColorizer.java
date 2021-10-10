@@ -10,6 +10,7 @@ import net.minecraft.block.AbstractBannerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.client.renderer.entity.model.ShieldModel;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SpawnReason;
@@ -136,6 +137,9 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 //		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
 //			compoundnbt = ArmorItem.getChildTag("displaymm");
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "MainColor", primaryColor,randint);
+		   	if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+		   		itemstack.getOrCreateChildTag("display").putInt("color", primaryColor);
+		   	}
 		   	//randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "SecondaryColor", secondaryColor,randint);
 		   	//randint = random.nextInt();
@@ -254,30 +258,47 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 	   }
 	   
         
-        
+//	   @OnlyIn(Dist.CLIENT)
+//	   @Override
+//	   public net.minecraft.client.renderer.tileentity.ItemStackTileEntityRenderer getItemStackTileEntityRenderer() {
+//	      net.minecraft.client.renderer.tileentity.ItemStackTileEntityRenderer renderer = ister != null ? ister.get() : null;
+//	      return renderer != null ? renderer : net.minecraft.client.renderer.tileentity.ItemStackTileEntityRenderer.instance;
+//	      //   private final ShieldModel modelShield = new ShieldModel();
+//	      //this.modelShield.func_228293_a_().render(matrixStack, ivertexbuilder, combinedLight, combinedOverlay, 1.0F, 1.0F, 1.0F, 1.0F);
+//	   }
 	   
 //	   @OnlyIn(Dist.CLIENT)
 //	   public int getColor(int tintIndex) {
-////		   switch(tintIndex) {
-////		  		case 0:
-////		  			return this.primaryColor;
-////		  		}
+//		   switch(tintIndex) {
+//		  		case 0:
+//		  			return this.primaryColor;
+//		  		}
 ////	   			default:
 ////	   				return this.secondaryColor;
 ////		  		}
 ////			}
 //	      return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
 //	   }
-	   
+//	   
 	   @OnlyIn(Dist.CLIENT)
+	   @Override
 	   public int getColor(ItemStack itemStackIn) {
 		      CompoundNBT compoundnbt = itemStackIn.getTag();
-		      if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-		         return compoundnbt.getInt("MainColor");
+		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//MainColor
+		         return compoundnbt.getInt("color");
 		      } else {
 		         return  342773;
 		      }
 		   }
+	   
+	   
+	   
+	   
+//	   public DyeColor getColor() {
+//		   CompoundNBT compoundnbt = itemStackIn.getTag();
+//		   //return ((AbstractBannerBlock)this.getBlock()).getColor();
+//		   }
+//	   
 //	   @OnlyIn(Dist.CLIENT)
 //	   public int createnbttogetcolorfrom(ItemStack itemStackIn) {
 //		      CompoundNBT compoundnbt = itemStackIn.getTag();

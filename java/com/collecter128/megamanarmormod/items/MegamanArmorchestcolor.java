@@ -19,13 +19,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.DyeableArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.ResourceLocation;
 
-public class MegamanArmorchestcolor extends ColorfulArmor implements IDyeableArmorItem{//implements Imorecolorfularmor
+public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeableArmorItem{//implements Imorecolorfularmor
 
 	int Colors;
 	

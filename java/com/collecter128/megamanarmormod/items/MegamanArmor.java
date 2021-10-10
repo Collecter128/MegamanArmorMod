@@ -10,10 +10,13 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.DyeableArmorItem;
 import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.CompoundNBT;
 
-public class MegamanArmor extends ArmorItem{//ArmorItem
+public class MegamanArmor extends DyeableArmorItem implements IDyeableArmorItem{//ArmorItem
 
 	public MegamanArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -78,6 +81,12 @@ public class MegamanArmor extends ArmorItem{//ArmorItem
     //public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
     //    return null;
     //}
+	
+	@Override
+	public int getColor(ItemStack stack) {
+	      CompoundNBT compoundnbt = stack.getChildTag("display");
+	      return compoundnbt != null && compoundnbt.contains("color", 99) ? compoundnbt.getInt("color") : 1581819;
+	}
 
 //	@Nullable
     @Override
