@@ -16,6 +16,8 @@ import com.collecter128.megamanarmormod.items.BassArmorFeet;
 import com.collecter128.megamanarmormod.items.BassArmorLegs;
 import com.collecter128.megamanarmormod.items.Buster;
 import com.collecter128.megamanarmormod.items.ColorfulArmor;
+import com.collecter128.megamanarmormod.items.IFXArmor;
+import com.collecter128.megamanarmormod.items.IFZeroArmor;
 import com.collecter128.megamanarmormod.items.MegamanArmor;
 import com.collecter128.megamanarmormod.items.MegamanArmorColor;
 import com.collecter128.megamanarmormod.items.MegamanArmorFeet;
@@ -45,9 +47,12 @@ import com.collecter128.megamanarmormod.items.XArmorLegs;
 import com.collecter128.megamanarmormod.items.ZeroArmor;
 import com.collecter128.megamanarmormod.items.ZeroArmorChest;
 import com.collecter128.megamanarmormod.items.ZeroArmorFeet;
+import com.collecter128.megamanarmormod.items.ZeroArmorFirst;
 import com.collecter128.megamanarmormod.items.ZeroArmorLegs;
+import com.collecter128.megamanarmormod.items.ZeroArmorLegsFirst;
 import com.collecter128.megamanarmormod.materials.ArmorMaterials;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BannerPatternItem;
@@ -137,6 +142,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> LightLabcoat = Items.register("drlightlabcoat",
 			() -> new com.collecter128.megamanarmormod.items.LightLabcoat(ArmorMaterials.LightLabcoat, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));
 	
+	public static final RegistryObject<Item> MettaurHelmet = Items.register("mettaurhelmet",
+			() -> new com.collecter128.megamanarmormod.items.MettaurHelmet(ArmorMaterials.MegamanArmor, EquipmentSlotType.HEAD, new Item.Properties().group(MegamanArmorMod.MMTab)));
 	//type
 	//0-??? Color
 	//-1 Does not color
@@ -174,16 +181,17 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/16002867, /*Secondary*/16673903, /*ThirdColor*/-1, 
 							/*WhiteColor*/12105912, /*Glow Bits*/2781423, /*GreyColor*/12105912}));
+	
 	public static final RegistryObject<Item> ProtomanColorizer = Items.register("colorizerprotoman",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
-					new int[]{/*Main*/16740644, /*Secondary*/9737364, /*ThirdColor*/16765460, 
+					new int[]{/*Main*/16331285, /*Secondary*/9737364, /*ThirdColor*/16765460, 
 							/*WhiteColor*/15855562, /*Glow Bits*/2359060, /*GreyColor*/12105912}));
 	public static final RegistryObject<Item> BreakmanColorizer = Items.register("colorizerbreakman",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
-					new int[]{/*Main*/16722264, /*Secondary*/9737364, /*ThirdColor*/16765460, 
+					new int[]{/*Main*/16331285, /*Secondary*/9737364, /*ThirdColor*/16765460, 
 							/*WhiteColor*/15855562, /*Glow Bits*/2359060, /*GreyColor*/12105912}));
 
-	public static final RegistryObject<Item> SuperArmColorizer = Items.register("colorizersuperarm",
+	public static final RegistryObject<Item> SuperArmColorizer = Items.register("colorizersuperarm", // Main??? 8728837
 	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 			, new int[]{/*Main*/16086016, /*Secondary*/16777215, -1, -1, -1, -1}));
 	public static final RegistryObject<Item> HyperBombColorizer = Items.register("colorizerhyperbomb",
@@ -211,9 +219,21 @@ public class ItemInit {
 	public static final RegistryObject<Item> LeafSheildColorizer = Items.register("colorizerleafshield",
 	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 			, new int[]{/*Main*/1285632, /*Secondary*/16579836, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> AirShooterColorizer = Items.register("colorizerairshooter",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/5212668, /*Secondary*/16579836, -1, -1, -1, -1}));
 	public static final RegistryObject<Item> TimeStopperColorizer = Items.register("colorizertimestopper",
 	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 			, new int[]{/*Main*/11674775, /*Secondary*/16448250, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> CrashBomberColorizer = Items.register("colorizercrashbomber",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/16748063, /*Secondary*/16579836, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> BubbleLeadColorizer = Items.register("colorizerbubblelead",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/10395294, /*Secondary*/16579836, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> MetalBladeColorizer = Items.register("colorizermetalblade",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/11899702, /*Secondary*/16637574, -1, -1, -1, -1}));
 	public static final RegistryObject<Item> AtomicfireColorizer = Items.register("colorizeratomicfire",
 	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 			, new int[]{/*Main*/16591720, /*Secondary*/16627243, -1, -1, -1, -1}));
@@ -224,6 +244,39 @@ public class ItemInit {
 	public static final RegistryObject<Item> Item123Colorizer = Items.register("colorizeritem123",
 	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 			, new int[]{/*Main*/16719661, /*Secondary*/16579836, -1, -1, -1, -1}));
+	
+	public static final RegistryObject<Item> HardKnuckleColorizer = Items.register("colorizerhardknuckle",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/8944, /*Secondary*/11382189, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> NeedleCannonColorizer = Items.register("colorizerneedlecannon",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/16748826, /*Secondary*/16448250, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> SparkShockColorizer = Items.register("colorizersparkshock",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/16549988, /*Secondary*/16448250, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> MagnetMissileColorizer = Items.register("colorizermagnetmissile",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/16731182, /*Secondary*/10592673, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> SearchSnakeColorizer = Items.register("colorizersearchsnake",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/113686, /*Secondary*/16448250, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> ShadowBladeColorizer = Items.register("colorizershadowblade",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/13834222, /*Secondary*/16487405, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> TopSpinColorizer = Items.register("colorizertopspin",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/9408399, /*Secondary*/15710392, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> GeminiLaserColorizer = Items.register("colorizergeminilaser",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/5238268, /*Secondary*/16448250, -1, -1, -1, -1}));
+	
+//	public static final RegistryObject<Item> RainFlushColorizer = Items.register("colorizerrainflush",
+//	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+//			, new int[]{/*Main*/6002959, /*Secondary*/7114433, -1, -1, -1, -1}));
+	
+//	public static final RegistryObject<Item> RainFlushColorizer = Items.register("colorizerrainflush",
+//	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+//			, new int[]{/*Main*/6002959, /*Secondary*/7114433, -1, -1, -1, -1}));
 	
 	public static final RegistryObject<Item> NoiseCrushColorizer = Items.register("colorizernoisecrush",
 	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
@@ -267,10 +320,35 @@ public class ItemInit {
 					, new int[]{/*Main*/8542759, /*Secondary*/10908982,/*ThirdColor*/10712638, 
 							/*WhiteColor*/13345650, /*Glow Bits*/7030815, /*GreyColor*/6444358}));
 	
-	public static final RegistryObject<Item>  VileColorizer = Items.register("colorizervile",
-			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
-					, new int[]{/*Main*/8728033, /*Secondary*/5066061,/*ThirdColor*/16772915, 
-							/*WhiteColor*/16777215, /*Glow Bits*/16728361, /*GreyColor*/12105912}));
+	public static final RegistryObject<Item> IceWave = Items.register("colorizericewave",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/1737675, /*Secondary*/16625195, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> FireSwordColorizer = Items.register("colorizerfiresword",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/16386638, /*Secondary*/16747290, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> TornadoHoldColorizer = Items.register("colorizertornadohold",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/1216876, /*Secondary*/13785337, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> WaterBaloonColorizer = Items.register("colorizerwaterbaloon",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/11341309, /*Secondary*/1103260, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> ThunderClawColorizer = Items.register("colorizerthunderclaw",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/13725184, /*Secondary*/43248, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> FlashBombColorizer = Items.register("colorizerflashbomb",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/1147308, /*Secondary*/16625195, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> HomingSniperColorizer = Items.register("colorizerhomingsniper",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/13335066, /*Secondary*/1745611, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> AstroCrushColorizer = Items.register("colorizerastrocrush",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/442754, /*Secondary*/16757786, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> MegaBallColorizer = Items.register("colorizermegaball",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/14227325, /*Secondary*/1556185, -1, -1, -1, -1}));
+
+
 	public static final RegistryObject<Item> ZeroColorizer = Items.register("colorizerzero",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/16711680, /*Secondary*/379125, /*ThirdColor*/16763151, 
@@ -283,7 +361,15 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/3158064, /*Secondary*/379125, /*ThirdColor*/6776040, 
 							/*WhiteColor*/14737632, /*Glow Bits*/2448340, /*GreyColor*/13799118}));
-
+	public static final RegistryObject<Item> NightmareZeroColorizer = Items.register("colorizerzeronightmare",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+					, new int[]{/*Main*/11277567, /*Secondary*/9764845, /*ThirdColor*/13402830, /*WhiteColor*/9764845,
+							/*Glow Bits*/1376087, /*GreyColor*/9614024}));
+	
+	public static final RegistryObject<Item>  VileColorizer = Items.register("colorizervile",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+					, new int[]{/*Main*/8728033, /*Secondary*/5066061,/*ThirdColor*/16772915, 
+							/*WhiteColor*/16777215, /*Glow Bits*/16728361, /*GreyColor*/12105912}));
 	
 	public static final RegistryObject<Item> RollingShieldColorizer = Items.register("colorizerrollingshield",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
@@ -313,12 +399,49 @@ public class ItemInit {
 	public static final RegistryObject<Item> SpeedBurnerColorizer = Items.register("colorizerspeedburner",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/15404288, /*Secondary*/11794431, -1, -1, -1, -1}));
-	
+	public static final RegistryObject<Item> SilkShotColorizer = Items.register("colorizersilkshot",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16342052, /*Secondary*/5439380, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> CrystalHunterColorizer = Items.register("colorizercrystalhunter",
+	() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+			, new int[]{/*Main*/5563384, /*Secondary*/15180534, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> BubbleSplashColorizer = Items.register("colorizerbubblesplash",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/15646225, /*Secondary*/16425956, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> SonicSlicerColorizer = Items.register("colorizersonicslicer",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/8080379, /*Secondary*/16752174, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> StrikeChainColorizer = Items.register("colorizerstrikechain",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/12554489, /*Secondary*/12237498, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> MagnetMineColorizer = Items.register("colorizermagnetmine",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/7237230, /*Secondary*/16577329, -1, -1, -1, -1}));
 	
 	public static final RegistryObject<Item> DrainedColorizer = Items.register("colorizerdrained",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 					, new int[]{/*Main*/6047422, /*Secondary*/8234928, /*ThirdColor*/-1, /*WhiteColor*/14863069,
 							/*Glow Bits*/12943768, /*GreyColor*/14863069}));
+	public static final RegistryObject<Item> SpeedBurnerChargedColorizer = Items.register("colorizerchargedspeedburner",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
+					, new int[]{/*Main*/16739610, /*Secondary*/16497985, /*ThirdColor*/16771354, /*WhiteColor*/14067743,
+							/*Glow Bits*/16066304, /*GreyColor*/14054431}));
+	
+	public static final RegistryObject<Item> TunnelFangColorizer = Items.register("colorizertunnelfang",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/6094814, /*Secondary*/15836731, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> GravityWellsColorizer = Items.register("colorizergravitywells",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/15095287, /*Secondary*/13874312, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> AcidBurstColorizer = Items.register("colorizeracidburst",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/6946631, /*Secondary*/16759864, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> RaySplasherColorizer = Items.register("colorizerraysplasher",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16224776, /*Secondary*/16249608, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> FrostSheildColorizer = Items.register("colorizerfrostsheild",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/6807766, /*Secondary*/13466071, -1, -1, -1, -1}));
 	
 	public static final RegistryObject<Item>HyperchipColorizer = Items.register("colorizerhyperchip",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer).isImmuneToFire()
@@ -345,11 +468,91 @@ public class ItemInit {
 					, new int[]{/*Main*/-1, /*Secondary*/-1, /*ThirdColor*/-1, /*WhiteColor*/16716836,
 							/*Glow Bits*/-1, /*GreyColor*/-1}));
 	
-	
 	public static final RegistryObject<Item> BetaHyperchipColorizer = Items.register("colorizerbetahyperchip",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 					, new int[]{/*Main*/-1, /*Secondary*/-1, /*ThirdColor*/-1, /*WhiteColor*/3552822,
 							/*Glow Bits*/-1, /*GreyColor*/-1}));
+	
+	public static final RegistryObject<Item> XalternateColorizer = Items.register("colorizerxalternate",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/3320059, /*Secondary*/11891667, -1, -1, -1, -1}));
+	
+	
+	public static final RegistryObject<Item> MagmaBladeColorizer = Items.register("colorizermagmablade",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16680982, /*Secondary*/16708480, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> MeteorRainColorizer = Items.register("colorizermeteorrain",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/6184797, /*Secondary*/15208194, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> GuardShellColorizer = Items.register("colorizerguardshell",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16739227, /*Secondary*/16773739, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> RayArrowColorizer = Items.register("colorizerrayarrow",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/13765375, /*Secondary*/12445138, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> IceBurstColorizer = Items.register("colorizericeburst",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/7458036, /*Secondary*/9676764, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> GroundDashColorizer = Items.register("colorizergrounddash",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/11436635, /*Secondary*/14388557, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> YammerOptionColorizer = Items.register("colorizeryammeroption",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/3649101, /*Secondary*/15371822, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> MetalAnchorColorizer = Items.register("colorizermetalanchor",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/7174330, /*Secondary*/16184763, -1, -1, -1, -1}));
+	
+	public static final RegistryObject<Item> VoltTornadoColorizer = Items.register("colorizervolttornado",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/15105024, /*Secondary*/13550887, -1, -1, -1, -1}));
+	//??? 7830403
+	public static final RegistryObject<Item> WindCutterColorizer = Items.register("colorizerwindcutter",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/7357316, /*Secondary*/13854172, -1, -1, -1, -1}));
+	//??? 10386858
+	
+	public static final RegistryObject<Item> MagneticShockwaveColorizer = Items.register("colorizermagneticshockwave",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/12454287, /*Secondary*/16714250, -1, -1, -1, -1}));
+	
+	public static final RegistryObject<Item> SonicShotColorizer = Items.register("colorizersonicshot",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/1015782, /*Secondary*/2928570, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> TailsWindColorizer = Items.register("colorizertailswind",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16748570, /*Secondary*/16777215, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> PikoHammerColorizer = Items.register("colorizerpikohammer",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/14366996, /*Secondary*/16091788, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> SharpKnuckleColorizer = Items.register("colorizersharpknuckle",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/13378596, /*Secondary*/16777215, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> BlackWaveColorizer = Items.register("colorizerblackwave",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16514301, /*Secondary*/5717630, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> ChaosCannonColorizer = Items.register("colorizerchaoscannon",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/5853803, /*Secondary*/13711150, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> ChromaCamoColorizer = Items.register("colorizerchromacamo",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/10972326, /*Secondary*/8219815, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> RapidStingerColorizer = Items.register("colorizerrapidstinger",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/6316646, /*Secondary*/16764457, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> AcousticBlasterColorizer = Items.register("colorizeracousticblaster",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/8504889, /*Secondary*/11518800, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> PsychoBurstColorizer = Items.register("colorizerpsychoburst",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/12972766, /*Secondary*/1406292, -1, -1, -1, -1}));
+	public static final RegistryObject<Item> FireTornadoColorizer = Items.register("colorizerfiretornado",
+			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/11956917, /*Secondary*/15582445, -1, -1, -1, -1}));
+	
+//	public static final RegistryObject<Item> SeieiEnbuColorizer = Items.register("colorizerseieienbu",
+//			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
+//					new int[]{/*Main*/6849261, /*Secondary*/4768480, -1, -1, -1, -1}));
 	
 	public static final RegistryObject<Item> SifttoDarkColorizer = Items.register("colorizershiftdark",
 			() -> new ArmorColorizerColorShift(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
@@ -357,6 +560,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> SifttoLightColorizer = Items.register("colorizershiftlight",
 			() -> new ArmorColorizerColorShift(new Item.Properties().group(MegamanArmorMod.ArmorColorizer)
 					,14935011 , 10));
+
 	
 	public static final RegistryObject<Item> RandomColorizer = Items.register("colorizerrandom",
 			() -> new ArmorColorizer(new Item.Properties().group(MegamanArmorMod.ArmorColorizer), 
@@ -370,10 +574,6 @@ public class ItemInit {
 			() -> new ArmorColorizerCustom(new Item.Properties().group(MegamanArmorMod.MMTab).isImmuneToFire()
 					, new int[]{/*Main*/-1, /*Secondary*/-1, /*ThirdColor*/-1, /*WhiteColor*/-1,
 							/*Glow Bits*/-1, /*GreyColor*/-1}, "MainColor"));
-//	public static final RegistryObject<Item> MainColorColorizer = Items.register("colorizermaincolor",
-//			() -> new ArmorColorizerCustom(ArmorMaterials.MegamanArmor, EquipmentSlotType.HEAD,new Item.Properties().group(MegamanArmorMod.MMTab).isImmuneToFire()
-//					, new int[]{/*Main*/-1, /*Secondary*/-1, /*ThirdColor*/-1, /*WhiteColor*/-1,
-//							/*Glow Bits*/-1, /*GreyColor*/-1}, "MainColor"));
 	public static final RegistryObject<Item> SecondaryColorColorizer = Items.register("colorizersecondarycolor",
 			() -> new ArmorColorizerCustom(new Item.Properties().group(MegamanArmorMod.MMTab).isImmuneToFire()
 					, new int[]{/*Main*/-1, /*Secondary*/-1, /*ThirdColor*/-1, /*WhiteColor*/-1,
@@ -429,6 +629,8 @@ public class ItemInit {
 			() -> new XArmorChest(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> XArmor_Legs = Items.register("xarmor_legs",
 			() -> new XArmorLegs(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().group(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> iFXArmor_Body = Items.register("ifxarmor_body",
+			() -> new IFXArmor(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));
 	
 //	public static final RegistryObject<Item> XTransparentArmor_Head = Items.register("xtransparentarmor_head",
 //			() -> new XArmorClear(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
@@ -439,6 +641,15 @@ public class ItemInit {
 //	public static final RegistryObject<Item> XTransparentArmor_Legs = Items.register("xtransparentarmor_legs",
 //			() -> new XArmorClearLegs(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
 	
+	public static final RegistryObject<Item> ZeroArmorFirst_Head = Items.register("zeroarmorfirst_head",
+			() -> new ZeroArmorFirst(ArmorMaterials.ZeroArmor, EquipmentSlotType.HEAD, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+	public static final RegistryObject<Item> ZeroArmorFirst_Arms = Items.register("zeroarmorfirst_arms",
+			() -> new ZeroArmorFirst(ArmorMaterials.ZeroArmor, EquipmentSlotType.FEET, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+	public static final RegistryObject<Item> ZeroArmorFirst_Body = Items.register("zeroarmorfirst_body",
+			() -> new ZeroArmorFirst(ArmorMaterials.ZeroArmor, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+	public static final RegistryObject<Item> ZeroArmorFirst_Legs = Items.register("zeroarmorfirst_legs",
+			() -> new ZeroArmorLegsFirst(ArmorMaterials.ZeroArmor, EquipmentSlotType.LEGS, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+	
 	public static final RegistryObject<Item> ZeroArmor_Head = Items.register("zeroarmor_head",
 			() -> new ZeroArmor(ArmorMaterials.ZeroArmor, EquipmentSlotType.HEAD, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
 	public static final RegistryObject<Item> ZeroArmor_Arms = Items.register("zeroarmor_arms",
@@ -447,6 +658,8 @@ public class ItemInit {
 			() -> new ZeroArmorChest(ArmorMaterials.ZeroArmor, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
 	public static final RegistryObject<Item> ZeroArmor_Legs = Items.register("zeroarmor_legs",
 			() -> new ZeroArmorLegs(ArmorMaterials.ZeroArmor, EquipmentSlotType.LEGS, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+	public static final RegistryObject<Item> iFZeroArmor_Body = Items.register("ifzeroarmor_body",
+			() -> new IFZeroArmor(ArmorMaterials.ZeroArmor, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
 	
 	public static final RegistryObject<Item> Zsaber = Items.register("zsaber",
 			() -> new SwordItem(ItemTier.IRON, 4, -2.4F, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
@@ -475,4 +688,5 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> Sigmasaber = Items.register("sigmasaber",
 			() -> new SwordItem(ItemTier.DIAMOND, 6, -2.4F, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+	
 }

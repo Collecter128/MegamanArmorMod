@@ -54,6 +54,7 @@ public class InputEvents {
 	               float f6 = 1.1999999F;
 	               mc.player.move(MoverType.SELF, new Vector3d(0.0D, (double)1.1999999F, 0.0D));
 	            }
+
 	
 	            SoundEvent soundevent;
 	            if (DashPower >= 3) {

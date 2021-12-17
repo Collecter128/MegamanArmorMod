@@ -1,6 +1,7 @@
 package com.collecter128.megamanarmormod.core;
 
 import com.collecter128.megamanarmormod.MegamanArmorMod;
+import com.collecter128.megamanarmormod.blocks.colorizerluckyblock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -21,4 +22,9 @@ public class BlockInit {
 			() -> new Block((AbstractBlock.Properties.create(Material.ROCK, MaterialColor.BLUE).harvestTool(ToolType.PICKAXE)
 					.setRequiresTool().hardnessAndResistance(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.CORAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
+	public static final RegistryObject<Block> CustomizerOre = Blocks.register("colorizerluckyblock",
+			() -> new colorizerluckyblock((AbstractBlock.Properties.create(Material.ANVIL, MaterialColor.EMERALD)
+					.setRequiresTool().hardnessAndResistance(3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.BAMBOO)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 }

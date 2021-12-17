@@ -1,5 +1,7 @@
 package com.collecter128.megamanarmormod.core;
 
+import com.collecter128.megamanarmormod.items.ArmorColorizer;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.color.BlockColors;
@@ -25,7 +27,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class CustomItemColors extends ItemColors{
 	   private final java.util.Map<net.minecraftforge.registries.IRegistryDelegate<Item>, IItemColor> colors = new java.util.HashMap<>();
 
-
 	   public static ItemColors init(BlockColors colors) {
 	      ItemColors itemcolors = new ItemColors();
 //	      itemcolors.register((stack, color) -> {
@@ -40,14 +41,24 @@ public class CustomItemColors extends ItemColors{
 			      }
 		   }, ItemInit.MegamanArmor_Body.get());
 	      itemcolors.register((stack, color) -> {
-//	    	  CompoundNBT compoundnbt = stack.getTag();
-//	    	  if (compoundnbt != null && compoundnbt.contains("color", 99)) {
+	    	  CompoundNBT compoundnbt = stack.getTag();
+	    	  //if (compoundnbt != null && compoundnbt.contains("color", 99)) {
+	    		  	color = compoundnbt.getInt("color");
 //			         return compoundnbt.getInt("color");
-//			      } else {
+			      //} else {
+			    	  color = 16579836;
+			    	  //color = 6;
 //			         return  16579836;
-//			      }
+			      //}
 	    	  return color > 0 ? -1 : ((IDyeableArmorItem)stack.getItem()).getColor(stack);
 		   }, ItemInit.AtomicfireColorizer.get());
+//	      for(ArmorColorizer colorizeritem : ArmorColorizer.getcolorizers()) {
+//	          itemcolors.register((stack, color) -> {
+//	             return colorizeritem.getColor(color);
+//	          }, colorizeritem);
+//	       }
+	      
+	      
 //	      itemcolors.register((stack, color) -> {
 //	    	  CompoundNBT compoundnbt = stack.getTag();
 //	    	  if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
