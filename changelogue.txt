@@ -1,0 +1,163 @@
+2.9.5
+	Fixed a loading error
+
+
+2.9.4
+	Added many more colorizers to the lucky block
+
+
+2.9.3
+	Added some more colorizers to the lucky block
+	Megaman 8 and a few others
+	added one or more armor colorizers
+
+
+2.9.2
+	Changed Virus Zero to Nightmare Zero cause that's what the color is.
+	Added a couple armor colorizers
+	Add Colorizer Lucky Block
+	Made from a couple ceratanium ingots
+	currently has megaman 1, 2, 3, and 7
+	And a few others
+
+
+2.9.1
+	Added a couple more armor colorizers
+
+
+2.9
+	Added First Zero Armor from Megaman X1
+
+
+2.8.2
+	Added a few more armor colorizers
+
+
+2.8.1
+	Added new armor versions of X and Zero
+	Added a few more armor colorizers
+	fixed a few more banner translations
+
+
+2.8
+	Added a certain helmet
+	Added a few more armor colorizers
+	fixed a problem with vile's body armor and colors
+	fixed a few more banner translations
+
+2.7
+	Added many more armor colorizers
+	Some may be from the comics...
+	changed x armor a bit
+	fixed a few more banner translations
+
+
+2.6
+	added a lot more armor customizers
+	Fixed some missing text and stuff
+
+
+2.5.1
+	added more banner patterns
+	added more armor customizer
+	Made a new tab for colorizers
+
+
+2.5`
+	Made Sigma's Eyes Glowy
+	Added a few more customizers
+	Fixed annoying Megaman Legs Bug
+
+
+2.4.1
+	Made Bass Armor more interesting
+	Fixed annoying Zero crystal problem
+	Fixed annoying X chest texture error
+	Added recipe for Evil Megaman Armor
+
+
+2.4
+	Upgraded Zero Armor
+	Added Evil Megaman Body
+	added a few customizers
+	Fixed Maverick Hunters Logo Shield
+
+
+2.3
+	Made Vile Armor obtainable in survival mode
+	Added Breakman Helmet it can be customized too.
+	Added the ability to Dash. 
+	To do so, press Z while wearing Zero or Vile Boots
+
+
+2.2
+	Added Vile Armor
+	Updated Protoman Armor
+	Added a bunch more colorizers
+
+
+2.1	
+	Better Dr. Wily Labcoat Model
+	Made the recipe different
+	Added Dr. Light Armor
+	Made Dr. Light armor "better" too
+	Made Megaman X armor model changeable
+	More armor customizers
+	Negative and random and one more
+
+
+2.0
+	Armor Colorizers! (That was difficult!)
+	Right click while wearing armor to change it's color!
+	Only Megaman armor works for now.
+	3 presets. 
+	No recipes yet sorry
+
+
+1.6
+	Added 3 different versions of the Z Saber
+	Added Sigmas Beam Sword
+	Added logos for King, Mr.X, and Dr. Doppler
+	Made Ceratanium Ore Generate and fixed texture bug
+	Now you can make armor in survival mode!
+	Not all things have recipes
+
+
+1.5
+	Added new Custom Model for Bass and Sigma
+	Added Ceratanium Ore (Doesn't Spawn yet)
+
+
+1.4
+	Fixed text for banner patterns
+	Fixed textures not loading problem
+	Updated Megaman X and Zero to have Custom Models
+	Added a new material
+	Made an X Buster! For now it just shoots arrows like a bow
+
+
+1.3
+	Made Megaman Armor and Protoman Armors Better! With new Custom Armor Model
+	That was quick!
+
+
+1.2 
+	Added several more Banner Patterns: Light Labs, Sigma, and Repliforce. Added a triangle for Sigma and Repliforce\\
+	Added Bass and Sigma Armors! 
+	Added a few more materials
+
+
+1.1
+	Added two Banner Patterns with the help of the Allomancy mod creator legobmw99
+	Dr Wily and Circle
+	Added Dr. Wily Coat like the one from Megaman 8
+	A few more materials
+	Improved a few textures, that fixes the boots wearing backwards problem.
+	Still no recipes yet, sorry! (except for a few)
+
+
+1.0 First Release!
+	Adds Megaman X and Megaman Armors
+	Adds Protoman Armor and Zero Armors
+	Adds several Materials from the megaman games
+	No recipes yet, sorry!
