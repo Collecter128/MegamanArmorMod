@@ -57,7 +57,7 @@ public class xarmor_chestcolor extends BipedModel {
 		
 		MainColorDefault = 2781423;//Main Body Color X Blue
 		SecondaryColorDefault = 5752303;//Secondary Cyan tiel color
-		ThirdColorDefault = 16777215;
+		ThirdColorDefault = 9614024; //Chest Thingy
 		WhiteColorDefault = 16777215;//Basic White
 		GlowyColorDefault = 16468504;//Glow?Red crystal thingy
 		GrayColorDefault = 16777215;//Basic White
@@ -208,8 +208,11 @@ public class xarmor_chestcolor extends BipedModel {
 		this.LeftArm2.copyModelAngles(this.bipedLeftArm);
 		LeftArm2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
+		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.ThirdColor & 255) / 255.0F;
 		this.Body4.copyModelAngles(this.bipedBody);
-		Body4.render(matrixStack, buffer, packedLight, packedOverlay);
+		Body4.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
