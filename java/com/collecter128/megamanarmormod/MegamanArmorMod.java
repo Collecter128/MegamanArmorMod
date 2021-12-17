@@ -29,6 +29,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.collecter128.megamanarmormod.core.BlockInit;
 import com.collecter128.megamanarmormod.core.CustomItemColors;
+import com.collecter128.megamanarmormod.core.CustomItemRenderer;
 import com.collecter128.megamanarmormod.core.EntityTypesInit;
 import com.collecter128.megamanarmormod.core.FeatureInit;
 import com.collecter128.megamanarmormod.core.ItemInit;
@@ -129,9 +130,11 @@ public class MegamanArmorMod
         	//Minecraft.blockColors = BlockColors.init();
         	//newblockColors = BlockColors.init();
         	//Object CustomitemColors = 
-        	CustomItemColors.init(BlockColors.init());
+        	//CustomItemColors.init(BlockColors.init());
+        	//CustomItemRenderer.registerItemRenderer();
         	//ColorRegistry.
         }
+        
     }
     
     public static class MegamanGroup extends ItemGroup{
