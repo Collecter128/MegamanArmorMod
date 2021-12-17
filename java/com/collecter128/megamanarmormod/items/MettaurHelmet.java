@@ -2,6 +2,7 @@ package com.collecter128.megamanarmormod.items;
 
 import java.awt.Color;
 
+import com.collecter128.megamanarmormod.client.models.helmet_mettaur;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_Boots;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_bootscolor;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestcolor;
@@ -27,24 +28,18 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 //implements Imorecolorfularmor
-public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//ArmorItem
+public class MettaurHelmet extends ArmorItem implements IDyeableArmorItem{//ArmorItem
 	
 
 	public int MainColorDefault = 342773;
 	public int SecondaryColorDefault = 379125;
-	public int WhiteColorDefault = 16777215;
-	public int ThirdColorDefault = 14105660;
-	public int GlowyColorDefault = 16728361;
-	public int GrayColorDefault = 12105912;
+
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
-	public int ThirdColor = ThirdColorDefault;
-	public int WhiteColor = WhiteColorDefault;
-	public int GlowyColor = GlowyColorDefault;
-	public int GrayColor = GrayColorDefault;
+
 	public int colortime = 25;
 
-	public MegamanArmorColor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public MettaurHelmet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 	}
 	
@@ -52,7 +47,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		if(slot == EquipmentSlotType.HEAD) {
-			megamanarmor_maincolor model = new megamanarmor_maincolor(1.0f);
+			helmet_mettaur model = new helmet_mettaur(1.0f);
 			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
         
 			model.isChild = _default.isChild;
@@ -114,17 +109,17 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 
 		      }
 		      
-		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
-
-		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
-
-		      }
-		      
-		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
-		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
-
-		      }
+//		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+//
+//		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+//
+//		      }
+//		      
+//		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+//
+//		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+//
+//		      }
 
 		      //if(this.MainColor == null) {
 		    	//  model.MainColor = MainColor;
@@ -150,10 +145,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 			
 			this.MainColor = model.MainColor;
 			this.SecondaryColor = model.SecondaryColor;
-			this.ThirdColor = model.ThirdColor;
-			this.WhiteColor = model.WhiteColor;
-			this.GlowyColor = model.GlowyColor;
-			this.GrayColor = model.GrayColor;
+
 
 			return (A) model;
 		}
@@ -187,10 +179,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 			
 			this.MainColor = model.MainColor;
 			this.SecondaryColor = model.SecondaryColor;
-			this.WhiteColor = model.WhiteColor;
-			this.ThirdColor = model.ThirdColor;
-			this.GlowyColor = model.GlowyColor;
-			this.GrayColor = model.GrayColor;
+
 
 			return (A) model;
 		}
@@ -231,10 +220,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 			
 			this.MainColor = model.MainColor;
 			this.SecondaryColor = model.SecondaryColor;
-			this.WhiteColor = model.WhiteColor;
-			this.ThirdColor = model.ThirdColor;
-			this.GlowyColor = model.GlowyColor;
-			this.GrayColor = model.GrayColor;
+
 
 			return (A) model;
 		}
@@ -316,7 +302,7 @@ public class MegamanArmorColor extends ArmorItem implements IDyeableArmorItem{//
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/megamanarmor_layer_1.png";
+        return "megamanarmormod:textures/armor/helmet.png";
     }
 	
 }

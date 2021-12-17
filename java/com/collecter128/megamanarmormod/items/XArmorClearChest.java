@@ -35,7 +35,7 @@ public class XArmorClearChest extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		//xarmorclear_chestplate model = new xarmorclear_chestplate(null, 1.0f, knockbackResistance, damageReduceAmount, damageReduceAmount);
-		xarmorclear_chestplate model = new xarmorclear_chestplate(RenderType::getEntityTranslucentCull, 1.0f, 16, 64, 79);
+		xarmorclear_chestplate model = new xarmorclear_chestplate(RenderType::getEntityTranslucentCull, 1.0f, 16, 74, 114);
 		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 		//IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEnergySwirl(this.func_225633_a_(), this.func_225634_a_(f), f * 0.01F));
        // entitymodel.setRotationAngles(entitylivingbaseIn, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
@@ -47,7 +47,7 @@ public class XArmorClearChest extends ArmorItem{
         model.leftArmPose = _default.leftArmPose;
         //model.getRenderType();
         //RenderType.getTranslucent();
-        RenderType.getArmorEntityGlint();
+        //RenderType.getTranslucent();
         return (A) model;
 	}
 	
@@ -60,7 +60,7 @@ public class XArmorClearChest extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-    	return "megamanarmormod:textures/armor/xtransparentarmor_layer_1.png";
+    	return "megamanarmormod:textures/armor/xarmorclear1.png";
     }
     
 //    public ResourceLocation getArmorResource(net.minecraft.entity.Entity entity, ItemStack stack, EquipmentSlotType slot, @Nullable String type) {

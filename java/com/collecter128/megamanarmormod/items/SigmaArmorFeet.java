@@ -11,8 +11,22 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.CompoundNBT;
 
 public class SigmaArmorFeet extends ArmorItem{
+	
+	public int MainColorDefault = 4574259;//Main Body Color 
+	public int SecondaryColorDefault = 3168981; //blue bits
+	public int WhiteColorDefault =  16777215;
+	public int ThirdColorDefault = 13401651; //Brown
+	public int GlowyColorDefault = 14691113; // It's red
+	public int GrayColorDefault = 11322824; //Slightly blue
+	public int MainColor = MainColorDefault;
+	public int SecondaryColor = SecondaryColorDefault;
+	public int ThirdColor = ThirdColorDefault;
+	public int WhiteColor = WhiteColorDefault;
+	public int GlowyColor = GlowyColorDefault;
+	public int GrayColor = GrayColorDefault;
 
 	public SigmaArmorFeet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -35,13 +49,58 @@ public class SigmaArmorFeet extends ArmorItem{
 //			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 //		}
 
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
-        model.rightArmPose = _default.rightArmPose;
-        model.leftArmPose = _default.leftArmPose;
+		CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
 
-        return (A) model;
+	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+
+	    	  model.MainColor = compoundnbt.getInt("MainColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+
+	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+
+	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+
+	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+
+	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+
+	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+
+      model.isChild = _default.isChild;
+      model.isSneak = _default.isSneak;
+      model.isSitting = _default.isSitting;
+      model.rightArmPose = _default.rightArmPose;
+      model.leftArmPose = _default.leftArmPose;
+      
+		this.MainColor = model.MainColor;
+		this.SecondaryColor = model.SecondaryColor;
+		this.ThirdColor = model.ThirdColor;
+		this.WhiteColor = model.WhiteColor;
+		this.GlowyColor = model.GlowyColor;
+		this.GrayColor = model.GrayColor;
+
+      return (A) model;
+
 	}
 	
 //

@@ -1,12 +1,15 @@
 package com.collecter128.megamanarmormod.items;
 
+import com.collecter128.megamanarmormod.client.models.ifxarmor;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplatecolor;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
+import com.collecter128.megamanarmormod.client.models.xarmor_chestcolor;
+import com.collecter128.megamanarmormod.client.models.xarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.zeroarmor_chestplate;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -17,14 +20,14 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 
-public class ProtomanArmorChest extends ArmorItem{
+public class IFXArmor extends ArmorItem{
 	
-	public int MainColorDefault = 16331285;//Main Body Color Protoman orangishRed
-	public int SecondaryColorDefault = 9737364;//Secondary Color black?
-	public int WhiteColorDefault = 15855562;
-	public int ThirdColorDefault = 16765460;//Scarf
-	public int GlowyColorDefault = 2359060;//Glow Green Bits
-	public int GrayColorDefault = 12105912;
+	public int MainColorDefault = 2781423;
+	public int SecondaryColorDefault = 5752303;
+	public int WhiteColorDefault = 16777215;
+	public int ThirdColorDefault = 16777215;
+	public int GlowyColorDefault = 16468504;
+	public int GrayColorDefault = 16777215;
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -32,7 +35,7 @@ public class ProtomanArmorChest extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 
-	public ProtomanArmorChest(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public IFXArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -40,15 +43,16 @@ public class ProtomanArmorChest extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		protomanarmor_chestplatecolor model = new protomanarmor_chestplatecolor(1.0f);
+		ifxarmor model = new ifxarmor(1.0f);
 		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 		
 		CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
-
+		
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
 	    	  //armorcolorer = compoundnbt.getInt("MainColor");
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
+	    	  model.ZeroMainColor = compoundnbt.getInt("MainColor");
 
 	      }
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
@@ -57,28 +61,26 @@ public class ProtomanArmorChest extends ArmorItem{
 
 	      }
 	      
-	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
-
-	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
-
-	      }
-	      
 	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
 
 	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
 	      }
-	      
+	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+
+	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+	    	  model.ZeroWhiteColor = compoundnbt.getInt("WhiteColor");
+
+	      }
 	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
 
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
-	      
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
-
+	    	  model.ZeroGrayColor = compoundnbt.getInt("GrayColor");
 	      }
 
         model.isChild = _default.isChild;
@@ -89,8 +91,8 @@ public class ProtomanArmorChest extends ArmorItem{
         
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;
-		this.ThirdColor = model.ThirdColor;
 		this.WhiteColor = model.WhiteColor;
+		this.ThirdColor = model.ThirdColor;
 		this.GlowyColor = model.GlowyColor;
 		this.GrayColor = model.GrayColor;
 
@@ -106,7 +108,7 @@ public class ProtomanArmorChest extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/protomanarmor1.png";
+        return "megamanarmormod:textures/armor/ifx.png";
     }
 	
 }

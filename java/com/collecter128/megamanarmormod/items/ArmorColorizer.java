@@ -11,9 +11,12 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.client.renderer.entity.model.ShieldModel;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.item.ArmorStandEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.DyeColor;
@@ -70,11 +73,23 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		GrayColor = GrayColorDefault;
 	}
 	
-	/**
-	    * Called when this item is used when targetting a Block
-	    */
+//	   public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
+//		      ItemStack itemstack = playerIn.getHeldItem(handIn);
+//		      EquipmentSlotType equipmentslottype = MobEntity.getSlotForItemStack(itemstack);
+//		      ItemStack itemstack1 = playerIn.getItemStackFromSlot(equipmentslottype);
+//		      if (itemstack1.isEmpty()) {
+//		         playerIn.setItemStackToSlot(equipmentslottype, itemstack.copy());
+//		         itemstack.setCount(0);
+//		         return ActionResult.func_233538_a_(itemstack, worldIn.isRemote());
+//		      } else {
+//		         return ActionResult.resultFail(itemstack);
+//		      }
+//		   }
+	
+//	/**
+//	    * Called when this item is used when targetting a Block
+//	    */
 //	   public ActionResultType onItemUse(ItemUseContext context) {
-		   
 //	      World world = context.getWorld();
 //	      if (!(world instanceof ServerWorld)) {
 //	         return ActionResultType.SUCCESS;
@@ -127,7 +142,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   ItemStack ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
 		   CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
 		   //if(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.MegamanArmor_Head.get()) {
-		   
+
 		   	Random random = new Random(16777215);
 		//   	Random random2 = new Random(16777215);
 	   		int randint = random.nextInt();//random2.nextInt()
@@ -257,6 +272,107 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   	randomvalue = random.nextInt();
 	   }
 	   
+	   /**
+	    * Returns true if the item can be used on the given entity, e.g. shears on sheep.
+	    */
+	   public ActionResultType itemInteractionForEntity(ItemStack stack, PlayerEntity playerIn, LivingEntity target, Hand hand) {
+	      //if (stack.hasDisplayName() && !(target instanceof PlayerEntity)) {
+	         if (!playerIn.world.isRemote) {// && target.isAlive()
+	            //target.setCustomName(stack.getDisplayName());
+//	            if (target instanceof PlayerEntity) {
+//	               ((MobEntity)target).enablePersistence();
+//	            }
+	        	 
+	        	// EquipmentSlotType equipmentslottype = MobEntity.getSlotForItemStack(itemstack);
+	            //if(target.getItemStackFromSlot(EquipmentSlotType.HEAD) != null) {
+	            	//target.getItemStackFromSlot(EquipmentSlotType.HEAD);
+	            	
+	            	int randint = random.nextInt();//random2.nextInt()
+	        	   	//	randint = random2.nextInt(random.nextInt());
+	        	   		randint = random.nextInt();
+	            	
+	            	ItemStack ArmorItem = target.getItemStackFromSlot(EquipmentSlotType.HEAD);
+	            	 CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
+	            	
+	    		   	ProcessColorizationOnTarget(playerIn, EquipmentSlotType.HEAD, compoundnbt, "MainColor", primaryColor,randint, ArmorItem);
+	    		   	if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+	    		   		ArmorItem.getOrCreateChildTag("display").putInt("color", primaryColor);
+	    		   		target.setItemStackToSlot(EquipmentSlotType.HEAD, ArmorItem);
+	    		   	}
+//	    		   	if(target instanceof ArmorStandEntity) {
+//	    		   		ArmorStandEntity armorstand = (ArmorStandEntity) target;
+//	    		   		armorstand.armorItems;
+//	    		   	}
+	    		   	//randint = random.nextInt();
+	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "SecondaryColor", secondaryColor,randint, ArmorItem);
+	    		   	//randint = random.nextInt();
+	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "WhiteColor", WhiteColor,randint, ArmorItem);
+	    		   	//randint = random.nextInt();
+	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "ThirdColor", thiraryColor,randint, ArmorItem);
+	    		   	//randint = random.nextInt();
+	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "GlowyColor", GlowyColor,randint, ArmorItem);
+	    		   	//randint = random.nextInt();
+	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "GrayColor", GrayColor,randint, ArmorItem);
+	            }
+
+	            //stack.shrink(1);
+	        //}
+
+	         return ActionResultType.func_233537_a_(playerIn.world.isRemote);
+//	      } else {
+//	         return ActionResultType.PASS;
+//	      }
+	   }
+	   
+	   public void ProcessColorizationOnTarget(Entity player, EquipmentSlotType slotype, CompoundNBT nbt, String colorchanged, int colorvalue, int randomvalue, ItemStack thisarmoritem) {
+		   	if(colorvalue >= 0) {// Change color to mach the value (similar to how vanilla armor is dyed
+				   //player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, colorvalue);
+				   thisarmoritem.getOrCreateChildTag("displaymm").putInt(colorchanged, colorvalue);
+				   player.setItemStackToSlot(slotype, thisarmoritem);
+		   	}
+		   	//-1 doesn't change the color, so it's not acted upon
+		   	else if(colorvalue == -2){//return it to default
+		   		if (nbt != null && nbt.contains(colorchanged, 99)) {
+			         //compoundnbt.remove("MainColor");
+			         //player.getItemStackFromSlot(slotype).removeChildTag(colorchanged);
+			         thisarmoritem.removeChildTag(colorchanged);
+					 player.setItemStackToSlot(slotype, thisarmoritem);
+			      }
+		   	}
+		   	else if(colorvalue == -3){//Random! Using the broken not working negative
+		   		if (nbt != null && nbt.contains(colorchanged, 99)) {
+		   			nbt.getInt(colorchanged);
+		   			float fred = (float)( nbt.getInt(colorchanged) >> 16 & 255) / 255.0F;
+		   			float fblue = (float)(nbt.getInt(colorchanged) >> 8 & 255) / 255.0F;
+		   			float fgreen = (float)(nbt.getInt(colorchanged) & 255) / 255.0F;
+		   			float nred = 255.0F - fred;
+		   			float ngreen = 255.0F - fgreen;
+		   			float nblue = 255.0F - fblue;
+		   			int negativevalue = (int) (ngreen * 65536 + nblue * 256 + nred);
+		   			//player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, negativevalue);
+		   			thisarmoritem.getOrCreateChildTag("displaymm").putInt(colorchanged, negativevalue);
+					player.setItemStackToSlot(slotype, thisarmoritem);
+		   		}
+		   		else
+		   		//	player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, randomvalue);
+		   		thisarmoritem.getOrCreateChildTag("displaymm").putInt(colorchanged, randomvalue);
+				player.setItemStackToSlot(slotype, thisarmoritem);
+		   	}
+		   	else if(colorvalue == -4){//Negative using the formula for negative
+		   		if (nbt != null && nbt.contains(colorchanged, 99)) {
+		   			Color color = new Color(nbt.getInt(colorchanged));
+		   			int nred = 255 - color.getRed();
+		   			int ngreen = 255 - color.getGreen();
+		   			int nblue = 255 - color.getBlue();
+		   			int negativevalue = (int) ((nred * 65536) + (ngreen * 256) + nblue);
+		   			//player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, negativevalue);
+		   			thisarmoritem.getOrCreateChildTag("displaymm").putInt(colorchanged, negativevalue);
+					player.setItemStackToSlot(slotype, thisarmoritem);
+		   		}
+		   	}
+		   	randomvalue = random.nextInt();
+	   }
+	   
         
 //	   @OnlyIn(Dist.CLIENT)
 //	   @Override
@@ -268,18 +384,22 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 //	   }
 	   
 //	   @OnlyIn(Dist.CLIENT)
+//	   //@Override
 //	   public int getColor(int tintIndex) {
-//		   switch(tintIndex) {
-//		  		case 0:
-//		  			return this.primaryColor;
+////		   switch(tintIndex) {
+////		  		case 0:
+//		   		if(tintIndex == 0) {
+//		  			//return this.primaryColor;
+//		  			return this.MainColorDefault;
 //		  		}
 ////	   			default:
-////	   				return this.secondaryColor;
+//	   				return this.secondaryColor;
 ////		  		}
 ////			}
-//	      return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
+//	      //return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
 //	   }
-//	   
+
+	   
 	   @OnlyIn(Dist.CLIENT)
 	   @Override
 	   public int getColor(ItemStack itemStackIn) {

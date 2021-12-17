@@ -18,6 +18,20 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 
 public class XArmorClear extends ArmorItem{
+	
+	public int MainColorDefault = 16729119;
+	public int SecondaryColorDefault = 6727167;
+	public int WhiteColorDefault = 16777215;
+	public int ThirdColorDefault = 16760663;
+	public int GlowyColorDefault = 16724004;
+	public int GrayColorDefault = 15986937;
+	public int MainColor = MainColorDefault;
+	public int SecondaryColor = SecondaryColorDefault;
+	public int ThirdColor = ThirdColorDefault;
+	public int WhiteColor = WhiteColorDefault;
+	public int GlowyColor = GlowyColorDefault;
+	public int GrayColor = GrayColorDefault;
+	public int colortime = 25;
 
 	public XArmorClear(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);

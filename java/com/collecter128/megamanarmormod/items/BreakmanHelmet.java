@@ -20,7 +20,7 @@ import net.minecraft.nbt.CompoundNBT;
 
 public class BreakmanHelmet extends ArmorItem{
 	
-	public int MainColorDefault = 16740644;//Main Body Color Protoman orangishRed
+	public int MainColorDefault = 16331285;//Main Body Color Protoman orangishRed
 	public int SecondaryColorDefault = 9737364;//Secondary Color black?
 	public int WhiteColorDefault = 15855562;
 	public int ThirdColorDefault = 16765460;//Scarf

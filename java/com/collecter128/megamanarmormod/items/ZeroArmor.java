@@ -51,12 +51,12 @@ public class ZeroArmor extends ArmorItem{
         model.leftArmPose = _default.leftArmPose;
         
         CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
-	     // compoundnbt != null && compoundnbt.contains("MainColor", 99);
+
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
 	    	  //armorcolorer = compoundnbt.getInt("MainColor");
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
-				//model.MainColor = maincompund.getInt("MainColor");
+
 	      }
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
 

@@ -207,16 +207,21 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 //	      return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
 //	   }
 	   
+	   @OnlyIn(Dist.CLIENT)
+	   @Override
+	   public int getColor(ItemStack itemStackIn) {
+		      CompoundNBT compoundnbt = itemStackIn.getTag();
+		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//"MainColor"
+		         return compoundnbt.getInt("color");//"MainColor"
+		      } //else {
+		         return  342773;
+		      //}
+		   }
+	   
 //	   @OnlyIn(Dist.CLIENT)
-//	   @Override
-//	   public int getColor(ItemStack itemStackIn) {
-//		      CompoundNBT compoundnbt = itemStackIn.getTag();
-//		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//"MainColor"
-//		         return compoundnbt.getInt("color");//"MainColor"
-//		      } //else {
-//		         return  342773;
-//		      //}
-//		   }
+//	   public int getColor(int tintIndex) {
+//	      return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
+//	   }
 	   
 //	   @OnlyIn(Dist.CLIENT)
 //	   public int createnbttogetcolorfrom(ItemStack itemStackIn) {

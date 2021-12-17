@@ -21,7 +21,7 @@ import net.minecraft.nbt.CompoundNBT;
 public class ZeroArmorChest extends ArmorItem{
 	
 	public int MainColorDefault = 16711680;//Main Body Color 
-	public int SecondaryColorDefault = 5752303;//Secondary 
+	public int SecondaryColorDefault = 14539732;//Secondary 
 	public int ThirdColorDefault = 16763151;
 	public int WhiteColorDefault = 16777215;
 	public int GlowyColorDefault = 2448340;

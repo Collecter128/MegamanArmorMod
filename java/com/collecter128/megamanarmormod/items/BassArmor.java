@@ -1,5 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
+import com.collecter128.megamanarmormod.client.models.bassarmor_bootscolor;
+import com.collecter128.megamanarmormod.client.models.bassarmor_chestcolor;
 import com.collecter128.megamanarmormod.client.models.bassarmor_color;
 import com.collecter128.megamanarmormod.client.models.bassarmor_main;
 
@@ -35,78 +37,187 @@ public class BassArmor extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		bassarmor_color model = new bassarmor_color(1.0f);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
-
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
-        model.rightArmPose = _default.rightArmPose;
-        model.leftArmPose = _default.leftArmPose;
+		if(slot == EquipmentSlotType.HEAD) {
+			bassarmor_color model = new bassarmor_color(1.0f);
+			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+	
+	        model.isChild = _default.isChild;
+	        model.isSneak = _default.isSneak;
+	        model.isSitting = _default.isSitting;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
+	        
+	        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+	
+		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+		    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		    	  model.MainColor = compoundnbt.getInt("MainColor");
+	
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+	
+		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+	
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+	
+		    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+	
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+	
+		    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
+	
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+	
+		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+	
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+	
+		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+	
+		      }
+		      
+				this.MainColor = model.MainColor;
+				this.SecondaryColor = model.SecondaryColor;
+				this.ThirdColor = model.ThirdColor;
+				this.WhiteColor = model.WhiteColor;
+				this.GlowyColor = model.GlowyColor;
+				this.GrayColor = model.GrayColor;
+	
+	        return (A) model;
+		}
         
-        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+		else if(slot == EquipmentSlotType.CHEST) {
+			bassarmor_chestcolor model = new bassarmor_chestcolor(1.0f);
+			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 
-	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-	    	  //armorcolorer = compoundnbt.getInt("MainColor");
-	    	  model.MainColor = compoundnbt.getInt("MainColor");
+	        model.isChild = _default.isChild;
+	        model.isSneak = _default.isSneak;
+	        model.isSitting = _default.isSitting;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
+	        
+	        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
 
-	      }
-	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+		    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		    	  model.MainColor = compoundnbt.getInt("MainColor");
 
-	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
 
-	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
-	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
 
-	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+		    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
-	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
 
-	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+		    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
-	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
 
-	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
-	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
-	      }
-	      
-			this.MainColor = model.MainColor;
-			this.SecondaryColor = model.SecondaryColor;
-			this.ThirdColor = model.ThirdColor;
-			this.WhiteColor = model.WhiteColor;
-			this.GlowyColor = model.GlowyColor;
-			this.GrayColor = model.GrayColor;
+		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
-        return (A) model;
-        
-//		if(slot == EquipmentSlotType.HEAD) {
-//			protomanarmor_main model = new protomanarmor_main(1.0f);
-//			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
-//		}
-//		if(slot == EquipmentSlotType.CHEST) {
-//			protomanarmor_chestplate modelchestplate = new protomanarmor_chestplate(1.0f);
-//			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
-//
-//        modelchestplate.isChild = _default.isChild;
-//        modelchestplate.isSneak = _default.isSneak;
-//        modelchestplate.isSitting = _default.isSitting;
-//        modelchestplate.rightArmPose = _default.rightArmPose;
-//        modelchestplate.leftArmPose = _default.leftArmPose;
-//
-//        return (A) modelchestplate;
-//		}
+		      }
+		      
+				this.MainColor = model.MainColor;
+				this.SecondaryColor = model.SecondaryColor;
+				this.ThirdColor = model.ThirdColor;
+				this.WhiteColor = model.WhiteColor;
+				this.GlowyColor = model.GlowyColor;
+				this.GrayColor = model.GrayColor;
+
+	        return (A) model;
+		}
+		
+
+		
+		else {
+			bassarmor_bootscolor model = new bassarmor_bootscolor(1.0f);
+			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
+
+//				if(slot == EquipmentSlotType.LEGS) {
+//					protomanarmor_leggings model = new protomanarmor_leggings(1.0f);
+//					model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+//				}
+
+	        model.isChild = _default.isChild;
+	        model.isSneak = _default.isSneak;
+	        model.isSitting = _default.isSitting;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
+	        
+	        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+
+		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+		    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		    	  model.MainColor = compoundnbt.getInt("MainColor");
+
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+
+		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+
+		    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+
+		    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+
+		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+
+		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+		      }
+		      
+				this.MainColor = model.MainColor;
+				this.SecondaryColor = model.SecondaryColor;
+				this.ThirdColor = model.ThirdColor;
+				this.WhiteColor = model.WhiteColor;
+				this.GlowyColor = model.GlowyColor;
+				this.GrayColor = model.GrayColor;
+
+	        return (A) model;
+		}
+		
 	}
 	
 //

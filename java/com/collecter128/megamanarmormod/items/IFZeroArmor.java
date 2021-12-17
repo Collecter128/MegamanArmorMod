@@ -1,9 +1,14 @@
 package com.collecter128.megamanarmormod.items;
 
-
-
-import com.collecter128.megamanarmormod.client.models.sigmaarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.sigmaarmor_legs;
+import com.collecter128.megamanarmormod.client.models.ifzeroarmor;
+import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
+import com.collecter128.megamanarmormod.client.models.zeroarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.zerochest;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -14,14 +19,14 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 
-public class SigmaArmorLegs extends ArmorItem{
+public class IFZeroArmor extends ArmorItem{
 	
-	public int MainColorDefault = 4574259;//Main Body Color 
-	public int SecondaryColorDefault = 3168981; //blue bits
-	public int WhiteColorDefault =  16777215;
-	public int ThirdColorDefault = 13401651; //Brown
-	public int GlowyColorDefault = 14691113; // It's red
-	public int GrayColorDefault = 11322824; //Slightly blue
+	public int MainColorDefault = 16711680;//Main Body Color 
+	public int SecondaryColorDefault = 5752303;//Secondary 
+	public int ThirdColorDefault = 16763151;
+	public int WhiteColorDefault = 16777215;
+	public int GlowyColorDefault = 2448340;
+	public int GrayColorDefault = 16777215;
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -29,7 +34,7 @@ public class SigmaArmorLegs extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 
-	public SigmaArmorLegs(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public IFZeroArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -37,26 +42,35 @@ public class SigmaArmorLegs extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		sigmaarmor_legs model = new sigmaarmor_legs(1.0f);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.LEGS;
+		ifzeroarmor model = new ifzeroarmor(1.0f);
+		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 
-		CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+        model.isChild = _default.isChild;
+        model.isSneak = _default.isSneak;
+        model.isSitting = _default.isSitting;
+        model.rightArmPose = _default.rightArmPose;
+        model.leftArmPose = _default.leftArmPose;
+        
+        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
 
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
+	    	  model.XMainColor = compoundnbt.getInt("MainColor");
 
 	      }
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
 
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+	    	  model.XSecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
 	      
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
 
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
-
+	    	  model.XWhiteColor = compoundnbt.getInt("WhiteColor");
 	      }
 	      
 	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
@@ -74,24 +88,17 @@ public class SigmaArmorLegs extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
-
+	    	  model.XGrayColor = compoundnbt.getInt("GrayColor");
 	      }
-
-      model.isChild = _default.isChild;
-      model.isSneak = _default.isSneak;
-      model.isSitting = _default.isSitting;
-      model.rightArmPose = _default.rightArmPose;
-      model.leftArmPose = _default.leftArmPose;
-      
+       
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;
-		this.ThirdColor = model.ThirdColor;
 		this.WhiteColor = model.WhiteColor;
+		this.ThirdColor = model.ThirdColor;
 		this.GlowyColor = model.GlowyColor;
 		this.GrayColor = model.GrayColor;
 
-      return (A) model;
-
+        return (A) model;
 	}
 	
 //
@@ -103,7 +110,7 @@ public class SigmaArmorLegs extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/sigma2.png";
+        return "megamanarmormod:textures/armor/ifzero.png";
     }
 	
 }
