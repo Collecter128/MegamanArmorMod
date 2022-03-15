@@ -20,9 +20,12 @@ public enum ArmorMaterials implements IArmorMaterial{
 	
 	WilyLabcoat("wilylabcoat", 6, new int[] {1, 2, 3, 1}, 3, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0f, 0f, () -> Ingredient.fromItems(Blocks.WHITE_WOOL)),
 	BassArmor("bassarmor", 6, new int[] {2, 5, 6, 2}, 7, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.Fortenium.get())),
+	QuintArmor("quintarmor", 6, new int[] {2, 5, 6, 2}, 7, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.Ceratanium.get())),
 	
 	XArmor("xarmor", 6, new int[] {2, 5, 6, 3}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
 	XTransparentArmor("xtransparentarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
+	iXArmor("ixarmor", 8, new int[] {4, 7, 8, 5}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
+	FirstXArmor("firstarmor", 8, new int[] {3, 6, 7, 5}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 2.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
 	
 	ZeroArmor("zeroarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1f, 0.1f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
 	SigmaArmor("sigmaarmor", 7, new int[] {3, 6, 8, 4}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2f, 0.2f, () -> Ingredient.fromItems(ItemInit.TitaniumX.get())),
