@@ -145,6 +145,14 @@ public class ArmorColorizerColorShift extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 
+		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
+			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "MainColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "SecondaryColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "WhiteColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "ThirdColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 		   
 //		   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
 //		   if((playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND).getItem() == ItemInit.MegamanArmor_Head.get()) ||

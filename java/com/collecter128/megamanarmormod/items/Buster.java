@@ -47,10 +47,14 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class Buster extends ShootableItem{// implements IVanishable
+public class Buster extends ShootableItem{ // implements IVanishable
 
-	public Buster(Properties builder) {
+	static int BusterPowerLevel = 4;
+	static int chargeLevel = 0;
+	
+	public Buster(int Busterlevel, Properties builder) {
 		super(builder);
+		this.BusterPowerLevel = Busterlevel;
 	}
 	
 //	   /** Set to {@code true} when the crossbow is 20% charged. */
@@ -429,13 +433,18 @@ public class Buster extends ShootableItem{// implements IVanishable
 	            if (itemstack.isEmpty()) {
 	               itemstack = new ItemStack(Items.ARROW);
 	            }
-
-	            float f = getShotVelocity(i);
+	            
+	            float f = getShotVelocity(i);//maybe power level as well?
+	            //BusterLevels if i > 0 regular shot
+	            //			if i >= 20   lv2 (green shot)
+	            //			if i >= 40	lv3 (blue shot)
+	            //			if i >= 60    Lv4 (Pink Shot)
+	            int level = getChargeLevel(i, stack, chargeLevel);
 	            if (!((double)f < 0.1D)) {
 	               boolean flag1 = playerentity.abilities.isCreativeMode || (itemstack.getItem() instanceof ArrowItem && ((ArrowItem)itemstack.getItem()).isInfinite(itemstack, stack, playerentity));
 	               if (!worldIn.isRemote) {
 	                 // ArrowItem arrowitem = (ArrowItem)(itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
-	                  AbstractArrowEntity Bustershot = createBlast(worldIn, itemstack, playerentity);
+	                  AbstractArrowEntity Bustershot = createBlast(worldIn, itemstack, playerentity, level);
 	                  //AbstractArrowEntity abstractarrowentity = arrowitem.createArrow(worldIn, itemstack, playerentity);
 	                  Bustershot = customArrow(Bustershot);
 	                  Bustershot.func_234612_a_(playerentity, playerentity.rotationPitch, playerentity.rotationYaw, 0.0F, f * 3.0F, 1.0F);
@@ -493,6 +502,29 @@ public class Buster extends ShootableItem{// implements IVanishable
 
 	      return f;
 	   }
+	   
+	   /**
+	    * The time the buster must be used to charge it
+	    */
+	   public static int getChargeTime(ItemStack stack) {
+	      int i = EnchantmentHelper.getEnchantmentLevel(Enchantments.QUICK_CHARGE, stack);
+	      return i == 0 ? 25 : 25 - 5 * i;
+	   }
+	   
+	   /**
+	    * The time the buster must be used to charge it
+	    */
+	   public static int getChargeLevel(int useTime, ItemStack stack, int Chargelevel) {
+		   float f = (float)useTime / (float)getChargeTime(stack);
+		     if (f > 1.0F) {
+		        f = 1.0F;
+		     }
+		     if(f == 1.0F && BusterPowerLevel > Chargelevel) {
+		    	 f = 0.0F;
+		    	 chargeLevel= chargeLevel +1;
+		     }
+	     return chargeLevel;
+	   }
 
 	   /**
 	    * How long it takes to use or consume an item
@@ -505,7 +537,7 @@ public class Buster extends ShootableItem{// implements IVanishable
 	    * returns the action that specifies what animation to play when the items is being used
 	    */
 	   public UseAction getUseAction(ItemStack stack) {
-	      return UseAction.CROSSBOW;
+	      return UseAction.BOW;
 	   }
 
 	   /**
@@ -542,10 +574,20 @@ public class Buster extends ShootableItem{// implements IVanishable
 	      return 15;
 	   }
 	   
-	   public AbstractArrowEntity createBlast(World worldIn, ItemStack stack, LivingEntity shooter) {
-		   bustershotentity shotentity = new bustershotentity(worldIn, shooter);
+	   public AbstractArrowEntity createBlast(World worldIn, ItemStack stack, LivingEntity shooter, int level) {
+		   float power = (float)level + 1.0F;
+		   bustershotentity shotentity = new bustershotentity(worldIn, shooter, power);
 		   shotentity.setPotionEffect(stack);
+		   shotentity.setNoGravity(true);
 		      return shotentity;
 		   }
+	   
+	   //Custom colors????
+//	   @OnlyIn(Dist.CLIENT)
+//	   @Override
+//	   public final net.minecraft.client.renderer.tileentity.ItemStackTileEntityRenderer getItemStackTileEntityRenderer() {
+//	      net.minecraft.client.renderer.tileentity.ItemStackTileEntityRenderer renderer = ister != null ? ister.get() : null;
+//	      return renderer != null ? renderer : net.minecraft.client.renderer.tileentity.ItemStackTileEntityRenderer.instance;
+//	   }
 
 }

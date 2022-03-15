@@ -113,6 +113,12 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "MainColorglow");
+			   removecolor(compoundnbt, "SecondaryColorglow");
+			   removecolor(compoundnbt, "ThirdColorglow");
+			   removecolor(compoundnbt, "WhiteColorglow");
+			   removecolor(compoundnbt, "GlowyColorglow");
+			   removecolor(compoundnbt, "GrayColorglow");
 
 			   playerIn.setItemStackToSlot(EquipmentSlotType.HEAD, ArmorItem.copy());
 			   
@@ -124,6 +130,12 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "MainColorglow");
+			   removecolor(compoundnbt, "SecondaryColorglow");
+			   removecolor(compoundnbt, "ThirdColorglow");
+			   removecolor(compoundnbt, "WhiteColorglow");
+			   removecolor(compoundnbt, "GlowyColorglow");
+			   removecolor(compoundnbt, "GrayColorglow");
 
 			   playerIn.setItemStackToSlot(EquipmentSlotType.CHEST, ArmorItem.copy());
 			   
@@ -135,6 +147,12 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "MainColorglow");
+			   removecolor(compoundnbt, "SecondaryColorglow");
+			   removecolor(compoundnbt, "ThirdColorglow");
+			   removecolor(compoundnbt, "WhiteColorglow");
+			   removecolor(compoundnbt, "GlowyColorglow");
+			   removecolor(compoundnbt, "GrayColorglow");
 
 			   playerIn.setItemStackToSlot(EquipmentSlotType.LEGS, ArmorItem.copy());
 			   
@@ -146,8 +164,31 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "MainColorglow");
+			   removecolor(compoundnbt, "SecondaryColorglow");
+			   removecolor(compoundnbt, "ThirdColorglow");
+			   removecolor(compoundnbt, "WhiteColorglow");
+			   removecolor(compoundnbt, "GlowyColorglow");
+			   removecolor(compoundnbt, "GrayColorglow");
 
 			   playerIn.setItemStackToSlot(EquipmentSlotType.FEET, ArmorItem.copy());
+			   
+			   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
+			   compoundnbt = ArmorItem.getChildTag("displaymm");
+			   removecolor(compoundnbt, "MainColor");
+			   removecolor(compoundnbt, "SecondaryColor");
+			   removecolor(compoundnbt, "ThirdColor");
+			   removecolor(compoundnbt, "WhiteColor");
+			   removecolor(compoundnbt, "GlowyColor");
+			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "MainColorglow");
+			   removecolor(compoundnbt, "SecondaryColorglow");
+			   removecolor(compoundnbt, "ThirdColorglow");
+			   removecolor(compoundnbt, "WhiteColorglow");
+			   removecolor(compoundnbt, "GlowyColorglow");
+			   removecolor(compoundnbt, "GrayColorglow");
+
+			   playerIn.setItemStackToSlot(EquipmentSlotType.OFFHAND, ArmorItem.copy());
 
             return ActionResult.resultConsume(itemstack);
 

@@ -71,6 +71,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		
 	}
 	
 //	   public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
@@ -166,6 +167,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   	//randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GrayColor", GrayColor,randint);
 		   	
+		   	
 		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST);
 			compoundnbt = ArmorItem.getChildTag("displaymm");
 			//randint = random.nextInt();
@@ -221,6 +223,21 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 //			   ((MegamanArmorColor) ArmorItem.getItem()).colorize(colorarray, ArmorItem);
 //			   playerIn.setItemStackToSlot(EquipmentSlotType.OFFHAND, ArmorItem.copy());
 //		   }
+		   	
+		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
+			compoundnbt = ArmorItem.getChildTag("displaymm");
+			//randint = random.nextInt();
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "MainColor", primaryColor,randint);
+		   	//randint = random.nextInt();
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "SecondaryColor", secondaryColor,randint);
+		   	//randint = random.nextInt();
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "WhiteColor", WhiteColor,randint);
+		   	//randint = random.nextInt();
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "ThirdColor", thiraryColor,randint);
+		   	//randint = random.nextInt();
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GlowyColor", GlowyColor,randint);
+		   	//randint = random.nextInt();
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GrayColor", GrayColor,randint);
 		   
 	       //return ActionResult.resultSuccess(ArmorItem);
 //	       if (!playerIn.abilities.isCreativeMode) {
@@ -400,19 +417,22 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 //	   }
 
 	   
+//	   @OnlyIn(Dist.CLIENT)
+//	   @Override
+//	   public int getColor(ItemStack itemStackIn) {
+//		      CompoundNBT compoundnbt = itemStackIn.getTag();
+//		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//MainColor
+//		         return compoundnbt.getInt("color");
+//		      } else {
+//		         return  342773;
+//		      }
+//		   }
+	   
+	   //Like a spawn egg? 
 	   @OnlyIn(Dist.CLIENT)
-	   @Override
-	   public int getColor(ItemStack itemStackIn) {
-		      CompoundNBT compoundnbt = itemStackIn.getTag();
-		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//MainColor
-		         return compoundnbt.getInt("color");
-		      } else {
-		         return  342773;
-		      }
-		   }
-	   
-	   
-	   
+	   public int getColor(int tintIndex) {
+	      return tintIndex == 0 ? this.primaryColor : this.secondaryColor;
+	   }
 	   
 //	   public DyeColor getColor() {
 //		   CompoundNBT compoundnbt = itemStackIn.getTag();
