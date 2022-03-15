@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TTT",
+		"TpT"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"p": {
+			"item": "minecraft:pink_dye"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:sigmaarmor_head",
+		"count": 1
+	}
+}

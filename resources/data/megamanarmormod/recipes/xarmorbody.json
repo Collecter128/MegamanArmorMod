@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"T T",
+		"TTT",
+		"TTT"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:xarmor_body",
+		"count": 1
+	}
+}

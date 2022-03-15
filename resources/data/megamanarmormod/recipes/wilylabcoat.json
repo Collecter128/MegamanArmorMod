@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"w w",
+		"wpw",
+		"wzw"
+	],
+	"key": {
+		"w": {
+			"item": "minecraft:white_wool"
+		},
+		"p": {
+			"item": "minecraft:purple_wool"
+		},
+		"z": {
+			"item": "minecraft:pink_wool"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:wily_labcoat",
+		"count": 1
+	}
+}

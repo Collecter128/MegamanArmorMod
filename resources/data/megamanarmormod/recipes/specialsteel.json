@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"T",
+		"g"
+	],
+	"key": {
+		"g": {
+			"item": "minecraft:glowstone_dust"
+		},
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:specialsteel",
+		"count": 1
+	}
+}

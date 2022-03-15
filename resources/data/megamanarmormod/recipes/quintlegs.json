@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"m",
+		"t"
+	],
+	"key": {
+		"t": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"m": {
+			"item": "megamanarmormod:megamanarmor_legs"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:quintarmor_legs",
+		"count": 1
+	}
+}

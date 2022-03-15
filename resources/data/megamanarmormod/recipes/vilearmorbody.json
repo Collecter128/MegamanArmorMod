@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TrT",
+		"TTT",
+		"TTT"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"r": {
+			"item": "minecraft:purple_dye"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:vilearmor_body",
+		"count": 1
+	}
+}

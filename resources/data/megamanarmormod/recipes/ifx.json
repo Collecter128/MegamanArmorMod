@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		"Cx",
+		"C "
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"x": {
+			"item": "megamanarmormod:xarmor_body"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:ifxarmor_body",
+		"count": 1
+	}
+}

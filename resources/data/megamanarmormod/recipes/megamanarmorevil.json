@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"p",
+		"C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:megamanarmor_body"
+		},
+		"p": {
+			"item": "minecraft:purple_wool"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:megamanevil",
+		"count": 1
+	}
+}

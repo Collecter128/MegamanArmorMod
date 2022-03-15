@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		" C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerluckyblock",
+		"count": 1
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "minecraft:diamond"
+		},
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:sigmasaber",
+		"count": 1
+	}
+}

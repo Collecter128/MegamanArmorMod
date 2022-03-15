@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" p ",
+		"C C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"p": {
+			"item": "megamanarmormod:protomanarmor_head"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:breakman_helmet",
+		"count": 1
+	}
+}

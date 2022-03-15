@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TbT",
+		"T T"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"b": {
+			"item": "minecraft:brown_dye"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:sigmaarmor_arms",
+		"count": 1
+	}
+}

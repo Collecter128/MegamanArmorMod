@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"FFF",
+		"F F"
+	],
+	"key": {
+		"F": {
+			"item": "megamanarmormod:fortenium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:bassarmor_head",
+		"count": 1
+	}
+}

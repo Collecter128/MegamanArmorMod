@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"T",
+		"g"
+	],
+	"key": {
+		"g": {
+			"item": "minecraft:coal"
+		},
+		"T": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:fortenium",
+		"count": 1
+	}
+}

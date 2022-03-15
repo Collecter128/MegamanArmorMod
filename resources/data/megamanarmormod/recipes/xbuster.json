@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TBT"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"B": {
+			"item": "minecraft:bow"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:xbuster",
+		"count": 1
+	}
+}

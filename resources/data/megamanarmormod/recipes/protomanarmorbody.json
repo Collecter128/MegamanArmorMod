@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CrC",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"r": {
+			"item": "minecraft:red_dye"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:protomanarmor_body",
+		"count": 1
+	}
+}

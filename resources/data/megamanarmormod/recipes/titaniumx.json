@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"l",
+		"T"
+	],
+	"key": {
+		"l": {
+			"item": "minecraft:lapis_lazuli"
+		},
+		"T": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:titaniumx",
+		"count": 1
+	}
+}

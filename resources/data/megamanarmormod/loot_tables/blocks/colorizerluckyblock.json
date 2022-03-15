@@ -1,0 +1,433 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+	    	"bonus_rolls": { "min": 0, "max": 3 },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerdefault",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizermegaman",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizermegamanevil",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerrush",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerprotoman",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerbreakman",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerquint",
+                    "quality": 1
+                },		
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizersuperadapter",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerzero",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerblackzero",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerzerovirus",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerirregularzero",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizervile",
+                    "quality": 1
+                },
+                
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizermaincolor",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizersecondarycolor",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerthirdcolor",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerwhitecolor",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizergraycolor",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerglowycolor",
+                    "quality": 1
+                },
+
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerrollingcutter",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizersuperarm",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerhyperbomb",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerthunderbeam",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizergfirestorm",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizertimeslow",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizeroilslider",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizericeslasher",
+                    "quality": 1
+                },
+
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizeratomicfire",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerbubblelead",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerleafshield",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerairshooter",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerquickboomerang",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizertimestopper",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizermetalblade",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizercrashbomber",
+                    "quality": 1
+                },
+				{
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizeritem123",
+                    "quality": 1
+                },
+                
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerhardknuckle",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerneedlecannon",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizershadowblade",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizergeminilaser",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizertopspin",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizersparkshock",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizermagnetmissile",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizersearchsnake",
+                    "quality": 1
+                },
+                
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizernoisecrush",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerjunkshield",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerwildcoil",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerdangerwrap",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerfreezecracker",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerslashclaw",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerthunderbolt",
+                    "quality": 1
+                },
+                
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerfrozen",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizersticky",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerpetrified",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizeroldphoto",
+                    "quality": 1
+                },
+                
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerastrocrush",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerwaterbaloon",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizericewave",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizertornadohold",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizermegaball",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerhomingsniper",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerfiresword",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerflashbomb",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerthunderclaw",
+                    "quality": 1
+                },
+
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerrollingshield",
+                    "quality": 1
+                },
+
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizernegative",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizershiftlight",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizershiftdark",
+                    "quality": 1
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "megamanarmormod:colorizerrandom",
+                    "quality": 1
+                }
+            ]
+        }
+    ]
+}
