@@ -33,8 +33,12 @@ public class InputEvents {
 	
 	private static void onInput(Minecraft mc, int key, int action) {
 		if(mc.currentScreen == null && KeybindInit.Dashkey.isPressed()) {
-			if((mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ZeroArmor_Arms.get() || 
-					mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.VileArmor_Arms.get()) 
+			if((mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ZeroArmor_Arms.get()|| 
+					mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.ZeroArmorFirst_Arms.get() || 
+					mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.VileArmor_Arms.get()|| 
+					mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.FirstArmor_Arms.get()|| 
+					mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.SigmaArmor_Arms.get()|| 
+					mc.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == ItemInit.iXArmor_Arms.get()) 
 					&& mc.player.isOnGround()) {
 				int DashPower = 1;
 				float Maxspeed = 16f;

@@ -42,16 +42,17 @@ public class CustomItemColors extends ItemColors{
 		   }, ItemInit.MegamanArmor_Body.get());
 	      itemcolors.register((stack, color) -> {
 	    	  CompoundNBT compoundnbt = stack.getTag();
-	    	  //if (compoundnbt != null && compoundnbt.contains("color", 99)) {
+	    	  if (compoundnbt != null && compoundnbt.contains("color", 99)) {
 	    		  	color = compoundnbt.getInt("color");
 //			         return compoundnbt.getInt("color");
-			      //} else {
+			      } else {
 			    	  color = 16579836;
 			    	  //color = 6;
 //			         return  16579836;
-			      //}
-	    	  return color > 0 ? -1 : ((IDyeableArmorItem)stack.getItem()).getColor(stack);
-		   }, ItemInit.AtomicfireColorizer.get());
+			      }
+	    	  //return color;
+	    	  return color > 0 ? 0 : ((IDyeableArmorItem)stack.getItem()).getColor(stack);
+		   }, ItemInit.MainColorColorizer.get());
 //	      for(ArmorColorizer colorizeritem : ArmorColorizer.getcolorizers()) {
 //	          itemcolors.register((stack, color) -> {
 //	             return colorizeritem.getColor(color);

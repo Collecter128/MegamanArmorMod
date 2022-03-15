@@ -12,7 +12,8 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class FeatureInit {
 	
 	public static void addOres(BiomeLoadingEvent event) {
-		addOre(event, OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.CerataniumOre.get().getDefaultState(), 3, 0, 20, 6);
+		addOre(event, OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, 
+				BlockInit.CerataniumOre.get().getDefaultState(), 5, 0, 30, 8);
 	}
 	
 	public static void addOre(final BiomeLoadingEvent event, RuleTest testrule, BlockState state, int veinsize, int MinHeight, int MaxHeight, int amount) {
