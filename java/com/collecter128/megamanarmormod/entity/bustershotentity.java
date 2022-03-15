@@ -3,6 +3,7 @@ package com.collecter128.megamanarmormod.entity;
 import java.util.Collection;
 import java.util.Set;
 
+import com.collecter128.megamanarmormod.core.EntityTypesInit;
 import com.google.common.collect.Sets;
 
 import net.minecraft.entity.EntityType;
@@ -13,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.ListNBT;
+import net.minecraft.nbt.NBTUtil;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
@@ -21,6 +23,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.potion.Potions;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -51,18 +54,28 @@ public class bustershotentity extends AbstractArrowEntity{
 	   private Potion potion = Potions.EMPTY;
 	   private final Set<EffectInstance> customPotionEffects = Sets.newHashSet();
 	   private boolean fixedColor;
+	   
+	   private double damage = 2.0D;//normal arrow
 
 	   public bustershotentity(EntityType<? extends bustershotentity> type, World worldIn) {
 	      super(type, worldIn);
+	      this.setNoGravity(true);
 	   }
 
 	   public bustershotentity(World worldIn, double x, double y, double z) {
 	      super(EntityType.ARROW, x, y, z, worldIn);
+	      //super(EntityTypesInit.BusterShot.get(), x, y, z, worldIn);
 	   }
 
 	   public bustershotentity(World worldIn, LivingEntity shooter) {
 	      super(EntityType.ARROW, shooter, worldIn);
+	      //super(EntityTypesInit.BusterShot.get(), shooter, worldIn);
 	   }
+	   public bustershotentity(World worldIn, LivingEntity shooter, float power) {
+		      super(EntityType.ARROW, shooter, worldIn);
+		      //super(EntityTypesInit.BusterShot.get(), shooter, worldIn);
+		      this.damage = power;
+		   }
 
 	   public void setPotionEffect(ItemStack stack) {
 	      if (stack.getItem() == Items.TIPPED_ARROW) {
@@ -251,6 +264,11 @@ public class bustershotentity extends AbstractArrowEntity{
 	         super.handleStatusUpdate(id);
 	      }
 
+	   }
+	   
+	   @Override
+	   public double getDamage() {
+		   return this.damage;
 	   }
 
 }

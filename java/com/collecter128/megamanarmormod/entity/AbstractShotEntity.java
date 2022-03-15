@@ -51,7 +51,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class AbstractShotEntity{//extends ProjectileEntity
+public class AbstractShotEntity {//extends ProjectileEntity
 
 ////	AbstractShotEntity(EntityType<? extends ProjectileEntity> p_i231584_1_, World p_i231584_2_) {
 ////		super(p_i231584_1_, p_i231584_2_);
