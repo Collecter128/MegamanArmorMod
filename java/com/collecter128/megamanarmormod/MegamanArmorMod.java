@@ -4,12 +4,14 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.color.BlockColors;
+import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.data.CustomRecipeBuilder;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipeSerializer;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -131,8 +133,11 @@ public class MegamanArmorMod
         	//newblockColors = BlockColors.init();
         	//Object CustomitemColors = 
         	//CustomItemColors.init(BlockColors.init());
+        	//CustomItemColors.init(Minecraft.class.getClass().getDeclaredField(name));
         	//CustomItemRenderer.registerItemRenderer();
         	//ColorRegistry.
+        	CustomItemColors.init();
+        	//CustomItemColors.init(net.minecraft.client.Minecraft.getBlockColors());
         }
         
     }
