@@ -10,7 +10,7 @@ import net.minecraft.nbt.CompoundNBT;
 
 public interface Imorecolorfularmor {
 	   default boolean hasColor(ItemStack stack) {
-		      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+		      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 		      return compoundnbt != null && compoundnbt.contains("MainColor", 99);
 		   }
 //	   default boolean hasColor2(ItemStack stack) {
@@ -19,7 +19,7 @@ public interface Imorecolorfularmor {
 //		   }
 
 		   default int getColor(ItemStack stack) {
-		      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+		      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 		      return compoundnbt != null && compoundnbt.contains("MainColor", 99) ? compoundnbt.getInt("color") : 2781423;
 		   }
 //		   default int getColor2(ItemStack stack) {
@@ -28,7 +28,7 @@ public interface Imorecolorfularmor {
 //			   }
 
 		   default void removeColor(ItemStack stack) {
-		      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+		      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 		      if (compoundnbt != null && compoundnbt.contains("MainColor")) {
 		         compoundnbt.remove("MainColor");
 		      }
@@ -39,7 +39,7 @@ public interface Imorecolorfularmor {
 		   }
 
 		   default void setColor(ItemStack stack, int color) {
-		      stack.getOrCreateChildTag("displaymm").putInt("MainColor", color);
+		      stack.getOrCreateTagElement("displaymm").putInt("MainColor", color);
 		     // stack.getOrCreateChildTag("display").putInt("color2", color);
 		   }
 
@@ -67,7 +67,7 @@ public interface Imorecolorfularmor {
 		         }
 
 		         for(DyeItem dyeitem : dyes) {
-		            float[] afloat = dyeitem.getDyeColor().getColorComponentValues();
+		            float[] afloat = dyeitem.getDyeColor().getTextureDiffuseColors();
 		            int i2 = (int)(afloat[0] * 255.0F);
 		            int l = (int)(afloat[1] * 255.0F);
 		            int i1 = (int)(afloat[2] * 255.0F);

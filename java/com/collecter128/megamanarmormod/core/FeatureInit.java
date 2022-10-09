@@ -12,14 +12,18 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class FeatureInit {
 	
 	public static void addOres(BiomeLoadingEvent event) {
-		addOre(event, OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, 
-				BlockInit.CerataniumOre.get().getDefaultState(), 5, 0, 30, 8);
+		addOre(event, OreFeatureConfig.FillerBlockType.NATURAL_STONE, 
+				BlockInit.CerataniumOre.get().defaultBlockState(), 5, 0, 30, 10);
+		addOre(event, OreFeatureConfig.FillerBlockType.NATURAL_STONE, 
+				BlockInit.BlueMysteryData.get().defaultBlockState(), 5, 0, 30, 5);
+		addOre(event, OreFeatureConfig.FillerBlockType.NETHERRACK, 
+				BlockInit.LimitedOre.get().defaultBlockState(), 5, 10, 50, 8);
 	}
 	
 	public static void addOre(final BiomeLoadingEvent event, RuleTest testrule, BlockState state, int veinsize, int MinHeight, int MaxHeight, int amount) {
-		event.getGeneration().withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, 
-				Feature.ORE.withConfiguration(new OreFeatureConfig(testrule, state, veinsize))
-				.withPlacement(Placement.RANGE.configure(new TopSolidRangeConfig(MinHeight, 0, MaxHeight))).square().func_242731_b(amount));
+		event.getGeneration().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, 
+				Feature.ORE.configured(new OreFeatureConfig(testrule, state, veinsize))
+				.decorated((Placement.RANGE.configured(new TopSolidRangeConfig(MinHeight, 0, MaxHeight))).squared().count((amount))));
 		//min height, offset, maximum height, 
 	}
 

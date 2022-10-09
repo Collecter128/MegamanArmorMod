@@ -22,14 +22,13 @@ import net.minecraft.world.GrassColors;
 import net.minecraft.world.IBlockDisplayReader;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.registries.IRegistryDelegate;
 
-//@OnlyIn(Dist.CLIENT)
-public class CustomItemColors implements IItemColor{
-	   private final static java.util.Map<net.minecraftforge.registries.IRegistryDelegate<Item>, IItemColor> colors = new java.util.HashMap<>();
+@OnlyIn(Dist.CLIENT)
+public class CustomItemColors extends ItemColors{
+	   private final java.util.Map<net.minecraftforge.registries.IRegistryDelegate<Item>, IItemColor> colors = new java.util.HashMap<>();
 	  
-	   public static ItemColors init() {//BlockColors blockColors
+	   public static ItemColors init(BlockColors colors) {//
 		  // private final java.util.Map<net.minecraftforge.registries.IRegistryDelegate<Item>, IItemColor> colors2 = new java.util.HashMap<>();
 	      ItemColors itemcolors = new ItemColors();
 //	      itemcolors.register((stack, color) -> {
@@ -67,19 +66,76 @@ public class CustomItemColors implements IItemColor{
 //	          }, colorizeritem);
 //	       }
 	      
+	      
+//	      itemcolors.register((stack, color) -> {
+//	    	  CompoundNBT compoundnbt = stack.getTag();
+//	    	  if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+//			         return compoundnbt.getInt("MainColor");
+//			      } else {
+//			         return  342773;
+//			      }
+//		   }, (Item)ItemInit.HyperchipColorizer.get());
+//	      itemcolors.register((stack, color) -> {
+//	    	  CompoundNBT compoundnbt = stack.getTag();
+//	    	  if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+//			         return compoundnbt.getInt("MainColor");
+//			      } else {
+//			         return  342773;
+//			      }
+//		   }, ItemInit.MegamanArmor_Body);
+//	      itemcolors.register((stack, color) -> {
+//		         return color > 0 ? -1 : ((IDyeableArmorItem)stack.getItem()).getColor(stack);
+//		      }, Items.LEATHER_HELMET, Items.LEATHER_CHESTPLATE, Items.LEATHER_LEGGINGS, Items.LEATHER_BOOTS, Items.LEATHER_HORSE_ARMOR);
+//	      itemcolors.register((stack, color) -> {
+//	         if (color != 1) {
+//	            return -1;
+//	         } else {
+//	            CompoundNBT compoundnbt = stack.getChildTag("Explosion");
+//	            int[] aint = compoundnbt != null && compoundnbt.contains("Colors", 11) ? compoundnbt.getIntArray("Colors") : null;
+//	            if (aint != null && aint.length != 0) {
+//	               if (aint.length == 1) {
+//	                  return aint[0];
+//	               } else {
+//	                  int i = 0;
+//	                  int j = 0;
+//	                  int k = 0;
+//
+//	                  for(int l : aint) {
+//	                     i += (l & 16711680) >> 16;
+//	                     j += (l & '\uff00') >> 8;
+//	                     k += (l & 255) >> 0;
+//	                  }
+//
+//	                  i = i / aint.length;
+//	                  j = j / aint.length;
+//	                  k = k / aint.length;
+//	                  return i << 16 | j << 8 | k;
+//	               }
+//	            } else {
+//	               return 9079434;
+//	            }
+//	         }
+//	      }, Items.FIREWORK_STAR);
+//	      itemcolors.register((stack, color) -> {
+//	         return color > 0 ? -1 : PotionUtils.getColor(stack);
+//	      }, Items.POTION, Items.SPLASH_POTION, Items.LINGERING_POTION);
+//
+//	      for(SpawnEggItem spawneggitem : SpawnEggItem.getEggs()) {
+//	         itemcolors.register((stack, color) -> {
+//	            return spawneggitem.getColor(color);
+//	         }, spawneggitem);
+//	      }
 //	      for(SpawnEggItem spawneggitem : SpawnEggItem.getEggs()) {
 //		         itemcolors.register((stack, color) -> {
 //		            return spawneggitem.getColor(color);
 //		         }, spawneggitem);
 //		      }
 
-	      //net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, colors);
-	      //getColor(ItemStack p_getColor_1_, int p_getColor_2_);
-	     //net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, net.minecraft.client.Minecraft.blockColors);
-	     //net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, net.minecraft.client.Minecraft.getBlockColors());
-	      //net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, ColorHandlerEvent.Item.getBlockColors());
-	      //net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, blockColors);
-	      
+//	      itemcolors.register((stack, color) -> {
+//	         return color == 0 ? PotionUtils.getColor(stack) : -1;
+//	      }, Items.TIPPED_ARROW);
+	      net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, colors);
+	     // net.minecraftforge.client.ForgeHooksClient.onItemColorsInit(itemcolors, net.minecraft.client.Minecraft.blockColors);
 	      return itemcolors;
 	   }
 	   
@@ -145,20 +201,19 @@ public class CustomItemColors implements IItemColor{
 //	      return itemcolors;
 //	   }
 //
-	   //@Override
 	   public int getColor(ItemStack stack, int tintIndex) {
 	      IItemColor iitemcolor = this.colors.get(stack.getItem().delegate);
 	      return iitemcolor == null ? -1 : iitemcolor.getColor(stack, tintIndex);
 	   }
 	   
-//	   @Override
-//	   public void register(IItemColor itemColor, IItemProvider... itemsIn) {
-//		   for(IItemProvider iitemprovider : itemsIn) {
-//		         this.colors.put(iitemprovider.asItem().delegate, itemColor);
-//		         //this.colors.put((IRegistryDelegate<Item>) ItemInit.MainColorColorizer.get(), itemColor);
-//		      }
-//		   
-//	   }
+	   @Override
+	   public void register(IItemColor itemColor, IItemProvider... itemsIn) {
+		   for(IItemProvider iitemprovider : itemsIn) {
+		         this.colors.put(iitemprovider.asItem().delegate, itemColor);
+		         //this.colors.put((IRegistryDelegate<Item>) ItemInit.MainColorColorizer.get(), itemColor);
+		      }
+		   
+	   }
 
 
 	   

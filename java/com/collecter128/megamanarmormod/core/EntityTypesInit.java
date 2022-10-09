@@ -17,7 +17,7 @@ public class EntityTypesInit {
 	public static final DeferredRegister<EntityType<?>> EntityTypes = DeferredRegister.create(ForgeRegistries.ENTITIES, "megamanarmormod");
 
 	public static final RegistryObject<EntityType< bustershotentity >> BusterShot = EntityTypes.register("bustershot", 
-			() -> EntityType.Builder.<bustershotentity>create(bustershotentity::new, EntityClassification.MISC).size(0.5f, 0.5f)
+			() -> EntityType.Builder.<bustershotentity>of(bustershotentity::new, EntityClassification.MISC).sized(0.5f, 0.5f)
 				.build(new ResourceLocation("megamanarmormod", "bustershot").toString()));
 //	public static final RegistryObject<EntityType< AbstractShotEntity >> AbstractBusterShot = EntityTypes.register("abstractbustershot", 
 //			() -> EntityType.Builder.<AbstractShotEntity>create(AbstractShotEntity::new, EntityClassification.MISC).size(0.5f, 0.5f)
