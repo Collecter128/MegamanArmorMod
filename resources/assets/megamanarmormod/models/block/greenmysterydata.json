@@ -1,0 +1,65 @@
+{
+"parent": "minecraft:block/cube_all",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "megamanarmormod:block/mysterydatagreen",
+		"block": "megamanarmormod:block/mysterydatagreen",
+		"upper": "megamanarmormod:block/mysterydatagreenparticle"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 0],
+			"to": [8, 16, 16],
+			"color": 1,
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#block"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#block"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#block"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#block"},
+				"up": {"uv": [0, 0, 0, 16], "texture": "#block"},
+				"down": {"uv": [0, 0, 0, 16], "texture": "#block"}
+			}
+		},
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"color": 6,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#block"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#block"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#block"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#block"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#block"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#block"}
+			}
+		},
+		{
+			"name": "particle",
+			"from": [0, 16, 8],
+			"to": [16, 32, 8],
+			"color": 6,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#upper"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#upper"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#upper"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#upper"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#upper"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#upper"}
+			}
+		},
+		{
+			"name": "particle",
+			"from": [8, 16, 0],
+			"to": [8, 32, 16],
+			"color": 1,
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#upper"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#upper"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#upper"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#upper"},
+				"up": {"uv": [0, 0, 0, 16], "texture": "#upper"},
+				"down": {"uv": [0, 0, 0, 16], "texture": "#upper"}
+			}
+		}
+	]
+}

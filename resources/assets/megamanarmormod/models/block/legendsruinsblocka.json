@@ -1,0 +1,9 @@
+{
+  "parent": "megamanarmormod:block/orientable_with_bottomnew",
+  "textures": {
+    "top": "megamanarmormod:block/ruinsblockatop",
+    "bottom": "megamanarmormod:block/ruinsblockatop",
+    "front": "megamanarmormod:block/ruinsblockasidea",
+    "side": "megamanarmormod:block/ruinsblockasideb"
+  }
+}
