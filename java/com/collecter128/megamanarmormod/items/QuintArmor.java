@@ -42,15 +42,15 @@ public class QuintArmor extends ArmorItem{
 		
 		if(armorSlot == EquipmentSlotType.HEAD) {
 			quintarmor_main model = new quintarmor_main(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -116,15 +116,15 @@ public class QuintArmor extends ArmorItem{
 //		}
 		if(armorSlot == EquipmentSlotType.CHEST) {
 			quintarmor_chestplate model = new quintarmor_chestplate(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+			model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -173,15 +173,15 @@ public class QuintArmor extends ArmorItem{
 		}
 		if(armorSlot == EquipmentSlotType.LEGS) {
 			quint_legs model = new quint_legs(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+			model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -230,15 +230,15 @@ public class QuintArmor extends ArmorItem{
 		}
 		else {
 			quintarmor_boots model = new quintarmor_boots(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
+			model.hat.visible = armorSlot == EquipmentSlotType.FEET;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");

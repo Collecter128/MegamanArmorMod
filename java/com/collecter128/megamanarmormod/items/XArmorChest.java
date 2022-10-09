@@ -24,9 +24,10 @@ public class XArmorChest extends ArmorItem{
 	public int MainColorDefault = 2781423;
 	public int SecondaryColorDefault = 5752303;
 	public int WhiteColorDefault = 16777215;
-	public int ThirdColorDefault = 16777215;
+	public int ThirdColorDefault = 16642337; //yellow gold
 	public int GlowyColorDefault = 16468504;
 	public int GrayColorDefault = 16777215;
+	
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -43,9 +44,9 @@ public class XArmorChest extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		xarmor_chestcolor model = new xarmor_chestcolor(1.0f);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 		
-		CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 		
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -79,12 +80,17 @@ public class XArmorChest extends ArmorItem{
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
-        model.rightArmPose = _default.rightArmPose;
-        model.leftArmPose = _default.leftArmPose;
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
+
+	      model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;

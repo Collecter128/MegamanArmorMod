@@ -37,15 +37,15 @@ public class WilyCoat extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		//Wily_Jacket model = new Wily_Jacket(1.0f);
 		DrWilyCoatEvilColor model = new DrWilyCoatEvilColor(1.0f);
-        model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
         
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
+        model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
         model.rightArmPose = _default.rightArmPose;
         model.leftArmPose = _default.leftArmPose;
         
-        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+        CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 	     // compoundnbt != null && compoundnbt.contains("MainColor", 99);
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -94,12 +94,12 @@ public class WilyCoat extends ArmorItem{
 	}
 	
 	public void colorize(int[]colors, ItemStack stack) {
-		stack.getOrCreateChildTag("displaymm").putInt("MainColor", colors[0]);
-		stack.getOrCreateChildTag("displaymm").putInt("SecondaryColor", colors[1]);
-		stack.getOrCreateChildTag("displaymm").putInt("ThirdColor", colors[2]);
-		stack.getOrCreateChildTag("displaymm").putInt("WhiteColor", colors[3]);
-		stack.getOrCreateChildTag("displaymm").putInt("GlowyColor", colors[4]);
-		stack.getOrCreateChildTag("displaymm").putInt("GrayColor", colors[5]);
+		stack.getOrCreateTagElement("displaymm").putInt("MainColor", colors[0]);
+		stack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", colors[1]);
+		stack.getOrCreateTagElement("displaymm").putInt("ThirdColor", colors[2]);
+		stack.getOrCreateTagElement("displaymm").putInt("WhiteColor", colors[3]);
+		stack.getOrCreateTagElement("displaymm").putInt("GlowyColor", colors[4]);
+		stack.getOrCreateTagElement("displaymm").putInt("GrayColor", colors[5]);
 	}
 	
 	public static int[] getdefaultcolors() {

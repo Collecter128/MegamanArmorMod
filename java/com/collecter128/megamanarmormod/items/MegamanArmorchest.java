@@ -30,12 +30,12 @@ public class MegamanArmorchest extends ArmorItem implements Imorecolorfularmor{/
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		megamanarmor_chestplate model = new megamanarmor_chestplate(1.0f);
-        model.bipedBody.showModel = armorSlot == EquipmentSlotType.CHEST;
+		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
         //model.bipedBody..addChild(_default.bipedBody);
         //model.bipedRightArm.addChild(_default.bipedRightArm);
-        model.bipedBody = new megamanarmor_chestplate(0f).Body;
-        model.bipedRightArm = new megamanarmor_chestplate(0f).RightArm;
-        model.bipedLeftArm = new megamanarmor_chestplate(0f).LeftArm;
+        model.body = new megamanarmor_chestplate(0f).Body;
+        model.rightArm = new megamanarmor_chestplate(0f).RightArm;
+        model.leftArm = new megamanarmor_chestplate(0f).LeftArm;
         //model.bipedLeftArm.rotateAngleX = entityLiving.
         //model.bipedRightArm.addChild(entityLiving.);
         //model.bipedLeftArm.addChild(_default.bipedLeftArm);
@@ -45,14 +45,14 @@ public class MegamanArmorchest extends ArmorItem implements Imorecolorfularmor{/
         //Imorecolorfularmor.setColor(itemStack, 66);
         //Imorecolorfularmor.getColor(itemStack);
         //model.bipedBody.addChild(new megamanarmor_chestplate.);
-        model.bipedRightArm.showModel = armorSlot == EquipmentSlotType.CHEST;
+        model.rightArm.visible = armorSlot == EquipmentSlotType.CHEST;
 
 
-      model.isChild = entityLiving.isChild();
-      model.isSneak = _default.isSneak;
-      model.isSitting = _default.isSitting;
-      model.rightArmPose = _default.rightArmPose;
-      model.leftArmPose = _default.leftArmPose;
+        model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
+        model.rightArmPose = _default.rightArmPose;
+        model.leftArmPose = _default.leftArmPose;
       //setColor(itemStack, 6);
         //        model.isChild = _default.isChild;
 //        model.isSneak = entityLiving.isSneaking();

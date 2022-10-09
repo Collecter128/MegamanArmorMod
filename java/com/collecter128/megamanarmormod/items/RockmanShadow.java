@@ -8,6 +8,7 @@ import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_maincolor;
+import com.collecter128.megamanarmormod.client.models.rockmanShadow;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -18,14 +19,14 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 
-public class BreakmanHelmet extends ArmorItem{
+public class RockmanShadow extends ArmorItem{
 	
-	public int MainColorDefault = 16331285;//Main Body Color Protoman orangishRed
-	public int SecondaryColorDefault = 9737364;//Secondary Color black?
-	public int WhiteColorDefault = 15855562;
-	public int ThirdColorDefault = 16765460;//Scarf
-	public int GlowyColorDefault = 2359060;//Glow Green Bits
-	public int GrayColorDefault = 12105912;
+	public int MainColorDefault = 3709250;//Main Body Color quint green
+	public int SecondaryColorDefault = 10413478;//Secondary quintlight green
+	public int ThirdColorDefault = 16755768; //Orange parts
+	public int WhiteColorDefault = 16777215;//Basic White
+	public int GlowyColorDefault = 16764984;//Glow? yellow color
+	public int GrayColorDefault = 12105912;//Kinda Blue
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -33,7 +34,7 @@ public class BreakmanHelmet extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 
-	public BreakmanHelmet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public RockmanShadow(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -41,7 +42,7 @@ public class BreakmanHelmet extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		breakman_helmet model = new breakman_helmet(1.0f);
+		rockmanShadow model = new rockmanShadow(1.0f);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
@@ -123,7 +124,7 @@ public class BreakmanHelmet extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/breakmanhelmet.png";
+        return "megamanarmormod:textures/armor/rockmanshadowhelmet.png";
     }
 	
 }

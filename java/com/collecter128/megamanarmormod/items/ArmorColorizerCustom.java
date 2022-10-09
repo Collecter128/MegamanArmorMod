@@ -135,15 +135,15 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 	    * {@link #onItemUse}.
 	    */
 		@Override
-	   public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-		   ItemStack itemstack = playerIn.getHeldItem(handIn);
+	   public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
+		   ItemStack itemstack = playerIn.getItemInHand(handIn);
 
-		   ItemStack ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
+		   ItemStack ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.HEAD);
 		   
-		   CompoundNBT compoundnbtitem = itemstack.getChildTag("color");
+		   CompoundNBT compoundnbtitem = itemstack.getTagElement("color");
 		   if(compoundnbtitem != null && compoundnbtitem.contains("color", 99)) {
 		 
-		   CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
+		   CompoundNBT compoundnbt = ArmorItem.getTagElement("displaymm");
 		   
 		   //CompoundNBT compoundnbtdye = playerIn.getHeldItem(handIn).getChildTag("display");
 		  
@@ -151,54 +151,54 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 //		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
 //			compoundnbt = ArmorItem.getChildTag("displaymm");
 	   		
-		   	ProcessColorization(playerIn, playerIn.getHeldItem(handIn), 
+		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
 		   			EquipmentSlotType.HEAD, compoundnbt, colortype);
 
 
 		   	
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 
-		   	ProcessColorization(playerIn, playerIn.getHeldItem(handIn), 
+		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
 		   			EquipmentSlotType.CHEST, compoundnbt, colortype);
 
 		   	
 		   	
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 
-		   	ProcessColorization(playerIn, playerIn.getHeldItem(handIn), 
+		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
 		   			EquipmentSlotType.LEGS, compoundnbt, colortype);
 
 		   	
 		   	
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.FEET);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 			
-		   	ProcessColorization(playerIn, playerIn.getHeldItem(handIn), 
+		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
 		   			EquipmentSlotType.FEET, compoundnbt, colortype);
 		   	
 		   	
 
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.OFFHAND);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 			
-		   	ProcessColorization(playerIn, playerIn.getHeldItem(handIn), 
+		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
 		   			EquipmentSlotType.OFFHAND, compoundnbt, colortype);
 		   	
 		   }
 		   
-            return ActionResult.resultConsume(itemstack);
+            return ActionResult.consume(itemstack);
 
 	   }
 	   
 	   public void ProcessColorization(PlayerEntity player, ItemStack helditem, EquipmentSlotType slotype, CompoundNBT nbt, String colorchanged) {
 
-		   	CompoundNBT compoundnbtdye = helditem.getChildTag("display");//displaymm
+		   	CompoundNBT compoundnbtdye = helditem.getTagElement("display");//displaymm
 			   
 		   	if(nbt != null && compoundnbtdye.contains("color", 99)) {
 		   		int color = compoundnbtdye.getInt("color");
-		   		player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, color);
+		   		player.getItemBySlot(slotype).getOrCreateTagElement("displaymm").putInt(colorchanged, color);
 		   	}
 		   		
 	   }

@@ -28,25 +28,25 @@ public class MegamanArmor extends DyeableArmorItem implements IDyeableArmorItem{
 		
 		if(slot == EquipmentSlotType.HEAD) {
 			megamanarmor_main model = new megamanarmor_main(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
         
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
 
 			return (A) model;
 		}
 		if(slot == EquipmentSlotType.CHEST) {
 			megamanarmor_chestplate model = new megamanarmor_chestplate(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
         
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
 
 			return (A) model;
 		}
@@ -64,13 +64,13 @@ public class MegamanArmor extends DyeableArmorItem implements IDyeableArmorItem{
 //		}
 		else {
 			megamanarmor_Boots model = new megamanarmor_Boots(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
         
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
 
 			return (A) model;
 		}
@@ -84,7 +84,7 @@ public class MegamanArmor extends DyeableArmorItem implements IDyeableArmorItem{
 	
 	@Override
 	public int getColor(ItemStack stack) {
-	      CompoundNBT compoundnbt = stack.getChildTag("display");
+	      CompoundNBT compoundnbt = stack.getTagElement("display");
 	      return compoundnbt != null && compoundnbt.contains("color", 99) ? compoundnbt.getInt("color") : 1581819;
 	}
 

@@ -48,15 +48,15 @@ public class iXArmor extends ArmorItem{
 		
 		//if(armorSlot == EquipmentSlotType.HEAD) {
 			ixarmor_main model = new ixarmor_main(1.0f, armorSlot);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -91,6 +91,12 @@ public class iXArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
       

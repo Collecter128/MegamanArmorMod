@@ -30,7 +30,7 @@ public class XArmorClearFeet extends ArmorItem{
 		//model
 		
 		xarmor_feet model = new xarmor_feet(1.0f);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
+		model.hat.visible = armorSlot == EquipmentSlotType.FEET;
 //		if(slot == EquipmentSlotType.HEAD) {
 //			protomanarmor_main model = new protomanarmor_main(1.0f);
 //			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
@@ -40,9 +40,9 @@ public class XArmorClearFeet extends ArmorItem{
 //			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 //		}
 
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
+		model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
         model.rightArmPose = _default.rightArmPose;
         model.leftArmPose = _default.leftArmPose;
 

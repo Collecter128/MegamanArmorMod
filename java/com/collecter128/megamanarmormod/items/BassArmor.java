@@ -39,15 +39,15 @@ public class BassArmor extends ArmorItem{
 		
 		if(slot == EquipmentSlotType.HEAD) {
 			bassarmor_color model = new bassarmor_color(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 	
-	        model.isChild = _default.isChild;
-	        model.isSneak = _default.isSneak;
-	        model.isSitting = _default.isSitting;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
 	        model.rightArmPose = _default.rightArmPose;
 	        model.leftArmPose = _default.leftArmPose;
 	        
-	        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+	        CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 	
 		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -97,15 +97,15 @@ public class BassArmor extends ArmorItem{
         
 		else if(slot == EquipmentSlotType.CHEST) {
 			bassarmor_chestcolor model = new bassarmor_chestcolor(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+			model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 
-	        model.isChild = _default.isChild;
-	        model.isSneak = _default.isSneak;
-	        model.isSitting = _default.isSitting;
+	        model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
 	        model.rightArmPose = _default.rightArmPose;
 	        model.leftArmPose = _default.leftArmPose;
 	        
-	        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+	        CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -157,20 +157,20 @@ public class BassArmor extends ArmorItem{
 		
 		else {
 			bassarmor_bootscolor model = new bassarmor_bootscolor(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
+			model.hat.visible = armorSlot == EquipmentSlotType.FEET;
 
 //				if(slot == EquipmentSlotType.LEGS) {
 //					protomanarmor_leggings model = new protomanarmor_leggings(1.0f);
 //					model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
 //				}
 
-	        model.isChild = _default.isChild;
-	        model.isSneak = _default.isSneak;
-	        model.isSitting = _default.isSitting;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
 	        model.rightArmPose = _default.rightArmPose;
 	        model.leftArmPose = _default.leftArmPose;
 	        
-	        CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+	        CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");

@@ -1,13 +1,15 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.breakman_helmet;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
+import com.collecter128.megamanarmormod.client.models.newarmor_leggings;
+import com.collecter128.megamanarmormod.client.models.newarmor_main;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_maincolor;
+import com.collecter128.megamanarmormod.client.models.zeroarmor;
+import com.collecter128.megamanarmormod.client.models.zeroarmor_main;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -18,22 +20,24 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 
-public class BreakmanHelmet extends ArmorItem{
+public class NewArmor extends ArmorItem{
 	
-	public int MainColorDefault = 16331285;//Main Body Color Protoman orangishRed
-	public int SecondaryColorDefault = 9737364;//Secondary Color black?
-	public int WhiteColorDefault = 15855562;
-	public int ThirdColorDefault = 16765460;//Scarf
-	public int GlowyColorDefault = 2359060;//Glow Green Bits
-	public int GrayColorDefault = 12105912;
+	public int MainColorDefault = 3750036;//Main Body Color 
+	public int SecondaryColorDefault = 4635342;//Secondary 
+	public int ThirdColorDefault = 16491790;
+	public int WhiteColorDefault = 15921906;
+	public int GlowyColorDefault = 16720159;
+	public int GrayColorDefault = 5855577;
+	public int FourthColorDefault = 6584982; //body middle thing 
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FourthColor = FourthColorDefault;
 
-	public BreakmanHelmet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public NewArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -41,13 +45,21 @@ public class BreakmanHelmet extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		breakman_helmet model = new breakman_helmet(1.0f);
+		if(armorSlot != EquipmentSlotType.LEGS) {
+		newarmor_main model = new newarmor_main(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
-		
-		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
+
+		model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
+        model.rightArmPose = _default.rightArmPose;
+        model.leftArmPose = _default.leftArmPose;
+        
+        CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-
+	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+	    	  //armorcolorer = compoundnbt.getInt("MainColor");
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
@@ -80,21 +92,79 @@ public class BreakmanHelmet extends ArmorItem{
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
-	      model.young = _default.young;
-	      model.crouching = _default.crouching;
-	      model.riding = _default.riding;
-	      model.rightArmPose = _default.rightArmPose;
-	      model.leftArmPose = _default.leftArmPose;
-        
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
+      
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;
-		this.ThirdColor = model.ThirdColor;
 		this.WhiteColor = model.WhiteColor;
+		this.ThirdColor = model.ThirdColor;
 		this.GlowyColor = model.GlowyColor;
 		this.GrayColor = model.GrayColor;
 
         return (A) model;
+		}
+		else {
+			newarmor_leggings model = new newarmor_leggings(1.0f);
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
+
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
+	        
+	        CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
+
+		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+		    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		    	  model.MainColor = compoundnbt.getInt("MainColor");
+
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+
+		    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+
+		    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+
+		    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+
+		    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
+
+		      }
+		      
+		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+
+		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+		      }
+		      
+	      
+			this.MainColor = model.MainColor;
+			this.SecondaryColor = model.SecondaryColor;
+			this.WhiteColor = model.WhiteColor;
+			this.ThirdColor = model.ThirdColor;
+			this.GlowyColor = model.GlowyColor;
+			this.GrayColor = model.GrayColor;
+
+	        return (A) model;
+			}
         
 //		if(slot == EquipmentSlotType.HEAD) {
 //			protomanarmor_main model = new protomanarmor_main(1.0f);
@@ -123,7 +193,7 @@ public class BreakmanHelmet extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/breakmanhelmet.png";
+        return "megamanarmormod:textures/armor/newarmor.png";
     }
 	
 }

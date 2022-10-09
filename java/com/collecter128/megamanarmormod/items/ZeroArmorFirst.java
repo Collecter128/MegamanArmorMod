@@ -47,15 +47,15 @@ public class ZeroArmorFirst extends ArmorItem{
 		
 		if(armorSlot == EquipmentSlotType.HEAD) {
 			zerofirst model = new zerofirst(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -121,15 +121,15 @@ public class ZeroArmorFirst extends ArmorItem{
 //		}
 		if(armorSlot == EquipmentSlotType.CHEST) {
 			zerofirstchest model = new zerofirstchest(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+			model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -178,15 +178,15 @@ public class ZeroArmorFirst extends ArmorItem{
 		}
 		else {
 			zerofirstfeet model = new zerofirstfeet(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
+			model.hat.visible = armorSlot == EquipmentSlotType.FEET;
 
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+			model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
         
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");

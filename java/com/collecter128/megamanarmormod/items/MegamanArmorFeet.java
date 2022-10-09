@@ -23,11 +23,11 @@ public class MegamanArmorFeet extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		megamanarmor_Boots model = new megamanarmor_Boots(1.0f);
-        model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.FEET;
+		model.hat.visible = armorSlot == EquipmentSlotType.FEET;
         //((PlayerEntity) entityLiving).
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
+        model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
         model.rightArmPose = _default.rightArmPose;
         model.leftArmPose = _default.leftArmPose;
         //model.rightArmPose = entityLiving.getAttribute(attribute);
@@ -40,7 +40,7 @@ public class MegamanArmorFeet extends ArmorItem{
 //        model.bipedLeftLeg.copyModelAngles(_default.bipedRightLeg);
         
         
-        model.setModelAttributes(_default);
+        //model.setModelAttributes(_default);
 
         return (A) model;
 	}

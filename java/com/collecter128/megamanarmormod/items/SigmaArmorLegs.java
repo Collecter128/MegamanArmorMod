@@ -38,9 +38,9 @@ public class SigmaArmorLegs extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		sigmaarmor_legs model = new sigmaarmor_legs(1.0f);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.LEGS;
+		model.hat.visible = armorSlot == EquipmentSlotType.LEGS;
 
-		CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 
@@ -77,11 +77,11 @@ public class SigmaArmorLegs extends ArmorItem{
 
 	      }
 
-      model.isChild = _default.isChild;
-      model.isSneak = _default.isSneak;
-      model.isSitting = _default.isSitting;
-      model.rightArmPose = _default.rightArmPose;
-      model.leftArmPose = _default.leftArmPose;
+	      model.young = _default.young;
+	        model.crouching = _default.crouching;
+	        model.riding = _default.riding;
+	        model.rightArmPose = _default.rightArmPose;
+	        model.leftArmPose = _default.leftArmPose;
       
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;

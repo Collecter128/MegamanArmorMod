@@ -101,11 +101,11 @@ public class ArmorColorizerCopy extends Item implements IDyeableArmorItem{
 	    * Called to trigger the item's "innate" right click behavior. To handle when this item is used on a Block, see
 	    * {@link #onItemUse}.
 	    */
-	   public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-		   ItemStack itemstack = playerIn.getHeldItem(handIn);
+	   public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
+		   ItemStack itemstack = playerIn.getItemInHand(handIn);
 		   
-		   ItemStack ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
-		   CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
+		   ItemStack ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.HEAD);
+		   CompoundNBT compoundnbt = ArmorItem.getTagElement("displaymm");
 		   
 		   	Random random = new Random(16777215);
 	   		int randint = random.nextInt();//random2.nextInt()
@@ -117,33 +117,37 @@ public class ArmorColorizerCopy extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "ThirdColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
 		   	
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "MainColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "SecondaryColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "WhiteColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "ThirdColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
 		   	
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "MainColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "SecondaryColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "WhiteColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "ThirdColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
 		   	
-		   	ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.FEET);
-			compoundnbt = ArmorItem.getChildTag("displaymm");
+		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
+			compoundnbt = ArmorItem.getTagElement("displaymm");
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "MainColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "SecondaryColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "WhiteColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "ThirdColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
 
 		   
 //		   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
@@ -161,7 +165,7 @@ public class ArmorColorizerCopy extends Item implements IDyeableArmorItem{
 //            }
 
             //playerIn.addStat(Stats.ITEM_USED.get(this));
-            return ActionResult.resultConsume(itemstack);
+            return ActionResult.consume(itemstack);
 
 	   }
 	   
@@ -178,7 +182,7 @@ public class ArmorColorizerCopy extends Item implements IDyeableArmorItem{
 //		   		float NewGreen = ( ((oldcolor.getGreen()*(100-percent))+(newcolor.getGreen()*percent))/2)  /100;
 //		   		float NewBlue = ( ((oldcolor.getBlue()*(100-percent))+(newcolor.getBlue()*percent))/2)  /100;
 		   		int shiftcolor = (int) ((NewRed * 65536) + (NewGreen * 256) + NewBlue);
-		   		player.getItemStackFromSlot(slotype).getOrCreateChildTag("displaymm").putInt(colorchanged, shiftcolor);
+		   		player.getItemBySlot(slotype).getOrCreateTagElement("displaymm").putInt(colorchanged, shiftcolor);
 		   	}
 
 	   }
@@ -200,6 +204,7 @@ public class ArmorColorizerCopy extends Item implements IDyeableArmorItem{
 //	   }
 	   
 	   @OnlyIn(Dist.CLIENT)
+	   @Override
 	   public int getColor(ItemStack itemStackIn) {
 		      CompoundNBT compoundnbt = itemStackIn.getTag();
 		      if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
@@ -208,6 +213,10 @@ public class ArmorColorizerCopy extends Item implements IDyeableArmorItem{
 		         return  342773;
 		      }
 		   }
+	   
+//	   public int Item.getColorFromItemStack( ItemStack itemStackIn, int color){
+//		   
+//	   }
 //	   @OnlyIn(Dist.CLIENT)
 //	   public int createnbttogetcolorfrom(ItemStack itemStackIn) {
 //		      CompoundNBT compoundnbt = itemStackIn.getTag();

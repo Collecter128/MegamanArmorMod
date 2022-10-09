@@ -95,12 +95,12 @@ public class ArmorColorizerDefault extends Item{
 	    * Called to trigger the item's "innate" right click behavior. To handle when this item is used on a Block, see
 	    * {@link #onItemUse}.
 	    */
-	   public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-		   ItemStack itemstack = playerIn.getHeldItem(handIn);
-		   ItemStack ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD);
+	   public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
+		   ItemStack itemstack = playerIn.getItemInHand(handIn);
+		   ItemStack ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.HEAD);
 		   //if(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.MegamanArmor_Head.get()) {
 		   
-			   CompoundNBT compoundnbt = ArmorItem.getChildTag("displaymm");
+			   CompoundNBT compoundnbt = ArmorItem.getTagElement("displaymm");
 			   
 //			   if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 //			         compoundnbt.remove("MainColor");
@@ -113,84 +113,94 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "FourthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
 			   removecolor(compoundnbt, "WhiteColorglow");
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
+			   removecolor(compoundnbt, "FourthColorglow");
 
-			   playerIn.setItemStackToSlot(EquipmentSlotType.HEAD, ArmorItem.copy());
+			   playerIn.setItemSlot(EquipmentSlotType.HEAD, ArmorItem.copy());
 			   
-			   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.CHEST);
-			   compoundnbt = ArmorItem.getChildTag("displaymm");
+			   ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
+			   compoundnbt = ArmorItem.getTagElement("displaymm");
 			   removecolor(compoundnbt, "MainColor");
 			   removecolor(compoundnbt, "SecondaryColor");
 			   removecolor(compoundnbt, "ThirdColor");
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "FourthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
 			   removecolor(compoundnbt, "WhiteColorglow");
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
+			   removecolor(compoundnbt, "FourthColorglow");
 
-			   playerIn.setItemStackToSlot(EquipmentSlotType.CHEST, ArmorItem.copy());
+			   playerIn.setItemSlot(EquipmentSlotType.CHEST, ArmorItem.copy());
 			   
-			   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.LEGS);
-			   compoundnbt = ArmorItem.getChildTag("displaymm");
+			   ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
+			   compoundnbt = ArmorItem.getTagElement("displaymm");
 			   removecolor(compoundnbt, "MainColor");
 			   removecolor(compoundnbt, "SecondaryColor");
 			   removecolor(compoundnbt, "ThirdColor");
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "FourthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
 			   removecolor(compoundnbt, "WhiteColorglow");
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
+			   removecolor(compoundnbt, "FourthColorglow");
 
-			   playerIn.setItemStackToSlot(EquipmentSlotType.LEGS, ArmorItem.copy());
+			   playerIn.setItemSlot(EquipmentSlotType.LEGS, ArmorItem.copy());
 			   
-			   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.FEET);
-			   compoundnbt = ArmorItem.getChildTag("displaymm");
+			   ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
+			   compoundnbt = ArmorItem.getTagElement("displaymm");
 			   removecolor(compoundnbt, "MainColor");
 			   removecolor(compoundnbt, "SecondaryColor");
 			   removecolor(compoundnbt, "ThirdColor");
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "FourthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
 			   removecolor(compoundnbt, "WhiteColorglow");
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
+			   removecolor(compoundnbt, "FourthColorglow");
 
-			   playerIn.setItemStackToSlot(EquipmentSlotType.FEET, ArmorItem.copy());
+			   playerIn.setItemSlot(EquipmentSlotType.FEET, ArmorItem.copy());
 			   
-			   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
-			   compoundnbt = ArmorItem.getChildTag("displaymm");
+			   ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.OFFHAND);
+			   compoundnbt = ArmorItem.getTagElement("displaymm");
 			   removecolor(compoundnbt, "MainColor");
 			   removecolor(compoundnbt, "SecondaryColor");
 			   removecolor(compoundnbt, "ThirdColor");
 			   removecolor(compoundnbt, "WhiteColor");
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
+			   removecolor(compoundnbt, "FourthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
 			   removecolor(compoundnbt, "WhiteColorglow");
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
+			   removecolor(compoundnbt, "FourthColorglow");
 
-			   playerIn.setItemStackToSlot(EquipmentSlotType.OFFHAND, ArmorItem.copy());
+			   playerIn.setItemSlot(EquipmentSlotType.OFFHAND, ArmorItem.copy());
 
-            return ActionResult.resultConsume(itemstack);
+            return ActionResult.consume(itemstack);
 
 	   }
 	   

@@ -2,8 +2,6 @@ package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplatecolorold;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplatecolorTest1;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplatecolorTest2;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
 import com.collecter128.megamanarmormod.core.Imorecolorfularmor;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -40,7 +38,7 @@ public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeable
 		megamanarmor_chestplatecolorold model = new megamanarmor_chestplatecolorold(1.0f);
 		//megamanarmor_chestplatecolorTest2 model = new megamanarmor_chestplatecolorTest2(null, 1.0f, knockbackResistance, damageReduceAmount, damageReduceAmount);
 		//megamanarmor_chestplatecolorTest1 model = new megamanarmor_chestplatecolorTest1(IEntityRenderer<T, M> p_i50936_1_, A leggingsmodel, megamanarmor_chestplatecolorTest2);
-        model.bipedBody.showModel = armorSlot == EquipmentSlotType.CHEST;
+		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
         //model.bipedBody..addChild(_default.bipedBody);
         //model.bipedRightArm.addChild(_default.bipedRightArm);
         //model.bipedBody = new megamanarmor_chestplate(0f).Body;
@@ -49,9 +47,9 @@ public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeable
         ArmorItem armoritem = (ArmorItem)itemStack.getItem();
         int i = ((net.minecraft.item.IDyeableArmorItem)armoritem).getColor(itemStack);
         model.Color = i;
-        model.bipedBody = new megamanarmor_chestplate(0f).Body;
-        model.bipedRightArm = new megamanarmor_chestplate(0f).RightArm;
-        model.bipedLeftArm = new megamanarmor_chestplate(0f).LeftArm;
+        model.body = new megamanarmor_chestplate(0f).Body;
+        model.rightArm = new megamanarmor_chestplate(0f).RightArm;
+        model.leftArm = new megamanarmor_chestplate(0f).LeftArm;
         //model.bipedLeftArm.rotateAngleX = entityLiving.
         //model.bipedRightArm.addChild(entityLiving.);
         //model.bipedLeftArm.addChild(_default.bipedLeftArm);
@@ -63,11 +61,11 @@ public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeable
       //model.bipedRightArm.showModel = armorSlot == EquipmentSlotType.CHEST;
 
 
-      model.isChild = entityLiving.isChild();
-      //model.isSneak = _default.isSneak;
-      model.isSitting = _default.isSitting;
-     // model.rightArmPose = _default.rightArmPose;
-      //model.leftArmPose = _default.leftArmPose;
+        model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
+        model.rightArmPose = _default.rightArmPose;
+        model.leftArmPose = _default.leftArmPose;
       //model.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
       //setColor(itemStack, 6);
         //        model.isChild = _default.isChild;
@@ -167,19 +165,19 @@ public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeable
 //    }
 
 	@Override
-	public boolean hasColor(ItemStack stack) {
-		return IDyeableArmorItem.super.hasColor(stack);
+	public boolean hasCustomColor(ItemStack stack) {
+		return IDyeableArmorItem.super.hasCustomColor(stack);
 	}
 
 	@Override
 	public int getColor(ItemStack stack) {
-	      CompoundNBT compoundnbt = stack.getChildTag("display");
+	      CompoundNBT compoundnbt = stack.getTagElement("display");
 	      return compoundnbt != null && compoundnbt.contains("color", 99) ? compoundnbt.getInt("color") : 1581819;
 	}
 
 	@Override
-	public void removeColor(ItemStack stack) {
-		IDyeableArmorItem.super.removeColor(stack);
+	public void clearColor(ItemStack stack) {
+		IDyeableArmorItem.super.clearColor(stack);
 	}
 
 	@Override

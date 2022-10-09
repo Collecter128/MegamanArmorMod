@@ -97,9 +97,9 @@ public class MegamanArmorEvil extends ArmorItem{//ArmorItem
 //		}
 //		if(slot == EquipmentSlotType.CHEST) {
 			MegamanEvil model = new MegamanEvil(1.0f);
-			model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
+			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 			
-			CompoundNBT compoundnbt = itemStack.getChildTag("displaymm");
+			CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 		      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 		    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
@@ -128,11 +128,11 @@ public class MegamanArmorEvil extends ArmorItem{//ArmorItem
 
 		      }
         
-			model.isChild = _default.isChild;
-			model.isSneak = _default.isSneak;
-			model.isSitting = _default.isSitting;
-			model.rightArmPose = _default.rightArmPose;
-			model.leftArmPose = _default.leftArmPose;
+		      model.young = _default.young;
+		        model.crouching = _default.crouching;
+		        model.riding = _default.riding;
+		        model.rightArmPose = _default.rightArmPose;
+		        model.leftArmPose = _default.leftArmPose;
 			
 			this.MainColor = model.MainColor;
 			this.SecondaryColor = model.SecondaryColor;
@@ -192,30 +192,30 @@ public class MegamanArmorEvil extends ArmorItem{//ArmorItem
 	}
 	
 	public boolean hasMainColor(ItemStack stack) {
-	      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+	      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 	      return compoundnbt != null && compoundnbt.contains("MainColor", 99);
 	   }
 	public boolean hasSecondaryColor(ItemStack stack) {
-	      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+	      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 	      return compoundnbt != null && compoundnbt.contains("SecondaryColor", 99);
 	   }
 	public boolean hasGlowyColor(ItemStack stack) {
-	      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+	      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 	      return compoundnbt != null && compoundnbt.contains("GlowyColor", 99);
 	   }
 	public boolean hasGrayColor(ItemStack stack) {
-	      CompoundNBT compoundnbt = stack.getChildTag("displaymm");
+	      CompoundNBT compoundnbt = stack.getTagElement("displaymm");
 	      return compoundnbt != null && compoundnbt.contains("GrayColor", 99);
 	   }
 	
 	
 	public void colorize(int[]colors, ItemStack stack) {
-		stack.getOrCreateChildTag("displaymm").putInt("MainColor", colors[0]);
-		stack.getOrCreateChildTag("displaymm").putInt("SecondaryColor", colors[1]);
-		stack.getOrCreateChildTag("displaymm").putInt("ThirdColor", colors[2]);
-		stack.getOrCreateChildTag("displaymm").putInt("WhiteColor", colors[3]);
-		stack.getOrCreateChildTag("displaymm").putInt("GlowyColor", colors[4]);
-		stack.getOrCreateChildTag("displaymm").putInt("GrayColor", colors[5]);
+		stack.getOrCreateTagElement("displaymm").putInt("MainColor", colors[0]);
+		stack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", colors[1]);
+		stack.getOrCreateTagElement("displaymm").putInt("ThirdColor", colors[2]);
+		stack.getOrCreateTagElement("displaymm").putInt("WhiteColor", colors[3]);
+		stack.getOrCreateTagElement("displaymm").putInt("GlowyColor", colors[4]);
+		stack.getOrCreateTagElement("displaymm").putInt("GrayColor", colors[5]);
 //		MainColor = colors[0];
 //		SecondaryColor = colors[1];
 //		GlowyColor = colors[2];

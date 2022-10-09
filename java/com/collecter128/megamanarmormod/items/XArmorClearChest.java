@@ -34,15 +34,15 @@ public class XArmorClearChest extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		//xarmorclear_chestplate model = new xarmorclear_chestplate(null, 1.0f, knockbackResistance, damageReduceAmount, damageReduceAmount);
-		xarmorclear_chestplate model = new xarmorclear_chestplate(RenderType::getEntityTranslucentCull, 1.0f, 16, 74, 114);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.CHEST;
+		xarmorclear_chestplate model = new xarmorclear_chestplate(null, 1.0f, 16, 74, 114);
+		//xarmorclear_chestplate model = new xarmorclear_chestplate(RenderType::getEntityTranslucentCull, 1.0f, 16, 74, 114);
+		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 		//IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEnergySwirl(this.func_225633_a_(), this.func_225634_a_(f), f * 0.01F));
        // entitymodel.setRotationAngles(entitylivingbaseIn, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
         //entitymodel.render(matrixStackIn, ivertexbuilder, packedLightIn, OverlayTexture.NO_OVERLAY, 0.5F, 0.5F, 0.5F, 1.0F);
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
+		model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
         model.rightArmPose = _default.rightArmPose;
         model.leftArmPose = _default.leftArmPose;
         //model.getRenderType();

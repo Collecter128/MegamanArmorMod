@@ -4,8 +4,12 @@ import com.collecter128.megamanarmormod.client.models.firstarmor_legs;
 import com.collecter128.megamanarmormod.client.models.firstarmorx_boots;
 import com.collecter128.megamanarmormod.client.models.firstarmorx_chest;
 import com.collecter128.megamanarmormod.client.models.firstarmorx_main;
+import com.collecter128.megamanarmormod.client.models.legendsarmor_legs;
+import com.collecter128.megamanarmormod.client.models.legendsarmor_main;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
+import com.collecter128.megamanarmormod.client.models.pachislot_leggings;
+import com.collecter128.megamanarmormod.client.models.pachislot_main;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
@@ -23,14 +27,15 @@ import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 
-public class FirstArmor extends ArmorItem{
+public class PachislotArmor extends ArmorItem{
 	
-	public int MainColorDefault = 2781423;
-	public int SecondaryColorDefault = 5752303;
-	public int WhiteColorDefault = 16777215;
-	public int ThirdColorDefault = 16642337; //Yellow Bits
-	public int GlowyColorDefault = 16468504;
-	public int GrayColorDefault = 16777215;
+	public int MainColorDefault = 4356095;//Main Body Color Dark Blue
+	public int SecondaryColorDefault = 3489365;//Secondary Really Dark blue
+	public int WhiteColorDefault = 16579836;//Basic White
+	public int ThirdColorDefault = 11579568; //Silver parts
+	public int GlowyColorDefault = 3407723;//Glow? green
+	public int GrayColorDefault = 5395026;//Kinda dark
+	public int FourthColorDefault = 8584431; //Cyan Color
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -38,7 +43,7 @@ public class FirstArmor extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 
-	public FirstArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public PachislotArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -47,7 +52,7 @@ public class FirstArmor extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 	if(armorSlot == EquipmentSlotType.HEAD) {
-		firstarmorx_main model = new firstarmorx_main(1.0f);
+		pachislot_main model = new pachislot_main(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
@@ -82,6 +87,11 @@ public class FirstArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
 
@@ -103,7 +113,7 @@ public class FirstArmor extends ArmorItem{
 	}
 	
 	else if(armorSlot == EquipmentSlotType.CHEST) {
-		firstarmorx_chest model = new firstarmorx_chest(1.0f);
+		pachislot_main model = new pachislot_main(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
@@ -138,6 +148,11 @@ public class FirstArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
 
@@ -158,7 +173,7 @@ public class FirstArmor extends ArmorItem{
         
 	}
 	else if(armorSlot == EquipmentSlotType.LEGS) {
-		firstarmor_legs model = new firstarmor_legs(1.0f);
+		pachislot_leggings model = new pachislot_leggings(1.0f);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
@@ -193,6 +208,11 @@ public class FirstArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
 
@@ -213,7 +233,7 @@ public class FirstArmor extends ArmorItem{
         
 	}
 	else{
-		firstarmorx_boots model = new firstarmorx_boots(1.0f);
+		pachislot_main model = new pachislot_main(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
@@ -248,6 +268,12 @@ public class FirstArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
 
@@ -280,7 +306,7 @@ public class FirstArmor extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/firstarmor.png";
+        return "megamanarmormod:textures/armor/pachislot_megaman.png";
     }
 	
 }

@@ -42,10 +42,10 @@ public class XArmorClear extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		xarmor_main model = new xarmor_main(1.0f);
-		model.bipedHeadwear.showModel = armorSlot == EquipmentSlotType.HEAD;
-        model.isChild = _default.isChild;
-        model.isSneak = _default.isSneak;
-        model.isSitting = _default.isSitting;
+		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
+		model.young = _default.young;
+        model.crouching = _default.crouching;
+        model.riding = _default.riding;
         model.rightArmPose = _default.rightArmPose;
         model.leftArmPose = _default.leftArmPose;
 
