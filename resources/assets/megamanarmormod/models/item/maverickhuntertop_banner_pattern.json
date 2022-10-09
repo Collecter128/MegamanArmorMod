@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "megamanarmormod:item/maverickhuntertop_banner_pattern"
+    "layer0": "megamanarmormod:item/maverickhunterbg_banner_pattern"
   }
 }
