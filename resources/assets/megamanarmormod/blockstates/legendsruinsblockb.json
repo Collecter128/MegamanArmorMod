@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "megamanarmormod:block/legendsruinsblockb",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "megamanarmormod:block/legendsruinsblockb"
+    },
+    "facing=south": {
+      "model": "megamanarmormod:block/legendsruinsblockb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "megamanarmormod:block/legendsruinsblockb",
+      "y": 270
+    }
+  }
+}
