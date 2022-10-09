@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"Z",
+		"C"
+	],
+	"key": {
+		"Z": {
+			"item": "megamanarmormod:zeroarmorfirst_head"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:zeroarmor_head",
+		"count": 1
+	}
+}

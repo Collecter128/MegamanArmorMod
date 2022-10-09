@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:xarmor_body"
+		},
+		"G": {
+			"item": "minecraft:gold_ingot"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:newarmor_body",
+		"count": 1
+	}
+}

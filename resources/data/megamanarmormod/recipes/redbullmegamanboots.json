@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"r",
+		"M"
+	],
+	"key": {
+		"M": {
+			"item": "megamanarmormod:megamanarmor_arms"
+		},
+		"r": {
+			"item": "megamanarmormod:rcan"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:redbullmegaman_arms",
+		"count": 1
+	}
+}

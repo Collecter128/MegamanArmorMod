@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"LXL",
+		" L "
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:xarmor_body"
+		},
+		"L": {
+			"item": "megamanarmormod:limited"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:ixarmor_body",
+		"count": 1
+	}
+}

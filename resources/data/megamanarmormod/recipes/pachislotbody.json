@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iii",
+		"iMi",
+		"iii"
+	],
+	"key": {
+		"M": {
+			"item": "megamanarmormod:megamanarmor_body"
+		},
+		"i": {
+			"item": "minecraft:iron_nugget"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:pachislot_body",
+		"count": 1
+	}
+}

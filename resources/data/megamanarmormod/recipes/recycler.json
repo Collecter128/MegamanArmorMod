@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iPi",
+		" F ",
+		"iPi"
+	],
+	"key": {
+		"i": {
+			"item": "minecraft:iron_ingot"
+		},
+		"P": {
+			"item": "minecraft:piston"
+		},
+		"F": {
+			"item": "minecraft:furnace"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:recycler",
+		"count": 1
+	}
+}

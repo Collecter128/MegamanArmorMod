@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"Z",
+		"C"
+	],
+	"key": {
+		"Z": {
+			"item": "megamanarmormod:xarmor_head"
+		},
+		"C": {
+			"item": "megamanarmormod:specialsteel"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:firstarmor_head",
+		"count": 1
+	}
+}

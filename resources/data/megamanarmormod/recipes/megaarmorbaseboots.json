@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CiC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"i": {
+			"item": "minecraft:iron_boots"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:megaarmorbase_arms",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"s",
+		"r"
+	],
+	"key": {
+		"s": {
+			"item": "minecraft:sugar"
+		},
+		"r": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:rcan",
+		"count": 1
+	}
+}

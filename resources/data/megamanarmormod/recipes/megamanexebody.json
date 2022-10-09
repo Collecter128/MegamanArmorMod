@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:data_buster"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:megamanexe_body",
+		"count": 1
+	}
+}

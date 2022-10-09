@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"C"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:legendsruinsblocka"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:legendsruinsblockaplate",
+		"count": 1
+	}
+}

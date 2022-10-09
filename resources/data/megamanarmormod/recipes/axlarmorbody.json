@@ -1,19 +1,20 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"T T",
-		"TrT"
+		"TgT",
+		"TTT",
+		"TTT"
 	],
 	"key": {
 		"T": {
 			"item": "megamanarmormod:titaniumx"
 		},
-		"r": {
-			"item": "minecraft:red_dye"
+		"g": {
+			"item": "minecraft:gray_dye"
 		}
 	},
 	"result": {
-		"item": "megamanarmormod:zeroarmorfirst_arms",
+		"item": "megamanarmormod:axlarmor_body",
 		"count": 1
 	}
 }

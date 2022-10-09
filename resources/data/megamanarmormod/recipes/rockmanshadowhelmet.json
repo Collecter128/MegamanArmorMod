@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"q"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"q": {
+			"item": "megamanarmormod:quintarmor_head"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:rockmanshadow_helmet",
+		"count": 1
+	}
+}

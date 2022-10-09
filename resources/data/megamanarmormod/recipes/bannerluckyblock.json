@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"c",
+		"p"
+	],
+	"key": {
+		"p": {
+			"item": "minecraft:paper"
+		},
+		"c": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:bannerluckyblock",
+		"count": 1
+	}
+}
