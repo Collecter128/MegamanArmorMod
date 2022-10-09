@@ -35,6 +35,7 @@ import com.collecter128.megamanarmormod.core.CustomItemRenderer;
 import com.collecter128.megamanarmormod.core.EntityTypesInit;
 import com.collecter128.megamanarmormod.core.FeatureInit;
 import com.collecter128.megamanarmormod.core.ItemInit;
+import com.collecter128.megamanarmormod.core.ModSoundEvents;
 
 import java.util.stream.Collectors;
 
@@ -63,6 +64,8 @@ public class MegamanArmorMod
     	MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
     	// CustomRecipeBuilder.customRecipe(IRecipeSerializer.CRAFTING_SPECIAL_ARMORDYE).build(consumer, "armorcolorizer_dye");
     	
+    	ModSoundEvents.register(bus);
+    	
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         
@@ -88,7 +91,7 @@ public class MegamanArmorMod
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
@@ -125,7 +128,7 @@ public class MegamanArmorMod
             // register a new item here
             //LOGGER.info("HELLO from Register Block");
         	BlockInit.Blocks.getEntries().stream().map(RegistryObject:: get).forEach(block-> {
-        		blockRegistryEvent.getRegistry().register(new BlockItem(block, new Item.Properties().group(MegamanArmorMod.MMTab)).setRegistryName(block.getRegistryName()));
+        		blockRegistryEvent.getRegistry().register(new BlockItem(block, new Item.Properties().tab(MegamanArmorMod.MMTab)).setRegistryName(block.getRegistryName()));
         	});;
         	//net.minecraft.client.renderer.color.ItemColors.register(itemColor, itemsIn);
         	//CustomItemColors.init(blockColorsC);
@@ -136,8 +139,7 @@ public class MegamanArmorMod
         	//CustomItemColors.init(Minecraft.class.getClass().getDeclaredField(name));
         	//CustomItemRenderer.registerItemRenderer();
         	//ColorRegistry.
-        	CustomItemColors.init();
-        	//CustomItemColors.init(net.minecraft.client.Minecraft.getBlockColors());
+        	//CustomItemColors.init(getBlockColors());
         }
         
     }
@@ -149,7 +151,7 @@ public class MegamanArmorMod
 		}
 
 		@Override
-		public ItemStack createIcon() {
+		public ItemStack makeIcon() {
 			return ItemInit.MegamanArmor_Head.get().getDefaultInstance();
 		}
     	
@@ -162,8 +164,8 @@ public class MegamanArmorMod
 		}
 
 		@Override
-		public ItemStack createIcon() {
-			return ItemInit.Ceratanium.get().getDefaultInstance();
+		public ItemStack makeIcon() {
+			return ItemInit.BlankBannerPattern.get().getDefaultInstance();
 		}
     	
     }
@@ -175,7 +177,7 @@ public class MegamanArmorMod
 		}
 
 		@Override
-		public ItemStack createIcon() {
+		public ItemStack makeIcon() {
 			return ItemInit.ShotgunIceColorizer.get().getDefaultInstance();
 		}
     	
