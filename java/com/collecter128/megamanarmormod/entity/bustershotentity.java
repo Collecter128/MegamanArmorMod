@@ -24,6 +24,8 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.potion.Potions;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -50,7 +52,7 @@ public class bustershotentity extends AbstractArrowEntity{
 //			return null;
 //		}
 	
-	   private static final DataParameter<Integer> COLOR = EntityDataManager.createKey(bustershotentity.class, DataSerializers.VARINT);
+	   private static final DataParameter<Integer> COLOR = EntityDataManager.defineId(bustershotentity.class, DataSerializers.INT);
 	   private Potion potion = Potions.EMPTY;
 	   private final Set<EffectInstance> customPotionEffects = Sets.newHashSet();
 	   private boolean fixedColor;
@@ -79,8 +81,8 @@ public class bustershotentity extends AbstractArrowEntity{
 
 	   public void setPotionEffect(ItemStack stack) {
 	      if (stack.getItem() == Items.TIPPED_ARROW) {
-	         this.potion = PotionUtils.getPotionFromItem(stack);
-	         Collection<EffectInstance> collection = PotionUtils.getFullEffectsFromItem(stack);
+	         this.potion = PotionUtils.getPotion(stack);
+	         Collection<EffectInstance> collection = PotionUtils.getCustomEffects(stack);
 	         if (!collection.isEmpty()) {
 	            for(EffectInstance effectinstance : collection) {
 	               this.customPotionEffects.add(new EffectInstance(effectinstance));
@@ -96,8 +98,16 @@ public class bustershotentity extends AbstractArrowEntity{
 	      } else if (stack.getItem() == Items.ARROW) {
 	         this.potion = Potions.EMPTY;
 	         this.customPotionEffects.clear();
-	         this.dataManager.set(COLOR, -1);
+	         
+	         this.setFixedColor(16698886); // Bustershot Yellow
+	         
+	         this.entityData.set(COLOR, 16698886);
+	         //greensecond shot 458249
+	         //Blue Third shot 1026303
+	         //Pink Shot 16688583
 	      }
+	      
+	      this.entityData.set(COLOR, 16698886);
 
 	   }
 
@@ -109,21 +119,21 @@ public class bustershotentity extends AbstractArrowEntity{
 	   private void refreshColor() {
 	      this.fixedColor = false;
 	      if (this.potion == Potions.EMPTY && this.customPotionEffects.isEmpty()) {
-	         this.dataManager.set(COLOR, -1);
+	         this.entityData.set(COLOR, 16698886);
 	      } else {
-	         this.dataManager.set(COLOR, PotionUtils.getPotionColorFromEffectList(PotionUtils.mergeEffects(this.potion, this.customPotionEffects)));
+	         this.entityData.set(COLOR, PotionUtils.getColor(PotionUtils.getAllEffects(this.potion, this.customPotionEffects)));
 	      }
 
 	   }
 
 	   public void addEffect(EffectInstance effect) {
 	      this.customPotionEffects.add(effect);
-	      this.getDataManager().set(COLOR, PotionUtils.getPotionColorFromEffectList(PotionUtils.mergeEffects(this.potion, this.customPotionEffects)));
+	      this.getEntityData().set(COLOR, PotionUtils.getColor(PotionUtils.getAllEffects(this.potion, this.customPotionEffects)));
 	   }
 
 	   protected void registerData() {
-	      super.registerData();
-	      this.dataManager.register(COLOR, -1);
+	      super.defineSynchedData();
+	      this.entityData.define(COLOR, 16698886);
 	   }
 
 	   /**
@@ -131,19 +141,19 @@ public class bustershotentity extends AbstractArrowEntity{
 	    */
 	   public void tick() {
 	      super.tick();
-	      if (this.world.isRemote) {
+	      if (this.level.isClientSide) {
 	         if (this.inGround) {
-	            if (this.timeInGround % 5 == 0) {
+	            if (this.inGroundTime % 5 == 0) {
 	               this.spawnPotionParticles(1);
 	            }
 	         } else {
 	            this.spawnPotionParticles(2);
 	         }
-	      } else if (this.inGround && this.timeInGround != 0 && !this.customPotionEffects.isEmpty() && this.timeInGround >= 600) {
-	         this.world.setEntityState(this, (byte)0);
+	      } else if (this.inGround && this.inGroundTime != 0 && !this.customPotionEffects.isEmpty() && this.inGroundTime >= 60) {
+	         this.level.broadcastEntityEvent(this, (byte)0);
 	         this.potion = Potions.EMPTY;
 	         this.customPotionEffects.clear();
-	         this.dataManager.set(COLOR, -1);
+	         this.entityData.set(COLOR, 16698886);
 	      }
 
 	   }
@@ -156,23 +166,23 @@ public class bustershotentity extends AbstractArrowEntity{
 	         double d2 = (double)(i >> 0 & 255) / 255.0D;
 
 	         for(int j = 0; j < particleCount; ++j) {
-	            this.world.addParticle(ParticleTypes.ENTITY_EFFECT, this.getPosXRandom(0.5D), this.getPosYRandom(), this.getPosZRandom(0.5D), d0, d1, d2);
+	            this.level.addParticle(ParticleTypes.ENTITY_EFFECT, this.getRandomX(0.5D), this.getRandomY(), this.getRandomZ(0.5D), d0, d1, d2);
 	         }
 
 	      }
 	   }
 
 	   public int getColor() {
-	      return this.dataManager.get(COLOR);
+	      return this.entityData.get(COLOR);
 	   }
 
 	   private void setFixedColor(int p_191507_1_) {
 	      this.fixedColor = true;
-	      this.dataManager.set(COLOR, p_191507_1_);
+	      this.entityData.set(COLOR, p_191507_1_);
 	   }
 
 	   public void writeAdditional(CompoundNBT compound) {
-	      super.writeAdditional(compound);
+	      super.addAdditionalSaveData(compound);
 	      if (this.potion != Potions.EMPTY && this.potion != null) {
 	         compound.putString("Potion", Registry.POTION.getKey(this.potion).toString());
 	      }
@@ -185,7 +195,7 @@ public class bustershotentity extends AbstractArrowEntity{
 	         ListNBT listnbt = new ListNBT();
 
 	         for(EffectInstance effectinstance : this.customPotionEffects) {
-	            listnbt.add(effectinstance.write(new CompoundNBT()));
+	            listnbt.add(effectinstance.save(new CompoundNBT()));
 	         }
 
 	         compound.put("CustomPotionEffects", listnbt);
@@ -197,12 +207,12 @@ public class bustershotentity extends AbstractArrowEntity{
 	    * (abstract) Protected helper method to read subclass entity data from NBT.
 	    */
 	   public void readAdditional(CompoundNBT compound) {
-	      super.readAdditional(compound);
+	      super.readAdditionalSaveData(compound);
 	      if (compound.contains("Potion", 8)) {
-	         this.potion = PotionUtils.getPotionTypeFromNBT(compound);
+	         this.potion = PotionUtils.getPotion(compound);
 	      }
 
-	      for(EffectInstance effectinstance : PotionUtils.getFullEffectsFromTag(compound)) {
+	      for(EffectInstance effectinstance : PotionUtils.getCustomEffects(compound)) {
 	         this.addEffect(effectinstance);
 	      }
 
@@ -215,15 +225,15 @@ public class bustershotentity extends AbstractArrowEntity{
 	   }
 
 	   protected void arrowHit(LivingEntity living) {
-	      super.arrowHit(living);
+	      super.doPostHurtEffects(living);
 
 	      for(EffectInstance effectinstance : this.potion.getEffects()) {
-	         living.addPotionEffect(new EffectInstance(effectinstance.getPotion(), Math.max(effectinstance.getDuration() / 8, 1), effectinstance.getAmplifier(), effectinstance.isAmbient(), effectinstance.doesShowParticles()));
+	         living.addEffect(new EffectInstance(effectinstance.getEffect(), Math.max(effectinstance.getDuration() / 8, 1), effectinstance.getAmplifier(), effectinstance.isAmbient(), effectinstance.isVisible()));
 	      }
 
 	      if (!this.customPotionEffects.isEmpty()) {
 	         for(EffectInstance effectinstance1 : this.customPotionEffects) {
-	            living.addPotionEffect(effectinstance1);
+	            living.addEffect(effectinstance1);
 	         }
 	      }
 
@@ -234,8 +244,8 @@ public class bustershotentity extends AbstractArrowEntity{
 	         return new ItemStack(Items.ARROW);
 	      } else {
 	         ItemStack itemstack = new ItemStack(Items.TIPPED_ARROW);
-	         PotionUtils.addPotionToItemStack(itemstack, this.potion);
-	         PotionUtils.appendEffects(itemstack, this.customPotionEffects);
+	         PotionUtils.setPotion(itemstack, this.potion);
+	         PotionUtils.setCustomEffects(itemstack, this.customPotionEffects);
 	         if (this.fixedColor) {
 	            itemstack.getOrCreateTag().putInt("CustomPotionColor", this.getColor());
 	         }
@@ -257,18 +267,37 @@ public class bustershotentity extends AbstractArrowEntity{
 	            double d2 = (double)(i >> 0 & 255) / 255.0D;
 
 	            for(int j = 0; j < 20; ++j) {
-	               this.world.addParticle(ParticleTypes.ENTITY_EFFECT, this.getPosXRandom(0.5D), this.getPosYRandom(), this.getPosZRandom(0.5D), d0, d1, d2);
+	            	this.level.addParticle(ParticleTypes.ENTITY_EFFECT, this.getRandomX(0.5D), this.getRandomY(), this.getRandomZ(0.5D), d0, d1, d2);
 	            }
 	         }
 	      } else {
-	         super.handleStatusUpdate(id);
+	         super.handleEntityEvent(id);
 	      }
 
 	   }
 	   
 	   @Override
-	   public double getDamage() {
+	   public double getBaseDamage() {
 		   return this.damage;
 	   }
+
+	@Override
+	protected ItemStack getPickupItem() {
+		//return new ItemStack(Items.ARROW);
+		return null;
+	}
+	
+//	   /**
+//    * The sound made when an entity is hit by this projectile
+//    */
+//   protected SoundEvent getHitEntitySound() {
+//      return SoundEvents.ANVIL_HIT;
+//   }
+//	 protected SoundEvent getDefaultHitGroundSoundEvent() {
+//    return SoundEvents.ARROW_HIT;
+// }
+//	   protected float getWaterInertia() {
+//    return 0.6F;
+// }
 
 }
