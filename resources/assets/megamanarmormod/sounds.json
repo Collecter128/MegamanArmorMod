@@ -1,0 +1,16 @@
+{
+	"xbustercharge":{
+		"category": "player",
+		"subtitle": "megamanarmormod.xbustercharge",
+		"sounds":[
+			"megamanarmormod:xbustercharge"
+		]
+	},
+	"xbusterregularshot":{
+		"category": "player",
+		"subtitle": "megamanarmormod.xbusterregularshot",
+		"sounds":[
+			"megamanarmormod:xbusterregularshot"
+		]
+	}
+}
