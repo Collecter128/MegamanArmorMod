@@ -37,8 +37,8 @@ public class DyeArmorColorizer extends SpecialRecipe {//extends ArmorDyeRecipe
 	      ItemStack itemstack = ItemStack.EMPTY;
 	      List<ItemStack> list = Lists.newArrayList();
 
-	      for(int i = 0; i < inv.getSizeInventory(); ++i) {
-	         ItemStack itemstack1 = inv.getStackInSlot(i);
+	      for(int i = 0; i < inv.getContainerSize(); ++i) {
+	         ItemStack itemstack1 = inv.getItem(i);
 	         if (!itemstack1.isEmpty()) {
 	            if (itemstack1.getItem() instanceof ArmorColorizerCustom) {
 	               if (!itemstack.isEmpty()) {
@@ -66,8 +66,8 @@ public class DyeArmorColorizer extends SpecialRecipe {//extends ArmorDyeRecipe
 	      List<DyeItem> list = Lists.newArrayList();
 	      ItemStack itemstack = ItemStack.EMPTY;
 
-	      for(int i = 0; i < inv.getSizeInventory(); ++i) {
-	         ItemStack itemstack1 = inv.getStackInSlot(i);
+	      for(int i = 0; i < inv.getContainerSize(); ++i) {
+	         ItemStack itemstack1 = inv.getItem(i);
 	         if (!itemstack1.isEmpty()) {
 	            Item item = itemstack1.getItem();
 	            if (item instanceof ArmorColorizerCustom) {//Imorecolorfularmor
@@ -86,7 +86,7 @@ public class DyeArmorColorizer extends SpecialRecipe {//extends ArmorDyeRecipe
 	         }
 	      }
 
-	      return !itemstack.isEmpty() && !list.isEmpty() ? IDyeableArmorItem.dyeItem(itemstack, list) : ItemStack.EMPTY;
+	      return !itemstack.isEmpty() && !list.isEmpty() ? IDyeableArmorItem.dyeArmor(itemstack, list) : ItemStack.EMPTY;
 	   }
 	   
 //	   public ItemStack customitemcolor(ItemStack item) {
@@ -105,4 +105,39 @@ public class DyeArmorColorizer extends SpecialRecipe {//extends ArmorDyeRecipe
 	   public IRecipeSerializer<?> getSerializer() {
 	      return CRAFTING_SPECIAL_ARMORCOLORIZERDYE;
 	   }
+
+	@Override
+	public ItemStack assemble(CraftingInventory p_77572_1_) {
+		List<DyeItem> list = Lists.newArrayList();
+	      ItemStack itemstack = ItemStack.EMPTY;
+
+	      for(int i = 0; i < p_77572_1_.getContainerSize(); ++i) {
+	         ItemStack itemstack1 = p_77572_1_.getItem(i);
+	         if (!itemstack1.isEmpty()) {
+	            Item item = itemstack1.getItem();
+	            if (item instanceof IDyeableArmorItem) {
+	               if (!itemstack.isEmpty()) {
+	                  return ItemStack.EMPTY;
+	               }
+
+	               itemstack = itemstack1.copy();
+	            } else {
+	               if (!(item instanceof DyeItem)) {
+	                  return ItemStack.EMPTY;
+	               }
+
+	               list.add((DyeItem)item);
+	            }
+	         }
+	      }
+
+	      return !itemstack.isEmpty() && !list.isEmpty() ? IDyeableArmorItem.dyeArmor(itemstack, list) : ItemStack.EMPTY;
+	}
+
+	@Override
+	public boolean canCraftInDimensions(int p_194133_1_, int p_194133_2_) {
+		return p_194133_1_ * p_194133_2_ >= 2;
+	}
+
+	
 }
