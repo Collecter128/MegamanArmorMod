@@ -25,41 +25,41 @@ public class bassarmor_main extends BipedModel {
 
 	public bassarmor_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 93;
+		texWidth = 64;
+		texHeight = 93;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head.setTextureOffset(47, 10).addBox(5.5744F, -5.7259F, -2.7657F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(36, 10).addBox(-5.8066F, -5.7298F, -2.7285F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(0, 32).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
-		Head.setTextureOffset(43, 3).addBox(-1.5114F, -9.8794F, -5.216F, 3.0F, 5.0F, 1.0F, 0.1F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(47, 10).addBox(5.5744F, -5.7259F, -2.7657F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(36, 10).addBox(-5.8066F, -5.7298F, -2.7285F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(0, 32).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
+		Head.texOffs(43, 3).addBox(-1.5114F, -9.8794F, -5.216F, 3.0F, 5.0F, 1.0F, 0.1F, false);
 
 		cube_r1 = new ModelRenderer(this);
-		cube_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+		cube_r1.setPos(0.0F, 0.0F, 0.0F);
 		Head.addChild(cube_r1);
 		setRotationAngle(cube_r1, 0.2618F, -0.2618F, -0.2618F);
-		cube_r1.setTextureOffset(45, 73).addBox(3.8F, -7.3064F, 4.0417F, 8.0F, 9.0F, 1.0F, 0.0F, false);
+		cube_r1.texOffs(45, 73).addBox(3.8F, -7.3064F, 4.0417F, 8.0F, 9.0F, 1.0F, 0.0F, false);
 
 		LFin_r1 = new ModelRenderer(this);
-		LFin_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+		LFin_r1.setPos(0.0F, 0.0F, 0.0F);
 		Head.addChild(LFin_r1);
 		setRotationAngle(LFin_r1, 0.0F, 0.0F, -0.7854F);
-		LFin_r1.setTextureOffset(0, 79).addBox(4.2961F, -2.8609F, -6.0489F, 9.0F, 1.0F, 12.0F, 0.0F, false);
+		LFin_r1.texOffs(0, 79).addBox(4.2961F, -2.8609F, -6.0489F, 9.0F, 1.0F, 12.0F, 0.0F, false);
 
 		cube_r2 = new ModelRenderer(this);
-		cube_r2.setRotationPoint(0.0F, 0.0F, 0.0F);
+		cube_r2.setPos(0.0F, 0.0F, 0.0F);
 		Head.addChild(cube_r2);
 		setRotationAngle(cube_r2, 0.2618F, 0.2618F, 0.2618F);
-		cube_r2.setTextureOffset(45, 83).addBox(-12.0F, -7.086F, 4.4969F, 8.0F, 9.0F, 1.0F, 0.0F, false);
+		cube_r2.texOffs(45, 83).addBox(-12.0F, -7.086F, 4.4969F, 8.0F, 9.0F, 1.0F, 0.0F, false);
 
 		RFin_r1 = new ModelRenderer(this);
-		RFin_r1.setRotationPoint(0.0F, 0.0F, 0.0F);
+		RFin_r1.setPos(0.0F, 0.0F, 0.0F);
 		Head.addChild(RFin_r1);
 		setRotationAngle(RFin_r1, 0.0F, 0.0F, 0.7854F);
-		RFin_r1.setTextureOffset(0, 65).addBox(-13.2135F, -2.9693F, -6.0F, 9.0F, 1.0F, 12.0F, 0.0F, false);
+		RFin_r1.texOffs(0, 65).addBox(-13.2135F, -2.9693F, -6.0F, 9.0F, 1.0F, 12.0F, 0.0F, false);
 
 //		Body = new ModelRenderer(this);
 //		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -97,8 +97,8 @@ public class bassarmor_main extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		this.Head.copyModelAngles(this.bipedHead);
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+		this.Head.copyFrom(this.head);
 //		this.Body.copyModelAngles(this.bipedBody);
 //		this.RightLeg.copyModelAngles(this.bipedRightLeg);
 //		this.LeftLeg.copyModelAngles(this.bipedLeftLeg);
@@ -111,8 +111,8 @@ public class bassarmor_main extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

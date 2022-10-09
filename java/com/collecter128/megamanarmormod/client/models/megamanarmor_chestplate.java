@@ -40,8 +40,8 @@ public class megamanarmor_chestplate extends BipedModel{//extends BipedModel //<
 
 	public megamanarmor_chestplate(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 71;
+		texWidth = 64;
+		texHeight = 71;
 
 //		Head = new ModelRenderer(this);
 //		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -53,24 +53,24 @@ public class megamanarmor_chestplate extends BipedModel{//extends BipedModel //<
 //		Head.setTextureOffset(16, 32).addBox(-0.6552F, -9.5707F, -4.5F, 2.0F, 6.0F, 10.0F, 0.25F, false);
 
 		Body = new ModelRenderer(this);
-		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Body.setPos(0.0F, 0.0F, 0.0F);
+		Body.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 
 		RightArm = new ModelRenderer(this);
 		//RightArm.addChild(bipedRightArm);
-		RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArm.setPos(-5.0F, 2.0F, 0.0F);
 		//setRotationAngle(RightArm, -0.1745F, 0.0F, 0.0F);
 		setRotationAngle(RightArm, -0.1745F, 0.0F, 0.0F);
-		RightArm.setTextureOffset(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArm.setTextureOffset(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		RightArm.texOffs(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArm.texOffs(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArm = new ModelRenderer(this);
 		//LeftArm.addChild(bipedLeftArm);
-		LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArm.setPos(5.0F, 2.0F, 0.0F);
 		//setRotationAngle(LeftArm, 0.2094F, 0.0F, 0.0F);
 		setRotationAngle(LeftArm, 0.2094F, 0.0F, 0.0F);
-		LeftArm.setTextureOffset(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
-		LeftArm.setTextureOffset(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		LeftArm.texOffs(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArm.texOffs(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		//RightLeg = new ModelRenderer(this);
 		//RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
@@ -191,16 +191,16 @@ public class megamanarmor_chestplate extends BipedModel{//extends BipedModel //<
 //		   }
 	
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 //public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		this.Body.copyModelAngles(this.bipedBody);
-		this.RightArm.copyModelAngles(this.bipedRightArm);
-		this.LeftArm.copyModelAngles(this.bipedLeftArm);
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+		this.Body.copyFrom(this.body);
+		this.RightArm.copyFrom(this.rightArm);
+		this.LeftArm.copyFrom(this.leftArm);
 		Body.render(matrixStack, buffer, packedLight, packedOverlay);
 		RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
 		LeftArm.render(matrixStack, buffer, packedLight, packedOverlay);

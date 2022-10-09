@@ -25,17 +25,17 @@ public class sigmaarmor_main extends BipedModel {
 
 	public sigmaarmor_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 61;
+		texWidth = 64;
+		texHeight = 61;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
-		Head.setTextureOffset(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head.setTextureOffset(30, 34).addBox(4.4038F, -5.925F, -0.8709F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(19, 34).addBox(-4.9848F, -5.9471F, -0.6603F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(42, 7).addBox(-1.0F, -8.8411F, -5.6852F, 2.0F, 2.0F, 1.0F, 0.1F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
+		Head.texOffs(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(30, 34).addBox(4.4038F, -5.925F, -0.8709F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(19, 34).addBox(-4.9848F, -5.9471F, -0.6603F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(42, 7).addBox(-1.0F, -8.8411F, -5.6852F, 2.0F, 2.0F, 1.0F, 0.1F, false);
 
 //		Body = new ModelRenderer(this);
 //		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -79,8 +79,8 @@ public class sigmaarmor_main extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		this.Head.copyModelAngles(this.bipedHead);
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+		this.Head.copyFrom(this.head);
 //		this.Body.copyModelAngles(this.bipedBody);
 		Head.render(matrixStack, buffer, packedLight, packedOverlay);
 //		Body.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -91,8 +91,8 @@ public class sigmaarmor_main extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

@@ -26,8 +26,8 @@ public class protomanarmor_chestplate extends BipedModel {
 
 	public protomanarmor_chestplate(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 71;
+		texWidth = 64;
+		texHeight = 71;
 
 		//Head = new ModelRenderer(this);
 		//Head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -38,26 +38,26 @@ public class protomanarmor_chestplate extends BipedModel {
 		//Head.setTextureOffset(21, 34).addBox(-5.5F, -8.4226F, -5.9571F, 11.0F, 6.0F, 1.0F, -0.12F, false);
 
 		Body = new ModelRenderer(this);
-		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Body.setPos(0.0F, 0.0F, 0.0F);
+		Body.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 
 		cube_r1 = new ModelRenderer(this);
-		cube_r1.setRotationPoint(2.0F, 7.0F, 4.0F);
+		cube_r1.setPos(2.0F, 7.0F, 4.0F);
 		Body.addChild(cube_r1);
 		setRotationAngle(cube_r1, 0.3491F, 0.0F, 0.0F);
-		cube_r1.setTextureOffset(17, 49).addBox(-2.0F, -7.0F, 0.0F, 2.0F, 7.0F, 1.0F, 0.0F, false);
+		cube_r1.texOffs(17, 49).addBox(-2.0F, -7.0F, 0.0F, 2.0F, 7.0F, 1.0F, 0.0F, false);
 
 		RightArm = new ModelRenderer(this);
-		RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArm.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm, -0.1745F, 0.0F, 0.0F);
-		RightArm.setTextureOffset(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArm.setTextureOffset(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		RightArm.texOffs(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArm.texOffs(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArm = new ModelRenderer(this);
-		LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArm.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArm, 0.2094F, 0.0F, 0.0F);
-		LeftArm.setTextureOffset(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
-		LeftArm.setTextureOffset(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		LeftArm.texOffs(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArm.texOffs(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		//RightLeg = new ModelRenderer(this);
 		//RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
@@ -76,11 +76,11 @@ public class protomanarmor_chestplate extends BipedModel {
 	//}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		//Head.render(matrixStack, buffer, packedLight, packedOverlay);
-		this.Body.copyModelAngles(this.bipedBody);
-		this.RightArm.copyModelAngles(this.bipedRightArm);
-		this.LeftArm.copyModelAngles(this.bipedLeftArm);
+		this.Body.copyFrom(this.body);
+		this.RightArm.copyFrom(this.rightArm);
+		this.LeftArm.copyFrom(this.leftArm);
 		Body.render(matrixStack, buffer, packedLight, packedOverlay);
 		RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
 		LeftArm.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -89,8 +89,8 @@ public class protomanarmor_chestplate extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

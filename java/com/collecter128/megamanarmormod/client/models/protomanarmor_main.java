@@ -26,16 +26,16 @@ public class protomanarmor_main extends BipedModel {
 
 	public protomanarmor_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 71;
+		texWidth = 64;
+		texHeight = 71;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head.setTextureOffset(34, 9).addBox(5.0643F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(49, 9).addBox(-5.8938F, -3.8448F, -1.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(21, 34).addBox(-5.5F, -8.4226F, -5.9571F, 11.0F, 6.0F, 1.0F, -0.12F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(34, 9).addBox(5.0643F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(49, 9).addBox(-5.8938F, -3.8448F, -1.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(21, 34).addBox(-5.5F, -8.4226F, -5.9571F, 11.0F, 6.0F, 1.0F, -0.12F, false);
 
 		//Body = new ModelRenderer(this);
 		//Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -76,8 +76,8 @@ public class protomanarmor_main extends BipedModel {
 	//}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		this.Head.copyModelAngles(this.bipedHead);
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+		this.Head.copyFrom(this.head);
 		Head.render(matrixStack, buffer, packedLight, packedOverlay);
 		//Body.render(matrixStack, buffer, packedLight, packedOverlay);
 		//RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -87,8 +87,8 @@ public class protomanarmor_main extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

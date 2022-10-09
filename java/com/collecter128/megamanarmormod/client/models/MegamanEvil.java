@@ -49,8 +49,8 @@ public class MegamanEvil extends BipedModel {
 
 	public MegamanEvil(float modelSize) {
 		super(modelSize);
-		textureWidth = 75;
-		textureHeight = 97;
+		texWidth = 75;
+		texHeight = 97;
 		
 		MainColorDefault = 342773;//Main Body Color Megaman Dark Blue
 		//MainColorDefault = 15404288;//Main Body Color Megaman Dark Blue
@@ -87,44 +87,44 @@ public class MegamanEvil extends BipedModel {
 //		Headglow.setTextureOffset(0, 80).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Bodyscarf = new ModelRenderer(this);
-		Bodyscarf.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Bodyscarf.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Bodyscarf.setPos(0.0F, 0.0F, 0.0F);
+		Bodyscarf.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 
 		cube_r1 = new ModelRenderer(this);
-		cube_r1.setRotationPoint(-2.0F, 0.0F, 3.0F);
+		cube_r1.setPos(-2.0F, 0.0F, 3.0F);
 		Bodyscarf.addChild(cube_r1);
 		setRotationAngle(cube_r1, -0.5236F, 3.1416F, 0.0F);
-		cube_r1.setTextureOffset(2, 52).addBox(-5.0F, -0.5F, 0.0F, 5.0F, 8.0F, 1.0F, 0.0F, false);
+		cube_r1.texOffs(2, 52).addBox(-5.0F, -0.5F, 0.0F, 5.0F, 8.0F, 1.0F, 0.0F, false);
 
 		Body2 = new ModelRenderer(this);
-		Body2.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body2.setTextureOffset(16, 32).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Body2.setPos(0.0F, 0.0F, 0.0F);
+		Body2.texOffs(16, 32).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 
 		Body3 = new ModelRenderer(this);
-		Body3.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body3.setTextureOffset(16, 48).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.31F, false);
+		Body3.setPos(0.0F, 0.0F, 0.0F);
+		Body3.texOffs(16, 48).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.31F, false);
 
 		RightArm = new ModelRenderer(this);
-		RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArm.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm, 0.1309F, 0.0F, 0.0F);
-		RightArm.setTextureOffset(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArm.setTextureOffset(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		RightArm.texOffs(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArm.texOffs(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		RightArm2 = new ModelRenderer(this);
-		RightArm2.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArm2.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm2, 0.1309F, 0.0F, 0.0F);
-		RightArm2.setTextureOffset(56, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArm2.texOffs(56, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		LeftArm = new ModelRenderer(this);
-		LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArm.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArm, -0.1309F, 0.0F, 0.0F);
-		LeftArm.setTextureOffset(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
-		LeftArm.setTextureOffset(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		LeftArm.texOffs(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArm.texOffs(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArm2 = new ModelRenderer(this);
-		LeftArm2.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArm2.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArm2, -0.1309F, 0.0F, 0.0F);
-		LeftArm2.setTextureOffset(56, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArm2.texOffs(56, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 //		RightLeg1 = new ModelRenderer(this);
 //		RightLeg1.setRotationPoint(-1.9F, 12.0F, 0.0F);
@@ -153,16 +153,16 @@ public class MegamanEvil extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
 //		this.Head1.copyModelAngles(this.bipedHead);
 //		Head1.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArm.copyModelAngles(this.bipedRightArm);
+		this.RightArm.copyFrom(this.rightArm);
 		RightArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArm.copyModelAngles(this.bipedLeftArm);
+		this.LeftArm.copyFrom(this.leftArm);
 		LeftArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLeg1.copyModelAngles(this.bipedRightLeg);
 //		RightLeg1.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -174,17 +174,17 @@ public class MegamanEvil extends BipedModel {
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
 //		this.Head2.copyModelAngles(this.bipedHead);
 //		Head2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Body2.copyModelAngles(this.bipedBody);
+		this.Body2.copyFrom(this.body);
 		Body2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArm2.copyModelAngles(this.bipedRightArm);
+		this.RightArm2.copyFrom(this.rightArm);
 		RightArm2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArm2.copyModelAngles(this.bipedLeftArm);
+		this.LeftArm2.copyFrom(this.leftArm);
 		LeftArm2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
-		this.Bodyscarf.copyModelAngles(this.bipedBody);
+		this.Bodyscarf.copyFrom(this.body);
 		Bodyscarf.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
@@ -192,7 +192,7 @@ public class MegamanEvil extends BipedModel {
         fblue = (float)(this.GrayColor & 255) / 255.0F;
 //		this.Head3.copyModelAngles(this.bipedHead);
 //		Head3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Body3.copyModelAngles(this.bipedBody);
+		this.Body3.copyFrom(this.body);
 		Body3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 //		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
@@ -209,8 +209,8 @@ public class MegamanEvil extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

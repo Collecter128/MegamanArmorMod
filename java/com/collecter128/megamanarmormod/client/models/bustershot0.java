@@ -18,18 +18,18 @@ public class bustershot0 <T extends bustershotentity> extends EntityModel<T> {//
 	private final ModelRenderer cube_r1;
 
 	public bustershot0() {
-		textureWidth = 32;
-		textureHeight = 32;
+		texWidth = 32;
+		texHeight = 32;
 
 		bb_main = new ModelRenderer(this);
-		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-		bb_main.setTextureOffset(0, 0).addBox(0.0F, -6.0F, -4.0F, 0.0F, 6.0F, 8.0F, 0.0F, false);
+		bb_main.setPos(0.0F, 24.0F, 0.0F);
+		bb_main.texOffs(0, 0).addBox(0.0F, -6.0F, -4.0F, 0.0F, 6.0F, 8.0F, 0.0F, false);
 
 		cube_r1 = new ModelRenderer(this);
-		cube_r1.setRotationPoint(-3.0F, -3.0F, -4.0F);
+		cube_r1.setPos(-3.0F, -3.0F, -4.0F);
 		bb_main.addChild(cube_r1);
 		setRotationAngle(cube_r1, 0.0F, 0.0F, 1.5708F);
-		cube_r1.setTextureOffset(0, 6).addBox(0.0F, -6.0F, 0.0F, 0.0F, 6.0F, 8.0F, 0.0F, false);
+		cube_r1.texOffs(0, 6).addBox(0.0F, -6.0F, 0.0F, 0.0F, 6.0F, 8.0F, 0.0F, false);
 	}
 
 //	@Override
@@ -38,14 +38,14 @@ public class bustershot0 <T extends bustershotentity> extends EntityModel<T> {//
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		bb_main.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 
 //	@Override
@@ -63,9 +63,16 @@ public class bustershot0 <T extends bustershotentity> extends EntityModel<T> {//
 //	}
 
 @Override
-public void setRotationAngles(bustershotentity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks,
+public void setupAnim(bustershotentity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks,
 		float netHeadYaw, float headPitch) {
 	// TODO Auto-generated method stub
 	
 }
+
+//@Override
+//public void setupAnim(T p_225597_1_, float p_225597_2_, float p_225597_3_, float p_225597_4_, float p_225597_5_,
+//		float p_225597_6_) {
+//	// TODO Auto-generated method stub
+//	
+//}
 }

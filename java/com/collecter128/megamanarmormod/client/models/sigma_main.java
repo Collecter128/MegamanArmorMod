@@ -54,8 +54,8 @@ public class sigma_main extends BipedModel  {
 
 	public sigma_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 75;
-		textureHeight = 153;
+		texWidth = 75;
+		texHeight = 153;
 		
 		MainColorDefault = 4574259;//Main Body Color 
 		SecondaryColorDefault = 3168981; //blue bits
@@ -71,28 +71,28 @@ public class sigma_main extends BipedModel  {
 		GrayColor = GrayColorDefault;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
-		Head.setTextureOffset(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
+		Head.texOffs(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Headsilver = new ModelRenderer(this);
-		Headsilver.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headsilver.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headsilver, -0.1047F, 0.0873F, 0.0F);
-		Headsilver.setTextureOffset(63, 68).addBox(4.4038F, -5.925F, -0.8709F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headsilver.setTextureOffset(52, 68).addBox(-4.9848F, -5.9471F, -0.6603F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headsilver.setTextureOffset(0, 137).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
+		Headsilver.texOffs(63, 68).addBox(4.4038F, -5.925F, -0.8709F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headsilver.texOffs(52, 68).addBox(-4.9848F, -5.9471F, -0.6603F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headsilver.texOffs(0, 137).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
 
 		Headcrystal = new ModelRenderer(this);
-		Headcrystal.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headcrystal.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headcrystal, -0.1047F, 0.0873F, 0.0F);
-		Headcrystal.setTextureOffset(17, 120).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
-		Headcrystal.setTextureOffset(59, 127).addBox(-1.0F, -8.5F, -5.0F, 2.0F, 2.0F, 1.0F, 0.1F, false);
+		Headcrystal.texOffs(17, 120).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
+		Headcrystal.texOffs(59, 127).addBox(-1.0F, -8.5F, -5.0F, 2.0F, 2.0F, 1.0F, 0.1F, false);
 
 		HeadEyes = new ModelRenderer(this);
-		HeadEyes.setRotationPoint(0.0F, 0.0F, 0.0F);
+		HeadEyes.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(HeadEyes, -0.1047F, 0.0873F, 0.0F);
-		HeadEyes.setTextureOffset(36, 137).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
+		HeadEyes.texOffs(36, 137).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.55F, false);
 
 //		BodyGreen = new ModelRenderer(this);
 //		BodyGreen.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -219,9 +219,9 @@ public class sigma_main extends BipedModel  {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
-		this.Head.copyModelAngles(this.bipedHead);
+		this.Head.copyFrom(this.head);
 		Head.render(matrixStack, buffer, packedLight, packedOverlay);
 		//Brown??
 //		this.RightLeg.copyModelAngles(this.bipedRightLeg);
@@ -237,11 +237,11 @@ public class sigma_main extends BipedModel  {
 //		this.LeftArmgreen.copyModelAngles(this.bipedLeftArm);
 //		LeftArmgreen.render(matrixStack, buffer, packedLight, packedOverlay);
 		
-//		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
-//		fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
-//		fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Headsilver.copyModelAngles(this.bipedHead);
-		Headsilver.render(matrixStack, buffer, packedLight, packedOverlay);
+		float fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
+		float fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
+		float fblue = (float)(this.GrayColor & 255) / 255.0F;
+		this.Headsilver.copyFrom(this.head);
+		Headsilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodysilver.copyModelAngles(this.bipedBody);
 //		Bodysilver.render(matrixStack, buffer, packedLight, packedOverlay);
 //		this.RightArmgray.copyModelAngles(this.bipedRightArm);
@@ -253,15 +253,18 @@ public class sigma_main extends BipedModel  {
 //		this.LeftLegSilverandGold.copyModelAngles(this.bipedLeftLeg);
 //		LeftLegSilverandGold.render(matrixStack, buffer, packedLight, packedOverlay);
 		
-		this.HeadEyes.copyModelAngles(this.bipedHead);
-		HeadEyes.render(matrixStack, buffer, 15728640, packedOverlay);
+		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.SecondaryColor & 255) / 255.0F;
+		this.HeadEyes.copyFrom(this.head);
+		HeadEyes.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightArmblue.copyModelAngles(this.bipedRightArm);
 //		RightArmblue.render(matrixStack, buffer, packedLight, packedOverlay);
 		
-		float fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
-		float fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
-		float fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.Headcrystal.copyModelAngles(this.bipedHead);
+		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
+		fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
+		fblue = (float)(this.GlowyColor & 255) / 255.0F;
+		this.Headcrystal.copyFrom(this.head);
 		Headcrystal.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodyglow.copyModelAngles(this.bipedBody);
 //		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay);
@@ -294,8 +297,8 @@ public class sigma_main extends BipedModel  {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

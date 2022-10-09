@@ -57,8 +57,8 @@ public class vilearmor_main extends BipedModel {
 
 	public vilearmor_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 76;
-		textureHeight = 121;
+		texWidth = 76;
+		texHeight = 121;
 		
 		MainColorDefault = 8728033;//Main Body Color Purple vile
 		SecondaryColorDefault = 5066061;//Secondary Color Vile Black
@@ -74,27 +74,27 @@ public class vilearmor_main extends BipedModel {
 		GrayColor = GrayColorDefault;
 
 		Headmain = new ModelRenderer(this);
-		Headmain.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headmain.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headmain, -0.1047F, 0.0873F, 0.0F);
-		Headmain.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headmain.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Headsilver = new ModelRenderer(this);
-		Headsilver.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headsilver.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headsilver, -0.1047F, 0.0873F, 0.0F);
-		Headsilver.setTextureOffset(33, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headsilver.texOffs(33, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Headgold = new ModelRenderer(this);
-		Headgold.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headgold.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headgold, -0.1047F, 0.0873F, 0.0F);
-		Headgold.setTextureOffset(58, 98).addBox(5.4872F, -4.8355F, -1.6704F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headgold.setTextureOffset(44, 98).addBox(-5.8938F, -4.8393F, -1.6332F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headgold.setTextureOffset(45, 106).addBox(-4.0F, -4.8263F, -2.0631F, 8.0F, 3.0F, 3.0F, 0.75F, false);
+		Headgold.texOffs(58, 98).addBox(5.4872F, -4.8355F, -1.6704F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headgold.texOffs(44, 98).addBox(-5.8938F, -4.8393F, -1.6332F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headgold.texOffs(45, 106).addBox(-4.0F, -4.8263F, -2.0631F, 8.0F, 3.0F, 3.0F, 0.75F, false);
 
 		Headglow = new ModelRenderer(this);
-		Headglow.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headglow.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headglow, -0.1047F, 0.0873F, 0.0F);
-		Headglow.setTextureOffset(45, 112).addBox(-4.0F, -4.8263F, -2.0631F, 8.0F, 3.0F, 3.0F, 0.75F, false);
-		Headglow.setTextureOffset(25, 2).addBox(-1.5F, -8.8F, -5.0F, 3.0F, 3.0F, 1.0F, 0.1F, false);
+		Headglow.texOffs(45, 112).addBox(-4.0F, -4.8263F, -2.0631F, 8.0F, 3.0F, 3.0F, 0.75F, false);
+		Headglow.texOffs(25, 2).addBox(-1.5F, -8.8F, -5.0F, 3.0F, 3.0F, 1.0F, 0.1F, false);
 
 //		Bodymain = new ModelRenderer(this);
 //		Bodymain.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -225,12 +225,12 @@ public class vilearmor_main extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
-		this.Headmain.copyModelAngles(this.bipedHead);
+		this.Headmain.copyFrom(this.head);
 		Headmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodymain.copyModelAngles(this.bipedBody);
 //		Bodymain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -254,7 +254,7 @@ public class vilearmor_main extends BipedModel {
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Headsilver.copyModelAngles(this.bipedHead);
+		this.Headsilver.copyFrom(this.head);
 		Headsilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodysilver.copyModelAngles(this.bipedBody);
 //		Bodysilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -280,7 +280,7 @@ public class vilearmor_main extends BipedModel {
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
-		this.Headgold.copyModelAngles(this.bipedHead);
+		this.Headgold.copyFrom(this.head);
 		Headgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodygold.copyModelAngles(this.bipedBody);
 //		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -296,7 +296,7 @@ public class vilearmor_main extends BipedModel {
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.Headglow.copyModelAngles(this.bipedHead);
+		this.Headglow.copyFrom(this.head);
 		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodyglow.copyModelAngles(this.bipedBody);
 //		Bodyglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -311,8 +311,8 @@ public class vilearmor_main extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

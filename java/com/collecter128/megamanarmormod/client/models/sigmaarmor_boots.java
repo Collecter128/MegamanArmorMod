@@ -25,8 +25,8 @@ public class sigmaarmor_boots extends BipedModel {
 
 	public sigmaarmor_boots(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 61;
+		texWidth = 64;
+		texHeight = 61;
 
 //		Head = new ModelRenderer(this);
 //		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -61,16 +61,16 @@ public class sigmaarmor_boots extends BipedModel {
 //		LeftArm.setTextureOffset(24, 51).addBox(-1.0F, 8.2391F, -2.0F, 4.0F, 0.0F, 4.0F, 1.0F, false);
 
 		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeg.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg, 0.192F, 0.0F, 0.0349F);
-		RightLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
-		RightLeg.setTextureOffset(0, 32).addBox(-2.2094F, 5.923F, -1.8374F, 4.0F, 0.0F, 4.0F, 1.25F, false);
+		RightLeg.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLeg.texOffs(0, 32).addBox(-2.2094F, 5.923F, -1.8374F, 4.0F, 0.0F, 4.0F, 1.25F, false);
 
 		LeftLeg = new ModelRenderer(this);
-		LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeg.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg, -0.1745F, 0.0F, -0.0349F);
-		LeftLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
-		LeftLeg.setTextureOffset(0, 32).addBox(-1.7906F, 5.9211F, -2.0562F, 4.0F, 0.0F, 4.0F, 1.25F, true);
+		LeftLeg.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLeg.texOffs(0, 32).addBox(-1.7906F, 5.9211F, -2.0562F, 4.0F, 0.0F, 4.0F, 1.25F, true);
 	}
 
 //	@Override
@@ -79,11 +79,11 @@ public class sigmaarmor_boots extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 ////		this.Head.copyModelAngles(this.bipedHead);
 //		this.Body.copyModelAngles(this.bipedBody);
-		this.RightLeg.copyModelAngles(this.bipedRightLeg);
-		this.LeftLeg.copyModelAngles(this.bipedLeftLeg);
+		this.RightLeg.copyFrom(this.rightLeg);
+		this.LeftLeg.copyFrom(this.leftLeg);
 ////		Head.render(matrixStack, buffer, packedLight, packedOverlay);
 //		Body.render(matrixStack, buffer, packedLight, packedOverlay);
 //		RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -93,8 +93,8 @@ public class sigmaarmor_boots extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

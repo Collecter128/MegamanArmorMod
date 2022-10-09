@@ -61,8 +61,8 @@ public class bassarmor_bootscolor extends BipedModel {
 
 	public bassarmor_bootscolor(float modelSize) {
 		super(modelSize);
-		textureWidth = 82;
-		textureHeight = 176;
+		texWidth = 82;
+		texHeight = 176;
 		
 		MainColorDefault = 5855577;//Main Body Color black
 		SecondaryColorDefault = 16763674;//Secondary
@@ -215,44 +215,44 @@ public class bassarmor_bootscolor extends BipedModel {
 //		LeftArmgold.setTextureOffset(63, 70).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeg.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg, 0.192F, 0.0F, 0.0349F);
-		RightLeg.setTextureOffset(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLeg.texOffs(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLegwhite = new ModelRenderer(this);
-		RightLegwhite.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLegwhite.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegwhite, 0.192F, 0.0F, 0.0349F);
-		RightLegwhite.setTextureOffset(0, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLegwhite.texOffs(0, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLeggold = new ModelRenderer(this);
-		RightLeggold.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeggold.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeggold, 0.192F, 0.0F, 0.0349F);
-		RightLeggold.setTextureOffset(43, 79).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLeggold.texOffs(43, 79).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLegglow = new ModelRenderer(this);
-		RightLegglow.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLegglow.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegglow, 0.192F, 0.0F, 0.0349F);
-		RightLegglow.setTextureOffset(47, 114).addBox(-1.0F, 7.0F, -1.0F, 2.0F, 5.0F, 2.0F, 0.7F, false);
+		RightLegglow.texOffs(47, 114).addBox(-1.0F, 7.0F, -1.0F, 2.0F, 5.0F, 2.0F, 0.7F, false);
 
 		LeftLegblack = new ModelRenderer(this);
-		LeftLegblack.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegblack.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegblack, -0.1745F, 0.0F, -0.0349F);
-		LeftLegblack.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLegblack.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLegwhite = new ModelRenderer(this);
-		LeftLegwhite.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegwhite.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegwhite, -0.1745F, 0.0F, -0.0349F);
-		LeftLegwhite.setTextureOffset(0, 48).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLegwhite.texOffs(0, 48).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLeggold = new ModelRenderer(this);
-		LeftLeggold.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeggold.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeggold, -0.1745F, 0.0F, -0.0349F);
-		LeftLeggold.setTextureOffset(0, 80).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLeggold.texOffs(0, 80).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLegglow = new ModelRenderer(this);
-		LeftLegglow.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegglow.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegglow, -0.1745F, 0.0F, -0.0349F);
-		LeftLegglow.setTextureOffset(46, 101).addBox(-1.0F, 7.0F, -1.0F, 2.0F, 5.0F, 2.0F, 0.7F, true);
+		LeftLegglow.texOffs(46, 101).addBox(-1.0F, 7.0F, -1.0F, 2.0F, 5.0F, 2.0F, 0.7F, true);
 	}
 
 //	@Override
@@ -261,7 +261,7 @@ public class bassarmor_bootscolor extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
 		float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
@@ -274,9 +274,9 @@ public class bassarmor_bootscolor extends BipedModel {
 //		RightArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmblack.copyModelAngles(this.bipedLeftArm);
 //		LeftArmblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeg.copyModelAngles(this.bipedRightLeg);
+		this.RightLeg.copyFrom(this.rightLeg);
 		RightLeg.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegblack.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegblack.copyFrom(this.leftLeg);
 		LeftLegblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
@@ -301,9 +301,9 @@ public class bassarmor_bootscolor extends BipedModel {
 //		RightArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmwhite.copyModelAngles(this.bipedLeftArm);
 //		LeftArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegwhite.copyModelAngles(this.bipedRightLeg);
+		this.RightLegwhite.copyFrom(this.rightLeg);
 		RightLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegwhite.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegwhite.copyFrom(this.leftLeg);
 		LeftLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
@@ -317,9 +317,9 @@ public class bassarmor_bootscolor extends BipedModel {
 //		RightArmgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmgold.copyModelAngles(this.bipedLeftArm);
 //		LeftArmgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeggold.copyModelAngles(this.bipedRightLeg);
+		this.RightLeggold.copyFrom(this.rightLeg);
 		RightLeggold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLeggold.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLeggold.copyFrom(this.leftLeg);
 		LeftLeggold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
@@ -329,15 +329,15 @@ public class bassarmor_bootscolor extends BipedModel {
 //		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodyglow.copyModelAngles(this.bipedBody);
 //		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
+		this.RightLegglow.copyFrom(this.rightLeg);
 		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegglow.copyFrom(this.leftLeg);
 		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

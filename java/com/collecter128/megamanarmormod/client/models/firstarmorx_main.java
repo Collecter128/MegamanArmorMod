@@ -56,8 +56,8 @@ public class firstarmorx_main extends BipedModel {
 
 	public firstarmorx_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 96;
-		textureHeight = 159;
+		texWidth = 96;
+		texHeight = 159;
 		
 		MainColorDefault = 2781423;//Main Body Color X Blue
 		SecondaryColorDefault = 5752303;//Secondary Cyan tiel color
@@ -73,34 +73,34 @@ public class firstarmorx_main extends BipedModel {
 		GrayColor = GrayColorDefault;
 
 		Headblue = new ModelRenderer(this);
-		Headblue.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headblue.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headblue, -0.1047F, 0.0873F, 0.0F);
-		Headblue.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headblue.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Headwhite = new ModelRenderer(this);
-		Headwhite.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headwhite.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headwhite, -0.1047F, 0.0873F, 0.0F);
-		Headwhite.setTextureOffset(64, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Headwhite.setTextureOffset(82, 20).addBox(5.4872F, -4.841F, -1.5659F, 1.0F, 4.0F, 4.0F, 0.5F, false);
-		Headwhite.setTextureOffset(82, 47).addBox(-5.8938F, -4.8448F, -1.5287F, 1.0F, 4.0F, 4.0F, 0.5F, false);
+		Headwhite.texOffs(64, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headwhite.texOffs(82, 20).addBox(5.4872F, -4.841F, -1.5659F, 1.0F, 4.0F, 4.0F, 0.5F, false);
+		Headwhite.texOffs(82, 47).addBox(-5.8938F, -4.8448F, -1.5287F, 1.0F, 4.0F, 4.0F, 0.5F, false);
 
 		Headsilver = new ModelRenderer(this);
-		Headsilver.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headsilver.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headsilver, -0.1047F, 0.0873F, 0.0F);
-		Headsilver.setTextureOffset(0, 142).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Headsilver.setTextureOffset(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
+		Headsilver.texOffs(0, 142).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headsilver.texOffs(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
 
 		Headyellow = new ModelRenderer(this);
-		Headyellow.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headyellow.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headyellow, -0.1047F, 0.0873F, 0.0F);
-		Headyellow.setTextureOffset(48, 126).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headyellow.texOffs(48, 126).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Headred = new ModelRenderer(this);
-		Headred.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headred.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headred, -0.1047F, 0.0873F, 0.0F);
-		Headred.setTextureOffset(16, 63).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Headred.setTextureOffset(78, 17).addBox(4.9128F, -4.3F, -1.0F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headred.setTextureOffset(78, 44).addBox(-7.3F, -4.3F, -1.0F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headred.texOffs(16, 63).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headred.texOffs(78, 17).addBox(4.9128F, -4.3F, -1.0F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headred.texOffs(78, 44).addBox(-7.3F, -4.3F, -1.0F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 
 //		Bodysecondary = new ModelRenderer(this);
 //		Bodysecondary.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -202,12 +202,12 @@ public class firstarmorx_main extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
-		this.Headblue.copyModelAngles(this.bipedHead);
+		this.Headblue.copyFrom(this.head);
 		Headblue.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodymain.copyModelAngles(this.bipedBody);
 //		Bodymain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -233,7 +233,7 @@ public class firstarmorx_main extends BipedModel {
 		fred = (float)( this.WhiteColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.WhiteColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.WhiteColor & 255) / 255.0F;
-		this.Headwhite.copyModelAngles(this.bipedHead);
+		this.Headwhite.copyFrom(this.head);
 		Headwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body3.copyModelAngles(this.bipedBody);
 //		Body3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -249,7 +249,7 @@ public class firstarmorx_main extends BipedModel {
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Headsilver.copyModelAngles(this.bipedHead);
+		this.Headsilver.copyFrom(this.head);
 		Headsilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightArmwhite2.copyModelAngles(this.bipedRightArm);
 //		RightArmwhite2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -259,7 +259,7 @@ public class firstarmorx_main extends BipedModel {
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
-		this.Headyellow.copyModelAngles(this.bipedHead);
+		this.Headyellow.copyFrom(this.head);
 		Headyellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodyyellow.copyModelAngles(this.bipedBody);
 //		Bodyyellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -271,14 +271,14 @@ public class firstarmorx_main extends BipedModel {
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.Headred.copyModelAngles(this.bipedHead);
+		this.Headred.copyFrom(this.head);
 		Headred.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

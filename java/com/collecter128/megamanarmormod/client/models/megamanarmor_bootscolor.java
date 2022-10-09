@@ -46,8 +46,8 @@ public class megamanarmor_bootscolor extends BipedModel {
 
 	public megamanarmor_bootscolor(float modelSize) {
 		super(modelSize);
-		textureWidth = 75;
-		textureHeight = 97;
+		texWidth = 75;
+		texHeight = 97;
 		
 		MainColorDefault = 342773;//Main Body Color Megaman Dark Blue
 		//MainColorDefault = 15404288;//Main Body Color Megaman Dark Blue
@@ -118,24 +118,24 @@ public class megamanarmor_bootscolor extends BipedModel {
 //		LeftArm2.setTextureOffset(56, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 		RightLeg1 = new ModelRenderer(this);
-		RightLeg1.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeg1.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg1, 0.192F, 0.0F, 0.0349F);
-		RightLeg1.setTextureOffset(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLeg1.texOffs(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLegglow = new ModelRenderer(this);
-		RightLegglow.setRotationPoint(-1.9F, 12.0F, -1.9632F);
+		RightLegglow.setPos(-1.9F, 12.0F, -1.9632F);
 		setRotationAngle(RightLegglow, 0.192F, 0.0F, 0.0349F);
-		RightLegglow.setTextureOffset(31, 88).addBox(-2.0F, 8.5F, -2.0F, 4.0F, 4.0F, 4.0F, 1.0F, false);
+		RightLegglow.texOffs(31, 88).addBox(-2.0F, 8.5F, -2.0F, 4.0F, 4.0F, 4.0F, 1.0F, false);
 
 		LeftLeg1 = new ModelRenderer(this);
-		LeftLeg1.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeg1.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg1, -0.1745F, 0.0F, -0.0349F);
-		LeftLeg1.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLeg1.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLegglow = new ModelRenderer(this);
-		LeftLegglow.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegglow.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegglow, -0.1745F, 0.0F, -0.0349F);
-		LeftLegglow.setTextureOffset(50, 88).addBox(-2.0F, 8.2F, -2.0F, 4.0F, 4.0F, 4.0F, 1.0F, true);
+		LeftLegglow.texOffs(50, 88).addBox(-2.0F, 8.2F, -2.0F, 4.0F, 4.0F, 4.0F, 1.0F, true);
 	}
 
 //	@Override
@@ -144,7 +144,7 @@ public class megamanarmor_bootscolor extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 //        float f = (float)(i >> 16 & 255) / 255.0F;
 //        float f1 = (float)(i >> 8 & 255) / 255.0F;
 //        float f2 = (float)(i & 255) / 255.0F;
@@ -160,9 +160,9 @@ public class megamanarmor_bootscolor extends BipedModel {
 //		RightArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArm.copyModelAngles(this.bipedLeftArm);
 //		LeftArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeg1.copyModelAngles(this.bipedRightLeg);
+		this.RightLeg1.copyFrom(this.rightLeg);
 		RightLeg1.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLeg1.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLeg1.copyFrom(this.leftLeg);
 		LeftLeg1.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
@@ -190,15 +190,15 @@ public class megamanarmor_bootscolor extends BipedModel {
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
+		this.RightLegglow.copyFrom(this.rightLeg);
 		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegglow.copyFrom(this.leftLeg);
 		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

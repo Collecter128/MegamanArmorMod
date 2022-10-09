@@ -47,10 +47,10 @@ public class protomanarmor_maincolor extends BipedModel {
 
 	public protomanarmor_maincolor(float modelSize, EquipmentSlotType part) {//EquipmentSlotType part
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 92;
+		texWidth = 64;
+		texHeight = 92;
 		
-		MainColorDefault = 16740644;//Main Body Color Protoman orangishRed
+		MainColorDefault = 16331285;//Main Body Color Protoman orangishRed
 		SecondaryColorDefault = 9737364;//Secondary Color black?
 		WhiteColorDefault = 15855562;
 		ThirdColorDefault = 16765460;//Scarf
@@ -66,33 +66,33 @@ public class protomanarmor_maincolor extends BipedModel {
 		armorpart = part;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Head2 = new ModelRenderer(this);
-		Head2.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head2.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head2, -0.1047F, 0.0873F, 0.0F);
-		Head2.setTextureOffset(3, 56).addBox(-5.5F, -8.8045F, -5.8244F, 11.0F, 6.0F, 0.0F, 0.1F, false);
-		Head2.setTextureOffset(12, 68).addBox(5.4F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head2.setTextureOffset(2, 68).addBox(-5.981F, -3.9489F, -0.538F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head2.setTextureOffset(39, 85).addBox(-4.0F, -4.3069F, -1.1323F, 8.0F, 3.0F, 3.0F, 0.9F, false);
+		Head2.texOffs(3, 56).addBox(-5.5F, -8.8045F, -5.8244F, 11.0F, 6.0F, 0.0F, 0.1F, false);
+		Head2.texOffs(12, 68).addBox(5.4F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head2.texOffs(2, 68).addBox(-5.981F, -3.9489F, -0.538F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head2.texOffs(39, 85).addBox(-4.0F, -4.3069F, -1.1323F, 8.0F, 3.0F, 3.0F, 0.9F, false);
 		
 		Head3 = new ModelRenderer(this);
-		Head3.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head3.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head3, -0.1047F, 0.0873F, 0.0F);
-		Head3.setTextureOffset(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
+		Head3.texOffs(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
 
 		Head4 = new ModelRenderer(this);
-		Head4.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head4.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head4, -0.1047F, 0.0873F, 0.0F);
-		Head4.setTextureOffset(3, 61).addBox(-5.5F, -8.8045F, -5.8244F, 11.0F, 6.0F, 0.0F, 0.1F, false);
+		Head4.texOffs(3, 61).addBox(-5.5F, -8.8045F, -5.8244F, 11.0F, 6.0F, 0.0F, 0.1F, false);
 
 		Headglow = new ModelRenderer(this);
-		Headglow.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headglow.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headglow, -0.1047F, 0.0873F, 0.0F);
-		Headglow.setTextureOffset(33, 79).addBox(-4.0F, -4.3069F, -1.1323F, 8.0F, 3.0F, 3.0F, 1.0F, false);
+		Headglow.texOffs(33, 79).addBox(-4.0F, -4.3069F, -1.1323F, 8.0F, 3.0F, 3.0F, 1.0F, false);
 		
 //		Body = new ModelRenderer(this);
 //		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -161,13 +161,13 @@ public class protomanarmor_maincolor extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
         //if(armorpart == EquipmentSlotType.HEAD) {
-        	this.Head.copyModelAngles(this.bipedHead);
+        	this.Head.copyFrom(this.head);
         	Head.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
        // }
         //if(armorpart == EquipmentSlotType.CHEST) {
@@ -188,7 +188,7 @@ public class protomanarmor_maincolor extends BipedModel {
         fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
         //if(armorpart == EquipmentSlotType.HEAD) {
-        	this.Head4.copyModelAngles(this.bipedHead);
+        	this.Head4.copyFrom(this.head);
 			Head4.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
         //}
         //if(armorpart == EquipmentSlotType.CHEST) {
@@ -204,7 +204,7 @@ public class protomanarmor_maincolor extends BipedModel {
         	fred = (float)( this.WhiteColor >> 16 & 255) / 255.0F;
         	fgreen = (float)(this.WhiteColor >> 8 & 255) / 255.0F;
         	fblue = (float)(this.WhiteColor & 255) / 255.0F;
-        	this.Head2.copyModelAngles(this.bipedHead);
+        	this.Head2.copyFrom(this.head);
         	Head2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
         //}
 		
@@ -220,7 +220,7 @@ public class protomanarmor_maincolor extends BipedModel {
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
         //if(armorpart == EquipmentSlotType.HEAD) {
-        	this.Head3.copyModelAngles(this.bipedHead);
+        	this.Head3.copyFrom(this.head);
         	Head3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
         //}
         //if(armorpart == EquipmentSlotType.CHEST) {
@@ -232,7 +232,7 @@ public class protomanarmor_maincolor extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
         //if(armorpart == EquipmentSlotType.HEAD) {
-        	this.Headglow.copyModelAngles(this.bipedHead);
+        	this.Headglow.copyFrom(this.head);
 			Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
         //}
         //if(armorpart == EquipmentSlotType.FEET) {
@@ -244,8 +244,8 @@ public class protomanarmor_maincolor extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

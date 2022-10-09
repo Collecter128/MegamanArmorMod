@@ -25,8 +25,8 @@ public class xarmor_chestplate extends BipedModel {
 
 	public xarmor_chestplate(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 79;
+		texWidth = 64;
+		texHeight = 79;
 
 //		Head = new ModelRenderer(this);
 //		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -39,23 +39,23 @@ public class xarmor_chestplate extends BipedModel {
 //		Head.setTextureOffset(15, 30).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
 
 		Body = new ModelRenderer(this);
-		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
-		Body.setTextureOffset(16, 60).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Body.setPos(0.0F, 0.0F, 0.0F);
+		Body.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Body.texOffs(16, 60).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 
 		RightArm = new ModelRenderer(this);
-		RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArm.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm, -0.1745F, 0.0F, 0.0F);
-		RightArm.setTextureOffset(40, 16).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
-		RightArm.setTextureOffset(40, 24).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArm.setTextureOffset(40, 40).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		RightArm.texOffs(40, 16).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		RightArm.texOffs(40, 24).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArm.texOffs(40, 40).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArm = new ModelRenderer(this);
-		LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArm.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArm, 0.2094F, 0.0F, 0.0F);
-		LeftArm.setTextureOffset(40, 48).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
-		LeftArm.setTextureOffset(40, 24).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
-		LeftArm.setTextureOffset(40, 40).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		LeftArm.texOffs(40, 48).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArm.texOffs(40, 24).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArm.texOffs(40, 40).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 //		RightLeg = new ModelRenderer(this);
 //		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
@@ -74,11 +74,11 @@ public class xarmor_chestplate extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 //		this.Head.copyModelAngles(this.bipedHead);
-		this.Body.copyModelAngles(this.bipedBody);
-		this.RightArm.copyModelAngles(this.bipedRightArm);
-		this.LeftArm.copyModelAngles(this.bipedLeftArm);
+		this.Body.copyFrom(this.body);
+		this.RightArm.copyFrom(this.rightArm);
+		this.LeftArm.copyFrom(this.leftArm);
 //		this.RightLeg.copyModelAngles(this.bipedRightLeg);
 //		this.LeftLeg.copyModelAngles(this.bipedLeftLeg);
 //		Head.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -90,8 +90,8 @@ public class xarmor_chestplate extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

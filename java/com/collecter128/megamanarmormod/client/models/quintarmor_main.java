@@ -50,8 +50,8 @@ public class quintarmor_main extends BipedModel {
 
 	public quintarmor_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 76;
-		textureHeight = 148;
+		texWidth = 76;
+		texHeight = 148;
 		
 		MainColorDefault = 3709250;//Main Body Color quint green
 		SecondaryColorDefault = 10413478;//Secondary quintlight green
@@ -67,42 +67,42 @@ public class quintarmor_main extends BipedModel {
 		GrayColor = GrayColorDefault;
 
 		Head1 = new ModelRenderer(this);
-		Head1.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Head1.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head1.setPos(0.0F, 0.0F, 0.0F);
+		Head1.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 		
 		HeadOrange = new ModelRenderer(this);
-		HeadOrange.setRotationPoint(0.0F, 0.0F, 0.0F);
-		HeadOrange.setTextureOffset(0, 64).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		HeadOrange.setPos(0.0F, 0.0F, 0.0F);
+		HeadOrange.texOffs(0, 64).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Headlightgray = new ModelRenderer(this);
-		Headlightgray.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Headlightgray.setTextureOffset(32, 1).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 7.0F, 8.0F, 0.75F, false);
-		Headlightgray.setTextureOffset(38, 67).addBox(5.0643F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headlightgray.setTextureOffset(38, 74).addBox(-5.8938F, -3.8448F, -0.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headlightgray.setPos(0.0F, 0.0F, 0.0F);
+		Headlightgray.texOffs(32, 1).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 7.0F, 8.0F, 0.75F, false);
+		Headlightgray.texOffs(38, 67).addBox(5.0643F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headlightgray.texOffs(38, 74).addBox(-5.8938F, -3.8448F, -0.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 
 		Headglow = new ModelRenderer(this);
-		Headglow.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headglow.setPos(0.0F, 0.0F, 0.0F);
 		
 
 		Headglow_r1 = new ModelRenderer(this);
-		Headglow_r1.setRotationPoint(10.0F, 23.0F, 3.0F);
+		Headglow_r1.setPos(10.0F, 23.0F, 3.0F);
 		Headglow.addChild(Headglow_r1);
 		setRotationAngle(Headglow_r1, 0.0F, 1.5708F, 0.0F);
-		Headglow_r1.setTextureOffset(50, 65).addBox(0.0F, -27.0F, -3.6F, 4.0F, 3.0F, 1.0F, -0.3F, false);
+		Headglow_r1.texOffs(50, 65).addBox(0.0F, -27.0F, -3.6F, 4.0F, 3.0F, 1.0F, -0.3F, false);
 
 		Headglow_r2 = new ModelRenderer(this);
-		Headglow_r2.setRotationPoint(-11.0F, 23.0F, -1.0F);
+		Headglow_r2.setPos(-11.0F, 23.0F, -1.0F);
 		Headglow.addChild(Headglow_r2);
 		setRotationAngle(Headglow_r2, 0.0F, -1.5708F, 0.0F);
-		Headglow_r2.setTextureOffset(50, 65).addBox(0.0F, -27.0F, -4.7F, 4.0F, 3.0F, 1.0F, -0.3F, false);
+		Headglow_r2.texOffs(50, 65).addBox(0.0F, -27.0F, -4.7F, 4.0F, 3.0F, 1.0F, -0.3F, false);
 
 		HeadYellow = new ModelRenderer(this);
-		HeadYellow.setRotationPoint(0.0F, 0.0F, 0.0F);
-		HeadYellow.setTextureOffset(57, 1).addBox(-4.5F, -11.4829F, -5.54F, 9.0F, 7.0F, 0.0F, 0.25F, false);
+		HeadYellow.setPos(0.0F, 0.0F, 0.0F);
+		HeadYellow.texOffs(57, 1).addBox(-4.5F, -11.4829F, -5.54F, 9.0F, 7.0F, 0.0F, 0.25F, false);
 
 		Headvisor = new ModelRenderer(this);
-		Headvisor.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Headvisor.setTextureOffset(54, 75).addBox(-4.0F, -6.5F, -4.5F, 8.0F, 4.0F, 1.0F, 0.25F, false);
+		Headvisor.setPos(0.0F, 0.0F, 0.0F);
+		Headvisor.texOffs(54, 75).addBox(-4.0F, -6.5F, -4.5F, 8.0F, 4.0F, 1.0F, 0.25F, false);
 
 //		Body2 = new ModelRenderer(this);
 //		Body2.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -179,12 +179,12 @@ public class quintarmor_main extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
-		this.Head1.copyModelAngles(this.bipedHead);
+		this.Head1.copyFrom(this.head);
 		Head1.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightArm.copyModelAngles(this.bipedRightArm);
 //		RightArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -211,7 +211,7 @@ public class quintarmor_main extends BipedModel {
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
-		this.HeadOrange.copyModelAngles(this.bipedHead);
+		this.HeadOrange.copyFrom(this.head);
 		HeadOrange.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightArmorange.copyModelAngles(this.bipedRightArm);
 //		RightArmorange.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -221,7 +221,7 @@ public class quintarmor_main extends BipedModel {
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Headlightgray.copyModelAngles(this.bipedHead);
+		this.Headlightgray.copyFrom(this.head);
 		Headlightgray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodygray.copyModelAngles(this.bipedBody);
 //		Bodygray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -229,25 +229,25 @@ public class quintarmor_main extends BipedModel {
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.Headglow.copyModelAngles(this.bipedHead);
+		this.Headglow.copyFrom(this.head);
 		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
 //		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		this.HeadYellow.copyModelAngles(this.bipedHead);
+		this.HeadYellow.copyFrom(this.head);
 		HeadYellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		
-		this.Headvisor.copyModelAngles(this.bipedHead);
+		this.Headvisor.copyFrom(this.head);
 		Headvisor.render(matrixStack, buffer, 15728640, packedOverlay);
 		
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

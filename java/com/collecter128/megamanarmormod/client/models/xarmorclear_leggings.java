@@ -27,23 +27,23 @@ public class xarmorclear_leggings extends BipedModel {
 
 	public xarmorclear_leggings(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 32;
+		texWidth = 64;
+		texHeight = 32;
 
 		Body = new ModelRenderer(this);
-		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Body.setTextureOffset(16, 17).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
-		Body.setTextureOffset(16, 25).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Body.setPos(0.0F, 0.0F, 0.0F);
+		Body.texOffs(16, 17).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
+		Body.texOffs(16, 25).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeg.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg, 0.192F, 0.0F, 0.0349F);
-		RightLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightLeg.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		LeftLeg = new ModelRenderer(this);
-		LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeg.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg, -0.1745F, 0.0F, -0.0349F);
-		LeftLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftLeg.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 	}
 	
 //	public static RenderType getArmorTransparent(ResourceLocation locationIn) {
@@ -57,10 +57,10 @@ public class xarmorclear_leggings extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		this.Body.copyModelAngles(this.bipedBody);
-		this.RightLeg.copyModelAngles(this.bipedRightLeg);
-		this.LeftLeg.copyModelAngles(this.bipedLeftLeg);
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+		this.Body.copyFrom(this.body);
+		this.RightLeg.copyFrom(this.rightLeg);
+		this.LeftLeg.copyFrom(this.leftLeg);
 		//buffer.
 		// IVertexBuilder ivertexbuilder = ItemRenderer.getArmorVertexBuilder(p_241738_2_, RenderType.getArmorCutoutNoCull(armorResource), false, p_241738_5_);
 		Body.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -69,8 +69,8 @@ public class xarmorclear_leggings extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

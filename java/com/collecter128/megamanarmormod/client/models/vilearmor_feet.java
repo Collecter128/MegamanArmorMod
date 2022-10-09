@@ -57,8 +57,8 @@ public class vilearmor_feet extends BipedModel {
 
 	public vilearmor_feet(float modelSize) {
 		super(modelSize);
-		textureWidth = 76;
-		textureHeight = 121;
+		texWidth = 76;
+		texHeight = 121;
 		
 		MainColorDefault = 8728033;//Main Body Color Purple vile
 		SecondaryColorDefault = 5066061;//Secondary Color Vile Black
@@ -179,44 +179,44 @@ public class vilearmor_feet extends BipedModel {
 //		LeftArmglow.setTextureOffset(58, 31).addBox(-1.0F, -2.3974F, -2.0F, 5.0F, 4.0F, 4.0F, 0.8F, false);
 
 		RightLegmain = new ModelRenderer(this);
-		RightLegmain.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLegmain.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegmain, 0.192F, 0.0F, 0.0349F);
-		RightLegmain.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLegmain.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLegwhite = new ModelRenderer(this);
-		RightLegwhite.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLegwhite.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegwhite, 0.192F, 0.0F, 0.0349F);
-		RightLegwhite.setTextureOffset(0, 48).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLegwhite.texOffs(0, 48).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLeggold = new ModelRenderer(this);
-		RightLeggold.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeggold.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeggold, 0.192F, 0.0F, 0.0349F);
-		RightLeggold.setTextureOffset(0, 80).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLeggold.texOffs(0, 80).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		RightLegglow = new ModelRenderer(this);
-		RightLegglow.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLegglow.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegglow, 0.192F, 0.0F, 0.0349F);
-		RightLegglow.setTextureOffset(68, 3).addBox(-0.8947F, 14.2F, -1.0F, 2.0F, 1.0F, 2.0F, 1.0F, false);
+		RightLegglow.texOffs(68, 3).addBox(-0.8947F, 14.2F, -1.0F, 2.0F, 1.0F, 2.0F, 1.0F, false);
 
 		LeftLegmain = new ModelRenderer(this);
-		LeftLegmain.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegmain.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegmain, -0.1745F, 0.0F, -0.0349F);
-		LeftLegmain.setTextureOffset(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLegmain.texOffs(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLegwhite = new ModelRenderer(this);
-		LeftLegwhite.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegwhite.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegwhite, -0.1745F, 0.0F, -0.0349F);
-		LeftLegwhite.setTextureOffset(0, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLegwhite.texOffs(0, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLeggold = new ModelRenderer(this);
-		LeftLeggold.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeggold.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeggold, -0.1745F, 0.0F, -0.0349F);
-		LeftLeggold.setTextureOffset(0, 96).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLeggold.texOffs(0, 96).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 
 		LeftLegglow = new ModelRenderer(this);
-		LeftLegglow.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLegglow.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegglow, -0.1745F, 0.0F, -0.0349F);
-		LeftLegglow.setTextureOffset(68, 10).addBox(-1.2791F, 14.2F, -1.0F, 2.0F, 1.0F, 2.0F, 1.0F, true);
+		LeftLegglow.texOffs(68, 10).addBox(-1.2791F, 14.2F, -1.0F, 2.0F, 1.0F, 2.0F, 1.0F, true);
 	}
 
 //	@Override
@@ -225,7 +225,7 @@ public class vilearmor_feet extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
@@ -238,9 +238,9 @@ public class vilearmor_feet extends BipedModel {
 //		RightArmmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmmain.copyModelAngles(this.bipedLeftArm);
 //		LeftArmmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegmain.copyModelAngles(this.bipedRightLeg);
+		this.RightLegmain.copyFrom(this.rightLeg);
 		RightLegmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegmain.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegmain.copyFrom(this.leftLeg);
 		LeftLegmain.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
@@ -272,9 +272,9 @@ public class vilearmor_feet extends BipedModel {
 //		RightArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmwhite.copyModelAngles(this.bipedLeftArm);
 //		LeftArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegwhite.copyModelAngles(this.bipedRightLeg);
+		this.RightLegwhite.copyFrom(this.rightLeg);
 		RightLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegwhite.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegwhite.copyFrom(this.leftLeg);
 		LeftLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
@@ -288,9 +288,9 @@ public class vilearmor_feet extends BipedModel {
 //		RightArmgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmgold.copyModelAngles(this.bipedLeftArm);
 //		LeftArmgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeggold.copyModelAngles(this.bipedRightLeg);
+		this.RightLeggold.copyFrom(this.rightLeg);
 		RightLeggold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLeggold.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLeggold.copyFrom(this.leftLeg);
 		LeftLeggold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
@@ -304,15 +304,15 @@ public class vilearmor_feet extends BipedModel {
 //		RightArmglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftArmglow.copyModelAngles(this.bipedLeftArm);
 //		LeftArmglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
+		this.RightLegglow.copyFrom(this.rightLeg);
 		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegglow.copyFrom(this.leftLeg);
 		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

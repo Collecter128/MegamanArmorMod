@@ -26,8 +26,8 @@ public class protomanarmor_Boots extends BipedModel {
 
 	public protomanarmor_Boots(float modelSize) {
 		super(modelSize);
-		textureWidth = 64;
-		textureHeight = 71;
+		texWidth = 64;
+		texHeight = 71;
 
 		//Head = new ModelRenderer(this);
 		//Head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -60,14 +60,14 @@ public class protomanarmor_Boots extends BipedModel {
 		//LeftArm.setTextureOffset(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeg.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg, 0.192F, 0.0F, 0.0349F);
-		RightLeg.setTextureOffset(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLeg.texOffs(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 
 		LeftLeg = new ModelRenderer(this);
-		LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeg.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg, -0.1745F, 0.0F, -0.0349F);
-		LeftLeg.setTextureOffset(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLeg.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 	}
 
 	//@Override
@@ -76,20 +76,20 @@ public class protomanarmor_Boots extends BipedModel {
 	//}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		//Head.render(matrixStack, buffer, packedLight, packedOverlay);
 		//Body.render(matrixStack, buffer, packedLight, packedOverlay);
 		//RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
 		//LeftArm.render(matrixStack, buffer, packedLight, packedOverlay);
-		this.RightLeg.copyModelAngles(this.bipedRightLeg);
-		this.LeftLeg.copyModelAngles(this.bipedLeftLeg);
+		this.RightLeg.copyFrom(this.rightLeg);
+		this.LeftLeg.copyFrom(this.leftLeg);
 		RightLeg.render(matrixStack, buffer, packedLight, packedOverlay);
 		LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

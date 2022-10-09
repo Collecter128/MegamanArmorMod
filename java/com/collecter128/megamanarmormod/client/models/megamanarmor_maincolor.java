@@ -46,8 +46,8 @@ public class megamanarmor_maincolor extends BipedModel {
 
 	public megamanarmor_maincolor(float modelSize) {
 		super(modelSize);
-		textureWidth = 75;
-		textureHeight = 97;
+		texWidth = 75;
+		texHeight = 97;
 		
 		MainColorDefault = 342773;//Main Body Color Megaman Dark Blue
 		//MainColorDefault = 15404288;//Main Body Color Megaman Dark Blue
@@ -64,24 +64,24 @@ public class megamanarmor_maincolor extends BipedModel {
 		GrayColor = GrayColorDefault;
 
 		Head1 = new ModelRenderer(this);
-		Head1.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Head1.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head1.setPos(0.0F, 0.0F, 0.0F);
+		Head1.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Head2 = new ModelRenderer(this);
-		Head2.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Head2.setTextureOffset(0, 64).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head2.setTextureOffset(61, 58).addBox(-1.0F, -7.4829F, -5.54F, 2.0F, 2.0F, 1.0F, 0.25F, false);
-		Head2.setTextureOffset(48, 65).addBox(-0.6552F, -9.5707F, -4.5F, 2.0F, 6.0F, 10.0F, 0.25F, false);
-		Head2.setTextureOffset(37, 66).addBox(5.0643F, -3.9451F, -1.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head2.setTextureOffset(37, 74).addBox(-5.8938F, -3.8448F, -1.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head2.setPos(0.0F, 0.0F, 0.0F);
+		Head2.texOffs(0, 64).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head2.texOffs(61, 58).addBox(-1.0F, -7.4829F, -5.54F, 2.0F, 2.0F, 1.0F, 0.25F, false);
+		Head2.texOffs(48, 65).addBox(-0.6552F, -9.5707F, -4.5F, 2.0F, 6.0F, 10.0F, 0.25F, false);
+		Head2.texOffs(37, 66).addBox(5.0643F, -3.9451F, -0.5F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head2.texOffs(37, 74).addBox(-5.8938F, -3.8448F, -0.5F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 
 		Head3 = new ModelRenderer(this);
-		Head3.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Head3.setTextureOffset(32, 1).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 7.0F, 8.0F, 0.75F, false);
+		Head3.setPos(0.0F, 0.0F, 0.0F);
+		Head3.texOffs(32, 1).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 7.0F, 8.0F, 0.75F, false);
 
 		Headglow = new ModelRenderer(this);
-		Headglow.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Headglow.setTextureOffset(0, 80).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headglow.setPos(0.0F, 0.0F, 0.0F);
+		Headglow.texOffs(0, 80).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 //		Body = new ModelRenderer(this);
 //		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -144,7 +144,7 @@ public class megamanarmor_maincolor extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 //        float f = (float)(i >> 16 & 255) / 255.0F;
 //        float f1 = (float)(i >> 8 & 255) / 255.0F;
 //        float f2 = (float)(i & 255) / 255.0F;
@@ -152,7 +152,7 @@ public class megamanarmor_maincolor extends BipedModel {
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
-		this.Head1.copyModelAngles(this.bipedHead);
+		this.Head1.copyFrom(this.head);
 		Head1.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body.copyModelAngles(this.bipedBody);
 //		Body.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -168,7 +168,7 @@ public class megamanarmor_maincolor extends BipedModel {
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
-		this.Head2.copyModelAngles(this.bipedHead);
+		this.Head2.copyFrom(this.head);
 		Head2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body2.copyModelAngles(this.bipedBody);
 //		Body2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -180,7 +180,7 @@ public class megamanarmor_maincolor extends BipedModel {
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Head3.copyModelAngles(this.bipedHead);
+		this.Head3.copyFrom(this.head);
 		Head3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body3.copyModelAngles(this.bipedBody);
 //		Body3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -188,7 +188,7 @@ public class megamanarmor_maincolor extends BipedModel {
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.Headglow.copyModelAngles(this.bipedHead);
+		this.Headglow.copyFrom(this.head);
 		//15728640
 		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
@@ -198,8 +198,8 @@ public class megamanarmor_maincolor extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

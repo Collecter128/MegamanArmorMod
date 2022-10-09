@@ -61,8 +61,8 @@ public class bassarmor_chestcolor extends BipedModel {
 
 	public bassarmor_chestcolor(float modelSize) {
 		super(modelSize);
-		textureWidth = 82;
-		textureHeight = 176;
+		texWidth = 82;
+		texHeight = 176;
 		
 		MainColorDefault = 5855577;//Main Body Color black
 		SecondaryColorDefault = 16763674;//Secondary
@@ -154,65 +154,65 @@ public class bassarmor_chestcolor extends BipedModel {
 //		Headglow.setTextureOffset(74, 1).addBox(-1.5114F, -9.8794F, -5.216F, 3.0F, 5.0F, 1.0F, 0.1F, false);
 
 		Bodyblack = new ModelRenderer(this);
-		Bodyblack.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Bodyblack.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodyblack.setPos(0.0F, 0.0F, 0.0F);
+		Bodyblack.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
 
 		Bodysilver = new ModelRenderer(this);
-		Bodysilver.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Bodysilver.setTextureOffset(16, 64).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Bodysilver.setPos(0.0F, 0.0F, 0.0F);
+		Bodysilver.texOffs(16, 64).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 
 		Bodyglow = new ModelRenderer(this);
-		Bodyglow.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Bodyglow.setTextureOffset(16, 48).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodyglow.setPos(0.0F, 0.0F, 0.0F);
+		Bodyglow.texOffs(16, 48).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
 
 		Bodygold = new ModelRenderer(this);
-		Bodygold.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Bodygold.setTextureOffset(16, 32).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodygold.setPos(0.0F, 0.0F, 0.0F);
+		Bodygold.texOffs(16, 32).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
 
 		RightArm = new ModelRenderer(this);
-		RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArm.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm, -0.1745F, 0.0F, 0.0F);
-		RightArm.setTextureOffset(40, 47).addBox(-6.0F, -2.2019F, -2.0F, 6.0F, 3.0F, 4.0F, 0.8F, false);
-		RightArm.setTextureOffset(44, 39).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		RightArm.texOffs(40, 47).addBox(-6.0F, -2.2019F, -2.0F, 6.0F, 3.0F, 4.0F, 0.8F, false);
+		RightArm.texOffs(44, 39).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		RightArmsilver = new ModelRenderer(this);
-		RightArmsilver.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArmsilver.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmsilver, -0.1745F, 0.0F, 0.0F);
-		RightArmsilver.setTextureOffset(44, 23).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArmsilver.texOffs(44, 23).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightArmwhite = new ModelRenderer(this);
-		RightArmwhite.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArmwhite.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmwhite, -0.1745F, 0.0F, 0.0F);
-		RightArmwhite.setTextureOffset(45, 54).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArmwhite.texOffs(45, 54).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightArmgold = new ModelRenderer(this);
-		RightArmgold.setRotationPoint(-5.0F, 2.0F, 0.0F);
+		RightArmgold.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmgold, -0.1745F, 0.0F, 0.0F);
-		RightArmgold.setTextureOffset(40, 16).addBox(-6.0F, -2.2019F, -2.0F, 6.0F, 3.0F, 4.0F, 0.8F, false);
-		RightArmgold.setTextureOffset(44, 27).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArmgold.setTextureOffset(45, 70).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		RightArmgold.texOffs(40, 16).addBox(-6.0F, -2.2019F, -2.0F, 6.0F, 3.0F, 4.0F, 0.8F, false);
+		RightArmgold.texOffs(44, 27).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArmgold.texOffs(45, 70).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArmblack = new ModelRenderer(this);
-		LeftArmblack.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArmblack.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmblack, 0.2094F, 0.0F, 0.0F);
-		LeftArmblack.setTextureOffset(61, 47).addBox(0.0F, -2.3756F, -1.7921F, 6.0F, 3.0F, 4.0F, 0.8F, false);
-		LeftArmblack.setTextureOffset(64, 39).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		LeftArmblack.texOffs(61, 47).addBox(0.0F, -2.3756F, -1.7921F, 6.0F, 3.0F, 4.0F, 0.8F, false);
+		LeftArmblack.texOffs(64, 39).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArmsilver = new ModelRenderer(this);
-		LeftArmsilver.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArmsilver.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmsilver, 0.2094F, 0.0F, 0.0F);
-		LeftArmsilver.setTextureOffset(63, 23).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArmsilver.texOffs(63, 23).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 		LeftArmwhite = new ModelRenderer(this);
-		LeftArmwhite.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArmwhite.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmwhite, 0.2094F, 0.0F, 0.0F);
-		LeftArmwhite.setTextureOffset(63, 54).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArmwhite.texOffs(63, 54).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 		LeftArmgold = new ModelRenderer(this);
-		LeftArmgold.setRotationPoint(5.0F, 2.0F, 0.0F);
+		LeftArmgold.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmgold, 0.2094F, 0.0F, 0.0F);
-		LeftArmgold.setTextureOffset(61, 16).addBox(0.0F, -2.3756F, -1.7921F, 6.0F, 3.0F, 4.0F, 0.8F, false);
-		LeftArmgold.setTextureOffset(63, 70).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		LeftArmgold.texOffs(61, 16).addBox(0.0F, -2.3756F, -1.7921F, 6.0F, 3.0F, 4.0F, 0.8F, false);
+		LeftArmgold.texOffs(63, 70).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 //		RightLeg = new ModelRenderer(this);
 //		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
@@ -261,18 +261,18 @@ public class bassarmor_chestcolor extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
 		float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
 		float fblue = (float)(this.MainColor & 255) / 255.0F;
 //		this.Headblack.copyModelAngles(this.bipedHead);
 //		Headblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Bodyblack.copyModelAngles(this.bipedBody);
+		this.Bodyblack.copyFrom(this.body);
 		Bodyblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArm.copyModelAngles(this.bipedRightArm);
+		this.RightArm.copyFrom(this.rightArm);
 		RightArm.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArmblack.copyModelAngles(this.bipedLeftArm);
+		this.LeftArmblack.copyFrom(this.leftArm);
 		LeftArmblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLeg.copyModelAngles(this.bipedRightLeg);
 //		RightLeg.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -284,11 +284,11 @@ public class bassarmor_chestcolor extends BipedModel {
         fblue = (float)(this.GrayColor & 255) / 255.0F;
 //		this.Headgray.copyModelAngles(this.bipedHead);
 //		Headgray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Bodysilver.copyModelAngles(this.bipedBody);
+		this.Bodysilver.copyFrom(this.body);
 		Bodysilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArmsilver.copyModelAngles(this.bipedRightArm);
+		this.RightArmsilver.copyFrom(this.rightArm);
 		RightArmsilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArmsilver.copyModelAngles(this.bipedLeftArm);
+		this.LeftArmsilver.copyFrom(this.leftArm);
 		LeftArmsilver.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 
@@ -297,9 +297,9 @@ public class bassarmor_chestcolor extends BipedModel {
         fblue = (float)(this.WhiteColor & 255) / 255.0F;
 //		this.Headwhite.copyModelAngles(this.bipedHead);
 //		Headwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArmwhite.copyModelAngles(this.bipedRightArm);
+		this.RightArmwhite.copyFrom(this.rightArm);
 		RightArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArmwhite.copyModelAngles(this.bipedLeftArm);
+		this.LeftArmwhite.copyFrom(this.leftArm);
 		LeftArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegwhite.copyModelAngles(this.bipedRightLeg);
 //		RightLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -311,11 +311,11 @@ public class bassarmor_chestcolor extends BipedModel {
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
 //		this.Headgold.copyModelAngles(this.bipedHead);
 //		Headgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Bodygold.copyModelAngles(this.bipedBody);
+		this.Bodygold.copyFrom(this.body);
 		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArmgold.copyModelAngles(this.bipedRightArm);
+		this.RightArmgold.copyFrom(this.rightArm);
 		RightArmgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArmgold.copyModelAngles(this.bipedLeftArm);
+		this.LeftArmgold.copyFrom(this.leftArm);
 		LeftArmgold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLeggold.copyModelAngles(this.bipedRightLeg);
 //		RightLeggold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -327,7 +327,7 @@ public class bassarmor_chestcolor extends BipedModel {
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 //        this.Headglow.copyModelAngles(this.bipedHead);
 		//Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Bodyglow.copyModelAngles(this.bipedBody);
+		this.Bodyglow.copyFrom(this.body);
 		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
@@ -336,8 +336,8 @@ public class bassarmor_chestcolor extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

@@ -26,28 +26,28 @@ public class zeroarmor_main  extends BipedModel{//extends EntityModel<Entity>
 
 	public zeroarmor_main(float modelSize) {
 		super(modelSize);
-		textureWidth = 82;
-		textureHeight = 85;
+		texWidth = 82;
+		texHeight = 85;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 4).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head.setTextureOffset(52, 51).addBox(5.0643F, -4.9396F, -0.6797F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(52, 45).addBox(-5.8938F, -4.8393F, -1.6332F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head.setTextureOffset(32, 0).addBox(-3.6706F, -12.6327F, -3.8533F, 8.0F, 12.0F, 8.0F, 1.55F, false);
+		Head.texOffs(0, 4).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(52, 51).addBox(5.0643F, -4.9396F, -0.6797F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(52, 45).addBox(-5.8938F, -4.8393F, -1.6332F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head.texOffs(32, 0).addBox(-3.6706F, -12.6327F, -3.8533F, 8.0F, 12.0F, 8.0F, 1.55F, false);
 
 		cube_r2 = new ModelRenderer(this);
-		cube_r2.setRotationPoint(0.0F, 0.0F, 10.0F);
+		cube_r2.setPos(0.0F, 0.0F, 10.0F);
 		Head.addChild(cube_r2);
 		setRotationAngle(cube_r2, 0.3927F, 0.0F, 0.0F);
-		cube_r2.setTextureOffset(58, 25).addBox(-3.0F, -1.1637F, -3.4193F, 6.0F, 12.0F, 6.0F, 0.0F, false);
+		cube_r2.texOffs(58, 25).addBox(-3.0F, -1.1637F, -3.4193F, 6.0F, 12.0F, 6.0F, 0.0F, false);
 
 		cube_r3 = new ModelRenderer(this);
-		cube_r3.setRotationPoint(0.0F, -2.0F, 5.0F);
+		cube_r3.setPos(0.0F, -2.0F, 5.0F);
 		Head.addChild(cube_r3);
 		setRotationAngle(cube_r3, -0.3491F, 0.0F, 0.0F);
-		cube_r3.setTextureOffset(63, 12).addBox(-1.0F, -0.9517F, -0.1853F, 2.0F, 2.0F, 5.0F, 0.0F, false);
+		cube_r3.texOffs(63, 12).addBox(-1.0F, -0.9517F, -0.1853F, 2.0F, 2.0F, 5.0F, 0.0F, false);
 
 //		Body = new ModelRenderer(this);
 //		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -85,8 +85,8 @@ public class zeroarmor_main  extends BipedModel{//extends EntityModel<Entity>
 	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		this.Head.copyModelAngles(this.bipedHead);
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+		this.Head.copyFrom(this.head);
 //		this.Body.copyModelAngles(this.bipedBody);
 //		this.RightArm.copyModelAngles(this.bipedRightArm);
 //		this.LeftArm.copyModelAngles(this.bipedLeftArm);
@@ -101,8 +101,8 @@ public class zeroarmor_main  extends BipedModel{//extends EntityModel<Entity>
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

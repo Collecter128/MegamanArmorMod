@@ -41,8 +41,8 @@ public class zero_legs extends BipedModel {
 
 	public zero_legs(float modelSize) {
 		super(modelSize);
-		textureWidth = 93;
-		textureHeight = 164;
+		texWidth = 93;
+		texHeight = 164;
 		
 		MainColorDefault = 16711680;//Main Body Color Zero Red
 		SecondaryColorDefault = 5752303;//
@@ -58,47 +58,47 @@ public class zero_legs extends BipedModel {
 		GrayColor = GrayColorDefault;
 
 		Body = new ModelRenderer(this);
-		Body.setRotationPoint(0.0F, 1.0F, 0.0F);
-		Body.setTextureOffset(16, 148).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
-		Body.setTextureOffset(16, 140).addBox(-4.0F, 8.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
+		Body.setPos(0.0F, 1.0F, 0.0F);
+		Body.texOffs(16, 148).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Body.texOffs(16, 140).addBox(-4.0F, 8.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
 
 		Bodygray = new ModelRenderer(this);
-		Bodygray.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Bodygray.setTextureOffset(16, 155).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodygray.setPos(0.0F, 0.0F, 0.0F);
+		Bodygray.texOffs(16, 155).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		Bodygold = new ModelRenderer(this);
-		Bodygold.setRotationPoint(0.0F, 1.0F, 0.0F);
-		Bodygold.setTextureOffset(16, 132).addBox(-4.0F, 8.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
+		Bodygold.setPos(0.0F, 1.0F, 0.0F);
+		Bodygold.texOffs(16, 132).addBox(-4.0F, 8.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
 
 		RightLeg = new ModelRenderer(this);
-		RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeg.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg, 0.192F, 0.0F, 0.0349F);
-		RightLeg.setTextureOffset(0, 132).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightLeg.texOffs(0, 132).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightLeggray = new ModelRenderer(this);
-		RightLeggray.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLeggray.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeggray, 0.192F, 0.0F, 0.0349F);
-		RightLeggray.setTextureOffset(17, 100).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightLeggray.texOffs(17, 100).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightLegglow = new ModelRenderer(this);
-		RightLegglow.setRotationPoint(-1.9F, 12.0F, 0.0F);
+		RightLegglow.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegglow, 0.192F, 0.0F, 0.0349F);
-		RightLegglow.setTextureOffset(43, 136).addBox(-0.9994F, 0.2251F, -1.025F, 2.0F, 12.0F, 2.0F, 0.5F, false);
+		RightLegglow.texOffs(43, 136).addBox(-0.9994F, 0.2251F, -1.025F, 2.0F, 12.0F, 2.0F, 0.5F, false);
 
 		LeftLeg = new ModelRenderer(this);
-		LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeg.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg, -0.1745F, 0.0F, -0.0349F);
-		LeftLeg.setTextureOffset(0, 148).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftLeg.texOffs(0, 148).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 		LeftLeggray = new ModelRenderer(this);
-		LeftLeggray.setRotationPoint(1.9F, 12.0F, 0.0F);
+		LeftLeggray.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeggray, -0.1745F, 0.0F, -0.0349F);
-		LeftLeggray.setTextureOffset(34, 100).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftLeggray.texOffs(34, 100).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 		LeftLegglow = new ModelRenderer(this);
-		LeftLegglow.setRotationPoint(0.9F, 12.0F, 1.0F);
+		LeftLegglow.setPos(0.9F, 12.0F, 1.0F);
 		setRotationAngle(LeftLegglow, -0.1745F, 0.0F, -0.0349F);
-		LeftLegglow.setTextureOffset(43, 149).addBox(0.0F, 0.0F, -2.0F, 2.0F, 12.0F, 2.0F, 0.5F, true);
+		LeftLegglow.texOffs(43, 149).addBox(0.0F, 0.0F, -2.0F, 2.0F, 12.0F, 2.0F, 0.5F, true);
 	}
 
 //	@Override
@@ -107,47 +107,47 @@ public class zero_legs extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.WhiteColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.WhiteColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.WhiteColor & 255) / 255.0F;
-		this.Body.copyModelAngles(this.bipedBody);
+		this.Body.copyFrom(this.body);
 		Body.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeg.copyModelAngles(this.bipedRightLeg);
+		this.RightLeg.copyFrom(this.rightLeg);
 		RightLeg.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLeg.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLeg.copyFrom(this.leftLeg);
 		LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
-		this.Bodygold.copyModelAngles(this.bipedBody);
+		this.Bodygold.copyFrom(this.body);
 		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Bodygray.copyModelAngles(this.bipedBody);
+		this.Bodygray.copyFrom(this.body);
 		Bodygray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeggray.copyModelAngles(this.bipedRightLeg);
+		this.RightLeggray.copyFrom(this.rightLeg);
 		RightLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLeggray.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLeggray.copyFrom(this.leftLeg);
 		LeftLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
+		this.RightLegglow.copyFrom(this.rightLeg);
 		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
+		this.LeftLegglow.copyFrom(this.leftLeg);
 		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }

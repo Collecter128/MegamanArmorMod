@@ -53,8 +53,8 @@ public class xarmor_maincolor extends BipedModel {
 
 	public xarmor_maincolor(float modelSize) {
 		super(modelSize);
-		textureWidth = 72;
-		textureHeight = 114;
+		texWidth = 72;
+		texHeight = 114;
 		
 		MainColorDefault = 2781423;//Main Body Color X Blue
 		SecondaryColorDefault = 5752303;//Secondary Cyan tiel color
@@ -70,28 +70,28 @@ public class xarmor_maincolor extends BipedModel {
 		GrayColor = GrayColorDefault;
 
 		Head = new ModelRenderer(this);
-		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
-		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 
 		Head2 = new ModelRenderer(this);
-		Head2.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head2.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head2, -0.1047F, 0.0873F, 0.0F);
-		Head2.setTextureOffset(0, 66).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Head2.setTextureOffset(44, 80).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
+		Head2.texOffs(0, 66).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Head2.texOffs(44, 80).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
 
 		Head3 = new ModelRenderer(this);
-		Head3.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Head3.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Head3, -0.1047F, 0.0873F, 0.0F);
-		Head3.setTextureOffset(3, 60).addBox(5.4F, -5.9341F, -0.7842F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head3.setTextureOffset(3, 53).addBox(-5.981F, -5.938F, -0.747F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Head3.setTextureOffset(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
+		Head3.texOffs(3, 60).addBox(5.4F, -5.9341F, -0.7842F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head3.texOffs(3, 53).addBox(-5.981F, -5.938F, -0.747F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Head3.texOffs(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
 
 		Headglow = new ModelRenderer(this);
-		Headglow.setRotationPoint(0.0F, 0.0F, 0.0F);
+		Headglow.setPos(0.0F, 0.0F, 0.0F);
 		setRotationAngle(Headglow, -0.1047F, 0.0873F, 0.0F);
-		Headglow.setTextureOffset(40, 96).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Headglow.setTextureOffset(4, 49).addBox(-1.0F, -8.8411F, -5.6852F, 2.0F, 2.0F, 1.0F, 0.1F, false);
+		Headglow.texOffs(40, 96).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headglow.texOffs(4, 49).addBox(-1.0F, -8.8411F, -5.6852F, 2.0F, 2.0F, 1.0F, 0.1F, false);
 
 //		Body = new ModelRenderer(this);
 //		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -178,12 +178,12 @@ public class xarmor_maincolor extends BipedModel {
 //	}
 
 	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
+	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.MainColor >> 16 & 255) / 255.0F;
         float fgreen = (float)(this.MainColor >> 8 & 255) / 255.0F;
         float fblue = (float)(this.MainColor & 255) / 255.0F;
-		this.Head.copyModelAngles(this.bipedHead);
+		this.Head.copyFrom(this.head);
 		Head.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body.copyModelAngles(this.bipedBody);
 //		Body.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -200,7 +200,7 @@ public class xarmor_maincolor extends BipedModel {
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
-		this.Head2.copyModelAngles(this.bipedHead);
+		this.Head2.copyFrom(this.head);
 		Head2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body2.copyModelAngles(this.bipedBody);
 //		Body2.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -216,7 +216,7 @@ public class xarmor_maincolor extends BipedModel {
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GrayColor & 255) / 255.0F;
-		this.Head3.copyModelAngles(this.bipedHead);
+		this.Head3.copyFrom(this.head);
 		Head3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Body3.copyModelAngles(this.bipedBody);
 //		Body3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
@@ -238,7 +238,7 @@ public class xarmor_maincolor extends BipedModel {
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
-		this.Headglow.copyModelAngles(this.bipedHead);
+		this.Headglow.copyFrom(this.head);
 		//OverlayTexture.NO_OVERLAY alpha
 		Headglow.render(matrixStack, buffer, 15728640, OverlayTexture.NO_OVERLAY, fred, fgreen, fblue, 1.0F);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
@@ -248,8 +248,8 @@ public class xarmor_maincolor extends BipedModel {
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+		modelRenderer.xRot = x;
+		modelRenderer.yRot = y;
+		modelRenderer.zRot = z;
 	}
 }
