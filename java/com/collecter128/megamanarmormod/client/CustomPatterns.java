@@ -23,25 +23,38 @@ public enum CustomPatterns {
 	logotriangle,
 	drlight,
 	wily,
+	mrx,
+	king,
+	kingstar,
+	kingbg,
+	cossack,
+	cossackstar,
+	
 	sigma,
 	sigmawolf,
 	limited,
 	limitedbg,
-	mrx,
 	doppler,
 	dopplerbg,
 	dopplerbg2,
 	maverickhuntertop,
 	maverickhunterbg,
 	maverickhunterv,
-	king,
-	kingstar,
-	kingbg,
-	cossack,
-	cossackstar,
 	repliforce,
 	repliforcestar,
-	repliforceoutline;
+	repliforceoutline,
+	redalert,
+	redalertbg,
+	redalerttriangle,
+	lumine,
+	luminebg1,
+	luminebg2,
+	
+	world3,
+	gospel,
+	nebula,
+	
+	bonne;
 	
     private final boolean vanilla;
 
