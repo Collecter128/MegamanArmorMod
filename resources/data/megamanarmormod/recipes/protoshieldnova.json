@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"g",
+		"S"
+	],
+	"key": {
+		"g": {
+			"item": "minecraft:gold_ingot"
+		},
+		"S": {
+			"item": "megamanarmormod:protoshield"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:protoshield_novacorps",
+		"count": 1
+	}
+}

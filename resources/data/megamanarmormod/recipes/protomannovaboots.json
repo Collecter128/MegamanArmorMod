@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"P"
+	],
+	"key": {
+		"P": {
+			"item": "megamanarmormod:protomanarmor_arms"
+		},
+		"G": {
+			"item": "minecraft:gold_ingot"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:protomannovaarmor_arms",
+		"count": 1
+	}
+}

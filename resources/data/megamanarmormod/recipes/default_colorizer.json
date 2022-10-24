@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "megamanarmormod:colorizerluckyblock"
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerdefault",
+		"count": 1
+	}
+}

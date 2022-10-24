@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SS",
+		"SS",
+		"SS"
+	],
+	"key": {
+		"S": {
+			"item": "megamanarmormod:specialsteel"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:protoshield",
+		"count": 1
+	}
+}
