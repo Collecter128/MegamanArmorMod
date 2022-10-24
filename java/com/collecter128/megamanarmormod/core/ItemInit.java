@@ -22,8 +22,10 @@ import com.collecter128.megamanarmormod.items.IFZeroArmor;
 import com.collecter128.megamanarmormod.items.LegendsArmor;
 import com.collecter128.megamanarmormod.items.MegamanArmorColor;
 import com.collecter128.megamanarmormod.items.MegamanArmorLegsColor;
+import com.collecter128.megamanarmormod.items.MegamanShield;
 import com.collecter128.megamanarmormod.items.MegamanZeroArmor;
 import com.collecter128.megamanarmormod.items.NewArmor;
+import com.collecter128.megamanarmormod.items.NovaProtomanArmor;
 import com.collecter128.megamanarmormod.items.PachislotArmor;
 import com.collecter128.megamanarmormod.items.ProtomanArmor;
 import com.collecter128.megamanarmormod.items.ProtomanArmorChest;
@@ -103,90 +105,115 @@ public class ItemInit {
 	//		() -> new BannerPatternItem(null, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
 	
 	public static final RegistryObject<Item> Titanium = Items.register("titanium",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 
 	public static final RegistryObject<Item> TrialProductionAlloy = Items.register("alloy_trial_production",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> PrototypeAlloy = Items.register("alloy_prototype",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> BasicAlloy = Items.register("alloy_basic",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> ModifiedAlloy = Items.register("alloy_modified",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> SmartAlloy = Items.register("alloy_smart",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionCircuit = Items.register("circuit_trialproduction",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> PrototypeCircuit = Items.register("circuit_prototype",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> BasicCircuit = Items.register("circuit_basic",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> ModifiedCircuit = Items.register("circuit_modified",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> SmartCircuit = Items.register("circuit_smart",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionCore = Items.register("core_trialproduction",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> PrototypeCore = Items.register("core_prototype",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> BasicCore = Items.register("core_basic",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> ModifiedCore = Items.register("core_modified",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> SmartCore = Items.register("core_smart",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionGear = Items.register("gear_trialproduction",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> PrototypeGear = Items.register("gear_prototype",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> BasicGear = Items.register("gear_basic",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
+	public static final RegistryObject<Item> TrialProductionBattery = Items.register("battery_trial_production",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> PrototypeBattery = Items.register("battery_prototype",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> BasicBattery = Items.register("battery_basic",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> ModifiedBattery = Items.register("battery_modified",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionAmplifier = Items.register("amplifier_trial_production",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> PrototypeAmplifier = Items.register("amplifier_prototype",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> BasicAmplifier = Items.register("amplifier_basic",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> ShockAbsorber = Items.register("shock_absorber",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	
+	public static final RegistryObject<Item> OreCrimson = Items.register("ore_crimson",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> OreAmber = Items.register("ore_amber",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> OreAzure = Items.register("ore_azure",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> OreViridian = Items.register("ore_viridian",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> Ceratanium = Items.register("ceratanium",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> NuggetCeratanium = Items.register("nugget_ceratanium",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> Fortenium = Items.register("fortenium",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> Bassnium = Items.register("bassnium",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> SpecialSteel = Items.register("specialsteel",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> TitaniumX = Items.register("titaniumx",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> HyperMetal = Items.register("hypermetal",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> AlienEnergy = Items.register("energy_alien",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> EvilEnergy = Items.register("energy_evil",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> SigmaVirus = Items.register("virussigma",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> Limited = Items.register("limited",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> ColdPearl = Items.register("coldpearl",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> BlankBannerPattern = Items.register("blank_banner_pattern",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> Zenny = Items.register("zenny",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> BugFrag = Items.register("bugfrag",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> BusterData = Items.register("data_buster",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> RCan = Items.register("rcan",
-			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	//type
 	//0-??? Color
@@ -211,26 +238,36 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/342773, /*Secondary*/379125, /*ThirdColor*/14105660, 
 							/*WhiteColor*/16777215, /*Glow Bits*/16728361, /*GreyColor*/12105912, /*FourthColor*/379125}));
+	public static final RegistryObject<Item> Megaman2PColorizer = Items.register("colorizermegaman2p",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/15270184, /*Secondary*/16745895, /*ThirdColor*/14105660, 
+							/*WhiteColor*/16777215, /*Glow Bits*/16728361, /*GreyColor*/12105912, /*FourthColor*/16745895}));
 	public static final RegistryObject<Item> QuintColorizer = Items.register("colorizerquint",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/3709250, /*Secondary*/10413478, /*ThirdColor*/16755768,
-							/*WhiteColor*/16777215, /*Glow Bits*/16764984, /*GreyColor*/12105912, /*FourthColor*/-1}));
+							/*WhiteColor*/16777215, /*Glow Bits*/16764984, /*GreyColor*/12105912, /*FourthColor*/10413478}));
 	public static final RegistryObject<Item> RockmanShadowColorizer = Items.register("colorizerrockmanshadow",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
-					new int[]{/*Main*/ 4479560, 4555344, 12281637, 14996179, 13619253, 14670057, -1 }));
+					new int[]{/*Main*/ 4479560, /*Secondary*/4555344, /*ThirdColor*/12281637, 
+							/*WhiteColor*/14996179, /*Glow Bits*/13619253, /*GreyColor*/14670057, /*FourthColor*/4555344}));
 	public static final RegistryObject<Item> MegamanEvilColorizer = Items.register("colorizermegamanevil",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/5636601, /*Secondary*/379125, /*ThirdColor*/12714489, 
-							/*WhiteColor*/16777215, /*Glow Bits*/14287176, /*GreyColor*/12105912, /*FourthColor*/-1}));
+							/*WhiteColor*/16777215, /*Glow Bits*/14287176, /*GreyColor*/12105912, /*FourthColor*/379125}));
 	public static final RegistryObject<Item> SuperAdapterColorizer = Items.register("colorizersuperadapter",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/16716820, /*Secondary*/11053224, /*ThirdColor*/16760596, 
-							/*WhiteColor*/16777215, /*Glow Bits*/14365440, /*GreyColor*/12105912, /*FourthColor*/-1}));
+							/*WhiteColor*/16777215, /*Glow Bits*/14365440, /*GreyColor*/12105912, /*FourthColor*/16673903}));
 	public static final RegistryObject<Item> RushColorizer = Items.register("colorizerrush",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
-					new int[]{/*Main*/16002867, /*Secondary*/16673903, /*ThirdColor*/-1, 
-							/*WhiteColor*/12105912, /*Glow Bits*/16753193, /*GreyColor*/12105912, /*FourthColor*/-1}));
+					new int[]{/*Main*/16002867, /*Secondary*/16777215, /*ThirdColor*/-1, 
+							/*WhiteColor*/12105912, /*Glow Bits*/16753193, /*GreyColor*/12105912, /*FourthColor*/16673903}));
 	// blue? 2781423
+	
+	public static final RegistryObject<Item> RedbullMegamanColorizer = Items.register("colorizerredbull",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/4413347, /*Secondary*/13356237, /*ThirdColor*/14032731, 
+							/*WhiteColor*/16777215, /*Glow Bits*/16773191, /*GreyColor*/13356237, /*FourthColor*/8374492}));
 	
 	public static final RegistryObject<Item> ProtomanColorizer = Items.register("colorizerprotoman",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
@@ -1041,6 +1078,11 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/6583190, /*Secondary*/10266021, -1, -1, -1, -1, /*FourthColor*/10266021}));
 	
+	public static final RegistryObject<Item> MegamanZeroColorizer = Items.register("colorizermegamanzero",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16586572, /*Secondary*/7688571, /*ThirdColor*/15645257, 
+							/*WhiteColor*/16777215, /*Glow Bits*/8049085, /*GreyColor*/9659807, /*FourthColor*/11974089}));
+	
 	public static final RegistryObject<Item> MegamanExeColorizer = Items.register("colorizermegamanexe",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/3425221, /*Secondary*/3225453, /*ThirdColor*/16630571, 
@@ -1213,6 +1255,19 @@ public class ItemInit {
 	public static final RegistryObject<Item> BreakmanHelmet = Items.register("breakman_helmet",
 			() -> new com.collecter128.megamanarmormod.items.BreakmanHelmet(ArmorMaterials.ProtomanArmor, EquipmentSlotType.HEAD, 
 					new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Protoshield = Items.register("protoshield",
+			() -> new MegamanShield(new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> NovaProtomanArmor_Head = Items.register("protomannovaarmor_head",
+			() -> new NovaProtomanArmor(ArmorMaterials.ProtomanArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> NovaProtomanArmor_Arms = Items.register("protomannovaarmor_arms",
+			() -> new NovaProtomanArmor(ArmorMaterials.ProtomanArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> NovaProtomanArmor_Body = Items.register("protomannovaarmor_body",
+			() -> new NovaProtomanArmor(ArmorMaterials.ProtomanArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> NovaProtomanArmor_Legs = Items.register("protomannovaarmor_legs",
+			() -> new NovaProtomanArmor(ArmorMaterials.ProtomanArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> ProtoshieldNova = Items.register("protoshield_novacorps",
+			() -> new MegamanShield(new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> Wilyjacket = Items.register("wily_labcoat",
 			() -> new WilyCoat(ArmorMaterials.WilyLabcoat, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
