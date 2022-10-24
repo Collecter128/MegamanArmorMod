@@ -76,31 +76,43 @@ public class redbullmegaman_main extends BipedModel {
 
 		Head1 = new ModelRenderer(this);
 		Head1.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.HEAD) {
 		Head1.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		}
 
 		Headred = new ModelRenderer(this);
 		Headred.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.HEAD) {
 		Headred.texOffs(0, 64).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 		Headred.texOffs(61, 58).addBox(-1.0F, -7.4829F, -5.54F, 2.0F, 2.0F, 1.0F, 0.25F, false);
 		Headred.texOffs(48, 65).addBox(-0.6552F, -9.5707F, -4.5F, 2.0F, 6.0F, 10.0F, 0.25F, false);
 		Headred.texOffs(37, 66).addBox(5.0643F, -3.9451F, -0.5752F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 		Headred.texOffs(37, 74).addBox(-5.8938F, -3.8448F, -0.5287F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		}
 
 		Headgray = new ModelRenderer(this);
 		Headgray.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.HEAD) {
 		Headgray.texOffs(32, 1).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 7.0F, 8.0F, 0.75F, false);
+		}
 
 		Headglow = new ModelRenderer(this);
 		Headglow.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.HEAD) {
 		Headglow.texOffs(0, 80).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		}
 
 		Body = new ModelRenderer(this);
 		Body.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Body.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		}
 
 		Body2 = new ModelRenderer(this);
 		Body2.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Body2.texOffs(16, 32).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		}
 
 		Body4 = new ModelRenderer(this);
 		Body4.setPos(0.0F, 0.0F, 0.0F);
@@ -110,69 +122,96 @@ public class redbullmegaman_main extends BipedModel {
 		Body_r1.setPos(0.0F, 24.0F, 0.0F);
 		Body4.addChild(Body_r1);
 		setRotationAngle(Body_r1, 0.0F, 0.0873F, 0.1309F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Body_r1.texOffs(4, 136).addBox(-33.0F, -28.0F, 6.0F, 28.0F, 16.0F, 0.0F, 0.51F, false);
+		}
 
 		Body_r2 = new ModelRenderer(this);
 		Body_r2.setPos(0.0F, 24.0F, 0.0F);
 		Body4.addChild(Body_r2);
 		setRotationAngle(Body_r2, 0.0F, -0.0873F, -0.1309F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Body_r2.texOffs(4, 119).addBox(6.0F, -29.0F, 6.0F, 28.0F, 16.0F, 0.0F, 0.51F, false);
+		}
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Bodygray.texOffs(16, 48).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.31F, false);
+		}
 
 		RightArm = new ModelRenderer(this);
 		RightArm.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm, 0.1309F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArm.texOffs(40, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 		RightArm.texOffs(40, 56).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		}
 
 		RightArm2 = new ModelRenderer(this);
 		RightArm2.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArm2, 0.1309F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArm2.texOffs(56, 40).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		}
 
 		RightArmred = new ModelRenderer(this);
 		RightArmred.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmred, 0.1309F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmred.texOffs(0, 97).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		}
 
 		LeftArm = new ModelRenderer(this);
 		LeftArm.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArm, -0.1309F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		LeftArm.texOffs(40, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 		LeftArm.texOffs(40, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
+		}
 
 		LeftArm2 = new ModelRenderer(this);
 		LeftArm2.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArm2, -0.1309F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		LeftArm2.texOffs(56, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		}
 
 		LeftArmred = new ModelRenderer(this);
 		LeftArmred.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmred, -0.1309F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		LeftArmred.texOffs(17, 97).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		}
 
 		RightLeg1 = new ModelRenderer(this);
 		RightLeg1.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg1, 0.192F, 0.0F, 0.0349F);
+		if(equipmentslot == EquipmentSlotType.FEET) {
 		RightLeg1.texOffs(0, 32).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		}
 
 		RightLegwhite = new ModelRenderer(this);
 		RightLegwhite.setPos(-1.9F, 12.0F, -1.9632F);
 		setRotationAngle(RightLegwhite, 0.192F, 0.0F, 0.0349F);
+		if(equipmentslot == EquipmentSlotType.FEET) {
 		RightLegwhite.texOffs(1, 52).addBox(0.0F, 13.0F, -1.0368F, 0.0F, 1.0F, 5.0F, 0.0F, false);
+		}
 
 		LeftLeg1 = new ModelRenderer(this);
 		LeftLeg1.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeg1, -0.1745F, 0.0F, -0.0349F);
+		if(equipmentslot == EquipmentSlotType.FEET) {
 		LeftLeg1.texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		}
 
 		LeftLegwhite = new ModelRenderer(this);
 		LeftLegwhite.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegwhite, -0.1745F, 0.0F, -0.0349F);
+		if(equipmentslot == EquipmentSlotType.FEET) {
 		LeftLegwhite.texOffs(1, 52).addBox(0.0F, 13.0F, -3.0F, 0.0F, 1.0F, 5.0F, 0.0F, false);
+		}
+		
 	}
 
 //	@Override
