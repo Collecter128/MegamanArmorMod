@@ -38,9 +38,9 @@ public class bannerluckyblock extends BreakableBlock{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(BlockInit.BannerLuckyBlock.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(33);
+	    	 int RandomInt = random.nextInt(41);
 	    	 
-	    	 if(RandomInt <= 32) {
+	    	 if(RandomInt <= 40) {
 	    		 itemstackIn = new ItemStack(ItemInit.PATTERN_ITEMS.get(RandomInt).get());
 	    	 }
 	    	 else {
