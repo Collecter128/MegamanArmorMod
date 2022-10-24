@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "megamanarmormod:item/protoman_banner_pattern"
+  }
+}
