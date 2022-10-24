@@ -49,6 +49,7 @@ public class MegamanArmorMod
     private static final Logger LOGGER = LogManager.getLogger();
     
     public static ItemGroup MMTab = new MegamanGroup("MegamanTab");
+    public static ItemGroup MMMaterialsTab = new MaterialsGroup("MMMaterialsTab");
     public static ItemGroup MMBannerMats = new BannerMatGroup("MMBannerMatsTab");
     public static ItemGroup ArmorColorizer = new ArmorColorizerGroup("ColorizerTab");
     
@@ -157,6 +158,19 @@ public class MegamanArmorMod
     	
     }
     
+  public static class MaterialsGroup extends ItemGroup{
+
+		public MaterialsGroup(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack makeIcon() {
+			return ItemInit.Ceratanium.get().getDefaultInstance();
+		}
+  	
+  }
+    
     public static class BannerMatGroup extends ItemGroup{
 
 		public BannerMatGroup(String label) {
@@ -182,19 +196,7 @@ public class MegamanArmorMod
 		}
     	
     }
-    
-//    public static class ArmorColorizerGroup extends ItemGroup{
-//
-//		public BannerMatGroup(String label) {
-//			super(label);
-//		}
-//
-//		@Override
-//		public ItemStack createIcon() {
-//			return ItemInit.ShotgunIceColorizer.get().getDefaultInstance();
-//		}
-//    	
-//    }
+   
     
     
     
