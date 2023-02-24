@@ -53,12 +53,29 @@
 	
 	"item.megamanarmormod.coldpearl": "Cold Pearl",
 	
+	"item.megamanarmormod.data_normal": "Norm Data",
+	"item.megamanarmormod.data_fire": "Fire Data",
+	"item.megamanarmormod.data_aqua": "Aqua Data",
+	"item.megamanarmormod.data_elec": "Elec Data",
+	"item.megamanarmormod.data_wood": "Wood Data",
 	
 	"item.megamanarmormod.data_buster": "Buster Data",
+	"item.megamanarmormod.data_sword": "Sword Data",
+	"item.megamanarmormod.data_wind": "Wind Data",
+	"item.megamanarmormod.data_curser": "Curser Data",
+	"item.megamanarmormod.data_break": "Break Data",
+	"item.megamanarmormod.data_recovery": "Recov Data",
+	"item.megamanarmormod.data_plus": "Plus Data",
+	"item.megamanarmormod.data_invisible": "Invis Data",
+	"item.megamanarmormod.data_panel": "Panel Data",
+	"item.megamanarmormod.data_obstacle": "Obstacle Data",
+	"item.megamanarmormod.data_dark": "Dark Data",
+	
 	"item.megamanarmormod.zenny": "Zenny",
 	"item.megamanarmormod.bugfrag": "BugFrag",
 	
 	"item.megamanarmormod.rcan": "R Can",
+	"item.megamanarmormod.teppenxcard": "X Teppen Card",
 	
 	"item.megamanarmormod.colorizerdefault": "Default Colorizer",
 	"item.megamanarmormod.colorizerdecolorizer": "Decolorizing Colorizer",
@@ -516,6 +533,7 @@
 	"item.megamanarmormod.fortenium": "Fortenium Ingot",
 	"item.megamanarmormod.specialsteel": "Special Steel Ingot",
 	"item.megamanarmormod.titanium": "Titanium Ingot",
+	"item.megamanarmormod.nugget_titanium": "Titanium Nugget",
 	"item.megamanarmormod.hypermetal": "Hyper Metal Ingot",
 	"item.megamanarmormod.titaniumx": "Titanium X Ingot",
 	
@@ -529,6 +547,11 @@
 	"item.megamanarmormod.redbullmegaman_arms": "Redbull Megaman Boots Armor",
 	"item.megamanarmormod.redbullmegaman_body": "Redbull Megaman Body Armor",
 	"item.megamanarmormod.redbullmegaman_legs": "Redbull Megaman Legs Armor",
+	
+	"item.megamanarmormod.novamegaman_head": "Nova Corps Megaman Helmet",
+	"item.megamanarmormod.novamegaman_arms": "Nova Corps Megaman Boots",
+	"item.megamanarmormod.novamegaman_body": "Nova Corps Megaman Body",
+	"item.megamanarmormod.novamegaman_legs": "Nova Corps Megaman Legs",
 	
 	"item.megamanarmormod.protomanarmor_head": "Protoman Head Armor",
 	"item.megamanarmormod.protomanarmor_arms": "Protoman Boots Armor",
@@ -575,6 +598,11 @@
 	"item.megamanarmormod.newarmor_body": "New Body Armor",
 	"item.megamanarmormod.newarmor_legs": "New Legs Armor",
 	
+	"item.megamanarmormod.xteppenarmor_head": "Teppen X Head Armor",
+	"item.megamanarmormod.xteppenarmor_arms": "Teppen X Boots Armor",
+	"item.megamanarmormod.xteppenarmor_body": "Teppen X Body Armor",
+	"item.megamanarmormod.xteppenarmor_legs": "Teppen X Legs Armor",
+	
 	"item.megamanarmormod.firstarmor_head": "First Armor Head",
 	"item.megamanarmormod.firstarmor_arms": "First Armor Boots",
 	"item.megamanarmormod.firstarmor_body": "First Armor Body",
@@ -605,6 +633,11 @@
 	"item.megamanarmormod.zeroarmor_legs": "Zero Legs Armor",
 	"item.megamanarmormod.ifzeroarmor_body": "iF Zero Armor",
 	
+	"item.megamanarmormod.novazero_head": "Nova Corps Zero Helmet",
+	"item.megamanarmormod.novazero_arms": "Nova Corps Zero Boots",
+	"item.megamanarmormod.novazero_body": "Nova Corps Zero Body",
+	"item.megamanarmormod.novazero_legs": "Nova Corps Zero Legs",
+	
 	"item.megamanarmormod.zsaber": "Z Saber",
 	"item.megamanarmormod.zsaberplus1": "Z Saber +1",
 	"item.megamanarmormod.zsaberplus2": "Z Saber +2",
@@ -614,6 +647,8 @@
 	"item.megamanarmormod.doubletooth": "Doubletooth",
 	"item.megamanarmormod.soulsaber": "Soul Saber",
 	"item.megamanarmormod.redlotussaber": "Red Lotus Saber",
+	
+	"item.megamanarmormod.zknuckle": "Z Knuckle",
 	
 	"item.megamanarmormod.axlarmor_head": "Axl Head Armor",
 	"item.megamanarmormod.axlarmor_arms": "Axl Boots Armor",
@@ -655,6 +690,11 @@
 	"item.megamanarmormod.megamanexe_arms": "Megaman.exe Boots Armor",
 	"item.megamanarmormod.megamanexe_body": "Megaman.exe Body Armor",
 	"item.megamanarmormod.megamanexe_legs": "Megaman.exe Legs Armor",
+	
+	"item.megamanarmormod.protomanexe_head": "Protoman.exe Head Armor",
+	"item.megamanarmormod.protomanexe_arms": "Protoman.exe Boots Armor",
+	"item.megamanarmormod.protomanexe_body": "Protoman.exe Body Armor",
+	"item.megamanarmormod.protomanexe_legs": "Protoman.exe Legs Armor",
 	
 	"item.megamanarmormod.pachislot_head": "Megaman Ability Head Armor",
 	"item.megamanarmormod.pachislot_arms": "Megaman Ability Boots Armor",
