@@ -479,9 +479,9 @@ public class axlarmor_main extends BipedModel {
         fblue = (float)(this.FourthColor & 255) / 255.0F;
 		
         this.Headglowblue.copyFrom(this.head);
-        Headglowblue.render(matrixStack, buffer, 15728640, packedOverlay);
+        Headglowblue.render(matrixStack, buffer, 0xF000F0, packedOverlay);
         this.Bodyblue.copyFrom(this.body);
-		Bodyblue.render(matrixStack, buffer, 15728640, packedOverlay);
+		Bodyblue.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
@@ -525,19 +525,19 @@ public class axlarmor_main extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
         this.Headred.copyFrom(this.head);
-        Headred.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+        Headred.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         this.Headglowred.copyFrom(this.head);
-        Headglowred.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+        Headglowred.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         this.Bodyred.copyFrom(this.body);
-        Bodyred.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+        Bodyred.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         this.RightArmred.copyFrom(this.rightArm);
-        RightArmred.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+        RightArmred.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         this.LeftArmred.copyFrom(this.leftArm);
-        LeftArmred.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+        LeftArmred.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         this.RightLegglow.copyFrom(this.rightLeg);
-        RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+        RightLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         this.LeftLegglow.copyFrom(this.leftLeg);
-		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 	}
 

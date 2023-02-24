@@ -39,7 +39,7 @@ public class bustershot0 <T extends bustershotentity> extends EntityModel<T> {//
 
 	@Override
 	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
-		bb_main.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		bb_main.render(matrixStack, buffer, 0xF000F0, packedOverlay, red, green, blue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
