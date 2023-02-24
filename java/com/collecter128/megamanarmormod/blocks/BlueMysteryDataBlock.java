@@ -43,9 +43,9 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	    	 	case 0: 
 	    	 		itemstackIn = new ItemStack(ItemInit.BusterData.get());
 	    	 		break;
-//	    	 	case 1: 
-//	    	 		itemstackIn = new ItemStack(ItemInit.MegamanEvilColorizer.get());
-//	    	 		break;
+	    	 	case 1: 
+	    	 		itemstackIn = new ItemStack(ItemInit.SwordData.get());
+	    	 		break;
 //	    	 	case 2: 
 //	    	 		itemstackIn = new ItemStack(ItemInit.SuperAdapterColorizer.get());
 //	    	 		break;
