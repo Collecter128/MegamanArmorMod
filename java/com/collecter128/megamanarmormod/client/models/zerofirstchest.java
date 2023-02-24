@@ -268,7 +268,7 @@ public class zerofirstchest extends BipedModel {
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 		this.Bodyglow.copyFrom(this.body);
-		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		Bodyglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);

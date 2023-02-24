@@ -437,11 +437,11 @@ public class secondarmor_main extends BipedModel  {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyFrom(this.head);
-		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		Headglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLeggold2.copyFrom(this.rightLeg);
-		RightLeggold2.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLeggold2.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglow.copyFrom(this.leftLeg);
-		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		
 		this.RightArmred.copyFrom(this.rightArm);
@@ -455,9 +455,9 @@ public class secondarmor_main extends BipedModel  {
 		
 		
 		this.RightArmgreen.copyFrom(this.rightArm);
-		RightArmgreen.render(matrixStack, buffer, 15728640, packedOverlay);
+		RightArmgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		this.LeftArmgreen.copyFrom(this.leftArm);
-		LeftArmgreen.render(matrixStack, buffer, 15728640, packedOverlay);
+		LeftArmgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		
 	}
 

@@ -131,9 +131,9 @@ public class xarmor_leggingscolor extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.RightLeg3.copyFrom(this.rightLeg);
-		RightLeg3.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLeg3.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglow.copyFrom(this.leftLeg);
-		LeftLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

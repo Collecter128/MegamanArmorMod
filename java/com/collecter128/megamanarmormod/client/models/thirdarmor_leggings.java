@@ -152,9 +152,9 @@ public class thirdarmor_leggings extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.RightLegglow.copyFrom(this.rightLeg);
-		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglow.copyFrom(this.leftLeg);
-		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		this.Bodyred.copyFrom(this.body);
 		Bodyred.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);

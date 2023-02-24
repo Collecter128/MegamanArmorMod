@@ -513,10 +513,10 @@ public class thirdarmor_main extends BipedModel {
 		LeftLegred.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		this.Headredglow.copyFrom(this.head);
-		Headredglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		Headredglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		this.Bodygreen.copyFrom(this.body);
-		Bodygreen.render(matrixStack, buffer, 15728640, packedOverlay);
+		Bodygreen.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		
 	}
 

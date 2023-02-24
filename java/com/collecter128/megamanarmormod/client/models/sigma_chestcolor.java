@@ -271,7 +271,7 @@ public class sigma_chestcolor extends BipedModel  {
 //		this.Headcrystal.copyModelAngles(this.bipedHead);
 //		Headcrystal.render(matrixStack, buffer, 15728640, packedOverlay);
 		this.Bodyglow.copyFrom(this.body);
-		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		Bodyglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);

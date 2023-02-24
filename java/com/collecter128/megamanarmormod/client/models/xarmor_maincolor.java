@@ -240,7 +240,7 @@ public class xarmor_maincolor extends BipedModel {
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyFrom(this.head);
 		//OverlayTexture.NO_OVERLAY alpha
-		Headglow.render(matrixStack, buffer, 15728640, OverlayTexture.NO_OVERLAY, fred, fgreen, fblue, 1.0F);
+		Headglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, 1.0F);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);

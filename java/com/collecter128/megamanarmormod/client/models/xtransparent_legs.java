@@ -95,10 +95,10 @@ public class xtransparent_legs extends BipedModel  {
 		Bodymaingray.render(matrixStack, buffer, packedLight, packedOverlay);
 		RightLegsecondary.render(matrixStack, buffer, packedLight, packedOverlay);
 		RightLeggray.render(matrixStack, buffer, packedLight, packedOverlay);
-		RightLegglow.render(matrixStack, buffer, packedLight, packedOverlay);
+		RightLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		LeftLegsecondary.render(matrixStack, buffer, packedLight, packedOverlay);
 		LeftLeggray.render(matrixStack, buffer, packedLight, packedOverlay);
-		LeftLegglow.render(matrixStack, buffer, packedLight, packedOverlay);
+		LeftLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

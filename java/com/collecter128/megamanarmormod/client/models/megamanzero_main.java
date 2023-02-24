@@ -325,7 +325,7 @@ public class megamanzero_main extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyFrom(this.head);
-		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		Headglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;

@@ -212,9 +212,9 @@ public class protomanarmor_feetcolor extends BipedModel {
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLeg2.copyFrom(this.rightLeg);
-		RightLeg2.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLeg2.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLeg2.copyFrom(this.leftLeg);
-		LeftLeg2.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLeg2.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

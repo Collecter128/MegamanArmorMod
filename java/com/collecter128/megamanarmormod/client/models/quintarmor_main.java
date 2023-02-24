@@ -230,7 +230,7 @@ public class quintarmor_main extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyFrom(this.head);
-		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		Headglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);
 //		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.LeftLegglow.copyModelAngles(this.bipedLeftLeg);
@@ -241,7 +241,7 @@ public class quintarmor_main extends BipedModel {
 		
 		
 		this.Headvisor.copyFrom(this.head);
-		Headvisor.render(matrixStack, buffer, 15728640, packedOverlay);
+		Headvisor.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		
 	}
 

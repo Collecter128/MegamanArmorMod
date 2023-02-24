@@ -262,7 +262,8 @@ public class redbullmegaman_main extends BipedModel {
         fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.FourthColor & 255) / 255.0F;
 		this.Body4.copyFrom(this.body);
-		Body4.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		//Only during the day 15728640
+		Body4.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
@@ -276,7 +277,7 @@ public class redbullmegaman_main extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglow.copyFrom(this.head);
-		Headglow.render(matrixStack, buffer, 15728640, packedOverlay,fred, fgreen, fblue, alpha);
+		Headglow.render(matrixStack, buffer, 0xF000F0, packedOverlay,fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.WhiteColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.WhiteColor >> 8 & 255) / 255.0F;

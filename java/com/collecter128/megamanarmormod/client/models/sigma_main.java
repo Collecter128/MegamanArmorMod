@@ -257,7 +257,7 @@ public class sigma_main extends BipedModel  {
         fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
 		this.HeadEyes.copyFrom(this.head);
-		HeadEyes.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		HeadEyes.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.RightArmblue.copyModelAngles(this.bipedRightArm);
 //		RightArmblue.render(matrixStack, buffer, packedLight, packedOverlay);
 		
@@ -265,7 +265,7 @@ public class sigma_main extends BipedModel  {
 		fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
 		fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headcrystal.copyFrom(this.head);
-		Headcrystal.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		Headcrystal.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 //		this.Bodyglow.copyModelAngles(this.bipedBody);
 //		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay);
 //		this.RightLegglow.copyModelAngles(this.bipedRightLeg);

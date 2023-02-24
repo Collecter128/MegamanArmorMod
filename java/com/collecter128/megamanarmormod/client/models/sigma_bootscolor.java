@@ -270,9 +270,9 @@ public class sigma_bootscolor extends BipedModel  {
 //		this.Bodyglow.copyModelAngles(this.bipedBody);
 //		Bodyglow.render(matrixStack, buffer, 15728640, packedOverlay);
 		this.RightLegglow.copyFrom(this.rightLeg);
-		RightLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglow.copyFrom(this.leftLeg);
-		LeftLegglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 //		this.RightArmred.copyModelAngles(this.bipedRightArm);
 //		RightArmred.render(matrixStack, buffer, packedLight, packedOverlay);

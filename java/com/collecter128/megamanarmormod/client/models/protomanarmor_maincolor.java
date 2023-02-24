@@ -233,7 +233,7 @@ public class protomanarmor_maincolor extends BipedModel {
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
         //if(armorpart == EquipmentSlotType.HEAD) {
         	this.Headglow.copyFrom(this.head);
-			Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
+			Headglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
         //}
         //if(armorpart == EquipmentSlotType.FEET) {
 //        	this.RightLeg2.copyModelAngles(this.bipedRightLeg);
