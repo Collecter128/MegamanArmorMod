@@ -1,5 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
+import javax.annotation.Nonnull;
+
 import com.collecter128.megamanarmormod.client.models.newarmor_leggings;
 import com.collecter128.megamanarmormod.client.models.newarmor_main;
 import com.collecter128.megamanarmormod.client.models.protomanNovaarmor_leggings;
@@ -187,6 +189,11 @@ public class NovaProtomanArmor extends ArmorItem{
     //public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
     //    return null;
     //}
+	
+	 @Override
+	    public boolean makesPiglinsNeutral(@Nonnull ItemStack stack, @Nonnull LivingEntity wearer) {
+	        return true;
+	    }
 
 //	@Nullable
     @Override
