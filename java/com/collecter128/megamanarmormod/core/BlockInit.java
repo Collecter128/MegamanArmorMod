@@ -29,6 +29,11 @@ public class BlockInit {
 					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.ANCIENT_DEBRIS)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
+	public static final RegistryObject<Block> TitaniumOre = Blocks.register("titanium_ore",
+			() -> new Block((AbstractBlock.Properties.of(Material.STONE, MaterialColor.CLAY).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.ANCIENT_DEBRIS)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
 	public static final RegistryObject<Block> CustomizerOre = Blocks.register("colorizerluckyblock",
 			() -> new colorizerluckyblock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.EMERALD)
 					.strength(1.0F)) //.group(MegamanArmorMod.MMTab)
