@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:xarmor_head"
+		},
+		"G": {
+			"item": "megamanarmormod:teppenxcard"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:xteppenarmor_head",
+		"count": 1
+	}
+}

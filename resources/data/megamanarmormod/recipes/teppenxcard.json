@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"g",
+		"p"
+	],
+	"key": {
+		"p": {
+			"item": "minecraft:paper"
+		},
+		"g": {
+			"item": "minecraft:green_dye"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:teppenxcard",
+		"count": 1
+	}
+}
