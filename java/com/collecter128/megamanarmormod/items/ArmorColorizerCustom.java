@@ -140,7 +140,7 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 
 		   ItemStack ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.HEAD);
 		   
-		   CompoundNBT compoundnbtitem = itemstack.getTagElement("color");
+		   CompoundNBT compoundnbtitem = itemstack.getTagElement("display");
 		   if(compoundnbtitem != null && compoundnbtitem.contains("color", 99)) {
 		 
 		   CompoundNBT compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -196,7 +196,7 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 
 		   	CompoundNBT compoundnbtdye = helditem.getTagElement("display");//displaymm
 			   
-		   	if(nbt != null && compoundnbtdye.contains("color", 99)) {
+		   	if(compoundnbtdye.contains("color", 99)) {//nbt != null && 
 		   		int color = compoundnbtdye.getInt("color");
 		   		player.getItemBySlot(slotype).getOrCreateTagElement("displaymm").putInt(colorchanged, color);
 		   	}
