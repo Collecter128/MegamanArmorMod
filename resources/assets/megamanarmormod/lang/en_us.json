@@ -4,36 +4,45 @@
 	"item.megamanarmormod.alloy_basic": "Basic Alloy Ingot",
 	"item.megamanarmormod.alloy_modified": "Modified Alloy",
 	"item.megamanarmormod.alloy_smart": "Smart Alloy",
+	"item.megamanarmormod.alloy_precision": "Precision Alloy",
+	"item.megamanarmormod.alloy_high_performance": "High Performance Alloy",
+	"item.megamanarmormod.alloy_evolved": "Evolved Alloy",
+	"item.megamanarmormod.alloy_special": "Special Alloy",
 	
 	"item.megamanarmormod.circuit_trialproduction": "Trial Production Circuit",
 	"item.megamanarmormod.circuit_prototype": "Prototype Circuit",
 	"item.megamanarmormod.circuit_basic": "Basic Circuit",
 	"item.megamanarmormod.circuit_modified": "Modified Circuit",
 	"item.megamanarmormod.circuit_smart": "Smart Circuit",
+	"item.megamanarmormod.circuit_precision": "Precision Circuit",
 	
 	"item.megamanarmormod.core_trialproduction": "Trial Production Core",
 	"item.megamanarmormod.core_prototype": "Prototype Core",
 	"item.megamanarmormod.core_basic": "Basic Core",
 	"item.megamanarmormod.core_modified": "Modified Core",
 	"item.megamanarmormod.core_smart": "Smart Core",
+	"item.megamanarmormod.core_precision": "Precision Core",
 	
 	"item.megamanarmormod.battery_trial_production": "Trial Production Battery",
 	"item.megamanarmormod.battery_prototype": "Prototype Battery",
 	"item.megamanarmormod.battery_basic": "Basic Battery",
 	"item.megamanarmormod.battery_modified": "Modified Battery",
 	"item.megamanarmormod.battery_smart": "Smart Battery",
+	"item.megamanarmormod.battery_precision": "Precision Battery",
 	
 	"item.megamanarmormod.gear_trialproduction": "Trial Production Gear",
 	"item.megamanarmormod.gear_prototype": "Prototype Gear",
 	"item.megamanarmormod.gear_basic": "Basic Gear",
 	"item.megamanarmormod.gear_modified": "Modified Gear",
 	"item.megamanarmormod.gear_smart": "Smart Gear",
+	"item.megamanarmormod.gear_precision": "Precision Gear",
 	
 	"item.megamanarmormod.amplifier_trial_production": "Trial Production Amplifier",
 	"item.megamanarmormod.amplifier_prototype": "Prototype Amplifier",
 	"item.megamanarmormod.amplifier_basic": "Basic Amplifier",
 	"item.megamanarmormod.amplifier_modified": "Modified Amplifier",
 	"item.megamanarmormod.amplifier_smart": "Smart Amplifier",
+	"item.megamanarmormod.amplifier_precision": "Precision Amplifier",
 	
 	"item.megamanarmormod.virussigma": "Sigma Virus",
 	"item.megamanarmormod.limited": "Limited",
@@ -53,6 +62,13 @@
 	
 	"item.megamanarmormod.coldpearl": "Cold Pearl",
 	
+	"item.megamanarmormod.bomb_dud": "Dud Bomb",
+	"item.megamanarmormod.cutter_broken": "Broken Cutter",
+	"item.megamanarmormod.electric_battery": "Electric Battery",
+	"item.megamanarmormod.fire_part": "Fire Part",
+	"item.megamanarmormod.guts_part": "Guts Part",
+	"item.megamanarmormod.ice_machine": "Ice Machine",
+	
 	"item.megamanarmormod.data_normal": "Norm Data",
 	"item.megamanarmormod.data_fire": "Fire Data",
 	"item.megamanarmormod.data_aqua": "Aqua Data",
@@ -71,9 +87,16 @@
 	"item.megamanarmormod.data_obstacle": "Obstacle Data",
 	"item.megamanarmormod.data_dark": "Dark Data",
 	
+	"item.megamanarmormod.mysterydatapartblue": "Blue Mystery Data Piece",
+	
+	"item.megamanarmormod.wave_am": "AM Wave",
+	"item.megamanarmormod.wave_fm": "FM Wave",
+	"item.megamanarmormod.wave_mu": "Mu Wave",
+	
 	"item.megamanarmormod.zenny": "Zenny",
 	"item.megamanarmormod.bugfrag": "BugFrag",
 	
+	"item.megamanarmormod.soccer_ball": "Soccer_ball",
 	"item.megamanarmormod.rcan": "R Can",
 	"item.megamanarmormod.teppenxcard": "X Teppen Card",
 	
@@ -91,6 +114,24 @@
 	"item.megamanarmormod.colorizerrockmanshadow": "Rockman Shadow Colorizer",
 	"item.megamanarmormod.colorizerprotoman": "Protoman Colorizer",
 	"item.megamanarmormod.colorizerbreakman": "Breakman Colorizer",
+	
+	"item.megamanarmormod.colorizerfireman": "Fireman Colorizer",
+	"item.megamanarmormod.colorizericeman": "Iceman Colorizer",
+	"item.megamanarmormod.colorizercutman": "Cutman Colorizer",
+	"item.megamanarmormod.colorizerbombman": "Bombman Colorizer",
+	"item.megamanarmormod.colorizerelecman": "Elecman Colorizer",
+	"item.megamanarmormod.colorizergutsman": "Gutsman Colorizer",
+	
+	"item.megamanarmormod.colorizermegamangoalie": "Megaman Goalie Colorizer",
+	"item.megamanarmormod.colorizermegaman2pgoalie": "Megaman 2P Goalie Colorizer",
+	"item.megamanarmormod.colorizerprotomangoalie": "Protoman Goalie Colorizer",
+	"item.megamanarmormod.colorizerfiremangoalie": "Fireman Goalie Colorizer",
+	"item.megamanarmormod.colorizericemangoalie": "Iceman Goalie Colorizer",
+	"item.megamanarmormod.colorizercutmangoalie": "Cutman Goalie Colorizer",
+	"item.megamanarmormod.colorizerbombmangoalie": "Bombman Goalie Colorizer",
+	"item.megamanarmormod.colorizerelecmangoalie": "Elecman Goalie Colorizer",
+	
+	"item.megamanarmormod.colorizergutsmanwood": "Wood Gutsman Colorizer",
 	
 	"item.megamanarmormod.colorizerx": "X Colorizer",
 	"item.megamanarmormod.colorizerxalternate": "X (X4 Cheat) Colorizer",
@@ -528,6 +569,7 @@
 		
 	"item.megamanarmormod.armor_parts": "Armor Parts",
 	"item.megamanarmormod.bassnium": "Bassnium Ingot",
+	"item.megamanarmormod.ceratanium_raw": "Ceratanium Chunk",
 	"item.megamanarmormod.ceratanium": "Ceratanium Ingot",
 	"item.megamanarmormod.nugget_ceratanium": "Ceratanium Nugget",
 	"item.megamanarmormod.fortenium": "Fortenium Ingot",
@@ -586,6 +628,36 @@
 	"item.megamanarmormod.bassarmor_arms": "Bass Boots Armor",
 	"item.megamanarmormod.bassarmor_body": "Bass Body Armor",
 	"item.megamanarmormod.bassarmor_legs": "Bass Legs Armor",
+	
+	"item.megamanarmormod.gutsman_head": "Gutsman Head Armor",
+	"item.megamanarmormod.gutsman_arms": "Gutsman Boots Armor",
+	"item.megamanarmormod.gutsman_body": "Gutsman Body Armor",
+	"item.megamanarmormod.gutsman_legs": "Gutsman Legs Armor",
+	
+	"item.megamanarmormod.bombman_head": "Bombman Head Armor",
+	"item.megamanarmormod.bombman_arms": "Bombman Boots Armor",
+	"item.megamanarmormod.bombman_body": "Bombman Body Armor",
+	"item.megamanarmormod.bombman_legs": "Bombman Legs Armor",
+	
+	"item.megamanarmormod.elecman_head": "Elecman Head Armor",
+	"item.megamanarmormod.elecman_arms": "Elecman Boots Armor",
+	"item.megamanarmormod.elecman_body": "Elecman Body Armor",
+	"item.megamanarmormod.elecman_legs": "Elecman Legs Armor",
+	
+	"item.megamanarmormod.cutman_head": "Cutman Head Armor",
+	"item.megamanarmormod.cutman_arms": "Cutman Boots Armor",
+	"item.megamanarmormod.cutman_body": "Cutman Body Armor",
+	"item.megamanarmormod.cutman_legs": "Cutman Legs Armor",
+	
+	"item.megamanarmormod.iceman_head": "Iceman Head Armor",
+	"item.megamanarmormod.iceman_arms": "Iceman Boots Armor",
+	"item.megamanarmormod.iceman_body": "Iceman Body Armor",
+	"item.megamanarmormod.iceman_legs": "Iceman Legs Armor",
+	
+	"item.megamanarmormod.fireman_head": "Fireman Head Armor",
+	"item.megamanarmormod.fireman_arms": "Fireman Boots Armor",
+	"item.megamanarmormod.fireman_body": "Fireman Body Armor",
+	"item.megamanarmormod.fireman_legs": "Fireman Legs Armor",
 	
 	"item.megamanarmormod.xarmor_head": "X Head Armor",
 	"item.megamanarmormod.xbuster": "X Buster",
@@ -666,6 +738,8 @@
 	"item.megamanarmormod.vilearmor_body": "Vile Body Armor",
 	"item.megamanarmormod.vilearmor_legs": "Vile Legs Armor",
 	
+	"item.megamanarmormod.replicapture": "Replicapture Armor",
+	
 	"item.megamanarmormod.ixarmor_head": "iX Head Armor",
 	"item.megamanarmormod.ixarmor_arms": "iX Boots Armor",
 	"item.megamanarmormod.ixarmor_body": "iX Body Armor",
@@ -708,6 +782,7 @@
 	"block.megamanarmormod.ceratanium_ore": "Ceratanium Ore",
 	"block.megamanarmormod.limited_ore": "Limited Ore",
 	"block.megamanarmormod.titanium_ore": "Titianium Ore",
+	"block.megamanarmormod.scrapblock": "Scrap Block",
 	
 	"block.megamanarmormod.legendsruinsblocka": "Ruins Block A",
 	"block.megamanarmormod.legendsruinsblockaplate": "Plated Ruins Block A",
@@ -720,7 +795,7 @@
 	"block.megamanarmormod.purplemysterydata": "Purple Mystery Data",
 	"block.megamanarmormod.goldmysterydata": "Gold Mystery Data",
 	
-	"block.megamanarmormod.recycler": "Colorizer Recycler",
+	"block.megamanarmormod.recycler": "Recycler",
 	
 	"block.minecraft.banner.logocircle.black": "Black Circle BG",
 	"block.minecraft.banner.logocircle.red": "Red Circle BG",
