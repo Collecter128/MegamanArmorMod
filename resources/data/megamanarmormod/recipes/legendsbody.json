@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" C ",
+		"CiC",
+		" C "
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"i": {
+			"item": "minecraft:iron_chestplate"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:legendsarmor_body",
+		"count": 1
+	}
+}
