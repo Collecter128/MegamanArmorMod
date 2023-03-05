@@ -3,6 +3,7 @@ package com.collecter128.megamanarmormod.core;
 import com.collecter128.megamanarmormod.MegamanArmorMod;
 import com.collecter128.megamanarmormod.blocks.BlueMysteryDataBlock;
 import com.collecter128.megamanarmormod.blocks.GreenMysteryDataBlock;
+import com.collecter128.megamanarmormod.blocks.ScrapBlock;
 import com.collecter128.megamanarmormod.blocks.bannerluckyblock;
 import com.collecter128.megamanarmormod.blocks.blockrotatable;
 import com.collecter128.megamanarmormod.blocks.colorizerluckyblock;
@@ -76,6 +77,11 @@ public class BlockInit {
 					.noOcclusion().lightLevel((p_235470_0_) -> {
 					      return 10;
 					   }).sound(SoundType.GLASS)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
+	public static final RegistryObject<Block> ScapBlock = Blocks.register("scrapblock",
+			() -> new ScrapBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)
+					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
 	public static final RegistryObject<Block> BlueMysteryData = Blocks.register("bluemysterydata",
 			() -> new BlueMysteryDataBlock((AbstractBlock.Properties.of(Material.GLASS, MaterialColor.DIAMOND)
