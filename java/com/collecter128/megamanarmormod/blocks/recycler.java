@@ -4,6 +4,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import com.collecter128.megamanarmormod.core.BlockInit;
 import com.collecter128.megamanarmormod.core.ItemInit;
 import com.collecter128.megamanarmormod.items.ArmorColorizer;
 import com.collecter128.megamanarmormod.items.ArmorColorizerColorShift;
@@ -71,7 +72,53 @@ public class recycler extends Block{
 		            }
 
 		            return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
-		         }   
+		         }  
+		         else if(item == Item.byBlock(Blocks.IRON_BLOCK)) {
+		        	 if (!p_225533_2_.isClientSide) {
+			            	itemstack.shrink(1);
+			            	
+			            	newItem = new ItemStack(BlockInit.ScapBlock.get(), 3);
+
+			               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
+			               p_225533_4_.inventory.add(newItem);
+		        	 
+		        	 }
+		        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+		         }//turn iron into scrap
+		        	 else if(item == ItemInit.DudBomb.get() || item == ItemInit.BrokenCutter.get()
+		        			 || item == ItemInit.ElectricBattery.get()|| item == ItemInit.FirePart.get()
+		        			 || item == ItemInit.GutsPart.get()|| item == ItemInit.IceMachine.get()
+		        			 || item == ItemInit.SoccerBall.get()) {
+			        	 if (!p_225533_2_.isClientSide) {
+				            	itemstack.shrink(1);
+				            	
+				            	newItem = new ItemStack(Items.IRON_INGOT, 2);
+
+				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
+				               p_225533_4_.inventory.add(newItem);
+			        	 
+			        	 }
+			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+		        	 }
+		        	 else if(item == ItemInit.NormalData.get() || item == ItemInit.FireData.get()
+		        			 || item == ItemInit.AquaData.get()|| item == ItemInit.ElecData.get()
+		        			 || item == ItemInit.WoodData.get()|| item == ItemInit.BusterData.get()
+		        			 || item == ItemInit.SwordData.get()|| item == ItemInit.WindData.get()
+		        			 || item == ItemInit.CurserData.get()|| item == ItemInit.BreakData.get()
+		        			 || item == ItemInit.RecoverData.get()|| item == ItemInit.PlusData.get()
+		        			 || item == ItemInit.InvisData.get()|| item == ItemInit.PanelData.get()
+		        			 || item == ItemInit.ObstacleData.get()|| item == ItemInit.DarkData.get()) {
+			        	 if (!p_225533_2_.isClientSide) {
+				            	itemstack.shrink(1);
+				            	
+				            	newItem = new ItemStack(ItemInit.MysteryDataPartBlue.get(), 1);
+
+				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+				               p_225533_4_.inventory.add(newItem);
+			        	 
+			        	 }
+			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+		        	 }
 //		            else {
 //		            if (i > 0 && item instanceof IDyeableArmorItem) {
 //		               IDyeableArmorItem idyeablearmoritem = (IDyeableArmorItem)item;

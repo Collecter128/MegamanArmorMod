@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(268);
+	    	 int RandomInt = random.nextInt(287);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -50,8 +50,14 @@ public class colorizerluckyblock extends Block{
 	    	 		//	.mergeStyle(TextFormatting.GRAY)); // Maybe color color
 	    	 		
 	    	 		break;
+	    	 	case 269: 
+	    	 		itemstackIn = new ItemStack(ItemInit.BlankColorizer.get());
+	    	 		break;
 	    	 	case 0: 
 	    	 		itemstackIn = new ItemStack(ItemInit.MegamanColorizer.get());
+	    	 		break;
+	    	 	case 271: 
+	    	 		itemstackIn = new ItemStack(ItemInit.Megaman2PColorizer.get());
 	    	 		break;
 	    	 	case 1: 
 	    	 		itemstackIn = new ItemStack(ItemInit.MegamanEvilColorizer.get());
@@ -61,6 +67,9 @@ public class colorizerluckyblock extends Block{
 	    	 		break;
 	    	 	case 3: 
 	    	 		itemstackIn = new ItemStack(ItemInit.RushColorizer.get());
+	    	 		break;
+	    	 	case 268: 
+	    	 		itemstackIn = new ItemStack(ItemInit.RedbullMegamanColorizer.get());
 	    	 		break;
 	    	 	case 4: 
 	    	 		itemstackIn = new ItemStack(ItemInit.ProtomanColorizer.get());
@@ -75,6 +84,55 @@ public class colorizerluckyblock extends Block{
 	    	 		itemstackIn = new ItemStack(ItemInit.BreakmanColorizer.get());
 	    	 		break;
 	    	 		
+	    	 	case 272: 
+	    	 		itemstackIn = new ItemStack(ItemInit.FiremanColorizer.get());
+	    	 		break;
+	    	 	case 273: 
+	    	 		itemstackIn = new ItemStack(ItemInit.IcemanColorizer.get());
+	    	 		break;
+	    	 	case 274: 
+	    	 		itemstackIn = new ItemStack(ItemInit.CutmanColorizer.get());
+	    	 		break;
+	    	 	case 275: 
+	    	 		itemstackIn = new ItemStack(ItemInit.BombmanColorizer.get());
+	    	 		break;
+	    	 	case 276: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ElecmanColorizer.get());
+	    	 		break;
+	    	 	case 277: 
+	    	 		itemstackIn = new ItemStack(ItemInit.GutsmanColorizer.get());
+	    	 		break;
+
+	    	 //Megaman Soccer
+	    	 	case 278: 
+	    	 		itemstackIn = new ItemStack(ItemInit.MegamanGoalieColorizer.get());
+	    	 		break;
+	    	 	case 279: 
+	    	 		itemstackIn = new ItemStack(ItemInit.Megaman2PGoalieColorizer.get());
+	    	 		break;
+	    	 	case 280: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ProtomanGoalieColorizer.get());
+	    	 		break;
+	    	 	case 281: 
+	    	 		itemstackIn = new ItemStack(ItemInit.FiremanGoalieColorizer.get());
+	    	 		break;
+	    	 	case 282: 
+	    	 		itemstackIn = new ItemStack(ItemInit.IcemanGoalieColorizer.get());
+	    	 		break;
+	    	 	case 283: 
+	    	 		itemstackIn = new ItemStack(ItemInit.CutmanGoalieColorizer.get());
+	    	 		break;
+	    	 	case 284: 
+	    	 		itemstackIn = new ItemStack(ItemInit.BombmanGoalieColorizer.get());
+	    	 		break;
+	    	 	case 285: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ElecmanGoalieColorizer.get());
+	    	 		break;
+	    	 		
+	    	 		//Rockman Xover
+	    	 	case 286: 
+	    	 		itemstackIn = new ItemStack(ItemInit.WoodGutsmanColorizer.get());
+	    	 		break;
 
 	    	 	case 7: 
 	    	 		itemstackIn = new ItemStack(ItemInit.SuperArmColorizer.get());
@@ -789,6 +847,10 @@ public class colorizerluckyblock extends Block{
 	    	 		
 	    	 	case 121: 
 	    	 		itemstackIn = new ItemStack(ItemInit.MagneticShockwaveColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 270: 
+	    	 		itemstackIn = new ItemStack(ItemInit.MegamanZeroColorizer.get());
 	    	 		break;
 	    	 		
 	    	 	case 251: 
