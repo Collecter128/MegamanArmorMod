@@ -1,3 +1,171 @@
+
+
+2.14 The Robot Master Update
+	Added Elecman Armor, Fireman Armor, Bombman Armor, Cutman, Iceman, and Gutsman Armors!
+	Added Scrap Block, a source of robot master materials
+	-found by feeding an iron block to the recycler
+	-drops Megaman 1 Boss related materials for now, and something not boss related
+	Added: More items for modpack makers or roleplay
+	Added: More Colorizers: This time for Megaman Soccer
+	Changed a some Character based Armor Customizers textures
+	Changed: Data Materials can be recycled for half a Mystery Data
+	Fixed Dyeable Armor Colorizer's not working! Now you can customize your armor in style!
+
+
+2.13.2
+	Added: Replicapture Armor
+	Added: More items for modpack makers or roleplay
+	Added: Recipe for Legends armor
+
+
+2.13.1
+	Added: Teppen X Armor
+	Fixed: Protoman.exe armor text
+	Fixed: Recipe for the Z Knuckle
+	Fixed: Texture on Plated Ruins Block
+
+
+2.13
+	Added Nova Corps Zero Armor
+	Added Nova Corps Megaman Armor
+	Added Protoman.exe Armor
+	Added a recipe for Megaman Zero Armor
+	Added the Z Knuckle a new weapon
+	-Right click to steal
+	Changed: Glow Bits now glow during the night
+	Fixed: Added glow to armor that were missing it.
+	Fixed: ruins blocks should drop now with pickaxes
+	Changed: Zenny can be traded with Pigmen now.
+	Added more materials for modpacks and roleplay
+
+
+2.12.4
+	Added Zero (Megaman Zero) Armor
+	Added Nova Corps Protoman Armor
+	Added recipe to make default colorizer easier to get
+	-Just smelt a lucky block
+	Added Protoshields
+	Added a new tab for just materials and some other items.
+	Added many more banner patterns!
+	Fixed: Limited Ore not dropping when mined
+	Fixed: Rendering Error with Megaman Zero armor and Redbull Armor.
+
+
+2.12.3
+	Fixed Ceratanium not dropping when mined!
+
+
+2.12.2
+	Added armor from Pachislot Megaman Ability
+	Added R Can and Redbull Megaman
+	Added More Armor Colorizers
+	Added another decorative Ruins block
+	Added a Colorizer Recycler
+	-Right Click to get an ingot back
+	Added Banner Lucky Block
+
+
+2.12.1
+	Re-added Dr. Light's Ryu Gi
+	Added a recipe for Megaman.exe things
+	Added the Third Armor
+	Added Megaman Legends Armor
+	Added Blue Mystery Data
+	 It's an ore for Battle Network materials
+	 Currently only drops Busterdata, but may drop others later
+	Buster now makes a buster noise instead of a bow one
+	 and Arrows fly a little more buster shot like
+	Fixed a problem with Quint's Boots
+	Added dash to some boots
+	Fixed Colorizer Lucky Block not dropping Colorizers
+
+
+2.12 the 1.16.5 Update!
+	Reverted the Buster a bit.
+	(I might have to rework some things)
+	Added Rockman Shadow Helmet and Colorizer
+	Added a bunch of swords from Command Mission
+	(Not sure what recipes these should have though)
+	Changed Icon for Banner Patterns Tab
+	Added blank banner pattern for modpacks or for roleplay
+	Added crafting recipe for ceratanium nuggets
+	Added crafting recipe for some armors
+
+
+2.11.2
+	Added Mega Armor base armor
+	No recipes yet, sorry!
+	Added blocks from the ruins in Megaman Legends
+	Added Fourth Color to Megaman and X armors
+	Added fourth color to many colorizers
+`	Added a few more items for roleplay/modpack makers
+	Added a few more banner patterns
+
+
+2.11.1
+	Added the Second Armor!
+	Added Megaman.exe Armor!
+	Added many more armor colorizers 
+	Added Fourth Color. Not many armors use this...
+	Added two new Banner Patterns
+	Changed Dyable Customizers. They can now be reset by crafting.
+
+
+2.11
+	Added New Armor
+	Added Axl Armor
+	Added a recipe for iX armor
+	Changed the recipes for Zero Armors
+	Limited is now a Nether Ore
+	New ore Limited: Found in the Nether
+	Fixed a rendering error with Zero (First game) Head
+	Changed the Zero (First) to Zero (X1) to make it less confusing
+	Changed the name of Custom Colorizers to Dyeable to make more sense
+	Added a few more items for modpack makers and roleplay
+	Added more armor colorizers 
+
+
+2.10.4
+	removed RyuGi to fix a crash? Not sure what went wrong
+	added a few more items
+
+
+2.10.3
+	Changed the Buster, charging makes attacks more powerful
+	Added Ryu Gi
+	Added the Military Buster, for now it charges to be slightly more powerful.
+`	-Doesn't have spiral blast sorry!
+
+
+2.10.2
+	Made Ceratanium slightly more plentiful. If it isn't enough please let me know.
+	More armor can use the "dash" function
+	Added First Armor!
+	Fixed the Cutstomizable colorizers so they don't crash without dye
+
+
+2.10.1
+	Fixed Loading error again, sorry!
+	Also quint armor had a crafting recipe in 2.10
+	Fixed an error with the last changelog
+
+
+2.10
+	Added iX Armor no crafting recipe yet sorry!
+	Added Quint Armor no crafting recipe yet sorry!
+	Added a few more banner translations
+	Added more colorizers to the lucky block
+	Added X themed colorizer
+	Added a few materials
+	Added recipes for both iF armor
+	Added a recipe for a certain helmet
+	Fixed Zero Armor having the wrong textures
+	?Fixed the order items should appear in JEI
+	Fixed Vile Body Armor Recipe
+	Changed armor customizers to now work on Offhand Items too.
+	Changed the recipe for Sigma's Saber
+
+
 2.9.5
 	Fixed a loading error
 
