@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		"sC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"s": {
+			"item": "megamanarmormod:bomb_dud"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerbombman",
+		"count": 1
+	}
+}

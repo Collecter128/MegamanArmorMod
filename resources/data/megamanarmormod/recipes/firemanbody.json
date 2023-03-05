@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CrC",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:fire_part"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:fireman_body",
+		"count": 1
+	}
+}

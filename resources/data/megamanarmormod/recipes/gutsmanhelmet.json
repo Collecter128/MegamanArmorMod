@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" r ",
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:guts_part"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:gutsman_head",
+		"count": 1
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" r ",
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:electric_battery"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:fireman_head",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		"sC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"s": {
+			"item": "megamanarmormod:fire_part"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerfireman",
+		"count": 1
+	}
+}

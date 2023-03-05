@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" r ",
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:ice_machine"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:iceman_head",
+		"count": 1
+	}
+}

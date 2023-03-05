@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		"sC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"s": {
+			"item": "megamanarmormod:cutter_broken"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizercutman",
+		"count": 1
+	}
+}

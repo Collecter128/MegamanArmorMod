@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"s"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizericeman"
+		},
+		"s": {
+			"item": "megamanarmormod:soccer_ball"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizericemangoalie",
+		"count": 1
+	}
+}

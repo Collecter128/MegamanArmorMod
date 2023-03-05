@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		"sC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"s": {
+			"item": "megamanarmormod:guts_part"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizergutsman",
+		"count": 1
+	}
+}
