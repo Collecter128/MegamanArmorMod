@@ -1,7 +1,7 @@
 {
 	"parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "megamanarmormod:item/armor_colorer1_overlay",
-    "layer1": "megamanarmormod:item/armor_colorer2_overlay"
+    "layer0": "megamanarmormod:item/rockmanshadow_helmet",
+    "layer1": "megamanarmormod:item/armor_colorercharacter_overlay"
   }
 }
