@@ -3,9 +3,12 @@ package com.collecter128.megamanarmormod.client.models;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.util.ResourceLocation;
 
 // Made with Blockbench 3.7.5
 // Exported for Minecraft version 1.15
@@ -239,7 +242,8 @@ public class quintarmor_main extends BipedModel {
 		this.HeadYellow.copyFrom(this.head);
 		HeadYellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		
+		buffer = Minecraft.getInstance().renderBuffers().bufferSource().getBuffer(RenderType.entityTranslucent(new ResourceLocation(
+				"megamanarmormod:textures/armor/quint.png")));
 		this.Headvisor.copyFrom(this.head);
 		Headvisor.render(matrixStack, buffer, 0xF000F0, packedOverlay);
 		
