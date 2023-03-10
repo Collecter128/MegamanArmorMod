@@ -141,9 +141,9 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 		   ItemStack ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.HEAD);
 		   
 		   CompoundNBT compoundnbtitem = itemstack.getTagElement("display");
-		   if(compoundnbtitem != null && compoundnbtitem.contains("color", 99)) {
+//		   if(compoundnbtitem != null && compoundnbtitem.contains("color", 99)) {
 		 
-		   CompoundNBT compoundnbt = ArmorItem.getTagElement("displaymm");
+		   //CompoundNBT compoundnbt = ArmorItem.getTagElement("displaymm");
 		   
 		   //CompoundNBT compoundnbtdye = playerIn.getHeldItem(handIn).getChildTag("display");
 		  
@@ -152,51 +152,59 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 //			compoundnbt = ArmorItem.getChildTag("displaymm");
 	   		
 		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
-		   			EquipmentSlotType.HEAD, compoundnbt, colortype);
+		   			EquipmentSlotType.HEAD, colortype);
 
 
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
-			compoundnbt = ArmorItem.getTagElement("displaymm");
+			//compoundnbt = ArmorItem.getTagElement("displaymm");
 
 		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
-		   			EquipmentSlotType.CHEST, compoundnbt, colortype);
+		   			EquipmentSlotType.CHEST, colortype);
 
 		   	
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
-			compoundnbt = ArmorItem.getTagElement("displaymm");
+			//compoundnbt = ArmorItem.getTagElement("displaymm");
 
 		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
-		   			EquipmentSlotType.LEGS, compoundnbt, colortype);
+		   			EquipmentSlotType.LEGS, colortype);
 
 		   	
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
-			compoundnbt = ArmorItem.getTagElement("displaymm");
+			//compoundnbt = ArmorItem.getTagElement("displaymm");
 			
 		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
-		   			EquipmentSlotType.FEET, compoundnbt, colortype);
+		   			EquipmentSlotType.FEET, colortype);
 		   	
 		   	
 
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.OFFHAND);
-			compoundnbt = ArmorItem.getTagElement("displaymm");
+			//compoundnbt = ArmorItem.getTagElement("displaymm");
 			
 		   	ProcessColorization(playerIn, playerIn.getItemInHand(handIn), 
-		   			EquipmentSlotType.OFFHAND, compoundnbt, colortype);
+		   			EquipmentSlotType.OFFHAND, colortype);
 		   	
-		   }
+//		   }
 		   
             return ActionResult.consume(itemstack);
 
 	   }
 	   
-	   public void ProcessColorization(PlayerEntity player, ItemStack helditem, EquipmentSlotType slotype, CompoundNBT nbt, String colorchanged) {
+	   public void ProcessColorization(PlayerEntity player, ItemStack helditem, EquipmentSlotType slotype, String colorchanged) {
 
 		   	CompoundNBT compoundnbtdye = helditem.getTagElement("display");//displaymm
 			   
-		   	if(compoundnbtdye.contains("color", 99)) {//nbt != null && 
+		   	if(compoundnbtdye == null) {//nbt != null && 
+		   		int color = 16777215;
+		   		player.getItemBySlot(slotype).getOrCreateTagElement("displaymm").putInt(colorchanged, color);
+		   	}
+		   	else if(!compoundnbtdye.contains("color", 99)) {//nbt != null && 
+		   		int color = 16777215;
+		   		player.getItemBySlot(slotype).getOrCreateTagElement("displaymm").putInt(colorchanged, color);
+		   	}
+		   	else if(compoundnbtdye.contains("color", 99)) {//nbt != null && 
 		   		int color = compoundnbtdye.getInt("color");
 		   		player.getItemBySlot(slotype).getOrCreateTagElement("displaymm").putInt(colorchanged, color);
 		   	}
@@ -226,6 +234,7 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//"MainColor"
 		         return compoundnbt.getInt("color");//"MainColor"
 		      } else {
+		    	 //return  16777215;
 		         return  342773;
 		      }
 		   }
