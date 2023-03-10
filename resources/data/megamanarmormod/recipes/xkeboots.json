@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:xarmor_arms"
+		},
+		"G": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:xke_arms",
+		"count": 1
+	}
+}

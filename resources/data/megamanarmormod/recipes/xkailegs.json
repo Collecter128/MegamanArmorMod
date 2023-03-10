@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:xke_legs"
+		},
+		"G": {
+			"item": "minecraft:coal"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:xkai_legs",
+		"count": 1
+	}
+}
