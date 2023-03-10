@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "megamanarmormod:item/armor_colorer_lightshift"
+    "layer0": "megamanarmormod:item/xkai_boots"
   }
 }
