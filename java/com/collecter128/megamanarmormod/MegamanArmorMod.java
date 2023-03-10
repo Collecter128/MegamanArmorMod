@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.color.BlockColors;
+import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.data.CustomRecipeBuilder;
 import net.minecraft.item.BlockItem;
@@ -36,6 +37,7 @@ import com.collecter128.megamanarmormod.core.EntityTypesInit;
 import com.collecter128.megamanarmormod.core.FeatureInit;
 import com.collecter128.megamanarmormod.core.ItemInit;
 import com.collecter128.megamanarmormod.core.ModSoundEvents;
+import com.collecter128.megamanarmormod.items.ArmorColorizerCustom;
 
 import java.util.stream.Collectors;
 
@@ -141,6 +143,24 @@ public class MegamanArmorMod
         	//CustomItemRenderer.registerItemRenderer();
         	//ColorRegistry.
         	//CustomItemColors.init(getBlockColors());
+        }
+        @SubscribeEvent
+        public void registerItemColourHandlers(final ColorHandlerEvent.Item event) {
+//        	final BlockColors blockColors = event.getBlockColors();
+//        	final ItemColors itemColors = event.getItemColors();
+//        	
+//        	final IItemColor itemColourHandler = (stack, tintIndex) -> {
+//        		return itemColors.getColor(stack, tintIndex);
+//        	};
+//               //itemColors.register(itemColourHandler, ItemInit.MainColorColorizer.get());
+//               event.getItemColors().register(
+//                       (stack, colorIn) -> colorIn < 1 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
+//                    		   ItemInit.MainColorColorizer.get()
+//               );
+               event.getItemColors().register(
+                       (stack, colorIn) -> colorIn > 0 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
+                    		   ItemInit.MainColorColorizer.get()
+               );
         }
         
     }
