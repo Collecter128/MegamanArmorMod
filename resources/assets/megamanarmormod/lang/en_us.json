@@ -675,6 +675,16 @@
 	"item.megamanarmormod.xteppenarmor_body": "Teppen X Body Armor",
 	"item.megamanarmormod.xteppenarmor_legs": "Teppen X Legs Armor",
 	
+	"item.megamanarmormod.xke_head": "X Ver.Ke Head Armor",
+	"item.megamanarmormod.xke_arms": "X Ver.Ke Boots Armor",
+	"item.megamanarmormod.xke_body": "X Ver.Ke Body Armor",
+	"item.megamanarmormod.xke_legs": "X Ver.Ke Legs Armor",
+	
+	"item.megamanarmormod.xkai_head": "X Kai Head Armor",
+	"item.megamanarmormod.xkai_arms": "X Kai Boots Armor",
+	"item.megamanarmormod.xkai_body": "X Kai Body Armor",
+	"item.megamanarmormod.xkai_legs": "X Kai Legs Armor",
+	
 	"item.megamanarmormod.firstarmor_head": "First Armor Head",
 	"item.megamanarmormod.firstarmor_arms": "First Armor Boots",
 	"item.megamanarmormod.firstarmor_body": "First Armor Body",
@@ -781,6 +791,7 @@
 	"block.megamanarmormod.bannerluckyblock": "Banner Lucky Block",
 	"block.megamanarmormod.ceratanium_ore": "Ceratanium Ore",
 	"block.megamanarmormod.limited_ore": "Limited Ore",
+	"block.megamanarmormod.ceratanium_block": "Ceratanium Block",
 	"block.megamanarmormod.titanium_ore": "Titianium Ore",
 	"block.megamanarmormod.scrapblock": "Scrap Block",
 	
