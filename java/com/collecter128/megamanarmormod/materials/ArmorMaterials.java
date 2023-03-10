@@ -14,29 +14,29 @@ import com.collecter128.megamanarmormod.core.ItemInit;;
 
 public enum ArmorMaterials implements IArmorMaterial{
 	
-	MegamanArmor("megamanarmor", 6, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
+	MegamanArmor("megamanarmor", 15, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
 	LightLabcoat("lightlabcoat", 6, new int[] {1, 2, 3, 1}, 3, SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(Blocks.WHITE_WOOL)),
-	ProtomanArmor("protomanarmor", 6, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
+	ProtomanArmor("protomanarmor", 15, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
 	
 	WilyLabcoat("wilylabcoat", 6, new int[] {1, 2, 3, 1}, 3, SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(Blocks.WHITE_WOOL)),
-	BassArmor("bassarmor", 6, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Fortenium.get())),
-	QuintArmor("quintarmor", 6, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
+	BassArmor("bassarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Fortenium.get())),
+	QuintArmor("quintarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
 	
-	MegaArmorBase("megaarmorbase", 2, new int[] {1, 1, 1, 1}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
-	XArmor("xarmor", 6, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	MegaArmorBase("megaarmorbase", 10, new int[] {1, 1, 1, 1}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
+	XArmor("xarmor", 20, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	XTransparentArmor("xtransparentarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
-	iXArmor("ixarmor", 8, new int[] {4, 7, 8, 5}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
-	FirstXArmor("firstarmor", 8, new int[] {3, 6, 7, 5}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 2.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
-	SecondXArmor("secondarmor", 9, new int[] {3, 6, 7, 5}, 8, SoundEvents.ARMOR_EQUIP_IRON, 1f, 1.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
-	ThirdXArmor("thirdarmor", 11, new int[] {3, 6, 7, 5}, 8, SoundEvents.ARMOR_EQUIP_IRON, 1f, 1.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	iXArmor("ixarmor", 24, new int[] {4, 7, 8, 5}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	FirstXArmor("firstarmor", 24, new int[] {3, 6, 7, 5}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 2.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	SecondXArmor("secondarmor", 27, new int[] {3, 6, 7, 5}, 8, SoundEvents.ARMOR_EQUIP_IRON, 1f, 1.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	ThirdXArmor("thirdarmor", 30, new int[] {3, 6, 7, 5}, 8, SoundEvents.ARMOR_EQUIP_IRON, 1f, 1.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	
-	ZeroArmor("zeroarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
-	AxlArmor("axlarmor", 6, new int[] {2, 5, 7, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	ZeroArmor("zeroarmor", 20, new int[] {2, 5, 7, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	AxlArmor("axlarmor", 20, new int[] {2, 5, 7, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	
-	SigmaArmor("sigmaarmor", 7, new int[] {3, 6, 8, 4}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
-	VileArmor("vilearmor", 6, new int[] {2, 5, 7, 3}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	SigmaArmor("sigmaarmor", 24, new int[] {3, 6, 8, 4}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
+	VileArmor("vilearmor", 20, new int[] {2, 5, 7, 3}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	
-	MegamanExeArmor("megamanexearmor", 6, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),;
+	MegamanExeArmor("megamanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),;
 	
 	public static final int[] basedurability = {128, 144, 160, 112};
 	private final String name;
