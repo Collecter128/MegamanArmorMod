@@ -62,7 +62,9 @@ import com.collecter128.megamanarmormod.items.XArmorClearFeet;
 import com.collecter128.megamanarmormod.items.XArmorClearLegs;
 import com.collecter128.megamanarmormod.items.XArmorFeet;
 import com.collecter128.megamanarmormod.items.XArmorLegs;
+import com.collecter128.megamanarmormod.items.XKaiArmor;
 import com.collecter128.megamanarmormod.items.XTeppenArmor;
+import com.collecter128.megamanarmormod.items.XkeArmor;
 import com.collecter128.megamanarmormod.items.ZKnuckle;
 import com.collecter128.megamanarmormod.items.ZeroArmor;
 import com.collecter128.megamanarmormod.items.ZeroArmorChest;
@@ -1563,14 +1565,32 @@ public class ItemInit {
 	public static final RegistryObject<Item> XTeppenArmor_Legs = Items.register("xteppenarmor_legs",
 			() -> new XTeppenArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
+	public static final RegistryObject<Item> XKeArmor_Head = Items.register("xke_head",
+			() -> new XkeArmor(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeArmor_Arms = Items.register("xke_arms",
+			() -> new XkeArmor(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeArmor_Body = Items.register("xke_body",
+			() -> new XkeArmor(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeArmor_Legs = Items.register("xke_legs",
+			() -> new XkeArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> XKaiArmor_Head = Items.register("xkai_head",
+			() -> new XKaiArmor(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKaiArmor_Arms = Items.register("xkai_arms",
+			() -> new XKaiArmor(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKaiArmor_Body = Items.register("xkai_body",
+			() -> new XKaiArmor(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKaiArmor_Legs = Items.register("xkai_legs",
+			() -> new XKaiArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 //	public static final RegistryObject<Item> XTransparentArmor_Head = Items.register("xtransparentarmor_head",
-//			() -> new XArmorClear(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+//			() -> new XArmorClear(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 //	public static final RegistryObject<Item> XTransparentArmor_Arms = Items.register("xtransparentarmor_arms",
-//			() -> new XArmorClearFeet(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+//			() -> new XArmorClearFeet(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 //	public static final RegistryObject<Item> XTransparentArmor_Body = Items.register("xtransparentarmor_body",
-//			() -> new XArmorClearChest(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+//			() -> new XArmorClearChest(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 //	public static final RegistryObject<Item> XTransparentArmor_Legs = Items.register("xtransparentarmor_legs",
-//			() -> new XArmorClearLegs(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().group(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
+//			() -> new XArmorClearLegs(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> Military_Buster = Items.register("military_buster",
 			() -> new Busterx(4, new Item.Properties().tab(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
