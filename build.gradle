@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.12.3'
+version = '2.15'
 group = 'com.collecter128.megamanarmormod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'megamanarmormod'
 
@@ -28,7 +28,7 @@ minecraft {
     //
     // You must be aware of the Mojang license when using the 'official' mappings.
     // See more information here: https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
-    //
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
     mappings channel: 'official', version: '1.16.5'
