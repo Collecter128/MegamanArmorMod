@@ -9,42 +9,43 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-// Made with Blockbench 4.6.4
+// Made with Blockbench 4.6.5
 // Exported for Minecraft version 1.15 - 1.16 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
 @OnlyIn(Dist.CLIENT)
-public class xke extends BipedModel  {
+public class xkeboost extends BipedModel {
 	private final ModelRenderer Headblue;
-	private final ModelRenderer Headlightblue;
+	private final ModelRenderer Headwhite;
 	private final ModelRenderer Headgray;
 	private final ModelRenderer Headglowred;
-	private final ModelRenderer Headglowlightblue;
+	private final ModelRenderer Headglowlightgreen;
 	private final ModelRenderer Bodyblue;
 	private final ModelRenderer Bodylightblue;
 	private final ModelRenderer Bodygray;
-	private final ModelRenderer Bodymiddlepart;
-	private final ModelRenderer Bodyglowlightblue;
+	private final ModelRenderer Bodygold;
+	private final ModelRenderer Bodyglowlightgreen;
+	private final ModelRenderer Bodywhite;
 	private final ModelRenderer RightArmblue;
+	private final ModelRenderer RightArmwhite;
 	private final ModelRenderer RightArmlightblue;
 	private final ModelRenderer RightArmgray;
-	private final ModelRenderer RightArmglowlightblue;
-	private final ModelRenderer RightArmwhite;
+	private final ModelRenderer RightArmglowlightgreen;
+	private final ModelRenderer RightArmred;
 	private final ModelRenderer LeftArmblue;
 	private final ModelRenderer LeftArmlightblue;
 	private final ModelRenderer LeftArmgray;
-	private final ModelRenderer LeftArmglowlightblue;
-	private final ModelRenderer LeftArmlightwhite;
+	private final ModelRenderer LeftArmglowlightgreen;
+	private final ModelRenderer LeftArmred;
+	private final ModelRenderer LeftArmwhite;
 	private final ModelRenderer RightLegblue;
 	private final ModelRenderer RightLegredglow;
-	private final ModelRenderer RightLeggray;
-	private final ModelRenderer RightLegglowlightblue;
+	private final ModelRenderer RightLegwhite;
+	private final ModelRenderer RightLegglowlightgreen;
 	private final ModelRenderer LeftLegblue;
 	private final ModelRenderer LeftLegredglow;
-	private final ModelRenderer LeftLeggray;
-	private final ModelRenderer LeftLegglowlightblue;
-	
-	EquipmentSlotType equipmentslot;
+	private final ModelRenderer LeftLegwhite;
+	private final ModelRenderer LeftLegglowlightgreen;
 	
 	public int MainColor;
 	public int SecondaryColor;
@@ -60,21 +61,23 @@ public class xke extends BipedModel  {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	
+	EquipmentSlotType equipmentslot;
 
-	public xke(float modelSize, EquipmentSlotType slot) {
+	public xkeboost(float modelSize, EquipmentSlotType slot) {
 		super(modelSize);
 		texWidth = 93;
-		texHeight = 255;
+		texHeight = 274;
 		
 		equipmentslot = slot;
 		
 		MainColorDefault = 2781423;//Blue
 		SecondaryColorDefault = 5752303;//Light Blue
-		ThirdColorDefault = 11904989; //Middle thing
+		ThirdColorDefault = 16230914; //Middle thing gold
 		WhiteColorDefault = 16777215;//White
 		GlowyColorDefault = 16468504;//Red
 		GrayColorDefault = 15592941;//gray
-		FourthColorDefault = 2091519;//Light Blue glow
+		FourthColorDefault = 6160215;//Light Green glow
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
@@ -90,13 +93,13 @@ public class xke extends BipedModel  {
 		Headblue.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 		Headblue.texOffs(25, 0).addBox(-1.5F, -9.0F, -5.0F, 3.0F, 4.0F, 1.0F, 0.3F, false);
 		}
-
-		Headlightblue = new ModelRenderer(this);
-		Headlightblue.setPos(0.0F, 0.0F, 0.0F);
-		setRotationAngle(Headlightblue, -0.1047F, 0.0873F, 0.0F);
+		
+		Headwhite = new ModelRenderer(this);
+		Headwhite.setPos(0.0F, 0.0F, 0.0F);
+		setRotationAngle(Headwhite, -0.1047F, 0.0873F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.HEAD) {
-		Headlightblue.texOffs(0, 66).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Headlightblue.texOffs(40, 95).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
+		Headwhite.texOffs(0, 66).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headwhite.texOffs(43, 96).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
 		}
 		
 		Headgray = new ModelRenderer(this);
@@ -106,7 +109,7 @@ public class xke extends BipedModel  {
 		Headgray.texOffs(32, 0).addBox(-3.6706F, -7.6327F, -3.8533F, 8.0F, 7.0F, 8.0F, 0.55F, false);
 		Headgray.texOffs(68, 2).addBox(5.4F, -5.9341F, -0.7842F, 1.0F, 3.0F, 3.0F, 0.5F, false);
 		Headgray.texOffs(68, 9).addBox(-5.981F, -5.938F, -0.747F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headgray.texOffs(65, 95).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
+		Headgray.texOffs(68, 96).addBox(-1.0872F, -9.9562F, -4.4855F, 2.0F, 5.0F, 10.0F, 0.4F, false);
 		}
 		
 		Headglowred = new ModelRenderer(this);
@@ -118,23 +121,24 @@ public class xke extends BipedModel  {
 		Headglowred.texOffs(85, 15).addBox(-5.5F, -5.5F, -0.3F, 1.0F, 2.0F, 2.0F, 0.5F, false);
 		}
 		
-		Headglowlightblue = new ModelRenderer(this);
-		Headglowlightblue.setPos(0.0F, 0.0F, 0.0F);
-		setRotationAngle(Headglowlightblue, -0.1047F, 0.0873F, 0.0F);
+		Headglowlightgreen = new ModelRenderer(this);
+		Headglowlightgreen.setPos(0.0F, 0.0F, 0.0F);
+		setRotationAngle(Headglowlightgreen, -0.1047F, 0.0873F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.HEAD) {
-		Headglowlightblue.texOffs(0, 157).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
-		Headglowlightblue.texOffs(79, 2).addBox(5.4F, -5.9341F, -0.7842F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headglowlightblue.texOffs(79, 9).addBox(-5.981F, -5.938F, -0.747F, 1.0F, 3.0F, 3.0F, 0.5F, false);
-		Headglowlightblue.texOffs(25, 5).addBox(-1.5F, -7.0F, -4.6F, 3.0F, 2.0F, 1.0F, 0.6F, false);
-		Headglowlightblue.texOffs(-2, 4).addBox(-1.5F, -8.9562F, -1.4855F, 3.0F, 0.0F, 3.0F, 0.4F, false);
-		Headglowlightblue.texOffs(34, 2).addBox(5.4F, -4.9341F, 0.2158F, 1.0F, 1.0F, 1.0F, 0.5F, false);
-		Headglowlightblue.texOffs(34, 5).addBox(-5.981F, -4.938F, 0.253F, 1.0F, 1.0F, 1.0F, 0.5F, false);
+		Headglowlightgreen.texOffs(0, 157).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		Headglowlightgreen.texOffs(79, 2).addBox(5.4F, -5.9341F, -0.7842F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headglowlightgreen.texOffs(79, 9).addBox(-5.981F, -5.938F, -0.747F, 1.0F, 3.0F, 3.0F, 0.5F, false);
+		Headglowlightgreen.texOffs(25, 5).addBox(-1.5F, -7.0F, -4.6F, 3.0F, 2.0F, 1.0F, 0.6F, false);
+		Headglowlightgreen.texOffs(-2, 4).addBox(-1.5F, -8.9562F, -1.4855F, 3.0F, 0.0F, 3.0F, 0.4F, false);
+		Headglowlightgreen.texOffs(34, 2).addBox(5.4F, -4.9341F, 0.2158F, 1.0F, 1.0F, 1.0F, 0.5F, false);
+		Headglowlightgreen.texOffs(34, 5).addBox(-5.981F, -4.938F, 0.253F, 1.0F, 1.0F, 1.0F, 0.5F, false);
 		}
 		
 		Bodyblue = new ModelRenderer(this);
 		Bodyblue.setPos(0.0F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Bodyblue.texOffs(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodyblue.texOffs(39, 169).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 		}
 		
 		Bodylightblue = new ModelRenderer(this);
@@ -147,19 +151,26 @@ public class xke extends BipedModel  {
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		Bodygray.texOffs(16, 48).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
-		Bodygray.texOffs(39, 169).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
+		Bodygray.texOffs(49, 187).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 		}
 		
-		Bodymiddlepart = new ModelRenderer(this);
-		Bodymiddlepart.setPos(0.0F, 0.0F, 0.0F);
+		Bodygold = new ModelRenderer(this);
+		Bodygold.setPos(0.0F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		Bodymiddlepart.texOffs(0, 98).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodygold.texOffs(0, 98).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
 		}
 		
-		Bodyglowlightblue = new ModelRenderer(this);
-		Bodyglowlightblue.setPos(0.0F, 0.0F, 0.0F);
+		Bodyglowlightgreen = new ModelRenderer(this);
+		Bodyglowlightgreen.setPos(0.0F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		Bodyglowlightblue.texOffs(38, 158).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodyglowlightgreen.texOffs(0, 255).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		}
+		
+		Bodywhite = new ModelRenderer(this);
+		Bodywhite.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
+		Bodywhite.texOffs(38, 158).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 10.0F, 4.0F, 0.7F, false);
+		Bodywhite.texOffs(69, 254).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
 		}
 		
 		RightArmblue = new ModelRenderer(this);
@@ -168,6 +179,14 @@ public class xke extends BipedModel  {
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmblue.texOffs(41, 16).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
 		RightArmblue.texOffs(41, 46).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
+		}
+		
+		RightArmwhite = new ModelRenderer(this);
+		RightArmwhite.setPos(-5.0F, 2.0F, 0.0F);
+		setRotationAngle(RightArmwhite, -0.1745F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
+		RightArmwhite.texOffs(76, 26).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		RightArmwhite.texOffs(67, 110).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
 		}
 		
 		RightArmlightblue = new ModelRenderer(this);
@@ -182,24 +201,23 @@ public class xke extends BipedModel  {
 		setRotationAngle(RightArmgray, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmgray.texOffs(41, 77).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArmgray.texOffs(1, 208).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArmgray.texOffs(67, 110).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
-		RightArmgray.texOffs(76, 64).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		RightArmgray.texOffs(35, 208).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArmgray.texOffs(49, 244).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
 		}
 		
-		RightArmglowlightblue = new ModelRenderer(this);
-		RightArmglowlightblue.setPos(-5.0F, 2.0F, 0.0F);
-		setRotationAngle(RightArmglowlightblue, -0.1745F, 0.0F, 0.0F);
+		RightArmglowlightgreen = new ModelRenderer(this);
+		RightArmglowlightgreen.setPos(-5.0F, 2.0F, 0.0F);
+		setRotationAngle(RightArmglowlightgreen, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		RightArmglowlightblue.texOffs(67, 128).addBox(-4.5F, 3.6391F, -2.5F, 6.0F, 6.0F, 5.0F, 0.2F, false);
-		RightArmglowlightblue.texOffs(76, 26).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		RightArmglowlightgreen.texOffs(67, 128).addBox(-4.5F, 3.6391F, -2.5F, 6.0F, 6.0F, 5.0F, 0.2F, false);
+		RightArmglowlightgreen.texOffs(76, 64).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
 		}
 		
-		RightArmwhite = new ModelRenderer(this);
-		RightArmwhite.setPos(-5.0F, 2.0F, 0.0F);
-		setRotationAngle(RightArmwhite, -0.1745F, 0.0F, 0.0F);
+		RightArmred = new ModelRenderer(this);	
+		RightArmred.setPos(-5.0F, 2.0F, 0.0F);
+		setRotationAngle(RightArmred, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		RightArmwhite.texOffs(41, 61).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightArmred.texOffs(41, 61).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 		}
 		
 		LeftArmblue = new ModelRenderer(this);
@@ -217,29 +235,37 @@ public class xke extends BipedModel  {
 		LeftArmlightblue.texOffs(58, 24).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 		}
 		
-		LeftArmgray = new ModelRenderer(this);	
+		LeftArmgray = new ModelRenderer(this);
 		LeftArmgray.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmgray, 0.2094F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		LeftArmgray.texOffs(58, 77).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
-		LeftArmgray.texOffs(18, 208).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
-		LeftArmgray.texOffs(67, 141).addBox(-1.5F, 0.6391F, -2.5F, 5.0F, 8.0F, 5.0F, 0.2F, false);
-		LeftArmgray.texOffs(76, 75).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArmgray.texOffs(52, 208).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArmgray.texOffs(49, 260).addBox(-1.5F, 0.6391F, -2.5F, 5.0F, 8.0F, 5.0F, 0.2F, false);
 		}
 		
-		LeftArmglowlightblue = new ModelRenderer(this);
-		LeftArmglowlightblue.setPos(5.0F, 2.0F, 0.0F);
-		setRotationAngle(LeftArmglowlightblue, 0.2094F, 0.0F, 0.0F);
+		LeftArmglowlightgreen = new ModelRenderer(this);
+		LeftArmglowlightgreen.setPos(5.0F, 2.0F, 0.0F);
+		setRotationAngle(LeftArmglowlightgreen, 0.2094F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmglowlightblue.texOffs(67, 160).addBox(-1.5F, 3.6391F, -2.5F, 5.0F, 6.0F, 5.0F, 0.2F, false);
-		LeftArmglowlightblue.texOffs(76, 37).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArmglowlightgreen.texOffs(67, 160).addBox(-1.5F, 3.6391F, -2.5F, 5.0F, 6.0F, 5.0F, 0.2F, false);
+		LeftArmglowlightgreen.texOffs(76, 77).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
 		}
 		
-		LeftArmlightwhite = new ModelRenderer(this);
-		LeftArmlightwhite.setPos(5.0F, 2.0F, 0.0F);
-		setRotationAngle(LeftArmlightwhite, 0.2094F, 0.0F, 0.0F);
+		LeftArmred = new ModelRenderer(this);
+		LeftArmred.setPos(5.0F, 2.0F, 0.0F);
+		setRotationAngle(LeftArmred, 0.2094F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmlightwhite.texOffs(58, 61).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		LeftArmred.texOffs(58, 61).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
+		}
+		
+		LeftArmwhite = new ModelRenderer(this);
+		LeftArmwhite.setPos(5.0F, 2.0F, 0.0F);
+		setRotationAngle(LeftArmwhite, 0.2094F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
+		LeftArmwhite.texOffs(76, 37).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArmwhite.texOffs(67, 141).addBox(-1.5F, 0.6391F, -2.5F, 5.0F, 9.0F, 5.0F, 0.2F, false);
+		LeftArmwhite.texOffs(18, 208).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 		}
 		
 		RightLegblue = new ModelRenderer(this);
@@ -256,19 +282,19 @@ public class xke extends BipedModel  {
 		RightLegredglow.texOffs(27, 106).addBox(-0.8947F, 14.2F, -1.0F, 2.0F, 1.0F, 2.0F, 1.0F, false);
 		}
 		
-		RightLeggray = new ModelRenderer(this);
-		RightLeggray.setPos(-1.9F, 12.0F, 0.0F);
-		setRotationAngle(RightLeggray, 0.192F, 0.0F, 0.0349F);
+		RightLegwhite = new ModelRenderer(this);
+		RightLegwhite.setPos(-1.9F, 12.0F, 0.0F);
+		setRotationAngle(RightLegwhite, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLeggray.texOffs(2, 175).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLegwhite.texOffs(2, 175).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 		}
 		
-		RightLegglowlightblue = new ModelRenderer(this);
-		RightLegglowlightblue.setPos(-1.9F, 12.0F, 0.0F);
-		setRotationAngle(RightLegglowlightblue, 0.192F, 0.0F, 0.0349F);
+		RightLegglowlightgreen = new ModelRenderer(this);
+		RightLegglowlightgreen.setPos(-1.9F, 12.0F, 0.0F);
+		setRotationAngle(RightLegglowlightgreen, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLegglowlightblue.texOffs(2, 191).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
-		RightLegglowlightblue.texOffs(42, 192).addBox(0.0F, 10.0F, -2.2F, 2.0F, 3.0F, 1.0F, 1.0F, false);
+		RightLegglowlightgreen.texOffs(2, 191).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		RightLegglowlightgreen.texOffs(42, 192).addBox(0.0F, 10.0F, -2.2F, 2.0F, 3.0F, 1.0F, 1.0F, false);
 		}
 		
 		LeftLegblue = new ModelRenderer(this);
@@ -285,19 +311,19 @@ public class xke extends BipedModel  {
 		LeftLegredglow.texOffs(27, 99).addBox(-1.2791F, 14.2F, -1.0F, 2.0F, 1.0F, 2.0F, 1.0F, true);
 		}
 		
-		LeftLeggray = new ModelRenderer(this);
-		LeftLeggray.setPos(1.9F, 12.0F, 0.0F);
-		setRotationAngle(LeftLeggray, -0.1745F, 0.0F, -0.0349F);
+		LeftLegwhite = new ModelRenderer(this);
+		LeftLegwhite.setPos(1.9F, 12.0F, 0.0F);
+		setRotationAngle(LeftLegwhite, -0.1745F, 0.0F, -0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		LeftLeggray.texOffs(21, 175).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLegwhite.texOffs(21, 175).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 		}
 		
-		LeftLegglowlightblue = new ModelRenderer(this);
-		LeftLegglowlightblue.setPos(1.9F, 12.0F, 0.0F);
-		setRotationAngle(LeftLegglowlightblue, -0.1745F, 0.0F, -0.0349F);
+		LeftLegglowlightgreen = new ModelRenderer(this);
+		LeftLegglowlightgreen.setPos(1.9F, 12.0F, 0.0F);
+		setRotationAngle(LeftLegglowlightgreen, -0.1745F, 0.0F, -0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		LeftLegglowlightblue.texOffs(21, 191).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
-		LeftLegglowlightblue.texOffs(41, 201).addBox(-1.4F, 10.0F, -2.2F, 3.0F, 3.0F, 1.0F, 1.0F, true);
+		LeftLegglowlightgreen.texOffs(21, 191).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		LeftLegglowlightgreen.texOffs(41, 201).addBox(-1.4F, 10.0F, -2.2F, 3.0F, 3.0F, 1.0F, 1.0F, true);
 		}
 	}
 
@@ -328,14 +354,28 @@ public class xke extends BipedModel  {
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.SecondaryColor & 255) / 255.0F;
-		this.Headlightblue.copyFrom(this.head);
-		Headlightblue.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.Bodylightblue.copyFrom(this.body);
 		Bodylightblue.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightArmlightblue.copyFrom(this.rightArm);
 		RightArmlightblue.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmlightblue.copyFrom(this.leftArm);
 		LeftArmlightblue.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		
+		fred = (float)( this.WhiteColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.WhiteColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.WhiteColor & 255) / 255.0F;
+		this.Headwhite.copyFrom(this.head);
+		Headwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.Bodywhite.copyFrom(this.body);
+		Bodywhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.RightArmwhite.copyFrom(this.rightArm);
+		RightArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.LeftArmwhite.copyFrom(this.leftArm);
+		LeftArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.RightLegwhite.copyFrom(this.rightLeg);
+		RightLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.LeftLegwhite.copyFrom(this.leftLeg);
+		LeftLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
@@ -348,16 +388,18 @@ public class xke extends BipedModel  {
 		RightArmgray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmgray.copyFrom(this.leftArm);
 		LeftArmgray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLeggray.copyFrom(this.rightLeg);
-		RightLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLeggray.copyFrom(this.leftLeg);
-		LeftLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglowred.copyFrom(this.head);
 		Headglowred.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		
+		this.RightArmred.copyFrom(this.rightArm);
+		RightArmred.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		this.LeftArmred.copyFrom(this.leftArm);
+		LeftArmred.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		
 		this.RightLegredglow.copyFrom(this.rightLeg);
 		RightLegredglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegredglow.copyFrom(this.leftLeg);
@@ -366,36 +408,24 @@ public class xke extends BipedModel  {
 		fred = (float)( this.FourthColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.FourthColor & 255) / 255.0F;
-		this.Headglowlightblue.copyFrom(this.head);
-		Headglowlightblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
-		this.Bodyglowlightblue.copyFrom(this.body);
-		Bodyglowlightblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightArmglowlightblue.copyFrom(this.rightArm);
-		RightArmglowlightblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArmglowlightblue.copyFrom(this.leftArm);
-		LeftArmglowlightblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
-		this.RightLegglowlightblue.copyFrom(this.rightLeg);
-		RightLegglowlightblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftLegglowlightblue.copyFrom(this.leftLeg);
-		LeftLegglowlightblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		this.Headglowlightgreen.copyFrom(this.head);
+		Headglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		this.Bodyglowlightgreen.copyFrom(this.body);
+		Bodyglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		this.RightArmglowlightgreen.copyFrom(this.rightArm);
+		RightArmglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		this.LeftArmglowlightgreen.copyFrom(this.leftArm);
+		LeftArmglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		this.RightLegglowlightgreen.copyFrom(this.rightLeg);
+		RightLegglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
+		this.LeftLegglowlightgreen.copyFrom(this.leftLeg);
+		LeftLegglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
-		this.Bodymiddlepart.copyFrom(this.body);
-		Bodymiddlepart.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		
-		fred = (float)( this.WhiteColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.WhiteColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.WhiteColor & 255) / 255.0F;
-		this.RightArmwhite.copyFrom(this.rightArm);
-		RightArmwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		this.LeftArmlightwhite.copyFrom(this.leftArm);
-		LeftArmlightwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-		
-		
-		
-		
+		this.Bodygold.copyFrom(this.body);
+		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
 	}
 

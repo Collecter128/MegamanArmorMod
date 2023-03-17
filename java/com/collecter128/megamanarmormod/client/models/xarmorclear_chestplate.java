@@ -20,16 +20,19 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 // Made with Blockbench 3.7.5
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class xarmorclear_chestplate extends BipedModel {
+	//RenderType type = RenderType.entityTranslucent(new ResourceLocation("megamanarmormod:textures/armor/xarmorclear1.png"));
 	 //super(RenderType::getEntityTranslucent, modelSize, 0.0F, 64, 64);
 	final static ResourceLocation ClearArmorTexture = new ResourceLocation("megamanarmormod:textures/armor/xtransparentarmor_layer_1.png");//textures/entity/llama/spit.png
-	private static final RenderType field_229123_e_ = RenderType.entityTranslucentCull(ClearArmorTexture);
+	private static final RenderType field_229123_e_ = RenderType.entityTranslucent(ClearArmorTexture);
 	
 //	private final ModelRenderer Head;
 	private final ModelRenderer Body;
