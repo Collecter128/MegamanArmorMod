@@ -8,6 +8,8 @@
 	"item.megamanarmormod.alloy_high_performance": "High Performance Alloy",
 	"item.megamanarmormod.alloy_evolved": "Evolved Alloy",
 	"item.megamanarmormod.alloy_special": "Special Alloy",
+	"item.megamanarmormod.alloy_heterogenic": "Heterogenic Alloy",
+	"item.megamanarmormod.alloy_reverse": "Reverse Alloy",
 	
 	"item.megamanarmormod.circuit_trialproduction": "Trial Production Circuit",
 	"item.megamanarmormod.circuit_prototype": "Prototype Circuit",
@@ -96,7 +98,7 @@
 	"item.megamanarmormod.zenny": "Zenny",
 	"item.megamanarmormod.bugfrag": "BugFrag",
 	
-	"item.megamanarmormod.soccer_ball": "Soccer_ball",
+	"item.megamanarmormod.soccer_ball": "Soccer Ball",
 	"item.megamanarmormod.rcan": "R Can",
 	"item.megamanarmormod.teppenxcard": "X Teppen Card",
 	
@@ -135,6 +137,8 @@
 	
 	"item.megamanarmormod.colorizerx": "X Colorizer",
 	"item.megamanarmormod.colorizerxalternate": "X (X4 Cheat) Colorizer",
+	"item.megamanarmormod.colorizerxvariant": "X Ke Variant Colorizer",
+	
 	"item.megamanarmormod.colorizerzero": "Zero Colorizer",
 	"item.megamanarmormod.colorizerblackzero": "Black Zero Colorizer",
 	"item.megamanarmormod.colorizerzeronightmare": "Nightmare Zero Colorizer",
@@ -225,6 +229,9 @@
 	"item.megamanarmormod.colorizerpetrified": "Petrification Colorizer",
 	"item.megamanarmormod.colorizersticky": "Fruit Colorizer",
 	"item.megamanarmormod.colorizerfrozen": "Frozen Colorizer",
+	
+	"item.megamanarmormod.colorizerpharaohwave": "Pharaoh Wave Colorizer",
+	"item.megamanarmormod.colorizercentaurarrow": "Centaur Arrow Colorizer",
 	
 	"item.megamanarmormod.colorizerastrocrush": "Astro Crush Colorizer",
 	"item.megamanarmormod.colorizerwaterbaloon": "Water Balloon Colorizer",
@@ -685,6 +692,11 @@
 	"item.megamanarmormod.xkai_body": "X Kai Body Armor",
 	"item.megamanarmormod.xkai_legs": "X Kai Legs Armor",
 	
+	"item.megamanarmormod.xkeboost_head": "X Ver.Ke Boost Head Armor",
+	"item.megamanarmormod.xkeboost_arms": "X Ver.Ke Boost Boots Armor",
+	"item.megamanarmormod.xkeboost_body": "X Ver.Ke Boost Body Armor",
+	"item.megamanarmormod.xkeboost_legs": "X Ver.Ke Boost Legs Armor",
+	
 	"item.megamanarmormod.firstarmor_head": "First Armor Head",
 	"item.megamanarmormod.firstarmor_arms": "First Armor Boots",
 	"item.megamanarmormod.firstarmor_body": "First Armor Body",
@@ -765,6 +777,8 @@
 	"item.megamanarmormod.legendsarmor_body": "Vulnutt's Body Armor",
 	"item.megamanarmormod.legendsarmor_legs": "Vulnutt's Legs Armor",
 	
+	"item.megamanarmormod.shades": "Shades",
+	
 	"item.megamanarmormod.megamanzero_head": "Zero(MegamanZero) Head Armor",
 	"item.megamanarmormod.megamanzero_arms": "Zero(MegamanZero) Boots Armor",
 	"item.megamanarmormod.megamanzero_body": "Zero(MegamanZero) Body Armor",
@@ -807,6 +821,18 @@
 	"block.megamanarmormod.goldmysterydata": "Gold Mystery Data",
 	
 	"block.megamanarmormod.recycler": "Recycler",
+	
+	"block.megamanarmormod.ladder_bomb": "Bombman Ladder",
+	"block.megamanarmormod.ladder_cut": "Cutman Ladder",
+	"block.megamanarmormod.ladder_elec": "Elecman Ladder",
+	"block.megamanarmormod.ladder_fire": "Fireman Ladder",
+	"block.megamanarmormod.ladder_guts": "Gutsman Ladder",
+	"block.megamanarmormod.ladder_ice": "Iceman Ladder",
+	"block.megamanarmormod.ladder_oil": "Oilman Ladder",
+	"block.megamanarmormod.ladder_time": "Timeman Ladder",
+	
+	"entity.minecraft.villager.megamanarmormod.junkshopowner": "Junk Shop",
+	"entity.minecraft.villager.junkshopowner": "Junk Shop",
 	
 	"block.minecraft.banner.logocircle.black": "Black Circle BG",
 	"block.minecraft.banner.logocircle.red": "Red Circle BG",
