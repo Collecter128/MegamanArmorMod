@@ -37,6 +37,7 @@ import com.collecter128.megamanarmormod.core.EntityTypesInit;
 import com.collecter128.megamanarmormod.core.FeatureInit;
 import com.collecter128.megamanarmormod.core.ItemInit;
 import com.collecter128.megamanarmormod.core.ModSoundEvents;
+import com.collecter128.megamanarmormod.core.VillagerInit;
 import com.collecter128.megamanarmormod.items.ArmorColorizerCustom;
 
 import java.util.stream.Collectors;
@@ -65,6 +66,8 @@ public class MegamanArmorMod
     	BlockInit.Blocks.register(bus);
     	EntityTypesInit.EntityTypes.register(bus);
     	MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
+    	VillagerInit.VillagerProffesions.register(bus);
+    	VillagerInit.Point_of_interestTypes.register(bus);
     	// CustomRecipeBuilder.customRecipe(IRecipeSerializer.CRAFTING_SPECIAL_ARMORDYE).build(consumer, "armorcolorizer_dye");
     	
     	ModSoundEvents.register(bus);
