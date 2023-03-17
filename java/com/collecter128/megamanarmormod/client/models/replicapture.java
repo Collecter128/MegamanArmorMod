@@ -1,8 +1,13 @@
 package com.collecter128.megamanarmormod.client.models;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -11,7 +16,7 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 // Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class replicapture extends BipedModel {
 	private final ModelRenderer Bodymain;
 	private final ModelRenderer Bodypurple;
@@ -290,6 +295,9 @@ public class replicapture extends BipedModel {
         fblue = (float)(this.ThirdColor & 255) / 255.0F;
 		this.Bodygreen.copyFrom(this.body);
 		Bodygreen.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		
+		buffer = Minecraft.getInstance().renderBuffers().bufferSource().getBuffer(RenderType.entityTranslucent(new ResourceLocation(
+				"megamanarmormod:textures/armor/replicapture.png")));
 		this.RightArmgreen.copyFrom(this.rightArm);
 		RightArmgreen.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmgreen.copyFrom(this.leftArm);

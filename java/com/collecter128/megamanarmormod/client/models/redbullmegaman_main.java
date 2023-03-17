@@ -6,13 +6,15 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraft.entity.Entity;
 
 // Made with Blockbench 4.3.1
 // Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class redbullmegaman_main extends BipedModel {
 	private final ModelRenderer Head1;
 	private final ModelRenderer Headred;

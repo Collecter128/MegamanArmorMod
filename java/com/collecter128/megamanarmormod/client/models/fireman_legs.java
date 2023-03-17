@@ -10,12 +10,14 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 // Made with Blockbench 4.6.4
 // Exported for Minecraft version 1.15 - 1.16 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class fireman_legs extends BipedModel {
 	private final ModelRenderer Bodygraymain;
 	private final ModelRenderer Bodygray;

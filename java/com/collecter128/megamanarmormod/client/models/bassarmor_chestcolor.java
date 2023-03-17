@@ -2,6 +2,8 @@ package com.collecter128.megamanarmormod.client.models;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -10,7 +12,7 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class bassarmor_chestcolor extends BipedModel {
 //	private final ModelRenderer Headblack;
 //	private final ModelRenderer cube_r1;
@@ -189,7 +191,7 @@ public class bassarmor_chestcolor extends BipedModel {
 		RightArmgold.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmgold, -0.1745F, 0.0F, 0.0F);
 		RightArmgold.texOffs(40, 16).addBox(-6.0F, -2.2019F, -2.0F, 6.0F, 3.0F, 4.0F, 0.8F, false);
-		RightArmgold.texOffs(44, 27).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		//RightArmgold.texOffs(44, 27).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 		RightArmgold.texOffs(45, 70).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArmblack = new ModelRenderer(this);

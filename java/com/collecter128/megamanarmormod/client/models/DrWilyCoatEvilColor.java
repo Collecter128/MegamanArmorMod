@@ -8,12 +8,14 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 // Made with Blockbench 3.9.3
 // Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class DrWilyCoatEvilColor extends BipedModel {
 	private final ModelRenderer Body;
 	private final ModelRenderer cube_r1;

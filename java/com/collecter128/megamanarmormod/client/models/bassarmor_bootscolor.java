@@ -2,6 +2,8 @@ package com.collecter128.megamanarmormod.client.models;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
@@ -10,7 +12,7 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
-
+@OnlyIn(Dist.CLIENT)
 public class bassarmor_bootscolor extends BipedModel {
 //	private final ModelRenderer Headblack;
 //	private final ModelRenderer cube_r1;
