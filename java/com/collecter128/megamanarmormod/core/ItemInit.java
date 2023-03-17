@@ -46,6 +46,7 @@ import com.collecter128.megamanarmormod.items.Replicapture;
 import com.collecter128.megamanarmormod.items.RockmanShadow;
 import com.collecter128.megamanarmormod.items.RyuGiarmor;
 import com.collecter128.megamanarmormod.items.SecondArmor;
+import com.collecter128.megamanarmormod.items.ShadesArmor;
 import com.collecter128.megamanarmormod.items.SigmaArmor;
 import com.collecter128.megamanarmormod.items.SigmaArmorChest;
 import com.collecter128.megamanarmormod.items.SigmaArmorFeet;
@@ -65,6 +66,8 @@ import com.collecter128.megamanarmormod.items.XArmorLegs;
 import com.collecter128.megamanarmormod.items.XKaiArmor;
 import com.collecter128.megamanarmormod.items.XTeppenArmor;
 import com.collecter128.megamanarmormod.items.XkeArmor;
+import com.collecter128.megamanarmormod.items.XkeBoostArmor;
+import com.collecter128.megamanarmormod.items.XtransparentOrange;
 import com.collecter128.megamanarmormod.items.ZKnuckle;
 import com.collecter128.megamanarmormod.items.ZeroArmor;
 import com.collecter128.megamanarmormod.items.ZeroArmorChest;
@@ -142,8 +145,10 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> SpecialAlloy = Items.register("alloy_special",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
-	//Heterogenic
-	//Reverse I may not get this far with every material.....
+	public static final RegistryObject<Item> HeterogenicAlloy = Items.register("alloy_heterogenic",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> ReverseAlloy = Items.register("alloy_reverse",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionCircuit = Items.register("circuit_trialproduction",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
@@ -665,6 +670,14 @@ public class ItemInit {
 					, new int[]{/*Main*/8542759, /*Secondary*/10908982,/*ThirdColor*/10712638, 
 							/*WhiteColor*/13345650, /*Glow Bits*/7030815, /*GreyColor*/6444358, /*FourthColor*/8542759}));
 	
+	//Megaman 2: The power Fighters
+	public static final RegistryObject<Item> PharaohWaveColorizer = Items.register("colorizerpharaohwave",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer)
+					, new int[]{/*Main*/15435264, /*Secondary*/16747627, -1, -1, -1, -1, /*FourthColor*/15435264}));
+	public static final RegistryObject<Item> CentaurArrowColorizer = Items.register("colorizercentaurarrow",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer)
+					, new int[]{/*Main*/4048736, /*Secondary*/7011215, -1, -1, -1, -1, /*FourthColor*/4048736}));
+	
 	public static final RegistryObject<Item> IceWave = Items.register("colorizericewave",
 	() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer)
 			, new int[]{/*Main*/3385087, /*Secondary*/16625195, -1, -1, -1, -1, /*FourthColor*/16625195}));
@@ -884,6 +897,12 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/2781423, /*Secondary*/5752303, /*ThirdColor*/16642337, 
 							/*WhiteColor*/16777215, /*Glow Bits*/16468504, /*GreyColor*/16777215, /*FourthColor*/9614024}));
+	
+	public static final RegistryObject<Item> XVariantColorizer = Items.register("colorizerxvariant",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/10193272, /*Secondary*/16777215, /*ThirdColor*/14666399, 
+							/*WhiteColor*/16777215, /*Glow Bits*/9737364, /*GreyColor*/16777215, /*FourthColor*/16745738}));
+	
 	public static final RegistryObject<Item> ZeroColorizer = Items.register("colorizerzero",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/16711680, /*Secondary*/379125, /*ThirdColor*/16763151, 
@@ -1535,6 +1554,7 @@ public class ItemInit {
 			() -> new XArmorChest(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> XArmor_Legs = Items.register("xarmor_legs",
 			() -> new XArmorLegs(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 	public static final RegistryObject<Item> iFXArmor_Body = Items.register("ifxarmor_body",
 			() -> new IFXArmor(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
@@ -1583,14 +1603,23 @@ public class ItemInit {
 	public static final RegistryObject<Item> XKaiArmor_Legs = Items.register("xkai_legs",
 			() -> new XKaiArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
-//	public static final RegistryObject<Item> XTransparentArmor_Head = Items.register("xtransparentarmor_head",
-//			() -> new XArmorClear(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
-//	public static final RegistryObject<Item> XTransparentArmor_Arms = Items.register("xtransparentarmor_arms",
-//			() -> new XArmorClearFeet(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
-//	public static final RegistryObject<Item> XTransparentArmor_Body = Items.register("xtransparentarmor_body",
-//			() -> new XArmorClearChest(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
-//	public static final RegistryObject<Item> XTransparentArmor_Legs = Items.register("xtransparentarmor_legs",
-//			() -> new XArmorClearLegs(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeBoostArmor_Head = Items.register("xkeboost_head",
+			() -> new XkeBoostArmor(ArmorMaterials.FirstXArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeBoostArmor_Arms = Items.register("xkeboost_arms",
+			() -> new XkeBoostArmor(ArmorMaterials.FirstXArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeBoostArmor_Body = Items.register("xkeboost_body",
+			() -> new XkeBoostArmor(ArmorMaterials.FirstXArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XKeBoostArmor_Legs = Items.register("xkeboost_legs",
+			() -> new XkeBoostArmor(ArmorMaterials.FirstXArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> XTransparentArmor_Head = Items.register("xtransparentarmor_head",
+			() -> new XtransparentOrange(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XTransparentArmor_Arms = Items.register("xtransparentarmor_arms",
+			() -> new XtransparentOrange(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XTransparentArmor_Body = Items.register("xtransparentarmor_body",
+			() -> new XtransparentOrange(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> XTransparentArmor_Legs = Items.register("xtransparentarmor_legs",
+			() -> new XtransparentOrange(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> Military_Buster = Items.register("military_buster",
 			() -> new Busterx(4, new Item.Properties().tab(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
@@ -1750,6 +1779,9 @@ public class ItemInit {
 			() -> new LegendsArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> LegendsArmor_Legs = Items.register("legendsarmor_legs",
 			() -> new LegendsArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> Shades = Items.register("shades",
+			() -> new ShadesArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> PachislotArmor_Head = Items.register("pachislot_head",
 			() -> new PachislotArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
