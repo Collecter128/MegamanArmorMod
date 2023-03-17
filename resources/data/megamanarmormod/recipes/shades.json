@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ccc",
+		"b b"
+	],
+	"key": {
+		"b": {
+			"item": "minecraft:black_stained_glass_pane"
+		},
+		"c": {
+			"item": "megamanarmormod:ceratanium"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:shades",
+		"count": 1
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "megamanarmormod:ceratanium_raw"
+	},
+	"result": {
+		"item": "megamanarmormod:ceratanium",
+		"count": 1
+	}
+}
