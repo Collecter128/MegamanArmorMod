@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "megamanarmormod:block/ladder_bomb",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "megamanarmormod:block/ladder_bomb"
+    },
+    "facing=south": {
+      "model": "megamanarmormod:block/ladder_bomb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "megamanarmormod:block/ladder_bomb",
+      "y": 270
+    }
+  }
+}
