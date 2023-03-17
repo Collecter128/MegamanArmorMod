@@ -11,6 +11,8 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class SigmaArmor extends ArmorItem{
 	
@@ -31,7 +33,7 @@ public class SigmaArmor extends ArmorItem{
 		super(materialIn, slot, builderIn);
 		
 	}
-	
+	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		

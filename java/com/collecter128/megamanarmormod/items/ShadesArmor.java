@@ -1,14 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.ifzeroarmor;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.zeroarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.zerochest;
+import com.collecter128.megamanarmormod.client.models.shades;
+
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -21,22 +14,24 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class IFZeroArmor extends ArmorItem{
+public class ShadesArmor extends ArmorItem{
 	
-	public int MainColorDefault = 16711680;//Main Body Color 
-	public int SecondaryColorDefault = 5752303;//Secondary 
-	public int ThirdColorDefault = 16763151;
-	public int WhiteColorDefault = 16777215;
-	public int GlowyColorDefault = 2448340;
-	public int GrayColorDefault = 16777215;
+	public int MainColorDefault = 4013373;//Black
+	public int SecondaryColorDefault = 4013373;
+	public int ThirdColorDefault = 4013373;
+	public int WhiteColorDefault = 4013373;
+	public int GlowyColorDefault = 4013373;
+	public int GrayColorDefault = 4013373;
+	public int FourthColorDefault = 4013373; //body middle thing 
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FourthColor = FourthColorDefault;
 
-	public IFZeroArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public ShadesArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -44,8 +39,8 @@ public class IFZeroArmor extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		ifzeroarmor model = new ifzeroarmor(1.0f);
-		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
+		shades model = new shades(1.0f);
+		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 		model.young = _default.young;
         model.crouching = _default.crouching;
@@ -57,22 +52,20 @@ public class IFZeroArmor extends ArmorItem{
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-
+	    	  //armorcolorer = compoundnbt.getInt("MainColor");
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
-	    	  model.XMainColor = compoundnbt.getInt("MainColor");
 
 	      }
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
 
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
-	    	  model.XSecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
 	      
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
 
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
-	    	  model.XWhiteColor = compoundnbt.getInt("WhiteColor");
+
 	      }
 	      
 	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
@@ -90,9 +83,14 @@ public class IFZeroArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
-	    	  model.XGrayColor = compoundnbt.getInt("GrayColor");
+
 	      }
-       
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
+      
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;
 		this.WhiteColor = model.WhiteColor;
@@ -101,6 +99,7 @@ public class IFZeroArmor extends ArmorItem{
 		this.GrayColor = model.GrayColor;
 
         return (A) model;
+		
 	}
 	
 //
@@ -112,7 +111,7 @@ public class IFZeroArmor extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/ifzero.png";
+        return "megamanarmormod:textures/armor/shades.png";
     }
 	
 }

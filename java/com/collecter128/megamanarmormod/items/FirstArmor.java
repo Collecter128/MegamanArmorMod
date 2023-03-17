@@ -22,6 +22,8 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class FirstArmor extends ArmorItem{
 	
@@ -42,7 +44,7 @@ public class FirstArmor extends ArmorItem{
 		super(materialIn, slot, builderIn);
 		
 	}
-	
+	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
@@ -52,38 +54,43 @@ public class FirstArmor extends ArmorItem{
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
-	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-	    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("MainColor", MainColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
-
-	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
-
-	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", SecondaryColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
-
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
 	      }
-	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("WhiteColor", WhiteColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
+	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("ThirdColor", ThirdColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GlowyColor", GlowyColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GrayColor", GrayColorDefault);
+	      
 
 	      model.young = _default.young;
 	        model.crouching = _default.crouching;
@@ -108,38 +115,43 @@ public class FirstArmor extends ArmorItem{
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
-	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-	    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("MainColor", MainColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
-
-	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
-
-	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", SecondaryColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
-
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
 	      }
-	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("WhiteColor", WhiteColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
+	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("ThirdColor", ThirdColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GlowyColor", GlowyColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GrayColor", GrayColorDefault);
+	      
 
 	      model.young = _default.young;
 	        model.crouching = _default.crouching;
@@ -163,38 +175,43 @@ public class FirstArmor extends ArmorItem{
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
-	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-	    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("MainColor", MainColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
-
-	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
-
-	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", SecondaryColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
-
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
 	      }
-	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("WhiteColor", WhiteColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
+	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("ThirdColor", ThirdColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GlowyColor", GlowyColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GrayColor", GrayColorDefault);
+	      
 
 	      model.young = _default.young;
 	        model.crouching = _default.crouching;
@@ -218,38 +235,43 @@ public class FirstArmor extends ArmorItem{
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
-	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-	    	  //armorcolorer = compoundnbt.getInt("MainColor");
+		if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("MainColor", MainColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
-	      
-	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
-
-	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
-
-	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", SecondaryColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
-
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
 	      }
-	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("WhiteColor", WhiteColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
+	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("ThirdColor", ThirdColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GlowyColor", GlowyColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      else
+	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GrayColor", GrayColorDefault);
+	      
 
 	      model.young = _default.young;
 	        model.crouching = _default.crouching;

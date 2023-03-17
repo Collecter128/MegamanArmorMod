@@ -26,7 +26,7 @@ public class MegamanArmorchest extends ArmorItem implements Imorecolorfularmor{/
 		super(materialIn, slot, builderIn);
 		
 	}
-	
+	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		megamanarmor_chestplate model = new megamanarmor_chestplate(1.0f);

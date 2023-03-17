@@ -1,7 +1,19 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.megamanzero_leggings;
-import com.collecter128.megamanarmormod.client.models.megamanzero_main;
+import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
+import com.collecter128.megamanarmormod.client.models.newarmor_leggings;
+import com.collecter128.megamanarmormod.client.models.newarmor_main;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
+import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
+import com.collecter128.megamanarmormod.client.models.xke;
+import com.collecter128.megamanarmormod.client.models.xke_legs;
+import com.collecter128.megamanarmormod.client.models.xkeboost;
+import com.collecter128.megamanarmormod.client.models.xkeboost_legs;
+import com.collecter128.megamanarmormod.client.models.zeroarmor;
+import com.collecter128.megamanarmormod.client.models.zeroarmor_main;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -14,15 +26,15 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class MegamanZeroArmor extends ArmorItem{
+public class XkeBoostArmor extends ArmorItem{
 	
-	public int MainColorDefault = 16586572;//Main Body Color redish
-	public int SecondaryColorDefault = 7688571;//Secondary dark grey color
-	public int ThirdColorDefault = 15645257; //Yellow Parts
-	public int WhiteColorDefault = 16777215;//Basic White
-	public int GlowyColorDefault = 8049085;//Glow? cyan thingy
-	public int GrayColorDefault = 9659807;//Basic White
-	public int FourthColorDefault = 11974089;//blue gray
+	public int MainColorDefault = 2781423;//Blue
+	public int SecondaryColorDefault = 5752303;//Light Blue
+	public int ThirdColorDefault = 16230914; //Middle thing Gold
+	public int WhiteColorDefault = 16777215;//White
+	public int GlowyColorDefault = 16468504;//Red
+	public int GrayColorDefault = 15592941;//gray
+	public int FourthColorDefault = 6160215;//Light Green glow
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -31,7 +43,7 @@ public class MegamanZeroArmor extends ArmorItem{
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
 
-	public MegamanZeroArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public XkeBoostArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
@@ -40,7 +52,7 @@ public class MegamanZeroArmor extends ArmorItem{
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		if(armorSlot != EquipmentSlotType.LEGS) {
-			megamanzero_main model = new megamanzero_main(1.0f, armorSlot);
+		xkeboost model = new xkeboost(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 		model.young = _default.young;
@@ -86,7 +98,6 @@ public class MegamanZeroArmor extends ArmorItem{
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
-	      
 	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
 	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
@@ -103,7 +114,7 @@ public class MegamanZeroArmor extends ArmorItem{
         return (A) model;
 		}
 		else {
-			megamanzero_leggings model = new megamanzero_leggings(1.0f);
+			xkeboost_legs model = new xkeboost_legs(1.0f);
 			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 			model.young = _default.young;
@@ -155,6 +166,7 @@ public class MegamanZeroArmor extends ArmorItem{
 		    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 		      }
+		      
 	      
 			this.MainColor = model.MainColor;
 			this.SecondaryColor = model.SecondaryColor;
@@ -193,7 +205,7 @@ public class MegamanZeroArmor extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/zeroarmormz.png";
+        return "megamanarmormod:textures/armor/xkeboost.png";
     }
 	
 }

@@ -23,6 +23,8 @@ import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeableArmorItem{//implements Imorecolorfularmor
 
@@ -32,7 +34,7 @@ public class MegamanArmorchestcolor extends DyeableArmorItem implements IDyeable
 		super(materialIn, slot, builderIn);
 		
 	}
-	
+	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		megamanarmor_chestplatecolorold model = new megamanarmor_chestplatecolorold(1.0f);

@@ -23,6 +23,8 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class XArmorClearChest extends ArmorItem{
 
@@ -30,14 +32,16 @@ public class XArmorClearChest extends ArmorItem{
 		super(materialIn, slot, builderIn);
 		
 	}
-	
+	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		xarmorclear_chestplate model = new xarmorclear_chestplate(null, 1.0f, 16, 74, 114);
+		RenderType type = RenderType.entityTranslucent(new ResourceLocation("megamanarmormod:textures/armor/xarmorclear1.png"));
+		//xarmorclear_chestplate model = new xarmorclear_chestplate(RenderType::entityTranslucent(new ResourceLocation("megamanarmormod:textures/armor/xarmorclear1.png")), 1.0f, 16, 74, 114);
 		//xarmorclear_chestplate model = new xarmorclear_chestplate(RenderType::getEntityTranslucentCull, 1.0f, 16, 74, 114);
 		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
-		//IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEnergySwirl(this.func_225633_a_(), this.func_225634_a_(f), f * 0.01F));
+		//IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEnergySwirl(thi t), f * 0.01F));
        // entitymodel.setRotationAngles(entitylivingbaseIn, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
         //entitymodel.render(matrixStackIn, ivertexbuilder, packedLightIn, OverlayTexture.NO_OVERLAY, 0.5F, 0.5F, 0.5F, 1.0F);
 		model.young = _default.young;
@@ -47,7 +51,9 @@ public class XArmorClearChest extends ArmorItem{
         model.leftArmPose = _default.leftArmPose;
         //model.getRenderType();
         //RenderType.getTranslucent();
-        //RenderType.getTranslucent();
+        //RenderType.translucent();
+        //model.renderType(RenderType.entityTranslucent(new ResourceLocation("megamanarmormod:textures/armor/xarmorclear1.png")));
+        RenderType.entityTranslucent(new ResourceLocation("megamanarmormod:textures/armor/xarmorclear1.png"));
         return (A) model;
 	}
 	
