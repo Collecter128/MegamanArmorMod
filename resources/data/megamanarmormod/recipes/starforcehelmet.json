@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:wave_am"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:starforce_head",
+		"count": 1
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "minecraft:iron_ingot"
+		},
+		"T": {
+			"item": "megamanarmormod:zsaber"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:zsabermz",
+		"count": 1
+	}
+}

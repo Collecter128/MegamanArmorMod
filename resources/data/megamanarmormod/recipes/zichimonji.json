@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:specialsteel"
+		},
+		"T": {
+			"item": "minecraft:netherite_ingot"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:zichimonji",
+		"count": 1
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"T": {
+			"item": "megamanarmormod:zsaber"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:zrapier",
+		"count": 1
+	}
+}
