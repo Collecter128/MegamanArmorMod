@@ -3,15 +3,21 @@ package com.collecter128.megamanarmormod;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.color.BlockColors;
 import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.data.CustomRecipeBuilder;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.IRecipeSerializer;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -127,6 +133,7 @@ public class MegamanArmorMod
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
+        	
             LOGGER.info("HELLO from Register Block");
         }
         @SubscribeEvent
@@ -136,6 +143,10 @@ public class MegamanArmorMod
         	BlockInit.Blocks.getEntries().stream().map(RegistryObject:: get).forEach(block-> {
         		blockRegistryEvent.getRegistry().register(new BlockItem(block, new Item.Properties().tab(MegamanArmorMod.MMTab)).setRegistryName(block.getRegistryName()));
         	});;
+        	
+        	RenderTypeLookup.setRenderLayer(BlockInit.BlueMysteryData.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.GreenMysteryData.get(), RenderType.cutout());
+        	
         	//net.minecraft.client.renderer.color.ItemColors.register(itemColor, itemsIn);
         	//CustomItemColors.init(blockColorsC);
         	//Minecraft.blockColors = BlockColors.init();
@@ -147,24 +158,21 @@ public class MegamanArmorMod
         	//ColorRegistry.
         	//CustomItemColors.init(getBlockColors());
         }
+        
         @SubscribeEvent
-        public void registerItemColourHandlers(final ColorHandlerEvent.Item event) {
-//        	final BlockColors blockColors = event.getBlockColors();
-//        	final ItemColors itemColors = event.getItemColors();
-//        	
-//        	final IItemColor itemColourHandler = (stack, tintIndex) -> {
-//        		return itemColors.getColor(stack, tintIndex);
-//        	};
-//               //itemColors.register(itemColourHandler, ItemInit.MainColorColorizer.get());
-//               event.getItemColors().register(
-//                       (stack, colorIn) -> colorIn < 1 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
-//                    		   ItemInit.MainColorColorizer.get()
-//               );
+        public void registerCustomItemColors(final ColorHandlerEvent.Item event) {
+
                event.getItemColors().register(
-                       (stack, colorIn) -> colorIn > 0 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
-                    		   ItemInit.MainColorColorizer.get()
+            		   (stack, colorIn) -> colorIn < 0 ? -1 : ((IDyeableArmorItem) stack.getItem()).getColor(stack),
+                    		   ItemInit.MegamanArmor_Body.get()
                );
-        }
+               event.getItemColors().register(
+            		   (stack, colorIn) -> colorIn < 0 ? -1 : ((IDyeableArmorItem) stack.getItem()).getColor(stack),
+                    		   ItemInit.MainColorColorizer.get()
+//                       (stack, colorIn) -> colorIn < 0 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
+//                    		   ItemInit.MainColorColorizer.get()
+               );
+        }//Register Item Colors End
         
     }
     
@@ -175,6 +183,7 @@ public class MegamanArmorMod
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
 			return ItemInit.MegamanArmor_Head.get().getDefaultInstance();
 		}
@@ -188,6 +197,7 @@ public class MegamanArmorMod
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
 			return ItemInit.Ceratanium.get().getDefaultInstance();
 		}
@@ -201,6 +211,7 @@ public class MegamanArmorMod
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
 			return ItemInit.BlankBannerPattern.get().getDefaultInstance();
 		}
@@ -214,6 +225,7 @@ public class MegamanArmorMod
 		}
 
 		@Override
+		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
 			return ItemInit.ShotgunIceColorizer.get().getDefaultInstance();
 		}
