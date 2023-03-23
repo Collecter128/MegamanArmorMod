@@ -422,6 +422,8 @@
 	"item.megamanarmormod.colorizerelecbugstyle": "Elec Bug-Style Colorizer",
 	"item.megamanarmormod.colorizerwoodbugstyle": "Wood Bug-Style Colorizer",
 	
+	"item.megamanarmormod.colorizerstarforcegeoversion": "Starforce (Geo Version) Colorizer",
+	
 	"item.megamanarmormod.colorizervolnutt": "Megaman (Legends) Colorizer",
 	"item.megamanarmormod.colorizervolnutt2p": "Megaman 2P (Legends) Colorizer",
 	"item.megamanarmormod.colorizervolnuttbad": "Bad Megaman (Legends) Colorizer",
@@ -742,6 +744,9 @@
 	"item.megamanarmormod.soulsaber": "Soul Saber",
 	"item.megamanarmormod.redlotussaber": "Red Lotus Saber",
 	
+	"item.megamanarmormod.zsabermz": "Z Saber (Megaman Zero)",
+	"item.megamanarmormod.triangular_saber": "Triangular Saber",
+	
 	"item.megamanarmormod.zknuckle": "Z Knuckle",
 	
 	"item.megamanarmormod.axlarmor_head": "Axl Head Armor",
@@ -794,6 +799,11 @@
 	"item.megamanarmormod.protomanexe_body": "Protoman.exe Body Armor",
 	"item.megamanarmormod.protomanexe_legs": "Protoman.exe Legs Armor",
 	
+	"item.megamanarmormod.starforce_head": "Starforce Megaman Head Armor",
+	"item.megamanarmormod.starforce_arms": "Starforce Megaman Boots Armor",
+	"item.megamanarmormod.starforce_body": "Starforce Megaman Body Armor",
+	"item.megamanarmormod.starforce_legs": "Starforce Megaman Legs Armor",
+	
 	"item.megamanarmormod.pachislot_head": "Megaman Ability Head Armor",
 	"item.megamanarmormod.pachislot_arms": "Megaman Ability Boots Armor",
 	"item.megamanarmormod.pachislot_body": "Megaman Ability Body Armor",
@@ -819,6 +829,8 @@
 	"block.megamanarmormod.bluemysterydata": "Blue Mystery Data",
 	"block.megamanarmormod.purplemysterydata": "Purple Mystery Data",
 	"block.megamanarmormod.goldmysterydata": "Gold Mystery Data",
+	
+	"block.megamanarmormod.bluemysterywave": "Blue Mystery Wave",
 	
 	"block.megamanarmormod.recycler": "Recycler",
 	
