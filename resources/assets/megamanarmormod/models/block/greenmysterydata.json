@@ -4,7 +4,7 @@
 	"textures": {
 		"particle": "megamanarmormod:block/mysterydatagreen",
 		"block": "megamanarmormod:block/mysterydatagreen",
-		"upper": "megamanarmormod:block/mysterydatagreenparticle"
+		"upper": "megamanarmormod:block/mysterydatagreenparticle2"
 	},
 	"elements": [
 		{
