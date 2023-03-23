@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(290);
+	    	 int RandomInt = random.nextInt(291);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -899,6 +899,10 @@ public class colorizerluckyblock extends Block{
 	    	 		break;
 	    	 	case 185: 
 	    	 		itemstackIn = new ItemStack(ItemInit.WoodBugStyleColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 290: 
+	    	 		itemstackIn = new ItemStack(ItemInit.StarforceGeoVersionColorizer.get());
 	    	 		break;
 	    	 		
 	    	 	case 258: 
