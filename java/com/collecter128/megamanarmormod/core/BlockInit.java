@@ -2,6 +2,7 @@ package com.collecter128.megamanarmormod.core;
 
 import com.collecter128.megamanarmormod.MegamanArmorMod;
 import com.collecter128.megamanarmormod.blocks.BlueMysteryDataBlock;
+import com.collecter128.megamanarmormod.blocks.BlueMysterywaveBlock;
 import com.collecter128.megamanarmormod.blocks.GreenMysteryDataBlock;
 import com.collecter128.megamanarmormod.blocks.ScrapBlock;
 import com.collecter128.megamanarmormod.blocks.bannerluckyblock;
@@ -76,20 +77,26 @@ public class BlockInit {
 					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
+	public static final RegistryObject<Block> ScapBlock = Blocks.register("scrapblock",
+			() -> new ScrapBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)
+					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
 	public static final RegistryObject<Block> GreenMysteryData = Blocks.register("greenmysterydata",
 			() -> new GreenMysteryDataBlock((AbstractBlock.Properties.of(Material.GLASS, MaterialColor.EMERALD)
 					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
 					.noOcclusion().lightLevel((p_235470_0_) -> {
 					      return 10;
 					   }).sound(SoundType.GLASS)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-	
-	public static final RegistryObject<Block> ScapBlock = Blocks.register("scrapblock",
-			() -> new ScrapBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)
-					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
-					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-	
 	public static final RegistryObject<Block> BlueMysteryData = Blocks.register("bluemysterydata",
 			() -> new BlueMysteryDataBlock((AbstractBlock.Properties.of(Material.GLASS, MaterialColor.DIAMOND)
+					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
+					.noOcclusion().lightLevel((p_235470_0_) -> {
+					      return 10;
+					   }).sound(SoundType.GLASS)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
+	public static final RegistryObject<Block> BlueMysterywave = Blocks.register("bluemysterywave",
+			() -> new BlueMysterywaveBlock((AbstractBlock.Properties.of(Material.GLASS, MaterialColor.DIAMOND)
 					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
 					.noOcclusion().lightLevel((p_235470_0_) -> {
 					      return 10;
@@ -105,7 +112,7 @@ public class BlockInit {
 //					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
 //					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 //	public static final RegistryObject<Block> CutLadder = Blocks.register("ladder_cut",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
+//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION).notSolid()
 //					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
 //					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 //	public static final RegistryObject<Block> ElecLadder = Blocks.register("ladder_elec",
