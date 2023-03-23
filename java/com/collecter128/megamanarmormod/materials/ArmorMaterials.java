@@ -36,7 +36,10 @@ public enum ArmorMaterials implements IArmorMaterial{
 	SigmaArmor("sigmaarmor", 24, new int[] {3, 6, 8, 4}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	VileArmor("vilearmor", 20, new int[] {2, 5, 7, 3}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	
-	MegamanExeArmor("megamanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),;
+	MegamanExeArmor("megamanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),
+	ProtomanExeArmor("protomanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.SwordData.get())),
+	
+	StarforceMegamanArmor("starforcearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.AMWave.get())),;
 	
 	public static final int[] basedurability = {128, 144, 160, 112};
 	private final String name;
