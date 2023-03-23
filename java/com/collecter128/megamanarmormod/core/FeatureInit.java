@@ -16,6 +16,10 @@ public class FeatureInit {
 				BlockInit.CerataniumOre.get().defaultBlockState(), 5, 0, 30, 10);
 		addOre(event, OreFeatureConfig.FillerBlockType.NATURAL_STONE, 
 				BlockInit.BlueMysteryData.get().defaultBlockState(), 5, 0, 30, 5);
+		addOre(event, OreFeatureConfig.FillerBlockType.NATURAL_STONE, 
+				BlockInit.BlueMysterywave.get().defaultBlockState(), 5, 0, 30, 5);
+		
+		
 		addOre(event, OreFeatureConfig.FillerBlockType.NETHERRACK, 
 				BlockInit.LimitedOre.get().defaultBlockState(), 5, 10, 50, 8);
 	}
