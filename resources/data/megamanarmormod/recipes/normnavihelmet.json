@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:data_normal"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:normnavi_head",
+		"count": 1
+	}
+}

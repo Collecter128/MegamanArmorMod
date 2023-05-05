@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CrC"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:oil_can"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:oilman_arms",
+		"count": 1
+	}
+}

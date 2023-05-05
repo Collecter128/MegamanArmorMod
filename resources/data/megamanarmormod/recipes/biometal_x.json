@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"T",
+		"g"
+	],
+	"key": {
+		"g": {
+			"item": "minecraft:blue_dye"
+		},
+		"T": {
+			"item": "megamanarmormod:biometal_blank"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:biometal_x",
+		"count": 1
+	}
+}

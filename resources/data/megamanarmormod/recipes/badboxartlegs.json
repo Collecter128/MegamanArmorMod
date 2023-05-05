@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"C C",
+		"C C"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:paper"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:badboxart_legs",
+		"count": 1
+	}
+}

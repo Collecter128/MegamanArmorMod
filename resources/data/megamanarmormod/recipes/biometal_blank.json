@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"T",
+		"g"
+	],
+	"key": {
+		"g": {
+			"item": "minecraft:redstone"
+		},
+		"T": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:biometal_blank",
+		"count": 1
+	}
+}

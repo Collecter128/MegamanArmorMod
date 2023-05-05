@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:megamanexe_body"
+		},
+		"G": {
+			"item": "megamanarmormod:hubbatch"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:hubstyle_body",
+		"count": 1
+	}
+}

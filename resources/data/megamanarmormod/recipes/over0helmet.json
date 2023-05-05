@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iXi",
+		"X X"
+	],
+	"key": {
+		"i": {
+			"item": "minecraft:iron_ingot"
+		},
+		"X": {
+			"item": "megamanarmormod:titaniumx"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:over0_head",
+		"count": 1
+	}
+}

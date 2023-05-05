@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"C C",
+		"CrC"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:time_clock"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:timeman_legs",
+		"count": 1
+	}
+}

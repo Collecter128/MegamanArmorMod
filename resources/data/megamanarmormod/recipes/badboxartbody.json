@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:paper"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:badboxart_body",
+		"count": 1
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CrC",
+		"C C",
+		"C C"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:biometal_x"
+		},
+		"C": {
+			"item": "megamanarmormod:biometal_blank"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:modelx_legs",
+		"count": 1
+	}
+}
