@@ -36,8 +36,12 @@ public enum ArmorMaterials implements IArmorMaterial{
 	SigmaArmor("sigmaarmor", 24, new int[] {3, 6, 8, 4}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	VileArmor("vilearmor", 20, new int[] {2, 5, 7, 3}, 8, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.TitaniumX.get())),
 	
+	BiometalArmor("biometalarmor", 20, new int[] {2, 5, 7, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.BlankBiometal.get())),
+	
 	MegamanExeArmor("megamanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),
+	HubstyleArmor("hubstylearmor", 30, new int[] {3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),
 	ProtomanExeArmor("protomanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.SwordData.get())),
+	NormnaviArmor("normnaviarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.NormalData.get())),
 	
 	StarforceMegamanArmor("starforcearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.AMWave.get())),;
 	
