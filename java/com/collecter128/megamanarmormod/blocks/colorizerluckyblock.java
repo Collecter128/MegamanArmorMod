@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(291);
+	    	 int RandomInt = random.nextInt(304);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -899,6 +899,48 @@ public class colorizerluckyblock extends Block{
 	    	 		break;
 	    	 	case 185: 
 	    	 		itemstackIn = new ItemStack(ItemInit.WoodBugStyleColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 291: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNaviColorizer.get());
+	    	 		break;
+	    	 	case 292: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNaviBColorizer.get());
+	    	 		break;
+	    	 	case 293: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNaviCColorizer.get());
+	    	 		break;
+	    	 	case 294: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNaviHeelColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 295: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavi2Colorizer.get());
+	    	 		break;
+	    	 	case 296: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavi3Colorizer.get());
+	    	 		break;
+	    	 	case 297: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavi4Colorizer.get());
+	    	 		break;
+	    	 	case 298: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavi5Colorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 299: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavitypeFColorizer.get());
+	    	 		break;
+	    	 	case 300: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavitypeAColorizer.get());
+	    	 		break;
+	    	 	case 301: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavitypeWColorizer.get());
+	    	 		break;
+	    	 	case 302: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavitypeEColorizer.get());
+	    	 		break;
+	    	 	case 303: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormNavitypeXColorizer.get());
 	    	 		break;
 	    	 		
 	    	 	case 290: 
