@@ -46,8 +46,11 @@
 	"item.megamanarmormod.amplifier_smart": "Smart Amplifier",
 	"item.megamanarmormod.amplifier_precision": "Precision Amplifier",
 	
+	"item.megamanarmormod.roboenza_cure": "Roboenza Cure",
 	"item.megamanarmormod.virussigma": "Sigma Virus",
 	"item.megamanarmormod.limited": "Limited",
+	"item.megamanarmormod.viruszero": "Zero Virus",
+	"item.megamanarmormod.energy_bassnium": "Bassnium Energy",
 	"item.megamanarmormod.energy_evil": "Evil Energy",
 	"item.megamanarmormod.energy_alien": "Alien Energy",
 	"item.megamanarmormod.shock_absorber": "Shock Absorber",
@@ -62,6 +65,8 @@
 	"item.megamanarmormod.crystal_azure": "Azure Crystal",
 	"item.megamanarmormod.crystal_viridian": "Viridian Crystal",
 	
+	"item.megamanarmormod.biometal_blank": "Blank Biometal",
+	"item.megamanarmormod.biometal_x": "Model X Biometal",
 	"item.megamanarmormod.coldpearl": "Cold Pearl",
 	
 	"item.megamanarmormod.bomb_dud": "Dud Bomb",
@@ -70,6 +75,9 @@
 	"item.megamanarmormod.fire_part": "Fire Part",
 	"item.megamanarmormod.guts_part": "Guts Part",
 	"item.megamanarmormod.ice_machine": "Ice Machine",
+	
+	"item.megamanarmormod.oil_can": "Oil Can",
+	"item.megamanarmormod.time_clock": "Time Clock",
 	
 	"item.megamanarmormod.data_normal": "Norm Data",
 	"item.megamanarmormod.data_fire": "Fire Data",
@@ -88,15 +96,19 @@
 	"item.megamanarmormod.data_panel": "Panel Data",
 	"item.megamanarmormod.data_obstacle": "Obstacle Data",
 	"item.megamanarmormod.data_dark": "Dark Data",
+	"item.megamanarmormod.data_falzar": "Falzar Data",
+	"item.megamanarmormod.data_gregar": "Gregar Data",
 	
 	"item.megamanarmormod.mysterydatapartblue": "Blue Mystery Data Piece",
 	
 	"item.megamanarmormod.wave_am": "AM Wave",
 	"item.megamanarmormod.wave_fm": "FM Wave",
 	"item.megamanarmormod.wave_mu": "Mu Wave",
+	"item.megamanarmormod.wave_noise": "Noise Wave",
 	
 	"item.megamanarmormod.zenny": "Zenny",
 	"item.megamanarmormod.bugfrag": "BugFrag",
+	"item.megamanarmormod.hubbatch": "Hub.bat",
 	
 	"item.megamanarmormod.soccer_ball": "Soccer Ball",
 	"item.megamanarmormod.rcan": "R Can",
@@ -422,6 +434,22 @@
 	"item.megamanarmormod.colorizerelecbugstyle": "Elec Bug-Style Colorizer",
 	"item.megamanarmormod.colorizerwoodbugstyle": "Wood Bug-Style Colorizer",
 	
+	"item.megamanarmormod.colorizernormnavi": "Normnavi Colorizer",
+	"item.megamanarmormod.colorizernormnavib": "Normnavi B Colorizer",
+	"item.megamanarmormod.colorizernormnavic": "Normnavi C Colorizer",
+	"item.megamanarmormod.colorizernormnaviheel": "Heel Normnavi Colorizer",
+	
+	"item.megamanarmormod.colorizernormnavi2": "Normnavi v2 Colorizer",
+	"item.megamanarmormod.colorizernormnavi3": "Normnavi v3 Colorizer",
+	"item.megamanarmormod.colorizernormnavi4": "Normnavi v4 Colorizer",
+	"item.megamanarmormod.colorizernormnavi5": "Normnavi v5 Colorizer",
+	
+	"item.megamanarmormod.colorizernormnavitypef": "Normnavi typeF Colorizer",
+	"item.megamanarmormod.colorizernormnavitypea": "Normnavi typeA Colorizer",
+	"item.megamanarmormod.colorizernormnavitypew": "Normnavi typeW Colorizer",
+	"item.megamanarmormod.colorizernormnavitypee": "Normnavi typeE Colorizer",
+	"item.megamanarmormod.colorizernormnavitypex": "Normnavi typeX Colorizer",
+	
 	"item.megamanarmormod.colorizerstarforcegeoversion": "Starforce (Geo Version) Colorizer",
 	
 	"item.megamanarmormod.colorizervolnutt": "Megaman (Legends) Colorizer",
@@ -604,6 +632,11 @@
 	"item.megamanarmormod.novamegaman_body": "Nova Corps Megaman Body",
 	"item.megamanarmormod.novamegaman_legs": "Nova Corps Megaman Legs",
 	
+	"item.megamanarmormod.badboxart_head": "Bad Box Art Megaman Head Armor",
+	"item.megamanarmormod.badboxart_arms": "Bad Box Art Megaman Boots Armor",
+	"item.megamanarmormod.badboxart_body": "Bad Box Art Megaman Body Armor",
+	"item.megamanarmormod.badboxart_legs": "Bad Box Art Megaman Legs Armor",
+	
 	"item.megamanarmormod.protomanarmor_head": "Protoman Head Armor",
 	"item.megamanarmormod.protomanarmor_arms": "Protoman Boots Armor",
 	"item.megamanarmormod.protomanarmor_body": "Protoman Body Armor",
@@ -667,6 +700,16 @@
 	"item.megamanarmormod.fireman_arms": "Fireman Boots Armor",
 	"item.megamanarmormod.fireman_body": "Fireman Body Armor",
 	"item.megamanarmormod.fireman_legs": "Fireman Legs Armor",
+	
+	"item.megamanarmormod.oilman_head": "Oilman Head Armor",
+	"item.megamanarmormod.oilman_arms": "Oilman Boots Armor",
+	"item.megamanarmormod.oilman_body": "Oilman Body Armor",
+	"item.megamanarmormod.oilman_legs": "Oilman Legs Armor",
+	
+	"item.megamanarmormod.timeman_head": "Timeman Head Armor",
+	"item.megamanarmormod.timeman_arms": "Timeman Boots Armor",
+	"item.megamanarmormod.timeman_body": "Timeman Body Armor",
+	"item.megamanarmormod.timeman_legs": "Timeman Legs Armor",
 	
 	"item.megamanarmormod.xarmor_head": "X Head Armor",
 	"item.megamanarmormod.xbuster": "X Buster",
@@ -789,20 +832,41 @@
 	"item.megamanarmormod.megamanzero_body": "Zero(MegamanZero) Body Armor",
 	"item.megamanarmormod.megamanzero_legs": "Zero(MegamanZero) Legs Armor",
 	
+	"item.megamanarmormod.modelx_head": "Model X Head Armor",
+	"item.megamanarmormod.modelx_arms": "Model X Boots Armor",
+	"item.megamanarmormod.modelx_body": "Model X Body Armor",
+	"item.megamanarmormod.modelx_legs": "Model X Legs Armor",
+	
 	"item.megamanarmormod.megamanexe_head": "Megaman.exe Head Armor",
 	"item.megamanarmormod.megamanexe_arms": "Megaman.exe Boots Armor",
 	"item.megamanarmormod.megamanexe_body": "Megaman.exe Body Armor",
 	"item.megamanarmormod.megamanexe_legs": "Megaman.exe Legs Armor",
+	
+	"item.megamanarmormod.hubstyle_head": "Megaman.exe Hubstyle Helmet",
+	"item.megamanarmormod.hubstyle_arms": "Megaman.exe Hubstyle Boots",
+	"item.megamanarmormod.hubstyle_body": "Megaman.exe Hubstyle Armor",
+	"item.megamanarmormod.hubstyle_legs": "Megaman.exe Hubstyle Leggings",
 	
 	"item.megamanarmormod.protomanexe_head": "Protoman.exe Head Armor",
 	"item.megamanarmormod.protomanexe_arms": "Protoman.exe Boots Armor",
 	"item.megamanarmormod.protomanexe_body": "Protoman.exe Body Armor",
 	"item.megamanarmormod.protomanexe_legs": "Protoman.exe Legs Armor",
 	
+	"item.megamanarmormod.normnavi_head": "Normnavi Head Armor",
+	"item.megamanarmormod.normnavi_arms": "Normnavi Boots Armor",
+	"item.megamanarmormod.normnavi_body": "Normnavi Body Armor",
+	"item.megamanarmormod.normnavi_legs": "Normnavi Legs Armor",
+	
+	
 	"item.megamanarmormod.starforce_head": "Starforce Megaman Head Armor",
 	"item.megamanarmormod.starforce_arms": "Starforce Megaman Boots Armor",
 	"item.megamanarmormod.starforce_body": "Starforce Megaman Body Armor",
 	"item.megamanarmormod.starforce_legs": "Starforce Megaman Legs Armor",
+	
+	"item.megamanarmormod.over0_head": "Over-0 Head Armor",
+	"item.megamanarmormod.over0_arms": "Over-0 Boots Armor",
+	"item.megamanarmormod.over0_body": "Over-0 Body Armor",
+	"item.megamanarmormod.over0_legs": "Over-0 Legs Armor",
 	
 	"item.megamanarmormod.pachislot_head": "Megaman Ability Head Armor",
 	"item.megamanarmormod.pachislot_arms": "Megaman Ability Boots Armor",
