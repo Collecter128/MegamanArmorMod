@@ -35,9 +35,9 @@ public class ScrapBlock extends BreakableBlock{
 	   public void playerDestroy(World worldIn, PlayerEntity player, BlockPos pos, BlockState state, @Nullable TileEntity p_180657_5_, ItemStack p_180657_6_) {
 	   //public void onRemove(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
 	      if (!worldIn.isClientSide) {
-	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
+	    	 ItemStack itemstackIn = new ItemStack(ItemInit.CerataniumRaw.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(7);
+	    	 int RandomInt = random.nextInt(9);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case 0: 
@@ -60,6 +60,12 @@ public class ScrapBlock extends BreakableBlock{
 	    	 		break;
 	    	 	case 6: 
 	    	 		itemstackIn = new ItemStack(ItemInit.SoccerBall.get());
+	    	 		break;
+	    	 	case 7: 
+	    	 		itemstackIn = new ItemStack(ItemInit.OilCan.get());
+	    	 		break;
+	    	 	case 8: 
+	    	 		itemstackIn = new ItemStack(ItemInit.TimeClock.get());
 	    	 		break;
 	    	 	
 	    	 		

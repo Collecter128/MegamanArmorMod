@@ -35,9 +35,9 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	   public void playerDestroy(World worldIn, PlayerEntity player, BlockPos pos, BlockState state, @Nullable TileEntity p_180657_5_, ItemStack p_180657_6_) {
 	   //public void onRemove(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
 	      if (!worldIn.isClientSide) {
-	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
+	    	 ItemStack itemstackIn = new ItemStack(ItemInit.NormalData.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(2);
+	    	 int RandomInt = random.nextInt(3);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case 0: 
@@ -46,9 +46,9 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	    	 	case 1: 
 	    	 		itemstackIn = new ItemStack(ItemInit.SwordData.get());
 	    	 		break;
-//	    	 	case 2: 
-//	    	 		itemstackIn = new ItemStack(ItemInit.SuperAdapterColorizer.get());
-//	    	 		break;
+	    	 	case 2: 
+	    	 		itemstackIn = new ItemStack(ItemInit.NormalData.get());
+	    	 		break;
 	    	 	
 	    	 		
 	    	 	default:

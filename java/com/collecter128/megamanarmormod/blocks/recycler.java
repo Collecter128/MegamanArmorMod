@@ -88,6 +88,7 @@ public class recycler extends Block{
 		        	 else if(item == ItemInit.DudBomb.get() || item == ItemInit.BrokenCutter.get()
 		        			 || item == ItemInit.ElectricBattery.get()|| item == ItemInit.FirePart.get()
 		        			 || item == ItemInit.GutsPart.get()|| item == ItemInit.IceMachine.get()
+		        					 || item == ItemInit.OilCan.get()|| item == ItemInit.TimeClock.get()
 		        			 || item == ItemInit.SoccerBall.get()) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
@@ -174,7 +175,7 @@ public class recycler extends Block{
 		         }// If Itemstack is not empty
 //		      }
 		   }
-
+	   
 //	/**
 //	    * Called before the Block is set to air in the world. Called regardless of if the player's tool can actually collect
 //	    * this block
