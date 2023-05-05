@@ -15,6 +15,7 @@ import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.ListNBT;
 import net.minecraft.nbt.NBTUtil;
+import net.minecraft.network.IPacket;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
@@ -30,6 +31,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.fml.network.NetworkHooks;
 
 public class bustershotentity extends AbstractArrowEntity{
 
@@ -285,6 +287,11 @@ public class bustershotentity extends AbstractArrowEntity{
 	protected ItemStack getPickupItem() {
 		//return new ItemStack(Items.ARROW);
 		return null;
+	}
+	
+	@Override
+	public IPacket<?> getAddEntityPacket(){
+		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 	
 //	   /**
