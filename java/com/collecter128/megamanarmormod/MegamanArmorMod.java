@@ -154,6 +154,7 @@ public class MegamanArmorMod
         	//Object CustomitemColors = 
         	//CustomItemColors.init(BlockColors.init());
         	//CustomItemColors.init(Minecraft.class.getClass().getDeclaredField(name));
+        	//CustomItemColors.init(Minecraft.getInstance().getItemColors());
         	//CustomItemRenderer.registerItemRenderer();
         	//ColorRegistry.
         	//CustomItemColors.init(getBlockColors());
