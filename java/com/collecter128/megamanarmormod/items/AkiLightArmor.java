@@ -1,17 +1,11 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.newarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.newarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanexe_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanexe_main;
-import com.collecter128.megamanarmormod.client.models.zeroarmor;
-import com.collecter128.megamanarmormod.client.models.zeroarmor_main;
+import com.collecter128.megamanarmormod.client.models.akilight;
+import com.collecter128.megamanarmormod.client.models.akilight_leggings;
+import com.collecter128.megamanarmormod.client.models.axlarmor_leggings;
+import com.collecter128.megamanarmormod.client.models.axlarmor_main;
+import com.collecter128.megamanarmormod.client.models.hubstyle;
+import com.collecter128.megamanarmormod.client.models.hubstyle_leggings;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -24,15 +18,15 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ProtomanExeArmor extends ArmorItem{
+public class AkiLightArmor extends ArmorItem{
 	
-	public int MainColorDefault = 14352384;//Darkish red
-	public int SecondaryColorDefault = 4275532;//dark gray
-	public int ThirdColorDefault = 16631836; //gold yellow
-	public int WhiteColorDefault = 16777215;//white
-	public int GlowyColorDefault = 16631836;//yellow also
-	public int GrayColorDefault = 16777215;//white
-	public int FourthColorDefault = 9068229;//purple
+	public int MainColorDefault = 5439433;//Main Body green
+	public int SecondaryColorDefault = 415304;//Secondary Dark Green
+	public int ThirdColorDefault = 16630571; //golden?
+	public int WhiteColorDefault = 2378966;//
+	public int GlowyColorDefault = 16646401;//red
+	public int GrayColorDefault = 2378966;//
+	public int FourthColorDefault = 65428; //Blue Green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -41,16 +35,17 @@ public class ProtomanExeArmor extends ArmorItem{
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
 
-	public ProtomanExeArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public AkiLightArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
+	
 	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		if(armorSlot != EquipmentSlotType.LEGS) {
-		protomanexe_main model = new protomanexe_main(1.0f, armorSlot);
+			akilight model = new akilight(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 		model.young = _default.young;
@@ -62,46 +57,48 @@ public class ProtomanExeArmor extends ArmorItem{
         CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
-	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
-	    	  //armorcolorer = compoundnbt.getInt("MainColor");
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("MainColor", MainColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
-
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
-	      
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", SecondaryColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
-
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
 	      }
-	      
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("WhiteColor", WhiteColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
-
 	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
 	      }
-	      
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("ThirdColor", ThirdColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
-
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
-	      
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GlowyColor", GlowyColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
-
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GrayColor", GrayColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
-
 	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
-      
+//	      else
+//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("FourthColor", FourthColorDefault);
+	      
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;
 		this.WhiteColor = model.WhiteColor;
@@ -112,7 +109,7 @@ public class ProtomanExeArmor extends ArmorItem{
         return (A) model;
 		}
 		else {
-			protomanexe_leggings model = new protomanexe_leggings(1.0f);
+			akilight_leggings model = new akilight_leggings(1.0f);
 			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 			model.young = _default.young;
@@ -164,7 +161,6 @@ public class ProtomanExeArmor extends ArmorItem{
 		    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 		      }
-		      
 	      
 			this.MainColor = model.MainColor;
 			this.SecondaryColor = model.SecondaryColor;
@@ -203,7 +199,7 @@ public class ProtomanExeArmor extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/protomanexe.png";
+        return "megamanarmormod:textures/armor/akilight.png";
     }
 	
 }
