@@ -67,6 +67,7 @@
 	
 	"item.megamanarmormod.biometal_blank": "Blank Biometal",
 	"item.megamanarmormod.biometal_x": "Model X Biometal",
+	"item.megamanarmormod.biometal_z": "Model Z Biometal",
 	"item.megamanarmormod.coldpearl": "Cold Pearl",
 	
 	"item.megamanarmormod.bomb_dud": "Dud Bomb",
@@ -78,6 +79,9 @@
 	
 	"item.megamanarmormod.oil_can": "Oil Can",
 	"item.megamanarmormod.time_clock": "Time Clock",
+	
+	"item.megamanarmormod.saberplusone": "Saber +1",
+	"item.megamanarmormod.saberplustwo": "Saber +2",
 	
 	"item.megamanarmormod.data_normal": "Norm Data",
 	"item.megamanarmormod.data_fire": "Fire Data",
@@ -434,6 +438,11 @@
 	"item.megamanarmormod.colorizerelecbugstyle": "Elec Bug-Style Colorizer",
 	"item.megamanarmormod.colorizerwoodbugstyle": "Wood Bug-Style Colorizer",
 	
+	"item.megamanarmormod.colorizerprotomanexe": "Protoman.exe Colorizer",
+	"item.megamanarmormod.colorizerprotomanexeds": "Protoman.exe DS Colorizer",
+	"item.megamanarmormod.colorizerprotomanexesp": "Protoman.exe SP Colorizer",
+	"item.megamanarmormod.colorizerprotomanexedarkbcs": "Dark Protoman.exe (BCS) Colorizer",
+	
 	"item.megamanarmormod.colorizernormnavi": "Normnavi Colorizer",
 	"item.megamanarmormod.colorizernormnavib": "Normnavi B Colorizer",
 	"item.megamanarmormod.colorizernormnavic": "Normnavi C Colorizer",
@@ -756,7 +765,7 @@
 	"item.megamanarmormod.thirdarmor_body": "Third Armor Body",
 	"item.megamanarmormod.thirdarmor_legs": "Third Armor Legs",
 	
-	"item.megamanarmormod.ifxarmor_body": "iFX Armor",
+	"item.megamanarmormod.ifxarmor_body": "IFX Armor",
 	"item.megamanarmormod.xtransparentarmor_head": "Transparent X Head Armor",
 	"item.megamanarmormod.xtransparentarmor_arms": "Transparent X Boots Armor",
 	"item.megamanarmormod.xtransparentarmor_body": "Transparent X Body Armor",
@@ -770,7 +779,7 @@
 	"item.megamanarmormod.zeroarmor_arms": "Zero Boots Armor",
 	"item.megamanarmormod.zeroarmor_body": "Zero Body Armor",
 	"item.megamanarmormod.zeroarmor_legs": "Zero Legs Armor",
-	"item.megamanarmormod.ifzeroarmor_body": "iF Zero Armor",
+	"item.megamanarmormod.ifzeroarmor_body": "IF Zero Armor",
 	
 	"item.megamanarmormod.novazero_head": "Nova Corps Zero Helmet",
 	"item.megamanarmormod.novazero_arms": "Nova Corps Zero Boots",
@@ -789,6 +798,9 @@
 	
 	"item.megamanarmormod.zsabermz": "Z Saber (Megaman Zero)",
 	"item.megamanarmormod.triangular_saber": "Triangular Saber",
+	
+	"item.megamanarmormod.festivespecialty": "Festive Specialty",
+	"item.megamanarmormod.ramengreatsword": "Ramen Great Sword",
 	
 	"item.megamanarmormod.zknuckle": "Z Knuckle",
 	
@@ -832,10 +844,20 @@
 	"item.megamanarmormod.megamanzero_body": "Zero(MegamanZero) Body Armor",
 	"item.megamanarmormod.megamanzero_legs": "Zero(MegamanZero) Legs Armor",
 	
+	"item.megamanarmormod.copyx_head": "Copy X Head Armor",
+	"item.megamanarmormod.copyx_arms": "Copy X Boots Armor",
+	"item.megamanarmormod.copyx_body": "Copy X Body Armor",
+	"item.megamanarmormod.copyx_legs": "Copy X Legs Armor",
+	
 	"item.megamanarmormod.modelx_head": "Model X Head Armor",
 	"item.megamanarmormod.modelx_arms": "Model X Boots Armor",
 	"item.megamanarmormod.modelx_body": "Model X Body Armor",
 	"item.megamanarmormod.modelx_legs": "Model X Legs Armor",
+	
+	"item.megamanarmormod.modelzx_head": "Model ZX Head Armor",
+	"item.megamanarmormod.modelzx_arms": "Model ZX Boots Armor",
+	"item.megamanarmormod.modelzx_body": "Model ZX Body Armor",
+	"item.megamanarmormod.modelzx_legs": "Model ZX Legs Armor",
 	
 	"item.megamanarmormod.megamanexe_head": "Megaman.exe Head Armor",
 	"item.megamanarmormod.megamanexe_arms": "Megaman.exe Boots Armor",
@@ -851,6 +873,11 @@
 	"item.megamanarmormod.protomanexe_arms": "Protoman.exe Boots Armor",
 	"item.megamanarmormod.protomanexe_body": "Protoman.exe Body Armor",
 	"item.megamanarmormod.protomanexe_legs": "Protoman.exe Legs Armor",
+	
+	"item.megamanarmormod.darkprotomanexe_head": "Dark Protoman.exe Head Armor",
+	"item.megamanarmormod.darkprotomanexe_arms": "Dark Protoman.exe Boots Armor",
+	"item.megamanarmormod.darkprotomanexe_body": "Dark Protoman.exe Body Armor",
+	"item.megamanarmormod.darkprotomanexe_legs": "Dark Protoman.exe Legs Armor",
 	
 	"item.megamanarmormod.normnavi_head": "Normnavi Head Armor",
 	"item.megamanarmormod.normnavi_arms": "Normnavi Boots Armor",
@@ -873,6 +900,11 @@
 	"item.megamanarmormod.pachislot_body": "Megaman Ability Body Armor",
 	"item.megamanarmormod.pachislot_legs": "Megaman Ability Legs Armor",
 	
+	"item.megamanarmormod.akilight_head": "Aki Light's Head Armor",
+	"item.megamanarmormod.akilight_arms": "Aki Light's Boots Armor",
+	"item.megamanarmormod.akilight_body": "Aki Light's Body Armor",
+	"item.megamanarmormod.akilight_legs": "Aki Light's Legs Armor",
+	
 	"key.category.megamanarmormod": "Megaman Armor Mod",
 	"key.category.megamanarmormod.dashkey": "Dash",
 	"block.megamanarmormod.colorizerluckyblock": "Armor Colorizer Lucky Block",
@@ -888,6 +920,14 @@
 	"block.megamanarmormod.legendsruinsblockb": "Ruins Block B",
 	"block.megamanarmormod.legendsruinsblockc": "Ruins Block C",
 	"block.megamanarmormod.legendsruinsblockd": "Ruins Block D",
+	"block.megamanarmormod.legendsruinsblocke": "Ruins Block E",
+	"block.megamanarmormod.legendsruinsblockf": "Ruins Block F",
+	"block.megamanarmormod.legendsruinsblockg": "Ruins Block G",
+	"block.megamanarmormod.legendsruinsblockgladder": "Ruins Block G Ladder",
+	"block.megamanarmormod.legendsruinsblockh": "Ruins Block H",
+	"block.megamanarmormod.legendsruinsblocki": "Ruins Block I",
+	"block.megamanarmormod.legendsruinsblockj": "Ruins Block J",
+	"block.megamanarmormod.legendsruinsblockk": "Ruins Block K",
 	
 	"block.megamanarmormod.greenmysterydata": "Green Mystery Data",
 	"block.megamanarmormod.bluemysterydata": "Blue Mystery Data",
