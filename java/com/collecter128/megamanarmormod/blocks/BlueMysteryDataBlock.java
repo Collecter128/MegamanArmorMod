@@ -37,7 +37,7 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.NormalData.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(3);
+	    	 int RandomInt = random.nextInt(4);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case 0: 
@@ -48,6 +48,9 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	    	 		break;
 	    	 	case 2: 
 	    	 		itemstackIn = new ItemStack(ItemInit.NormalData.get());
+	    	 		break;
+	    	 	case 3: 
+	    	 		itemstackIn = new ItemStack(ItemInit.DarkData.get());
 	    	 		break;
 	    	 	
 	    	 		
