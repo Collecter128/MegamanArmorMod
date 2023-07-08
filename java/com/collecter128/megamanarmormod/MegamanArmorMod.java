@@ -144,6 +144,17 @@ public class MegamanArmorMod
         		blockRegistryEvent.getRegistry().register(new BlockItem(block, new Item.Properties().tab(MegamanArmorMod.MMTab)).setRegistryName(block.getRegistryName()));
         	});;
         	
+        	RenderTypeLookup.setRenderLayer(BlockInit.RuinsBlockGLadder.get(), RenderType.cutout());
+        	
+        	RenderTypeLookup.setRenderLayer(BlockInit.BombLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.CutLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.ElecLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.FireLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.GutsLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.IceLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.OilLadder.get(), RenderType.cutout());
+        	RenderTypeLookup.setRenderLayer(BlockInit.TimeLadder.get(), RenderType.cutout());
+        	
         	RenderTypeLookup.setRenderLayer(BlockInit.BlueMysteryData.get(), RenderType.cutout());
         	RenderTypeLookup.setRenderLayer(BlockInit.GreenMysteryData.get(), RenderType.cutout());
         	
