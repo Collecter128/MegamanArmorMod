@@ -62,9 +62,11 @@ public class VillagerInit {
 				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.LegendsArmor_Body.get()), 7, 1, 12, 2),
 				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.LegendsArmor_Legs.get()), 7, 1, 12, 2),
 				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.LegendsArmor_Arms.get()), 7, 1, 12, 2)
+				
 		};
 		VillagerTrades.ITrade[] junkLevel4 = new VillagerTrades.ITrade[]{
-				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(BlockInit.Recycler.get()), 5, 1, 16, 1)
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.SaberPlusOne.get()), 2, 1, 12, 2),
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.SaberPlusTwo.get()), 4, 1, 12, 2)
 		};
 		VillagerTrades.ITrade[] junkLevel5 = new VillagerTrades.ITrade[]{
 				

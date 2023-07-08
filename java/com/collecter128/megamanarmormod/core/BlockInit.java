@@ -7,6 +7,7 @@ import com.collecter128.megamanarmormod.blocks.GreenMysteryDataBlock;
 import com.collecter128.megamanarmormod.blocks.ScrapBlock;
 import com.collecter128.megamanarmormod.blocks.bannerluckyblock;
 import com.collecter128.megamanarmormod.blocks.blockrotatable;
+import com.collecter128.megamanarmormod.blocks.blockrotatableLadder;
 import com.collecter128.megamanarmormod.blocks.colorizerluckyblock;
 import com.collecter128.megamanarmormod.blocks.recycler;
 
@@ -76,6 +77,38 @@ public class BlockInit {
 			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_BROWN).harvestTool(ToolType.PICKAXE)
 					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockE = Blocks.register("legendsruinsblocke",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_BROWN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockF = Blocks.register("legendsruinsblockf",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_BROWN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockG = Blocks.register("legendsruinsblockg",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_GREEN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockGLadder = Blocks.register("legendsruinsblockgladder",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockH = Blocks.register("legendsruinsblockh",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_RED).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockI = Blocks.register("legendsruinsblocki",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_BROWN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockJ = Blocks.register("legendsruinsblockj",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_BROWN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> RuinsBlockK = Blocks.register("legendsruinsblockk",
+			() -> new blockrotatable((AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_BROWN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
 	public static final RegistryObject<Block> ScapBlock = Blocks.register("scrapblock",
 			() -> new ScrapBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)
@@ -107,37 +140,37 @@ public class BlockInit {
 					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.ANVIL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
-//	public static final RegistryObject<Block> BombLadder = Blocks.register("ladder_bomb",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> CutLadder = Blocks.register("ladder_cut",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION).notSolid()
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> ElecLadder = Blocks.register("ladder_elec",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> FireLadder = Blocks.register("ladder_fire",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> GutsLadder = Blocks.register("ladder_guts",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> IceLadder = Blocks.register("ladder_ice",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> OilLadder = Blocks.register("ladder_oil",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	public static final RegistryObject<Block> TimeLadder = Blocks.register("ladder_time",
-//			() -> new LadderBlock((AbstractBlock.Properties.of(Material.DECORATION)
-//					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
-//					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
-//	
+	public static final RegistryObject<Block> BombLadder = Blocks.register("ladder_bomb",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> CutLadder = Blocks.register("ladder_cut",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> ElecLadder = Blocks.register("ladder_elec",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> FireLadder = Blocks.register("ladder_fire",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> GutsLadder = Blocks.register("ladder_guts",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> IceLadder = Blocks.register("ladder_ice",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> OilLadder = Blocks.register("ladder_oil",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> TimeLadder = Blocks.register("ladder_time",
+			() -> new blockrotatableLadder((AbstractBlock.Properties.of(Material.DECORATION)
+					.strength(0.4F)).noOcclusion() //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.LADDER)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
 }
