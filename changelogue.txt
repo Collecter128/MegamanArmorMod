@@ -1,3 +1,229 @@
+	New Todo
+	Right or left leg is over too far?
+		How to fix: X -1, Y, Z
+	Rockman Ability Boots Glow off Right leg
+		How to fix: X, Y, Z -2
+	No recipes yet, sorry!
+		some swords
+		military buster
+		
+	Add fourth color to other armor?
+		zero?
+		Vile's belt?
+		Megaman Evil?
+		Sigma? and third?
+	Figure out how to make buster fire "lemons"
+	Maybe some other source of ammo than arrows for buster
+
+	problem with X ver ke boost armor arm
+
+	MM1 Robot masters have an issue with glow foot
+	Right arm problem on Xke, Xkeboost, and Xkai
+
+	Fireman helmet may be too far down, might need to change it so its like one or two pixels higher when worn?
+
+	iX armor may be too powerful now
+
+	Github
+		en_us
+		ItemInit
+		ModelZX Model files
+		ModelZX Item Files
+		Protoman.exe Armor item
+		Colorizerluckyblock
+		CopyX Model Files
+		CopyX Item Class
+		XarmorChestcolormodel class
+		Darkprotoman.exe Model Files
+		Dark Protoman.exe Item Class
+		Bluemysterydata block
+		core-villagerinit
+		MegamanArmorMod class
+		blockrotatableladder class
+		BlockInit
+		Akilight model classes
+		Akilight Item Class
+		SwordFire Item Class
+
+		Textures for
+			Model ZX armor
+			Model ZX Items
+			Biometal Z
+			copyx armor
+			copyx items
+			X Armor armor
+			Dark Protoman exe armor
+			darkprotoman exe armor items
+			saber plus1 item
+			saber plus 2 item
+			festive specialty
+			ramengreatsword
+			ruinsblockg block
+			ruinsblockg ladder block
+			ruinsblockH block
+			ruinsblocki block
+			ruinsblockj block
+			ruinsblockk block
+			Akilight Armor Items
+			Akilight Armor armor
+		Item Models for
+			Biometal Z
+			Model ZX Items
+			protomanexe colorizers
+			copyx items
+			dark protoman exe items
+			Saberplusone and two
+			Ruinsblock E
+			Ruinsblock F
+			ruinsblockg block
+			ruinsblockg ladder block
+			ruinsblockH block
+			ruinsblocki block
+			ruinsblockj block
+			ruinsblockk block
+			Akilight Armor
+		Blockstate for
+			Ruinsblock E
+			Ruinsblock F
+			ruinsblockg block
+			ruinsblockg ladder block
+			ruinsblockH block
+			ruinsblocki block
+			ruinsblockj block
+			ruinsblockk block
+		Block Model for
+			Ruinsblock E
+			Ruinsblock F
+			ruinsblockg block
+			ruinsblockg ladder block
+			ruinsblockH block
+			ruinsblocki block
+			ruinsblockj block
+			ruinsblockk block
+		Crafting recipes for
+			Transparent Armor X
+			Model ZX Armor
+			Biometal Z
+			CopyX armor
+			DarkProtomanExe Armor
+			Zero Saber Plus 1
+			Zero Saber Plus 2
+			Ruinsblock E
+			Ruinsblock F
+			ruinsblockg block
+			ruinsblockg ladder block
+			ruinsblockH block
+			ruinsblocki block
+			ruinsblockj block
+			ruinsblockk block
+			Akilight Armor
+
+	Wiki
+		add all weapons?
+		Add uncraftable thingys?
+
+	1.18
+		2.15.2 content
+		bad box art megaman
+		normnavi
+		normnavi Colorizers
+		Protoman.exe colorizers
+			bassnium???
+			virus zero item
+			nightmare souls items
+			roboenza item
+			data Falzar item
+			data Gregar item
+			hubbatch item
+			oil can
+			time clock
+			wave noise
+			saber plus1 item
+			saber plus 2 item
+
+???
+	Update to 1.18!
+
+
+https://megaman-armor-mod.fandom.com/wiki/Version_History?so=search
+
+2.15.4
+
+
+2.15.3
+	Added Hubstyle Armor
+	Added Model ZX Armor!
+	Added Copy X Armor
+	Added Dark Protoman.exe Armor
+	Added Two new Swords from XDive
+	Added Saber +1 and Saber +2 Items
+	Added some more colorizers
+	Added more blocks and some ladders
+	Added a recipe for Transparent Orange Armor X
+	Fixed Timeman pants
+	fixed a bug with Protoman.exe armor
+	Fixed a bug with Megaman X Armor
+	Fixed Recipe for Fireman Helmet
+
+
+2.15.2
+	Added Bad Box art Megaman Armor
+	Added Normavi Armor
+	Added Over-0 Armor
+	Added Model X Armor
+	Added Timeman Armor
+	Added Oilman Armor
+	Added more colorizers
+	Added More materials. Biometals are included.
+	Fix for a possible server crash?
+	Fixed Leg problem with many different armors
+	Fixed yellow hands problem with Bass Armor
+	Fixed boots glow being offset for many (not all) armor
+
+
+2.15.1
+	Added Starforce Megaman Armor
+	Added a new ore, Mystery Wave
+	Nerfed weapons a tiny bit.
+	Added Z Saber (Megaman Zero) and Triangular Saber
+	Made iX armor better. Maybe too good...
+	Made some more weapons craftable
+	Changed the appearance of Mystery Data
+	Protoman.exe armor now repaired with Sword Data
+
+
+2.15 
+	Added Junk Shop Villager!
+	-Place a scrap block next to a villager, this may change later.
+	Added X Ver. Ke Boost Armor
+	Added a few more colorizers
+	fixed a typo with Soccer Ball
+	A fix for part of Bass Armor's problems
+
+		
+2.14.3
+	Possible fix for servers again
+
+
+2.14.2
+	Added Shades
+	Added transparent Armor X
+	No recipes yet sorry!
+	added recipe for third armor
+	Changed Rockman Shadow Armor to have transparency
+	Also changed Replicapture armor
+	Changed some armor colorizer textures
+	Possible fix for server crash?
+
+
+2.14.1 The Ke Update
+	Added X Kai Armor
+	Added X Ver.Ke Armor
+	Added block of Ceratanium
+	Changed the Dyable Colorizers a bit
+	Increased most armor durability.
+	Made a funky new texture for the Random Colorizer
+	Changed Quint armor. The visor is now transparent
 
 
 2.14 The Robot Master Update
