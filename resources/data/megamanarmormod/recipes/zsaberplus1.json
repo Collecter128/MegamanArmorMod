@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:saberplusone"
+		},
+		"T": {
+			"item": "megamanarmormod:zsaber"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:zsaberplus1",
+		"count": 1
+	}
+}

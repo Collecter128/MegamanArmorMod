@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:modelx_legs"
+		},
+		"G": {
+			"item": "megamanarmormod:biometal_z"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:modelzx_legs",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:protomanexe_arms"
+		},
+		"G": {
+			"item": "megamanarmormod:data_dark"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:darkprotomanexe_arms",
+		"count": 1
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" d",
+		"HC"
+	],
+	"key": {
+		"d": {
+			"item": "minecraft:dirt"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"H": {
+			"item": "minecraft:ladder"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:legendsruinsblockgladder",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"m",
+		"t"
+	],
+	"key": {
+		"t": {
+			"item": "minecraft:redstone"
+		},
+		"m": {
+			"item": "megamanarmormod:megamanarmor_head"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:akilight_head",
+		"count": 1
+	}
+}

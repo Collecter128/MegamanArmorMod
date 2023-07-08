@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:saberplustwo"
+		},
+		"T": {
+			"item": "megamanarmormod:zsaber"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:zsaberplus2",
+		"count": 1
+	}
+}

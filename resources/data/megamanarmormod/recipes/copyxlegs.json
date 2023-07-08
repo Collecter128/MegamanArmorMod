@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"XiX",
+		"i i",
+		"X X"
+	],
+	"key": {
+		"i": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"X": {
+			"item": "megamanarmormod:titaniumx"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:copyx_legs",
+		"count": 1
+	}
+}

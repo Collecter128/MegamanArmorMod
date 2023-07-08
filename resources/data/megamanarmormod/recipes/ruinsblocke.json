@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"g",
+		"d",
+		"C"
+	],
+	"key": {
+		"d": {
+			"item": "minecraft:dirt"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"g": {
+			"item": "minecraft:glowstone_dust"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:legendsruinsblocke",
+		"count": 1
+	}
+}
