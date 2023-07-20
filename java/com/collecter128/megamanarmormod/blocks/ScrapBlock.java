@@ -74,7 +74,8 @@ public class ScrapBlock extends BreakableBlock{
 	    	 }
 	    	  
 	    	 worldIn.playSound((PlayerEntity)null, pos, SoundEvents.METAL_BREAK, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.random.nextFloat() * 0.4F);
-	         player.inventory.add(itemstackIn);
+	    	//player.inventory.add(itemstackIn);
+	         popResource(worldIn, pos, itemstackIn);
 	    	 //player.inventory.addItemStackToInventory(itemstackIn);
 	      }
 

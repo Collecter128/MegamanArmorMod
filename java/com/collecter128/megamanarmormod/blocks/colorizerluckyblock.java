@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(308);
+	    	 int RandomInt = random.nextInt(313);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -71,6 +71,14 @@ public class colorizerluckyblock extends Block{
 	    	 	case 268: 
 	    	 		itemstackIn = new ItemStack(ItemInit.RedbullMegamanColorizer.get());
 	    	 		break;
+	    	 		
+	    	 	case 311: 
+	    	 		itemstackIn = new ItemStack(ItemInit.RollColorizer.get());
+	    	 		break;
+	    	 	case 312: 
+	    	 		itemstackIn = new ItemStack(ItemInit.Roll2PColorizer.get());
+	    	 		break;
+	    	 		
 	    	 	case 4: 
 	    	 		itemstackIn = new ItemStack(ItemInit.ProtomanColorizer.get());
 	    	 		break;
@@ -901,6 +909,17 @@ public class colorizerluckyblock extends Block{
 	    	 		itemstackIn = new ItemStack(ItemInit.WoodBugStyleColorizer.get());
 	    	 		break;
 	    	 		
+	    	 		
+	    	 	case 308: 
+	    	 		itemstackIn = new ItemStack(ItemInit.RollExeColorizer.get());
+	    	 		break;
+	    	 	case 309: 
+	    	 		itemstackIn = new ItemStack(ItemInit.RollExeDSColorizer.get());
+	    	 		break;
+	    	 	case 310: 
+	    	 		itemstackIn = new ItemStack(ItemInit.RollExeSPColorizer.get());
+	    	 		break;
+	    	 		
 	    	 	case 304: 
 	    	 		itemstackIn = new ItemStack(ItemInit.ProtomanExeColorizer.get());
 	    	 		break;
@@ -1026,7 +1045,8 @@ public class colorizerluckyblock extends Block{
 	    	 }
 	    	  
 	    	 worldIn.playSound((PlayerEntity)null, pos, SoundEvents.FIREWORK_ROCKET_LAUNCH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.random.nextFloat() * 0.4F);
-	         player.inventory.add(itemstackIn);
+	         //player.inventory.add(itemstackIn);
+	         popResource(worldIn, pos, itemstackIn);
 	    	 //player.inventory.addItemStackToInventory(itemstackIn);
 	      }
 

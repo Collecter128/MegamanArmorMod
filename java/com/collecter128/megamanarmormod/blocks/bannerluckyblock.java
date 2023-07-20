@@ -106,7 +106,8 @@ public class bannerluckyblock extends BreakableBlock{
 	    	 //}
 	    	  
 	    	 worldIn.playSound((PlayerEntity)null, pos, SoundEvents.FIREWORK_ROCKET_LAUNCH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.random.nextFloat() * 0.4F);
-	         player.inventory.add(itemstackIn);
+	         //player.inventory.add(itemstackIn);
+	         popResource(worldIn, pos, itemstackIn);
 	    	 //player.inventory.addItemStackToInventory(itemstackIn);
 	      }
 

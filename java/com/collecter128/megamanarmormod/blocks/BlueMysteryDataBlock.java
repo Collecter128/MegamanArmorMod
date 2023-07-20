@@ -11,6 +11,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.BreakableBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
 import net.minecraft.util.SoundCategory;
@@ -37,7 +38,7 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.NormalData.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(4);
+	    	 int RandomInt = random.nextInt(5);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case 0: 
@@ -52,6 +53,9 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	    	 	case 3: 
 	    	 		itemstackIn = new ItemStack(ItemInit.DarkData.get());
 	    	 		break;
+	    	 	case 4: 
+	    	 		itemstackIn = new ItemStack(ItemInit.RecoverData.get());
+	    	 		break;
 	    	 	
 	    	 		
 	    	 	default:
@@ -59,7 +63,8 @@ public class BlueMysteryDataBlock extends BreakableBlock{
 	    	 }
 	    	  
 	    	 worldIn.playSound((PlayerEntity)null, pos, SoundEvents.FIREWORK_ROCKET_LAUNCH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.random.nextFloat() * 0.4F);
-	         player.inventory.add(itemstackIn);
+	         //player.inventory.add(itemstackIn);
+	         popResource(worldIn, pos, itemstackIn);
 	    	 //player.inventory.addItemStackToInventory(itemstackIn);
 	      }
 
