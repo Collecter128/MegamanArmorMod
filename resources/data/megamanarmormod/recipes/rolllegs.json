@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"C C",
+		"CrC"
+	],
+	"key": {
+		"r": {
+			"item": "minecraft:pink_dye"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:roll_legs",
+		"count": 1
+	}
+}

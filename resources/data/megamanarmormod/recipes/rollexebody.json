@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:data_recovery"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:rollexe_body",
+		"count": 1
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" w ",
+		" iw",
+		"i  "
+	],
+	"key": {
+		"i": {
+			"item": "minecraft:iron_ingot"
+		},
+		"w": {
+			"item": "minecraft:wheat"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:rollbroom",
+		"count": 1
+	}
+}

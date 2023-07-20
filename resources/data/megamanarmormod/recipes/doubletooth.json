@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" PB",
+		" TB",
+		"T  "
+	],
+	"key": {
+		"P": {
+			"item": "minecraft:packed_ice"
+		},
+		"B": {
+			"item": "minecraft:blaze_rod"
+		},
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:doubletooth",
+		"count": 1
+	}
+}

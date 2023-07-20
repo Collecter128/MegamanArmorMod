@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "minecraft:netherite_ingot"
+		},
+		"T": {
+			"item": "megamanarmormod:zsabermz"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:triangular_saber",
+		"count": 1
+	}
+}

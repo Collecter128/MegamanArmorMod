@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TT",
+		"TT",
+		"dd"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:specialsteel"
+		},
+		"T": {
+			"item": "minecraft:netherite_ingot"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:soulsaber",
+		"count": 1
+	}
+}

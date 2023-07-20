@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" BB",
+		"BXB",
+		"T  "
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:nether_star"
+		},
+		"B": {
+			"item": "minecraft:blaze_rod"
+		},
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:redlotussaber",
+		"count": 1
+	}
+}
