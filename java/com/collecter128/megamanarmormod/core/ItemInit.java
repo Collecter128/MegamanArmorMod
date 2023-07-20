@@ -54,6 +54,8 @@ import com.collecter128.megamanarmormod.items.QuintArmor;
 import com.collecter128.megamanarmormod.items.RedbullMegamanArmor;
 import com.collecter128.megamanarmormod.items.Replicapture;
 import com.collecter128.megamanarmormod.items.RockmanShadow;
+import com.collecter128.megamanarmormod.items.RollArmor;
+import com.collecter128.megamanarmormod.items.RollexeArmor;
 import com.collecter128.megamanarmormod.items.RyuGiarmor;
 import com.collecter128.megamanarmormod.items.SecondArmor;
 import com.collecter128.megamanarmormod.items.ShadesArmor;
@@ -174,6 +176,16 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> PrecisionCircuit = Items.register("circuit_precision",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> HighPerformanceCircuit = Items.register("circuit_high_performance",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> EvolvedCircuit = Items.register("circuit_evolved",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> SpecialCircuit = Items.register("circuit_special",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> HeterogenicCircuit = Items.register("circuit_heterogenic",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> ReverseCircuit = Items.register("circuit_reverse",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionCore = Items.register("core_trialproduction",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
@@ -198,6 +210,8 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> SmartGear = Items.register("gear_smart",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> PrecisionGear = Items.register("gear_precision",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionBattery = Items.register("battery_trial_production",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
@@ -209,6 +223,8 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> SmartBattery = Items.register("battery_smart",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> PrecisionBattery = Items.register("battery_precision",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> TrialProductionAmplifier = Items.register("amplifier_trial_production",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
@@ -219,6 +235,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> ModifiedAmplifier = Items.register("amplifier_modified",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> SmartAmplifier = Items.register("amplifier_smart",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> PrecisionAmplifier = Items.register("amplifier_precision",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> ShockAbsorber = Items.register("shock_absorber",
@@ -428,6 +446,15 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/4413347, /*Secondary*/13356237, /*ThirdColor*/14032731, 
 							/*WhiteColor*/16777215, /*Glow Bits*/16773191, /*GreyColor*/13356237, /*FourthColor*/8374492}));
+	
+	public static final RegistryObject<Item> RollColorizer = Items.register("colorizerroll",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16731960, /*Secondary*/12708608, /*ThirdColor*/16635420, 
+							/*WhiteColor*/16777215, /*Glow Bits*/16749332, /*GreyColor*/6113907, /*FourthColor*/6113907}));
+	public static final RegistryObject<Item> Roll2PColorizer = Items.register("colorizerroll2p",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/9539985, /*Secondary*/3847816, /*ThirdColor*/16236377, 
+							/*WhiteColor*/16777215, /*Glow Bits*/3454813, /*GreyColor*/8421504, /*FourthColor*/8421504}));
 	
 	public static final RegistryObject<Item> ProtomanColorizer = Items.register("colorizerprotoman",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
@@ -1358,6 +1385,19 @@ public class ItemInit {
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/7966566, /*Secondary*/4148021, -1, -1, -1, -1, /*FourthColor*/12639404}));
 	
+	public static final RegistryObject<Item> RollExeColorizer = Items.register("colorizerrollexe",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16744603, /*Secondary*/16138578, /*ThirdColor*/15525763, 
+							/*WhiteColor*/16777215, /*Glow Bits*/16762900, /*GreyColor*/7757920, /*FourthColor*/4599860}));
+	public static final RegistryObject<Item> RollExeDSColorizer = Items.register("colorizerrollexeds",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/13397465, /*Secondary*/11010216, /*ThirdColor*/16096957, 
+							/*WhiteColor*/14606046, /*Glow Bits*/15635223, /*GreyColor*/8157620, /*FourthColor*/5920670}));
+	public static final RegistryObject<Item> RollExeSPColorizer = Items.register("colorizerrollexesp",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/16129639, /*Secondary*/12390200, /*ThirdColor*/15507070, 
+							/*WhiteColor*/16777215, /*Glow Bits*/15769088, /*GreyColor*/3618883, /*FourthColor*/3618883}));
+	
 	public static final RegistryObject<Item> ProtomanExeColorizer = Items.register("colorizerprotomanexe",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/14352384, /*Secondary*/4275532, /*ThirdColor*/16631836, 
@@ -1566,6 +1606,19 @@ public class ItemInit {
 	public static final RegistryObject<Item> BadBoxArt_Legs = Items.register("badboxart_legs",
 			() -> new BadBoxArtArmor(ArmorMaterials.MegaArmorBase, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab))
 			);//MegamanArmorMod.ArmorItems_Group
+	
+	public static final RegistryObject<Item> RollArmor_Head = Items.register("roll_head",
+			() -> new RollArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> RollArmor_Arms = Items.register("roll_arms",
+			() -> new RollArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> RollArmor_Body = Items.register("roll_body",
+			() -> new RollArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> RollArmor_Legs = Items.register("roll_legs",
+			() -> new RollArmor(ArmorMaterials.MegamanArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab))
+			);//MegamanArmorMod.ArmorItems_Group
+			
+	public static final RegistryObject<Item> RollsBroom = Items.register("rollbroom",
+			() -> new SwordItem(ItemTier.IRON, 3, -2.4F, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> LightLabcoat = Items.register("drlightlabcoat",
 			() -> new com.collecter128.megamanarmormod.items.LightLabcoat(ArmorMaterials.LightLabcoat, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
@@ -1859,12 +1912,19 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> Zrapier = Items.register("zrapier",
 			() -> new SwordItem(ItemTier.DIAMOND, 3, -1.4f, new Item.Properties().tab(MegamanArmorMod.MMTab)));
-	public static final RegistryObject<Item> Zichimonji = Items.register("zichimonji",
-			() -> new SwordItem(ItemTier.DIAMOND, 4, -1.5F, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> Beamrapier = Items.register("beamrapier",
 			() -> new SwordItem(ItemTier.DIAMOND, 5, -1.4f, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> Zichimonji = Items.register("zichimonji",
+			() -> new SwordItem(ItemTier.DIAMOND, 4, -1.5F, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Muramasa = Items.register("muramasa",
+			() -> new SwordItem(ItemTier.DIAMOND, 6, -1.5F, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 	public static final RegistryObject<Item> Doubletooth = Items.register("doubletooth",
 			() -> new SwordItem(ItemTier.DIAMOND, 6, -2.4f, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> TwinFangs = Items.register("twinfangs",
+			() -> new SwordItem(ItemTier.DIAMOND, 8, -2.4f, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 	public static final RegistryObject<Item> SoulSaber = Items.register("soulsaber",
 			() -> new SwordItem(ItemTier.DIAMOND, 8, -2.4f, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> RedLotusSaber = Items.register("redlotussaber",
@@ -1982,6 +2042,15 @@ public class ItemInit {
 			() -> new DarkProtomanExeArmor(ArmorMaterials.ProtomanExeArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> DarkprotomanexeArmor_Legs = Items.register("darkprotomanexe_legs",
 			() -> new DarkProtomanExeArmor(ArmorMaterials.ProtomanExeArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> rollexeArmor_Head = Items.register("rollexe_head",
+			() -> new RollexeArmor(ArmorMaterials.RollExeArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> rollexeArmor_Arms = Items.register("rollexe_arms",
+			() -> new RollexeArmor(ArmorMaterials.RollExeArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> rollexeArmor_Body = Items.register("rollexe_body",
+			() -> new RollexeArmor(ArmorMaterials.RollExeArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> rollexeArmor_Legs = Items.register("rollexe_legs",
+			() -> new RollexeArmor(ArmorMaterials.RollExeArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> NormnaviArmor_Head = Items.register("normnavi_head",
 			() -> new NormnaviArmor(ArmorMaterials.NormnaviArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
