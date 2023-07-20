@@ -17,6 +17,11 @@
 	"item.megamanarmormod.circuit_modified": "Modified Circuit",
 	"item.megamanarmormod.circuit_smart": "Smart Circuit",
 	"item.megamanarmormod.circuit_precision": "Precision Circuit",
+	"item.megamanarmormod.circuit_high_performance": "High Performance Circuit",
+	"item.megamanarmormod.circuit_evolved": "Evolved Circuit",
+	"item.megamanarmormod.circuit_special": "Special Circuit",
+	"item.megamanarmormod.circuit_heterogenic": "Heterogenic Circuit",
+	"item.megamanarmormod.circuit_reverse": "Reverse Circuit",
 	
 	"item.megamanarmormod.core_trialproduction": "Trial Production Core",
 	"item.megamanarmormod.core_prototype": "Prototype Core",
@@ -130,6 +135,10 @@
 	
 	"item.megamanarmormod.colorizerquint": "Quint Colorizer",
 	"item.megamanarmormod.colorizerrockmanshadow": "Rockman Shadow Colorizer",
+	
+	"item.megamanarmormod.colorizerroll": "Roll Colorizer",
+	"item.megamanarmormod.colorizerroll2p": "Roll 2P Colorizer",
+	
 	"item.megamanarmormod.colorizerprotoman": "Protoman Colorizer",
 	"item.megamanarmormod.colorizerbreakman": "Breakman Colorizer",
 	
@@ -438,6 +447,10 @@
 	"item.megamanarmormod.colorizerelecbugstyle": "Elec Bug-Style Colorizer",
 	"item.megamanarmormod.colorizerwoodbugstyle": "Wood Bug-Style Colorizer",
 	
+	"item.megamanarmormod.colorizerrollexe": "Roll.exe Colorizer",
+	"item.megamanarmormod.colorizerrollexeds": "Roll.exe DS Colorizer",
+	"item.megamanarmormod.colorizerrollexesp": "Roll.exe SP Colorizer",
+	
 	"item.megamanarmormod.colorizerprotomanexe": "Protoman.exe Colorizer",
 	"item.megamanarmormod.colorizerprotomanexeds": "Protoman.exe DS Colorizer",
 	"item.megamanarmormod.colorizerprotomanexesp": "Protoman.exe SP Colorizer",
@@ -665,7 +678,11 @@
 	"item.megamanarmormod.quintarmor_legs": "Quint Legs Armor",
 	"item.megamanarmormod.rockmanshadow_helmet": "Rockman Shadow Head Armor",
 	
-	
+	"item.megamanarmormod.roll_head": "Roll Head Armor",
+	"item.megamanarmormod.roll_arms": "Roll Boots Armor",
+	"item.megamanarmormod.roll_body": "Roll Body Armor",
+	"item.megamanarmormod.roll_legs": "Roll Legs Armor",
+	"item.megamanarmormod.rollbroom": "Roll's Broom",
 	
 	"item.megamanarmormod.wily_labcoat": "Evil Wily Labcoat",
 	"item.megamanarmormod.mettaurhelmet": "Mettaur Helmet",
@@ -791,8 +808,10 @@
 	"item.megamanarmormod.zsaberplus2": "Z Saber +2",
 	"item.megamanarmormod.zrapier": "Z Rapier",
 	"item.megamanarmormod.zichimonji": "Z Ichimonji",
+	"item.megamanarmormod.muramasa": "Muramasa",
 	"item.megamanarmormod.beamrapier": "Beam Rapier",
 	"item.megamanarmormod.doubletooth": "Doubletooth",
+	"item.megamanarmormod.twinfangs": "Twin Fangs",
 	"item.megamanarmormod.soulsaber": "Soul Saber",
 	"item.megamanarmormod.redlotussaber": "Red Lotus Saber",
 	
@@ -878,6 +897,11 @@
 	"item.megamanarmormod.darkprotomanexe_arms": "Dark Protoman.exe Boots Armor",
 	"item.megamanarmormod.darkprotomanexe_body": "Dark Protoman.exe Body Armor",
 	"item.megamanarmormod.darkprotomanexe_legs": "Dark Protoman.exe Legs Armor",
+	
+	"item.megamanarmormod.rollexe_head": "Roll.exe Head Armor",
+	"item.megamanarmormod.rollexe_arms": "Roll.exe Boots Armor",
+	"item.megamanarmormod.rollexe_body": "Roll.exe Body Armor",
+	"item.megamanarmormod.rollexe_legs": "Roll.exe Legs Armor",
 	
 	"item.megamanarmormod.normnavi_head": "Normnavi Head Armor",
 	"item.megamanarmormod.normnavi_arms": "Normnavi Boots Armor",
