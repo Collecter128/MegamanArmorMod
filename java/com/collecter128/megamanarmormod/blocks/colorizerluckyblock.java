@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(313);
+	    	 int RandomInt = random.nextInt(315);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -135,6 +135,13 @@ public class colorizerluckyblock extends Block{
 	    	 		break;
 	    	 	case 285: 
 	    	 		itemstackIn = new ItemStack(ItemInit.ElecmanGoalieColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 313: 
+	    	 		itemstackIn = new ItemStack(ItemInit.SoccerWilyColorizer.get());
+	    	 		break;
+	    	 	case 314: 
+	    	 		itemstackIn = new ItemStack(ItemInit.SoccerWilyGoalieColorizer.get());
 	    	 		break;
 	    	 		
 	    	 		//Rockman Xover

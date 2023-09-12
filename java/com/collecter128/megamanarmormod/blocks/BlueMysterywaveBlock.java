@@ -43,11 +43,11 @@ public class BlueMysterywaveBlock extends BreakableBlock{
 	    	 	case 0: 
 	    	 		itemstackIn = new ItemStack(ItemInit.AMWave.get());
 	    	 		break;
-//	    	 	case 1: 
-//	    	 		itemstackIn = new ItemStack(ItemInit.SwordData.get());
-//	    	 		break;
+	    	 	case 1: 
+	    	 		itemstackIn = new ItemStack(ItemInit.FMWave.get());
+	    	 		break;
 //	    	 	case 2: 
-//	    	 		itemstackIn = new ItemStack(ItemInit.SuperAdapterColorizer.get());
+//	    	 		itemstackIn = new ItemStack(ItemInit.MUWave.get());
 //	    	 		break;
 	    	 	
 	    	 		
