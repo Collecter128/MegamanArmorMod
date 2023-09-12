@@ -52,6 +52,15 @@ public class BlockInit {
 					.strength(1.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.WOOD)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
+	public static final RegistryObject<Block> DeeplogServer = Blocks.register("deeplog_server",
+			() -> new Block((AbstractBlock.Properties.of(Material.METAL, MaterialColor.DIAMOND).harvestTool(ToolType.PICKAXE)
+					.strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	public static final RegistryObject<Block> DeeplogServerCorrupted = Blocks.register("deeplog_server_corrupted",
+			() -> new Block((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_RED).harvestTool(ToolType.PICKAXE)
+					.strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
 	public static final RegistryObject<Block> LimitedOre = Blocks.register("limited_ore",
 			() -> new Block((AbstractBlock.Properties.of(Material.STONE, MaterialColor.EMERALD).harvestTool(ToolType.PICKAXE)
 					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)

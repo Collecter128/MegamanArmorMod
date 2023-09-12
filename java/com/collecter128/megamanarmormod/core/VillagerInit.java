@@ -33,15 +33,25 @@ public class VillagerInit {
 			()->new PointOfInterestType("junks", PointOfInterestType.getBlockStates(BlockInit.ScapBlock.get()), 1, 1));
 	public static final RegistryObject<VillagerProfession> JunkShopProffesion = VillagerProffesions.register("junkshopowner", 
 			()->new VillagerProfession("junkshopowner", JunkShopPoE.get(), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_WEAPONSMITH));
-	public static void registerPOI() {
+	//public static void registerPOI() {
+
 //		try {
 //			ObfuscationReflectionHelper.findMethod(PointOfInterestType.class, "registerBlockStates", PointOfInterestType.class).invoke(null, JunkShopPoE.get());
 //		}catch (IllegalAccessException | InvocationTargetException e){
 //			e.printStackTrace();
 //		}
-	}
+	//}
+	
+	public static final RegistryObject<PointOfInterestType> DeepLogPoE = Point_of_interestTypes.register("deepl", 
+			()->new PointOfInterestType("deepl", PointOfInterestType.getBlockStates(BlockInit.DeeplogServer.get()), 1, 1));
+	public static final RegistryObject<VillagerProfession> DeepLogProffesion = VillagerProffesions.register("deeplogger", 
+			()->new VillagerProfession("deeplogger", DeepLogPoE.get(), ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_CLERIC));
+	//public static void registerPOI() {
+		
+	//}
 	
 	public static void FillTradeData() {
+		//Junk Shop Owner
 		VillagerTrades.ITrade[] junkLevel1 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
 				new VillagerTrades.EmeraldForItemsTrade(ItemInit.BrokenCutter.get(), 1, 16, 3),
 				new VillagerTrades.EmeraldForItemsTrade(ItemInit.GutsPart.get(), 1, 16, 3),
@@ -73,6 +83,33 @@ public class VillagerInit {
 		};
 		VillagerTrades.TRADES.put(JunkShopProffesion.get(), toIntMap(ImmutableMap.of(
 				1, junkLevel1, 2, junkLevel2, 3, junkLevel3, 4, junkLevel4, 5, junkLevel5)));
+		
+		//Deep Logger
+		VillagerTrades.ITrade[] deepLoggerLevel1 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
+				//Cost, Amount, Trades, Exp, 
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.CharacterPatchProgram.get()), 1, 1, 99, 3),
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.DeepElement.get()), 1, 1, 99, 3)
+		};
+		VillagerTrades.ITrade[] deepLoggerLevel2 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
+				//Cost, Amount, Trades, Exp, 
+				
+		};
+		VillagerTrades.ITrade[] deepLoggerLevel3 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
+				//Cost, Amount, Trades, Exp, 
+				
+		};
+		VillagerTrades.ITrade[] deepLoggerLevel4 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
+				//Cost, Amount, Trades, Exp, 
+				
+		};
+		VillagerTrades.ITrade[] deepLoggerLevel5 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
+				//Cost, Amount, Trades, Exp, 
+				
+		};
+		VillagerTrades.TRADES.put(DeepLogProffesion.get(), toIntMap(ImmutableMap.of(
+				1, deepLoggerLevel1, 2, deepLoggerLevel2, 3, deepLoggerLevel3, 4, deepLoggerLevel4, 5, deepLoggerLevel5)));
+		
+		//Higsbys
 	}
 	private static Int2ObjectMap<VillagerTrades.ITrade[]> toIntMap(ImmutableMap<Integer, VillagerTrades.ITrade[]> p_221238_0_) {
 	      return new Int2ObjectOpenHashMap<>(p_221238_0_);
