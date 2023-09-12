@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iXi",
+		"X X"
+	],
+	"key": {
+		"i": {
+			"item": "megamanarmormod:patch_program_character"
+		},
+		"X": {
+			"item": "megamanarmormod:deep_element"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:via_head",
+		"count": 1
+	}
+}

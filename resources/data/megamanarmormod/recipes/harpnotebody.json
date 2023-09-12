@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:wave_fm"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:harpnote_body",
+		"count": 1
+	}
+}

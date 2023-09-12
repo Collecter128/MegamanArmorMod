@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CrC"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:energy_alien"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:duo_arms",
+		"count": 1
+	}
+}

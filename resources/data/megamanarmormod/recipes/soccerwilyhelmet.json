@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" r ",
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:soccer_ball"
+		},
+		"C": {
+			"item": "minecraft:glass"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:soccerwily_head",
+		"count": 1
+	}
+}

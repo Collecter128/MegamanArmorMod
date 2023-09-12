@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"fbf",
+		"brb",
+		"fbf"
+	],
+	"key": {
+		"f": {
+			"item": "megamanarmormod:fortenium"
+		},
+		"b": {
+			"item": "minecraft:blue_stained_glass"
+		},
+		"r": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:deeplog_server",
+		"count": 1
+	}
+}

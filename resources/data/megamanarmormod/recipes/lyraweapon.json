@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"WBW"
+	],
+	"key": {
+		"W": {
+			"item": "megamanarmormod:wave_fm"
+		},
+		"B": {
+			"item": "minecraft:bow"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:lyra_weapon",
+		"count": 1
+	}
+}
