@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "megamanarmormod:item/electronic_conversion_bottle"
+  }
+}
