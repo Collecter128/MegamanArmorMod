@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C ",
+		"sC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"s": {
+			"item": "megamanarmormod:soccer_ball"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizersoccerwily",
+		"count": 1
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "megamanarmormod:colorizerdefault"
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerrandom",
+		"count": 1
+	}
+}
