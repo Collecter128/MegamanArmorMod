@@ -44,7 +44,8 @@ public enum ArmorMaterials implements IArmorMaterial{
 	RollExeArmor("rollexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.RecoverData.get())),
 	NormnaviArmor("normnaviarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.NormalData.get())),
 	
-	StarforceMegamanArmor("starforcearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.AMWave.get())),;
+	StarforceMegamanArmor("starforcearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.AMWave.get())),
+	StarforceFMArmor("starforcefmarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.FMWave.get()));
 	
 	public static final int[] basedurability = {128, 144, 160, 112};
 	private final String name;
