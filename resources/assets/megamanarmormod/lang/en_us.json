@@ -55,11 +55,30 @@
 	"item.megamanarmormod.virussigma": "Sigma Virus",
 	"item.megamanarmormod.limited": "Limited",
 	"item.megamanarmormod.viruszero": "Zero Virus",
+	"item.megamanarmormod.nightmaresoul_blue": "Blue Nightmare Soul",
+	"item.megamanarmormod.nightmaresoul_bluesmall": "Small Blue Nightmare Soul",
+	"item.megamanarmormod.nightmaresoul_green": "Green Nightmare Soul",
+	"item.megamanarmormod.nightmaresoul_red": "Red Nightmare Soul",
+	
 	"item.megamanarmormod.energy_bassnium": "Bassnium Energy",
 	"item.megamanarmormod.energy_evil": "Evil Energy",
 	"item.megamanarmormod.energy_alien": "Alien Energy",
-	"item.megamanarmormod.shock_absorber": "Shock Absorber",
 	
+	"item.megamanarmormod.shock_absorber": "Shock Absorber",
+	"item.megamanarmormod.element_metal": "Element Metal",
+	
+	"item.megamanarmormod.electronic_storage_bottle": "Electronic Storage Bottle",
+	"item.megamanarmormod.electronic_conversion_bottle": "Electronic Conversion Bottle",
+		
+	"item.megamanarmormod.patch_program_character": "Character Patch Program",
+	"item.megamanarmormod.patch_program_weapon": "Weapon Patch Program",
+	
+	"item.megamanarmormod.token_arena": "Arena Token",
+	"item.megamanarmormod.token_coop": "Co-op Token",
+	"item.megamanarmormod.token_lucky": "Lucky Token",
+	
+	"item.megamanarmormod.deep_element": "Deep Element",
+		
 	"item.megamanarmormod.ore_crimson": "Crimson Ore",
 	"item.megamanarmormod.ore_amber": "Amber Ore",
 	"item.megamanarmormod.ore_azure": "Azure Ore",
@@ -157,6 +176,9 @@
 	"item.megamanarmormod.colorizercutmangoalie": "Cutman Goalie Colorizer",
 	"item.megamanarmormod.colorizerbombmangoalie": "Bombman Goalie Colorizer",
 	"item.megamanarmormod.colorizerelecmangoalie": "Elecman Goalie Colorizer",
+	
+	"item.megamanarmormod.colorizersoccerwily": "Soccer Wily Colorizer",
+	"item.megamanarmormod.colorizersoccerwilygoalie": "Soccer Wily Goalie Colorizer",
 	
 	"item.megamanarmormod.colorizergutsmanwood": "Wood Gutsman Colorizer",
 	
@@ -672,6 +694,11 @@
 	"item.megamanarmormod.protomannovaarmor_legs": "Nova Corps Protoman Leggings",
 	"item.megamanarmormod.protoshield_novacorps": "Nova Corps Protoshield",
 	
+	"item.megamanarmormod.duo_head": "Duo Head Armor",
+	"item.megamanarmormod.duo_arms": "Duo Boots Armor",
+	"item.megamanarmormod.duo_body": "Duo Body Armor",
+	"item.megamanarmormod.duo_legs": "Duo Legs Armor",
+	
 	"item.megamanarmormod.quintarmor_head": "Quint Head Armor",
 	"item.megamanarmormod.quintarmor_arms": "Quint Boots Armor",
 	"item.megamanarmormod.quintarmor_body": "Quint Body Armor",
@@ -685,6 +712,11 @@
 	"item.megamanarmormod.rollbroom": "Roll's Broom",
 	
 	"item.megamanarmormod.wily_labcoat": "Evil Wily Labcoat",
+	"item.megamanarmormod.soccerwily_head": "Wily's Soccer Head",
+	"item.megamanarmormod.soccerwily_arms": "Wily's Soccer Boots",
+	"item.megamanarmormod.soccerwily_body": "Wily's Soccer Body",
+	"item.megamanarmormod.soccerwily_legs": "Wily's Soccer Legs",
+	
 	"item.megamanarmormod.mettaurhelmet": "Mettaur Helmet",
 	
 	"item.megamanarmormod.drlightlabcoat": "Dr Light Labcoat",
@@ -914,6 +946,13 @@
 	"item.megamanarmormod.starforce_body": "Starforce Megaman Body Armor",
 	"item.megamanarmormod.starforce_legs": "Starforce Megaman Legs Armor",
 	
+	"item.megamanarmormod.harpnote_head": "Harp Note Head Armor",
+	"item.megamanarmormod.harpnote_arms": "Harp Note Megaman Boots Armor",
+	"item.megamanarmormod.harpnote_body": "Harp Note Megaman Body Armor",
+	"item.megamanarmormod.harpnote_legs": "Harp Note Megaman Legs Armor",
+	
+	"item.megamanarmormod.lyra_weapon": "Lyra (weapon)",
+	
 	"item.megamanarmormod.over0_head": "Over-0 Head Armor",
 	"item.megamanarmormod.over0_arms": "Over-0 Boots Armor",
 	"item.megamanarmormod.over0_body": "Over-0 Body Armor",
@@ -929,8 +968,14 @@
 	"item.megamanarmormod.akilight_body": "Aki Light's Body Armor",
 	"item.megamanarmormod.akilight_legs": "Aki Light's Legs Armor",
 	
+	"item.megamanarmormod.via_head": "Via Head Armor",
+	"item.megamanarmormod.via_arms": "Via Boots Armor",
+	"item.megamanarmormod.via_body": "Via Body Armor",
+	"item.megamanarmormod.via_legs": "Via Legs Armor",
+	
 	"key.category.megamanarmormod": "Megaman Armor Mod",
 	"key.category.megamanarmormod.dashkey": "Dash",
+	
 	"block.megamanarmormod.colorizerluckyblock": "Armor Colorizer Lucky Block",
 	"block.megamanarmormod.bannerluckyblock": "Banner Lucky Block",
 	"block.megamanarmormod.ceratanium_ore": "Ceratanium Ore",
@@ -938,6 +983,9 @@
 	"block.megamanarmormod.ceratanium_block": "Ceratanium Block",
 	"block.megamanarmormod.titanium_ore": "Titianium Ore",
 	"block.megamanarmormod.scrapblock": "Scrap Block",
+	
+	"block.megamanarmormod.deeplog_server": "Deep Log Server",
+	"block.megamanarmormod.deeplog_server_corrupted": "Corrupted Deep Log Server",
 	
 	"block.megamanarmormod.legendsruinsblocka": "Ruins Block A",
 	"block.megamanarmormod.legendsruinsblockaplate": "Plated Ruins Block A",
@@ -973,6 +1021,9 @@
 	
 	"entity.minecraft.villager.megamanarmormod.junkshopowner": "Junk Shop",
 	"entity.minecraft.villager.junkshopowner": "Junk Shop",
+	
+	"entity.minecraft.villager.megamanarmormod.deeplogger": "Deep Logger",
+	"entity.minecraft.villager.deeplogger": "Deep Logger",
 	
 	"block.minecraft.banner.logocircle.black": "Black Circle BG",
 	"block.minecraft.banner.logocircle.red": "Red Circle BG",
