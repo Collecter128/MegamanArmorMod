@@ -20,6 +20,8 @@ public enum ArmorMaterials implements IArmorMaterial{
 	
 	WilyLabcoat("wilylabcoat", 6, new int[] {1, 2, 3, 1}, 3, SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(Blocks.WHITE_WOOL)),
 	BassArmor("bassarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Fortenium.get())),
+	SuperBassArmor("superbassarmor", 25, new int[] {3, 6, 7, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Fortenium.get())),
+	SuperBassEvilArmor("superbassevilarmor", 30, new int[] {3, 6, 7, 3}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Fortenium.get())),
 	QuintArmor("quintarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
 	
 	MegaArmorBase("megaarmorbase", 10, new int[] {1, 1, 1, 1}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.Ceratanium.get())),
@@ -42,10 +44,13 @@ public enum ArmorMaterials implements IArmorMaterial{
 	HubstyleArmor("hubstylearmor", 30, new int[] {3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.1f, () -> Ingredient.of(ItemInit.BusterData.get())),
 	ProtomanExeArmor("protomanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.SwordData.get())),
 	RollExeArmor("rollexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.RecoverData.get())),
+	GutsmanExeArmor("gutsmanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.PanelData.get())),
 	NormnaviArmor("normnaviarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.NormalData.get())),
 	
 	StarforceMegamanArmor("starforcearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.AMWave.get())),
-	StarforceFMArmor("starforcefmarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.FMWave.get()));
+	StarforceFMArmor("starforcefmarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.FMWave.get())),
+	
+	DeepLogArmor("deeplogarmor", 20, new int[] {2, 5, 6, 3}, 6, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.CharacterPatchProgram.get()));
 	
 	public static final int[] basedurability = {128, 144, 160, 112};
 	private final String name;
