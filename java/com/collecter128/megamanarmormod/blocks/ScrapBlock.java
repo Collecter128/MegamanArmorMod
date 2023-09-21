@@ -37,7 +37,7 @@ public class ScrapBlock extends BreakableBlock{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.CerataniumRaw.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(10);
+	    	 int RandomInt = random.nextInt(11);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case 0: 
@@ -69,6 +69,9 @@ public class ScrapBlock extends BreakableBlock{
 	    	 		break;
 	    	 	case 9: 
 	    	 		itemstackIn = new ItemStack(ItemInit.AlienEnergy.get());
+	    	 		break;
+	    	 	case 10: 
+	    	 		itemstackIn = new ItemStack(ItemInit.EvilEnergy.get());
 	    	 		break;
 	    	 	
 	    	 		
