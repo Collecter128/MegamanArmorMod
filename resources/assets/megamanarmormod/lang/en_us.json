@@ -478,6 +478,11 @@
 	"item.megamanarmormod.colorizerprotomanexesp": "Protoman.exe SP Colorizer",
 	"item.megamanarmormod.colorizerprotomanexedarkbcs": "Dark Protoman.exe (BCS) Colorizer",
 	
+	"item.megamanarmormod.colorizergutsmanexe": "Gutsman.exe Colorizer",
+	"item.megamanarmormod.colorizergutsmanexeds": "Gutsman.exe DS Colorizer",
+	"item.megamanarmormod.colorizergutsmanexesp": "Gutsman.exe SP Colorizer",
+	"item.megamanarmormod.colorizergutsmanexeunused": "Gutsman.exe Unused Colorizer",
+	
 	"item.megamanarmormod.colorizernormnavi": "Normnavi Colorizer",
 	"item.megamanarmormod.colorizernormnavib": "Normnavi B Colorizer",
 	"item.megamanarmormod.colorizernormnavic": "Normnavi C Colorizer",
@@ -729,6 +734,16 @@
 	"item.megamanarmormod.bassarmor_body": "Bass Body Armor",
 	"item.megamanarmormod.bassarmor_legs": "Bass Legs Armor",
 	
+	"item.megamanarmormod.superbass_head": "Super Bass (MM7) Head Armor",
+	"item.megamanarmormod.superbass_arms": "Super Bass (MM7) Boots Armor",
+	"item.megamanarmormod.superbass_body": "Super Bass (MM7) Body Armor",
+	"item.megamanarmormod.superbass_legs": "Super Bass (MM7) Legs Armor",
+	
+		"item.megamanarmormod.superbassevil_head": "Super Bass Head Armor",
+	"item.megamanarmormod.superbassevil_arms": "Super Bass Boots Armor",
+	"item.megamanarmormod.superbassevil_body": "Super Bass Body Armor",
+	"item.megamanarmormod.superbassevil_legs": "Super Bass Legs Armor",
+	
 	"item.megamanarmormod.gutsman_head": "Gutsman Head Armor",
 	"item.megamanarmormod.gutsman_arms": "Gutsman Boots Armor",
 	"item.megamanarmormod.gutsman_body": "Gutsman Body Armor",
@@ -805,14 +820,21 @@
 	"item.megamanarmormod.firstarmor_body": "First Armor Body",
 	"item.megamanarmormod.firstarmor_legs": "First Armor Legs",
 	"item.megamanarmormod.military_buster": "Military Buster",
+	
 	"item.megamanarmormod.secondarmor_head": "Second Armor Head",
 	"item.megamanarmormod.secondarmor_arms": "Second Armor Boots",
 	"item.megamanarmormod.secondarmor_body": "Second Armor Body",
 	"item.megamanarmormod.secondarmor_legs": "Second Armor Legs",
+	
 	"item.megamanarmormod.thirdarmor_head": "Third Armor Head",
 	"item.megamanarmormod.thirdarmor_arms": "Third Armor Boots",
 	"item.megamanarmormod.thirdarmor_body": "Third Armor Body",
 	"item.megamanarmormod.thirdarmor_legs": "Third Armor Legs",
+	
+	"item.megamanarmormod.fourtharmor_head": "Fourth Armor Head",
+	"item.megamanarmormod.fourtharmor_arms": "Fourth Armor Boots",
+	"item.megamanarmormod.fourtharmor_body": "Fourth Armor Body",
+	"item.megamanarmormod.fourtharmor_legs": "Fourth Armor Legs",
 	
 	"item.megamanarmormod.ifxarmor_body": "IFX Armor",
 	"item.megamanarmormod.xtransparentarmor_head": "Transparent X Head Armor",
@@ -838,6 +860,7 @@
 	"item.megamanarmormod.zsaber": "Z Saber",
 	"item.megamanarmormod.zsaberplus1": "Z Saber +1",
 	"item.megamanarmormod.zsaberplus2": "Z Saber +2",
+	
 	"item.megamanarmormod.zrapier": "Z Rapier",
 	"item.megamanarmormod.zichimonji": "Z Ichimonji",
 	"item.megamanarmormod.muramasa": "Muramasa",
@@ -849,6 +872,8 @@
 	
 	"item.megamanarmormod.zsabermz": "Z Saber (Megaman Zero)",
 	"item.megamanarmormod.triangular_saber": "Triangular Saber",
+	
+	"item.megamanarmormod.modelzsaber": "Model Z Saber",
 	
 	"item.megamanarmormod.festivespecialty": "Festive Specialty",
 	"item.megamanarmormod.ramengreatsword": "Ramen Great Sword",
@@ -905,6 +930,11 @@
 	"item.megamanarmormod.modelx_body": "Model X Body Armor",
 	"item.megamanarmormod.modelx_legs": "Model X Legs Armor",
 	
+	"item.megamanarmormod.modelz_head": "Model Z Head Armor",
+	"item.megamanarmormod.modelz_arms": "Model Z Boots Armor",
+	"item.megamanarmormod.modelz_body": "Model Z Body Armor",
+	"item.megamanarmormod.modelz_legs": "Model Z Legs Armor",
+	
 	"item.megamanarmormod.modelzx_head": "Model ZX Head Armor",
 	"item.megamanarmormod.modelzx_arms": "Model ZX Boots Armor",
 	"item.megamanarmormod.modelzx_body": "Model ZX Body Armor",
@@ -934,6 +964,11 @@
 	"item.megamanarmormod.rollexe_arms": "Roll.exe Boots Armor",
 	"item.megamanarmormod.rollexe_body": "Roll.exe Body Armor",
 	"item.megamanarmormod.rollexe_legs": "Roll.exe Legs Armor",
+	
+	"item.megamanarmormod.gutsmanexe_head": "Gutsman.exe Head Armor",
+	"item.megamanarmormod.gutsmanexe_arms": "Gutsman.exe Boots Armor",
+	"item.megamanarmormod.gutsmanexe_body": "Gutsman.exe Body Armor",
+	"item.megamanarmormod.gutsmanexe_legs": "Gutsman.exe Legs Armor",
 	
 	"item.megamanarmormod.normnavi_head": "Normnavi Head Armor",
 	"item.megamanarmormod.normnavi_arms": "Normnavi Boots Armor",
