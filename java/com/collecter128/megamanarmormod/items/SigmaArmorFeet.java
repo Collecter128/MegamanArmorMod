@@ -3,6 +3,7 @@ package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.sigma_bootscolor;
 import com.collecter128.megamanarmormod.client.models.sigmaarmor_boots;
+import com.collecter128.megamanarmormod.client.models.sigmanew;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -20,15 +21,17 @@ public class SigmaArmorFeet extends ArmorItem{
 	public int MainColorDefault = 4574259;//Main Body Color 
 	public int SecondaryColorDefault = 3168981; //blue bits
 	public int WhiteColorDefault =  16777215;
-	public int ThirdColorDefault = 13401651; //Brown
+	public int ThirdColorDefault = 16569117; //yellow/gold
 	public int GlowyColorDefault = 14691113; // It's red
 	public int GrayColorDefault = 11322824; //Slightly blue
+	public int FourthColorDefault = 13401651; //Brown
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FourthColor = FourthColorDefault;
 
 	public SigmaArmorFeet(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -40,7 +43,7 @@ public class SigmaArmorFeet extends ArmorItem{
 		
 		//model
 		
-		sigma_bootscolor model = new sigma_bootscolor(1.0f);
+		sigmanew model = new sigmanew(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.FEET;
 //		if(slot == EquipmentSlotType.HEAD) {
 //			protomanarmor_main model = new protomanarmor_main(1.0f);
@@ -87,6 +90,11 @@ public class SigmaArmorFeet extends ArmorItem{
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
 
 	      model.young = _default.young;
 	        model.crouching = _default.crouching;
@@ -114,7 +122,7 @@ public class SigmaArmorFeet extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/sigma1.png";
+        return "megamanarmormod:textures/armor/sigma1new.png";
     }
 	
 }

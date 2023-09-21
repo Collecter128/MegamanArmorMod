@@ -21,15 +21,17 @@ public class SigmaArmorLegs extends ArmorItem{
 	public int MainColorDefault = 4574259;//Main Body Color 
 	public int SecondaryColorDefault = 3168981; //blue bits
 	public int WhiteColorDefault =  16777215;
-	public int ThirdColorDefault = 13401651; //Brown
+	public int ThirdColorDefault = 16569117; //yellow/gold
 	public int GlowyColorDefault = 14691113; // It's red
 	public int GrayColorDefault = 11322824; //Slightly blue
+	public int FourthColorDefault = 13401651; //Brown
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FourthColor = FourthColorDefault;
 
 	public SigmaArmorLegs(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -76,6 +78,11 @@ public class SigmaArmorLegs extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
 
