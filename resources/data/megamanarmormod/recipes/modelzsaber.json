@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"d",
+		"T"
+	],
+	"key": {
+		"d": {
+			"item": "megamanarmormod:biometal_z"
+		},
+		"T": {
+			"item": "megamanarmormod:zsaber"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:modelzsaber",
+		"count": 1
+	}
+}

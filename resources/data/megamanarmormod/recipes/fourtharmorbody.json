@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		" Z ",
+		"C C"
+	],
+	"key": {
+		"Z": {
+			"item": "megamanarmormod:xarmor_body"
+		},
+		"C": {
+			"item": "megamanarmormod:specialsteel"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:fourtharmor_body",
+		"count": 1
+	}
+}

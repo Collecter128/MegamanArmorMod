@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"Z",
+		"C"
+	],
+	"key": {
+		"Z": {
+			"item": "megamanarmormod:superbass_head"
+		},
+		"C": {
+			"item": "megamanarmormod:energy_evil"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:superbassevil_head",
+		"count": 1
+	}
+}

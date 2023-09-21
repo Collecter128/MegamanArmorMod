@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"C C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:data_panel"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:gutsmanexe_arms",
+		"count": 1
+	}
+}

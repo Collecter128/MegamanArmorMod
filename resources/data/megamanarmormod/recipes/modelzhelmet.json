@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CrC",
+		"C C"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:biometal_z"
+		},
+		"C": {
+			"item": "megamanarmormod:biometal_blank"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:modelz_head",
+		"count": 1
+	}
+}
