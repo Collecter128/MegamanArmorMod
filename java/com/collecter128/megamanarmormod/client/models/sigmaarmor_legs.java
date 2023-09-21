@@ -30,12 +30,14 @@ public class sigmaarmor_legs extends BipedModel  {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FourthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FourthColorDefault;
 
 	public sigmaarmor_legs(float modelSize) {
 		super(modelSize);
@@ -45,15 +47,18 @@ public class sigmaarmor_legs extends BipedModel  {
 		MainColorDefault = 4574259;//Main Body Color 
 		SecondaryColorDefault = 3168981; //blue bits
 		WhiteColorDefault = 16777215;
-		ThirdColorDefault = 13401651; //Brown
+		ThirdColorDefault = 16569117; //yellow/gold
 		GlowyColorDefault = 14691113; // It's red
 		GrayColorDefault = 11322824; //Slightly blue
+		FourthColorDefault = 13401651; //Brown
+		
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FourthColor = FourthColorDefault;
 
 		Body = new ModelRenderer(this);
 		Body.setPos(0.0F, 0.0F, 0.0F);
@@ -110,12 +115,15 @@ public class sigmaarmor_legs extends BipedModel  {
 	@Override
 	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
+		float fred = (float)( this.ThirdColor >> 16 & 255) / 255.0F;
+		float fgreen = (float)(this.ThirdColor >> 8 & 255) / 255.0F;
+		float fblue = (float)(this.ThirdColor & 255) / 255.0F;
 		this.Bodygold.copyFrom(this.body);
-		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay);
+		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		float fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
-		float fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
-		float fblue = (float)(this.GrayColor & 255) / 255.0F;
+		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
+		fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
+		fblue = (float)(this.GrayColor & 255) / 255.0F;
 		this.Bodygray.copyFrom(this.body);
 		Bodygray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLegsilver.copyFrom(this.rightLeg);
