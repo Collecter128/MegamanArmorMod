@@ -187,6 +187,7 @@
 	"item.megamanarmormod.colorizerxvariant": "X Ke Variant Colorizer",
 	
 	"item.megamanarmormod.colorizerzero": "Zero Colorizer",
+	"item.megamanarmormod.colorizerfakezero": "Fake Zero Colorizer",
 	"item.megamanarmormod.colorizerblackzero": "Black Zero Colorizer",
 	"item.megamanarmormod.colorizerzeronightmare": "Nightmare Zero Colorizer",
 	"item.megamanarmormod.colorizerirregularzero": "Irregular Zero Colorizer",
@@ -207,6 +208,7 @@
 	"item.megamanarmormod.colorizergraycolor": "Dyeable Gray Colorizer",
 	"item.megamanarmormod.colorizerglowycolor": "Dyeable Glowy Colorizer",
 	"item.megamanarmormod.colorizerfourthcolor": "Dyeable Fourth Colorizer",
+	"item.megamanarmormod.colorizerfifthcolor": "Dyeable Fifth Colorizer",
 	
 	"item.megamanarmormod.colorizerrollingcutter": "Rolling Cutter Colorizer",
 	"item.megamanarmormod.colorizersuperarm": "Super Arm Colorizer",
@@ -499,6 +501,7 @@
 	"item.megamanarmormod.colorizernormnavitypee": "Normnavi typeE Colorizer",
 	"item.megamanarmormod.colorizernormnavitypex": "Normnavi typeX Colorizer",
 	
+	"item.megamanarmormod.colorizerstarforcemegaman": "Megaman (Starforce) Colorizer",
 	"item.megamanarmormod.colorizerstarforcegeoversion": "Starforce (Geo Version) Colorizer",
 	
 	"item.megamanarmormod.colorizervolnutt": "Megaman (Legends) Colorizer",
@@ -895,6 +898,8 @@
 	"item.megamanarmormod.vilearmor_arms": "Vile Boots Armor",
 	"item.megamanarmormod.vilearmor_body": "Vile Body Armor",
 	"item.megamanarmormod.vilearmor_legs": "Vile Legs Armor",
+	
+	"item.megamanarmormod.vile_cannonbody": "Vile Body W. Cannon",
 	
 	"item.megamanarmormod.replicapture": "Replicapture Armor",
 	
