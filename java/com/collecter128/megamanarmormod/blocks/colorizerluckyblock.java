@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(318);
+	    	 int RandomInt = random.nextInt(322);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -634,6 +634,9 @@ public class colorizerluckyblock extends Block{
 	    	 	case 105: 
 	    	 		itemstackIn = new ItemStack(ItemInit.ZeroColorizer.get());
 	    	 		break;
+	    	 	case 319: 
+	    	 		itemstackIn = new ItemStack(ItemInit.FakeZeroColorizer.get());
+	    	 		break;
 	    	 	case 61: 
 	    	 		itemstackIn = new ItemStack(ItemInit.BlackZeroColorizer.get());
 	    	 		break;
@@ -949,6 +952,9 @@ public class colorizerluckyblock extends Block{
 	    	 	case 317: 
 	    	 		itemstackIn = new ItemStack(ItemInit.GutsmanExeSPColorizer.get());
 	    	 		break;
+	    	 	case 318: 
+	    	 		itemstackIn = new ItemStack(ItemInit.GutsmanExeUnusedColorizer.get());
+	    	 		break;
 	    	 		
 	    	 	case 291: 
 	    	 		itemstackIn = new ItemStack(ItemInit.NormNaviColorizer.get());
@@ -992,6 +998,9 @@ public class colorizerluckyblock extends Block{
 	    	 		itemstackIn = new ItemStack(ItemInit.NormNavitypeXColorizer.get());
 	    	 		break;
 	    	 		
+	    	 	case 321: 
+	    	 		itemstackIn = new ItemStack(ItemInit.StarforceMegamanColorizer.get());
+	    	 		break;
 	    	 	case 290: 
 	    	 		itemstackIn = new ItemStack(ItemInit.StarforceGeoVersionColorizer.get());
 	    	 		break;
@@ -1045,6 +1054,9 @@ public class colorizerluckyblock extends Block{
 	    	 		break;
 	    	 	case 97: 
 	    	 		itemstackIn = new ItemStack(ItemInit.GlowColorColorizer.get());
+	    	 		break;
+	    	 	case 320: 
+	    	 		itemstackIn = new ItemStack(ItemInit.FifthColorColorizer.get());
 	    	 		break;
 	    	 		
 	    	 	case 77: 
