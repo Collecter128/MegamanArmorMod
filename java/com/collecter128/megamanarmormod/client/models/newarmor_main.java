@@ -56,6 +56,7 @@ public class newarmor_main extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -63,6 +64,7 @@ public class newarmor_main extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType equipmentslot;
 
@@ -80,7 +82,7 @@ public class newarmor_main extends BipedModel {
 		GlowyColorDefault = 16720159;//Glow? red
 		GrayColorDefault = 5855577;//Kinda dark
 		FourthColorDefault = 6584982; //body middle thing 
-		//??? body middle thing 6584982
+		FifthColorDefault = 2935135; //green
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
@@ -88,6 +90,7 @@ public class newarmor_main extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Head = new ModelRenderer(this);
 		Head.setPos(0.0F, 0.0F, 0.0F);

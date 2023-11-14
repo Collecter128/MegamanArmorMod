@@ -69,12 +69,14 @@ public class thirdarmor_main extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType equipmentslot;
 
@@ -89,12 +91,14 @@ public class thirdarmor_main extends BipedModel {
 		WhiteColorDefault = 16777215;//Basic White
 		GlowyColorDefault = 16468504;//Glow?Red crystal thingy
 		GrayColorDefault = 16777215;//Basic White
+		FifthColorDefault = 2935135; //green
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FifthColor = FifthColorDefault;
 		
 		this.equipmentslot = slot;
 
@@ -517,8 +521,12 @@ public class thirdarmor_main extends BipedModel {
 		this.Headredglow.copyFrom(this.head);
 		Headredglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
+		
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.Bodygreen.copyFrom(this.body);
-		Bodygreen.render(matrixStack, buffer, 0xF000F0, packedOverlay);
+		Bodygreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 	}
 

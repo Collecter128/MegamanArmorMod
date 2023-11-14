@@ -60,6 +60,7 @@ public class fourtharmor extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -67,6 +68,7 @@ public class fourtharmor extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType equipmentslot;
 
@@ -83,7 +85,8 @@ public class fourtharmor extends BipedModel {
 		WhiteColorDefault = 16777215;//Basic White
 		GlowyColorDefault = 16468504;//Glow?Red crystal thingy
 		GrayColorDefault = 16777215;//Basic White
-		FourthColorDefault = 2935135; //green
+		FourthColorDefault = 9614024; //Chest Thingy
+		FifthColorDefault = 2935135; //green
 		
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
@@ -92,6 +95,7 @@ public class fourtharmor extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Headblue = new ModelRenderer(this);
 		Headblue.setPos(0.0F, 0.0F, 0.0F);
@@ -472,9 +476,9 @@ public class fourtharmor extends BipedModel {
 		this.LeftLegyellow.copyFrom(this.leftLeg);
 		LeftLegyellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		fred = (float)( this.FourthColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.FourthColor & 255) / 255.0F;
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.Bodygreenglow.copyFrom(this.body);
 		Bodygreenglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLeggreenglow.copyFrom(this.rightLeg);

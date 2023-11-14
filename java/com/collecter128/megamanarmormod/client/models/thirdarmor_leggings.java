@@ -36,12 +36,14 @@ public class thirdarmor_leggings extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FifthColorDefault;
 	
 	public thirdarmor_leggings(float modelSize) {
 		super(modelSize);
@@ -86,7 +88,7 @@ public class thirdarmor_leggings extends BipedModel {
 		RightLeggsecondary = new ModelRenderer(this);
 		RightLeggsecondary.setPos(-2.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeggsecondary, 0.192F, 0.0F, 0.0349F);
-		RightLeggsecondary.texOffs(0, 164).addBox(-1.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightLeggsecondary.texOffs(0, 164).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightLegglow = new ModelRenderer(this);
 		RightLegglow.setPos(-1.9F, 12.0F, 0.0F);

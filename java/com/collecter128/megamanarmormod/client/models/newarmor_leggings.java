@@ -32,12 +32,16 @@ public class newarmor_leggings extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FourthColorDefault;
+	public int FifthColorDefault;
 
 	public newarmor_leggings(float modelSize) {
 		super(modelSize);
@@ -50,13 +54,17 @@ public class newarmor_leggings extends BipedModel {
 		WhiteColorDefault = 15921906;//Basic White
 		GlowyColorDefault = 16720159;//Glow? red
 		GrayColorDefault = 5855577;//Kinda dark
-		//??? body middle thing 6584982
+		FourthColorDefault = 6584982; //body middle thing 
+		FifthColorDefault = 2935135; //green
+		
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
@@ -72,8 +80,8 @@ public class newarmor_leggings extends BipedModel {
 		Bodywhite.texOffs(62, 89).addBox(-4.0F, 8.5F, -2.0F, 8.0F, 4.0F, 4.0F, 1.4F, false);
 		Bodywhite.texOffs(77, 121).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 4.0F, 4.0F, 1.01F, false);
 		Bodywhite.texOffs(45, 122).addBox(-4.0F, 11.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.52F, false);
-		Bodywhite.texOffs(38, 135).addBox(-6.0F, 9.0F, -1.5F, 1.0F, 3.0F, 3.0F, 0.0F, false);
-		Bodywhite.texOffs(47, 135).addBox(5.0F, 9.0F, -1.5F, 1.0F, 3.0F, 3.0F, 0.0F, false);
+		Bodywhite.texOffs(38, 133).addBox(-6.0F, 9.0F, -1.5F, 1.0F, 3.0F, 3.0F, 0.0F, false);
+		Bodywhite.texOffs(47, 133).addBox(5.0F, 9.0F, -1.5F, 1.0F, 3.0F, 3.0F, 0.0F, false);
 
 		Bodygold = new ModelRenderer(this);
 		Bodygold.setPos(0.0F, -1.0F, 0.0F);
@@ -82,7 +90,9 @@ public class newarmor_leggings extends BipedModel {
 		Bodygreen = new ModelRenderer(this);
 		Bodygreen.setPos(0.0F, -1.0F, 0.0F);
 		Bodygreen.texOffs(71, 137).addBox(-1.0F, 8.0F, -3.9F, 2.0F, 2.0F, 0.0F, 0.0F, false);
-
+		Bodygreen.texOffs(38, 139).addBox(-6.0F, 9.0F, -1.5F, 1.0F, 3.0F, 3.0F, 0.0F, false);
+		Bodygreen.texOffs(47, 139).addBox(5.0F, 9.0F, -1.5F, 1.0F, 3.0F, 3.0F, 0.0F, false);
+		
 		RightLeggray = new ModelRenderer(this);
 		RightLeggray.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeggray, 0.192F, 0.0F, 0.0349F);
@@ -154,9 +164,11 @@ public class newarmor_leggings extends BipedModel {
 		this.Bodygold.copyFrom(this.body);
 		Bodygold.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.Bodygreen.copyFrom(this.body);
-		Bodygreen.render(matrixStack, buffer, 15728640, packedOverlay);
+		Bodygreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;

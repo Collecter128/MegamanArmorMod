@@ -50,12 +50,14 @@ public class zerofirstchest extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType Slottype;
 
@@ -65,17 +67,20 @@ public class zerofirstchest extends BipedModel {
 		texHeight = 152;
 		
 		MainColorDefault = 15339559;//Main Body Color Zero Red old ver
-		SecondaryColorDefault = 14539732;//5752303;//
+		SecondaryColorDefault = 7039851;//Secondary Gray
 		ThirdColorDefault = 16763151; // Hair
 		WhiteColorDefault = 16777215;//Basic White
-		GlowyColorDefault = 4570959;//Glow? 
+		GlowyColorDefault = 2448340;//Glow? 
 		GrayColorDefault = 16777215;//Basic White
+		//FourthColorDefault = ???; //
+		FifthColorDefault = 2935135; //green
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FifthColor = FifthColorDefault;
 
 //		Head = new ModelRenderer(this);
 //		Head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -254,19 +259,24 @@ public class zerofirstchest extends BipedModel {
 //		this.LeftLegwhite.copyModelAngles(this.bipedLeftLeg);
 //		LeftLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.GrayColor & 255) / 255.0F;
+		
+//		fred = (float)( this.GrayColor >> 16 & 255) / 255.0F;
+//        fgreen = (float)(this.GrayColor >> 8 & 255) / 255.0F;
+//        fblue = (float)(this.GrayColor & 255) / 255.0F;
 		this.Bodygray.copyFrom(this.body);
 		Bodygray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		
+		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.SecondaryColor & 255) / 255.0F;
 		this.RightArmgray.copyFrom(this.rightArm);
 		RightArmgray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmgray.copyFrom(this.leftArm);
 		LeftArmgray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.GlowyColor & 255) / 255.0F;
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 //		this.Headglow.copyModelAngles(this.bipedHead);
 //		Headglow.render(matrixStack, buffer, 15728640, packedOverlay, fred, fgreen, fblue, alpha);
 		this.Bodyglow.copyFrom(this.body);

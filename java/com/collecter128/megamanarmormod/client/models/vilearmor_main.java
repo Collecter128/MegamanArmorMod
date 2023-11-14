@@ -50,12 +50,16 @@ public class vilearmor_main extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FourthColorDefault;
+	public int FifthColorDefault;
 
 	public vilearmor_main(float modelSize) {
 		super(modelSize);
@@ -64,16 +68,20 @@ public class vilearmor_main extends BipedModel {
 		
 		MainColorDefault = 8728033;//Main Body Color Purple vile
 		SecondaryColorDefault = 5066061;//Secondary Color Vile Black
-		WhiteColorDefault = 16777215;
-		ThirdColorDefault = 16772915;
+		WhiteColorDefault = 16777215;//White
+		ThirdColorDefault = 16772915;//Gold
 		GlowyColorDefault = 16728361;//Glow Red Bits
-		GrayColorDefault = 12105912;
+		GrayColorDefault = 12105912;//Gray
+		FourthColorDefault = 3892666;// Blue
+		FifthColorDefault = 6470203;// Green
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Headmain = new ModelRenderer(this);
 		Headmain.setPos(0.0F, 0.0F, 0.0F);

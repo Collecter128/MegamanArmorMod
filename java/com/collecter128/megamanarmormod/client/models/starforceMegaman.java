@@ -61,6 +61,7 @@ public class starforceMegaman extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -68,6 +69,7 @@ public class starforceMegaman extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType equipmentslot;
 
@@ -85,6 +87,7 @@ public class starforceMegaman extends BipedModel {
 		GlowyColorDefault = 16727060;//Glow? red
 		GrayColorDefault = 13619151;//gray
 		FourthColorDefault = 4091380; //blue
+		FifthColorDefault = 62814; //Green
 		
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
@@ -93,6 +96,7 @@ public class starforceMegaman extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Headblue = new ModelRenderer(this);
 		Headblue.setPos(0.0F, 0.0F, 0.0F);
@@ -429,8 +433,11 @@ public class starforceMegaman extends BipedModel {
 		this.Headhair.copyFrom(this.head);
 		Headhair.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
 		
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.LeftArmgreen.copyFrom(this.leftArm);
-		LeftArmgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, red, green, blue, alpha);
+		LeftArmgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;

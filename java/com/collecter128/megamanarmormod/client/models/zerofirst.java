@@ -50,12 +50,14 @@ public class zerofirst extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType Slottype;
 
@@ -65,17 +67,20 @@ public class zerofirst extends BipedModel {
 		texHeight = 152;
 		
 		MainColorDefault = 15339559;//Main Body Color Zero Red old ver
-		SecondaryColorDefault = 5752303;//
+		SecondaryColorDefault = 7039851;//Secondary Gray
 		ThirdColorDefault = 16763151; // Hair
 		WhiteColorDefault = 16777215;//Basic White
-		GlowyColorDefault = 4570959;//Glow? 
+		GlowyColorDefault = 2448340;//Glow? 
 		GrayColorDefault = 16777215;//Basic White
+		//FourthColorDefault = ???; //
+		FifthColorDefault = 2935135; //green
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Head = new ModelRenderer(this);
 		Head.setPos(0.0F, 0.0F, 0.0F);

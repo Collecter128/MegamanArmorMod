@@ -34,12 +34,14 @@ public class zero_legfirsts extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FifthColorDefault;
 
 	public zero_legfirsts(float modelSize) {
 		super(modelSize);
@@ -47,21 +49,24 @@ public class zero_legfirsts extends BipedModel {
 		texHeight = 152;
 		
 		MainColorDefault = 15339559;//Main Body Color Zero Red old ver
-		SecondaryColorDefault = 5752303;//
+		SecondaryColorDefault = 7039851;//Secondary Gray
 		ThirdColorDefault = 16763151; // Hair
 		WhiteColorDefault = 16777215;//Basic White
-		GlowyColorDefault = 4570959;//Glow? 
+		GlowyColorDefault = 2448340;//Glow? 
 		GrayColorDefault = 16777215;//Basic White
+		//FourthColorDefault = ???; //
+		FifthColorDefault = 2935135; //green
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Bodywhite = new ModelRenderer(this);
 		Bodywhite.setPos(0.0F, 1.0F, 0.0F);
-		Bodywhite.texOffs(16, 126).addBox(-4.0F, 8.0F, -2.0F, 8.0F, 3.0F, 4.0F, 1.01F, false);
+		Bodywhite.texOffs(16, 126).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 1.01F, false);
 
 		Bodysilver = new ModelRenderer(this);
 		Bodysilver.setPos(0.0F, 1.0F, 0.0F);
@@ -129,14 +134,18 @@ public class zero_legfirsts extends BipedModel {
 		this.LeftLeggray.copyFrom(this.leftLeg);
 		LeftLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
+		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.SecondaryColor & 255) / 255.0F;
+		
 		this.RightLegblack.copyFrom(this.rightLeg);
 		RightLegblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegblack.copyFrom(this.leftLeg);
 		LeftLegblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 
-		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.GlowyColor & 255) / 255.0F;
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.RightLegglow.copyFrom(this.rightLeg);
 		RightLegglow.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglow.copyFrom(this.leftLeg);

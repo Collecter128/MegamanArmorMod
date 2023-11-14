@@ -35,6 +35,7 @@ public class xkeboost_legs extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -42,6 +43,7 @@ public class xkeboost_legs extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 
 	public xkeboost_legs(float modelSize) {
 		super(modelSize);
@@ -54,7 +56,8 @@ public class xkeboost_legs extends BipedModel {
 		WhiteColorDefault = 16777215;//White
 		GlowyColorDefault = 16468504;//Red
 		GrayColorDefault = 15592941;//gray
-		FourthColorDefault = 6160215;//Light Green glow
+		FourthColorDefault = 11904989;//Grayish
+		FifthColorDefault = 6160215;//Light Green glow
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
@@ -62,6 +65,7 @@ public class xkeboost_legs extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Bodyblue = new ModelRenderer(this);
 		Bodyblue.setPos(0.0F, 1.0F, 0.0F);
@@ -154,9 +158,9 @@ public class xkeboost_legs extends BipedModel {
 		this.LeftLegwhite.copyFrom(this.leftLeg);
 		LeftLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		fred = (float)( this.FourthColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.FourthColor & 255) / 255.0F;
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.Bodyglowlightgreen.copyFrom(this.body);
 		Bodyglowlightgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
