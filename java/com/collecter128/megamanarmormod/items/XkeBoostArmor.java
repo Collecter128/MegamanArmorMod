@@ -34,7 +34,8 @@ public class XkeBoostArmor extends ArmorItem{
 	public int WhiteColorDefault = 16777215;//White
 	public int GlowyColorDefault = 16468504;//Red
 	public int GrayColorDefault = 15592941;//gray
-	public int FourthColorDefault = 6160215;//Light Green glow
+	public int FourthColorDefault = 11904989;//grayish
+	public int FifthColorDefault = 6160215;//Light Green glow
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -42,6 +43,7 @@ public class XkeBoostArmor extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public XkeBoostArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -101,6 +103,11 @@ public class XkeBoostArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
 	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       

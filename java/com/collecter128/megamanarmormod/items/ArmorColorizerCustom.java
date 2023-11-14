@@ -11,6 +11,8 @@ import net.minecraft.block.AbstractBannerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.client.renderer.color.IItemColor;
+import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SpawnReason;
@@ -228,16 +230,24 @@ public class ArmorColorizerCustom extends Item implements IDyeableArmorItem{
 //	   }
 	   
 	   @OnlyIn(Dist.CLIENT)
-	   @Override
-	   public int getColor(ItemStack itemStackIn) {
+	   //@Override
+	   public int getColor(ItemStack itemStackIn, int tintIndex) {
 		      CompoundNBT compoundnbt = itemStackIn.getTag();
 		      if (compoundnbt != null && compoundnbt.contains("color", 99)) {//"MainColor"
 		         return compoundnbt.getInt("color");//"MainColor"
 		      } else {
 		    	 //return  16777215;
-		         return  342773;
+		    	  return 16777215;
 		      }
 		   }
+	   
+	   @OnlyIn(Dist.CLIENT)
+	public
+	    IItemColor getColors() {
+	        //return (stack, tintIndex) -> 16777215;
+		   return (stack, tintIndex) -> 7157;
+	    }
+	   
 	   
 //	   @OnlyIn(Dist.CLIENT)
 //	   public int getColor(int tintIndex) {

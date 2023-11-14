@@ -114,6 +114,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
 			   removecolor(compoundnbt, "FourthColor");
+			   removecolor(compoundnbt, "FifthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
@@ -121,6 +122,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
 			   removecolor(compoundnbt, "FourthColorglow");
+			   removecolor(compoundnbt, "FifthColorglow");
 
 			   playerIn.setItemSlot(EquipmentSlotType.HEAD, ArmorItem.copy());
 			   
@@ -133,6 +135,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
 			   removecolor(compoundnbt, "FourthColor");
+			   removecolor(compoundnbt, "FifthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
@@ -140,6 +143,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
 			   removecolor(compoundnbt, "FourthColorglow");
+			   removecolor(compoundnbt, "FifthColorglow");
 
 			   playerIn.setItemSlot(EquipmentSlotType.CHEST, ArmorItem.copy());
 			   
@@ -152,6 +156,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
 			   removecolor(compoundnbt, "FourthColor");
+			   removecolor(compoundnbt, "FifthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
@@ -159,6 +164,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
 			   removecolor(compoundnbt, "FourthColorglow");
+			   removecolor(compoundnbt, "FifthColorglow");
 
 			   playerIn.setItemSlot(EquipmentSlotType.LEGS, ArmorItem.copy());
 			   
@@ -171,6 +177,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
 			   removecolor(compoundnbt, "FourthColor");
+			   removecolor(compoundnbt, "FifthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
@@ -178,6 +185,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
 			   removecolor(compoundnbt, "FourthColorglow");
+			   removecolor(compoundnbt, "FifthColorglow");
 
 			   playerIn.setItemSlot(EquipmentSlotType.FEET, ArmorItem.copy());
 			   
@@ -190,6 +198,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColor");
 			   removecolor(compoundnbt, "GrayColor");
 			   removecolor(compoundnbt, "FourthColor");
+			   removecolor(compoundnbt, "FifthColor");
 			   removecolor(compoundnbt, "MainColorglow");
 			   removecolor(compoundnbt, "SecondaryColorglow");
 			   removecolor(compoundnbt, "ThirdColorglow");
@@ -197,6 +206,7 @@ public class ArmorColorizerDefault extends Item{
 			   removecolor(compoundnbt, "GlowyColorglow");
 			   removecolor(compoundnbt, "GrayColorglow");
 			   removecolor(compoundnbt, "FourthColorglow");
+			   removecolor(compoundnbt, "FifthColorglow");
 
 			   playerIn.setItemSlot(EquipmentSlotType.OFFHAND, ArmorItem.copy());
 

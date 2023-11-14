@@ -1,14 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.ifzeroarmor;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.zeroarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.zerochest;
+import com.collecter128.megamanarmormod.client.models.ifzeroarmornew;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -24,7 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class IFZeroArmor extends ArmorItem{
 	
 	public int MainColorDefault = 16711680;//Main Body Color 
-	public int SecondaryColorDefault = 5752303;//Secondary 
+	public int SecondaryColorDefault = 2171169;//Secondary 
 	public int ThirdColorDefault = 16763151;
 	public int WhiteColorDefault = 16777215;
 	public int GlowyColorDefault = 2448340;
@@ -44,7 +37,7 @@ public class IFZeroArmor extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		ifzeroarmor model = new ifzeroarmor(1.0f);
+		ifzeroarmornew model = new ifzeroarmornew(1.0f);
 		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 
 		model.young = _default.young;
@@ -91,6 +84,12 @@ public class IFZeroArmor extends ArmorItem{
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 	    	  model.XGrayColor = compoundnbt.getInt("GrayColor");
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
+
 	      }
        
 		this.MainColor = model.MainColor;

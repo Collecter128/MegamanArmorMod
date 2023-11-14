@@ -51,6 +51,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 	public int GlowyColor= 0;
 	public int GrayColor= 0;
 	public int FourthColor= 0;
+	public int FifthColor= 0;
 	public int MainColorDefault = 342773;
 	public int SecondaryColorDefault = 379125;
 	public int WhiteColorDefault = 16777215;
@@ -58,6 +59,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 	public int GlowyColorDefault = 16728361;
 	public int GrayColorDefault = 12105912;
 	public int FourthColorDefault = 379125;
+	public int FifthColorDefault = 16728361;
 	
 	public ArmorColorizer(Properties properties, int[]colors) {
 		super(properties);
@@ -68,6 +70,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		this.GlowyColorDefault = colors[4];
 		this.GrayColorDefault = colors[5];
 		this.FourthColorDefault = colors[6];
+		this.FifthColorDefault = colors[7];
 		primaryColor = MainColorDefault;
 		secondaryColor = SecondaryColorDefault;
 		thiraryColor = ThirdColorDefault;
@@ -75,6 +78,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 		
 	}
 	
@@ -143,7 +147,8 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 	    */
 	   public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		   ItemStack itemstack = playerIn.getItemInHand(handIn);
-		   int[] colorarray = new int[] {primaryColor, secondaryColor, thiraryColor, WhiteColor, GlowyColor, GrayColor, FourthColor};
+		   //int[] colorarray = new int[] {primaryColor, secondaryColor, thiraryColor, WhiteColor, GlowyColor, GrayColor, FourthColor};
+		   
 		   ItemStack ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.HEAD);
 		   CompoundNBT compoundnbt = ArmorItem.getOrCreateTagElement("displaymm");
 		   //if(playerIn.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == ItemInit.MegamanArmor_Head.get()) {
@@ -173,6 +178,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		  //randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FourthColor", FourthColor,randint);
 		   	
+		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FifthColor", FifthColor,randint);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -189,6 +195,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   	//randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GrayColor", GrayColor,randint);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FourthColor", FourthColor,randint);
+		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FifthColor", FifthColor,randint);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -205,7 +212,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   	//randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GrayColor", GrayColor,randint);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FourthColor", FourthColor,randint);
-		   	
+		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FifthColor", FifthColor,randint);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -222,6 +229,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   	//randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GrayColor", GrayColor,randint);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FourthColor", FourthColor,randint);
+		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FifthColor", FifthColor,randint);
 		   	//}
 		   //}
 		   
@@ -249,7 +257,7 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		   	//randint = random.nextInt();
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GrayColor", GrayColor,randint);
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "FourthColor", FourthColor,randint);
-		   	
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "FifthColor", FifthColor,randint);
 	       //return ActionResult.resultSuccess(ArmorItem);
 //	       if (!playerIn.abilities.isCreativeMode) {
 //               itemstack.shrink(1);
@@ -343,7 +351,8 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "GrayColor", GrayColor,randint, ArmorItem);
 	    		   	
 	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "FourthColor", FourthColor,randint, ArmorItem);
-	            }
+	    		   	ProcessColorizationOnTarget(target, EquipmentSlotType.HEAD, compoundnbt, "FifthColor", FifthColor,randint, ArmorItem);
+	         }
 
 	            //stack.shrink(1);
 	        //}
@@ -455,8 +464,8 @@ public class ArmorColorizer extends Item implements IDyeableArmorItem{
 		     // if (compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
 		       //  return compoundnbt.getInt("MainColor");
 		      //} else {
-		         //return  342773;
-		         return this.primaryColor;
+		         return  342773;
+		         //return this.primaryColor;
 		      //}
 		   }
 	   

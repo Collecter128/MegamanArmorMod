@@ -118,6 +118,7 @@ public class ArmorColorizerColorShift extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FifthColor", shiftcolor, shiftpercent);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -128,6 +129,7 @@ public class ArmorColorizerColorShift extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FifthColor", shiftcolor, shiftpercent);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -138,6 +140,7 @@ public class ArmorColorizerColorShift extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FifthColor", shiftcolor, shiftpercent);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -148,6 +151,7 @@ public class ArmorColorizerColorShift extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FifthColor", shiftcolor, shiftpercent);
 
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.OFFHAND);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -158,6 +162,7 @@ public class ArmorColorizerColorShift extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GlowyColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GrayColor", shiftcolor, shiftpercent);
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "FourthColor", shiftcolor, shiftpercent);
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "FifthColor", shiftcolor, shiftpercent);
 		   
 //		   ArmorItem = playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND);
 //		   if((playerIn.getItemStackFromSlot(EquipmentSlotType.OFFHAND).getItem() == ItemInit.MegamanArmor_Head.get()) ||

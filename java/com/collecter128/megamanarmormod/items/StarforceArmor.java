@@ -37,6 +37,7 @@ public class StarforceArmor extends ArmorItem{
 	public int GlowyColorDefault = 16727060;//Glow? red
 	public int GrayColorDefault = 13619151;//gray
 	public int FourthColorDefault = 4091380; //blue
+	public int FifthColorDefault = 62814; //Green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -44,6 +45,7 @@ public class StarforceArmor extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public StarforceArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -103,6 +105,11 @@ public class StarforceArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
 	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       

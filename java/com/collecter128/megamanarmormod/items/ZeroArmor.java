@@ -8,6 +8,7 @@ import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
 import com.collecter128.megamanarmormod.client.models.zeroarmor;
 import com.collecter128.megamanarmormod.client.models.zeroarmor_main;
+import com.collecter128.megamanarmormod.client.models.zeromainnew2;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -23,17 +24,19 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class ZeroArmor extends ArmorItem{
 	
 	public int MainColorDefault = 16711680;//Main Body Color 
-	public int SecondaryColorDefault = 5752303;//Secondary 
+	public int SecondaryColorDefault = 2171169;//Secondary 
 	public int ThirdColorDefault = 16763151;
 	public int WhiteColorDefault = 16777215;
 	public int GlowyColorDefault = 2448340;
 	public int GrayColorDefault = 16777215;
+	public int FifthColorDefault = 2935135; //Green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public ZeroArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -43,7 +46,7 @@ public class ZeroArmor extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		zeroarmor model = new zeroarmor(1.0f);
+		zeromainnew2 model = new zeromainnew2(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 		model.young = _default.young;
@@ -87,6 +90,11 @@ public class ZeroArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       

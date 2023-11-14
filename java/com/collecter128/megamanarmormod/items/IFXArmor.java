@@ -1,15 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.ifxarmor;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.xarmor_chestcolor;
-import com.collecter128.megamanarmormod.client.models.xarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.zeroarmor_chestplate;
+import com.collecter128.megamanarmormod.client.models.ifxarmornew;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -45,7 +37,7 @@ public class IFXArmor extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		ifxarmor model = new ifxarmor(1.0f);
+		ifxarmornew model = new ifxarmornew(1.0f);
 		model.hat.visible = armorSlot == EquipmentSlotType.CHEST;
 		
 		CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
@@ -60,6 +52,7 @@ public class IFXArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
 
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
+	    	  model.ZeroSecondColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
 	      

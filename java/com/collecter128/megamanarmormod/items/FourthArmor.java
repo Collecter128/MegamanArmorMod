@@ -22,7 +22,8 @@ public class FourthArmor extends ArmorItem{
 	public int WhiteColorDefault = 16777215;//Basic White
 	public int GlowyColorDefault = 16468504;//Glow?Red crystal thingy
 	public int GrayColorDefault = 16777215;//Basic White
-	public int FourthColorDefault = 2935135; //green
+	public int FourthColorDefault = 9614024; //Chest Thingy
+	public int FifthColorDefault = 2935135; //green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -30,6 +31,7 @@ public class FourthArmor extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public FourthArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -94,6 +96,10 @@ public class FourthArmor extends ArmorItem{
 	      }
 //	      else
 //	    	  itemStack.getOrCreateTagElement("displaymm").putInt("FourthColor", FourthColorDefault);
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
+
+	      }
 	      
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;

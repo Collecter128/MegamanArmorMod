@@ -31,6 +31,7 @@ public class NewArmor extends ArmorItem{
 	public int GlowyColorDefault = 16720159;
 	public int GrayColorDefault = 5855577;
 	public int FourthColorDefault = 6584982; //body middle thing 
+	public int FifthColorDefault = 2935135; //Green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -38,6 +39,7 @@ public class NewArmor extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public NewArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -97,6 +99,11 @@ public class NewArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
 	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       

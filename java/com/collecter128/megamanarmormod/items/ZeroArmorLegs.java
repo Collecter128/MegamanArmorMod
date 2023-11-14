@@ -1,5 +1,6 @@
 package com.collecter128.megamanarmormod.items;
 
+import com.collecter128.megamanarmormod.client.models.Zero_leggings_new2;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
 import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
@@ -23,17 +24,19 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class ZeroArmorLegs extends ArmorItem{
 	
 	public int MainColorDefault = 16711680;//Main Body Color 
-	public int SecondaryColorDefault = 5752303;//Secondary 
+	public int SecondaryColorDefault = 2171169;//Secondary 
 	public int ThirdColorDefault = 16763151;
 	public int WhiteColorDefault = 16777215;
 	public int GlowyColorDefault = 2448340;
 	public int GrayColorDefault = 16777215;
+	public int FifthColorDefault = 2935135; //Green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public ZeroArmorLegs(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -43,7 +46,7 @@ public class ZeroArmorLegs extends ArmorItem{
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
-		zero_legs model = new zero_legs(1.0f);
+		Zero_leggings_new2 model = new Zero_leggings_new2(1.0f);
 		model.hat.visible = armorSlot == EquipmentSlotType.LEGS;
 
 		model.young = _default.young;
@@ -87,6 +90,11 @@ public class ZeroArmorLegs extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
         

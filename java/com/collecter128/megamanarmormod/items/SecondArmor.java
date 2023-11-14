@@ -18,16 +18,18 @@ public class SecondArmor extends ArmorItem{
 	
 	public int MainColorDefault = 2781423;
 	public int SecondaryColorDefault = 5752303;
-	public int WhiteColorDefault = 16777215;
+	public int WhiteColorDefault = 16777215; //White
 	public int ThirdColorDefault = 16642337; //Yellow Bits
 	public int GlowyColorDefault = 16468504;
-	public int GrayColorDefault = 16777215;
+	public int GrayColorDefault = 16777215; //White
+	public int FifthColorDefault = 2935135; //green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public SecondArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -82,6 +84,11 @@ public class SecondArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       
@@ -139,6 +146,11 @@ public class SecondArmor extends ArmorItem{
 		      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+		      }
+		      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+		    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 		      }
 	      

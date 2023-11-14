@@ -24,17 +24,19 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class ZeroArmorLegsFirst extends ArmorItem{
 	
 	public int MainColorDefault = 15339559;//Main Body Color 
-	public int SecondaryColorDefault = 5752303;//Secondary 
+	public int SecondaryColorDefault = 7039851;//Secondary Gray
 	public int ThirdColorDefault = 16763151;
 	public int WhiteColorDefault = 16777215;
-	public int GlowyColorDefault = 457095;
+	public int GlowyColorDefault = 2448340;//Glow? 
 	public int GrayColorDefault = 16777215;
+	public int FifthColorDefault = 2935135; //green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public ZeroArmorLegsFirst(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -88,6 +90,11 @@ public class ZeroArmorLegsFirst extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       

@@ -117,6 +117,7 @@ public class ArmorColorizerGlow extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GlowyColorglow", glowstyles[4]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "GrayColorglow", glowstyles[5]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FourthColorglow", glowstyles[6]);
+		   	ProcessColorization(playerIn, EquipmentSlotType.HEAD, compoundnbt, "FifthColorglow", glowstyles[6]);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.CHEST);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -127,6 +128,7 @@ public class ArmorColorizerGlow extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GlowyColorglow", glowstyles[4]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "GrayColorglow", glowstyles[5]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FourthColorglow", glowstyles[6]);
+		   	ProcessColorization(playerIn, EquipmentSlotType.CHEST, compoundnbt, "FifthColorglow", glowstyles[6]);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.LEGS);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -137,6 +139,7 @@ public class ArmorColorizerGlow extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GlowyColorglow", glowstyles[4]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "GrayColorglow", glowstyles[5]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FourthColorglow", glowstyles[6]);
+		   	ProcessColorization(playerIn, EquipmentSlotType.LEGS, compoundnbt, "FifthColorglow", glowstyles[6]);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.FEET);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -147,6 +150,7 @@ public class ArmorColorizerGlow extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GlowyColorglow", glowstyles[4]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "GrayColorglow", glowstyles[5]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FourthColorglow", glowstyles[6]);
+		   	ProcessColorization(playerIn, EquipmentSlotType.FEET, compoundnbt, "FifthColorglow", glowstyles[6]);
 		   	
 		   	ArmorItem = playerIn.getItemBySlot(EquipmentSlotType.OFFHAND);
 			compoundnbt = ArmorItem.getTagElement("displaymm");
@@ -157,7 +161,8 @@ public class ArmorColorizerGlow extends Item implements IDyeableArmorItem{
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GlowyColorglow", glowstyles[4]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "GrayColorglow", glowstyles[5]);
 		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "FourthColorglow", glowstyles[6]);
-		   
+		   	ProcessColorization(playerIn, EquipmentSlotType.OFFHAND, compoundnbt, "FifthColorglow", glowstyles[6]);
+		   	
 	       //return ActionResult.resultSuccess(ArmorItem);
 //	       if (!playerIn.abilities.isCreativeMode) {
 //               itemstack.shrink(1);

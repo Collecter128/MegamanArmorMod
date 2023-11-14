@@ -1,7 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.secondarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.secondarmor_main;
 import com.collecter128.megamanarmormod.client.models.thirdarmor_leggings;
 import com.collecter128.megamanarmormod.client.models.thirdarmor_main;
 
@@ -24,12 +22,14 @@ public class ThirdArmor extends ArmorItem{
 	public int ThirdColorDefault = 16642337; //Yellow Bits
 	public int GlowyColorDefault = 16468504;
 	public int GrayColorDefault = 16777215;
+	public int FifthColorDefault = 2935135; //green
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public ThirdArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -84,6 +84,11 @@ public class ThirdArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       
