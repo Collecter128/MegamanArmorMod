@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"iii",
+		"  T"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:vilearmor_body"
+		},
+		"i": {
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:vile_cannonbody",
+		"count": 1
+	}
+}
