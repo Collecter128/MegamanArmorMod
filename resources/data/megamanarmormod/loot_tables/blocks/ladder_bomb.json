@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "megamanarmormod:ladder_bomb",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
