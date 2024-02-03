@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"m",
+		"s"
+	],
+	"key": {
+		"m": {
+			"item": "megamanarmormod:zeroarmorfirst_body"
+		},
+		"s": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:zerofc_body",
+		"count": 1
+	}
+}

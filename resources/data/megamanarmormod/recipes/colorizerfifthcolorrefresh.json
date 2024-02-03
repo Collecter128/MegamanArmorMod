@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizerfifthcolor"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerfifthcolor",
+		"count": 1
+	}
+}

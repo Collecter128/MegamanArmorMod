@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "megamanarmormod:titanium_ore"
+  },
+  "result": "megamanarmormod:titanium",
+  "experience": 0.7,
+  "cookingtime": 100
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "megamanarmormod:ceratanium_raw"
+  },
+  "result": "megamanarmormod:ceratanium",
+  "experience": 0.7,
+  "cookingtime": 100
+}

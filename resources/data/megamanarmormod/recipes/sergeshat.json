@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"B",
+		"S"
+	],
+	"key": {
+		"S": {
+			"item": "megamanarmormod:serges_head"
+		},
+		"B": {
+			"item": "minecraft:black_wool"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:serges_hat",
+		"count": 1
+	}
+}

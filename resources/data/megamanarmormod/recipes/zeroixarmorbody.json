@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"P"
+	],
+	"key": {
+		"P": {
+			"item": "megamanarmormod:zeroarmor_body"
+		},
+		"G": {
+			"item": "megamanarmormod:limited"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:zeroix_body",
+		"count": 1
+	}
+}

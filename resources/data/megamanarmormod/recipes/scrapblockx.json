@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"l",
+		"S"
+	],
+	"key": {
+		"l": {
+			"item": "minecraft:lapis_lazuli"
+		},
+		"S": {
+			"item": "megamanarmormod:scrapblock"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:scrapblockx",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:zeroarmor_legs"
+		},
+		"G": {
+			"item": "minecraft:red_stained_glass_pane"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:zeroex_legs",
+		"count": 1
+	}
+}
