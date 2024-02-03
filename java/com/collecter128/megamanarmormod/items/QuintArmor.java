@@ -27,12 +27,14 @@ public class QuintArmor extends ArmorItem{
 	public int WhiteColorDefault = 16777215;//Basic White
 	public int GlowyColorDefault = 16764984;//Glow? yellow color
 	public int GrayColorDefault = 12105912;//Kinda Blue
+	public int FifthColorDefault = 6832845; //blue
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
 	public int WhiteColor = WhiteColorDefault;
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
+	public int FifthColor = FifthColorDefault;
 
 	public QuintArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
@@ -87,6 +89,12 @@ public class QuintArmor extends ArmorItem{
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
 
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
+
+	      }
+	      
+	      if(compoundnbt != null && compoundnbt.contains("FifthColor", 99)) {
+
+	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
       
