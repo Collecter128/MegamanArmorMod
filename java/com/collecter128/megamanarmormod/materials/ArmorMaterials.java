@@ -46,6 +46,7 @@ public enum ArmorMaterials implements IArmorMaterial{
 	RollExeArmor("rollexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.RecoverData.get())),
 	GutsmanExeArmor("gutsmanexearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.PanelData.get())),
 	NormnaviArmor("normnaviarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.NormalData.get())),
+	VirusArmor("virusarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.VirusData.get())),
 	
 	StarforceMegamanArmor("starforcearmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.AMWave.get())),
 	StarforceFMArmor("starforcefmarmor", 15, new int[] {2, 5, 6, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON, 1f, 0.1f, () -> Ingredient.of(ItemInit.FMWave.get())),
