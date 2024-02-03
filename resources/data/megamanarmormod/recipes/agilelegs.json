@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TTT",
+		"TST",
+		"T T"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"S": {
+			"item": "megamanarmormod:fake_zero_piece3"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:agile_legs",
+		"count": 1
+	}
+}

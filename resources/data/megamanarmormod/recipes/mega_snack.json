@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" pw",
+		" w ",
+		"w  "
+	],
+	"key": {
+		"p": {
+			"item": "minecraft:paper"
+		},
+		"w": {
+			"item": "minecraft:wheat"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:mega_snack",
+		"count": 1
+	}
+}

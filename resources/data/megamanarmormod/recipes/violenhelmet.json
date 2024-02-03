@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TTT",
+		"TST"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"S": {
+			"item": "megamanarmormod:fake_zero_piece2"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:violen_head",
+		"count": 1
+	}
+}

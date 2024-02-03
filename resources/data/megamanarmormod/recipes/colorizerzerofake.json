@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"1 ",
+		"2C",
+		"3 "
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizerdefault"
+		},
+		"1": {
+			"item": "megamanarmormod:fake_zero_piece1"
+		},
+		"2": {
+			"item": "megamanarmormod:fake_zero_piece2"
+		},
+		"3": {
+			"item": "megamanarmormod:fake_zero_piece3"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerfakezero",
+		"count": 1
+	}
+}

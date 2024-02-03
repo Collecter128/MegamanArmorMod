@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"C C"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:data_virus"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:zeroexe_head",
+		"count": 1
+	}
+}
