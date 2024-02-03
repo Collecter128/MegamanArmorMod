@@ -33,12 +33,14 @@ public class rockmanShadow extends BipedModel {
 	public int ThirdColor;
 	public int GlowyColor;
 	public int GrayColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
 	public int ThirdColorDefault;
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
+	public int FifthColorDefault;
 
 	public rockmanShadow(float modelSize) {
 		super(modelSize);
@@ -51,12 +53,15 @@ public class rockmanShadow extends BipedModel {
 		WhiteColorDefault = 16777215;//Basic White
 		GlowyColorDefault = 16764984;//Glow? yellow color
 		GrayColorDefault = 12105912;//Kinda Blue
+		FifthColorDefault = 6832845; //blue
+		
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
 		WhiteColor = WhiteColorDefault;
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Head1 = new ModelRenderer(this);
 		Head1.setPos(0.0F, 0.0F, 0.0F);
@@ -133,10 +138,14 @@ public class rockmanShadow extends BipedModel {
 		this.HeadYellow.copyFrom(this.head);
 		HeadYellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
+		
 		buffer = Minecraft.getInstance().renderBuffers().bufferSource().getBuffer(RenderType.entityTranslucent(new ResourceLocation(
 				"megamanarmormod:textures/armor/rockmanshadowhelmet.png")));
 		this.Headvisor.copyFrom(this.head);
-		Headvisor.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		Headvisor.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
