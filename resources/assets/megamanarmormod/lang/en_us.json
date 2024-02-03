@@ -54,11 +54,17 @@
 	"item.megamanarmormod.roboenza_cure": "Roboenza Cure",
 	"item.megamanarmormod.virussigma": "Sigma Virus",
 	"item.megamanarmormod.limited": "Limited",
+	"item.megamanarmormod.limited_hyper": "Hyper Limited",
+	"item.megamanarmormod.extreme": "Extreme",
 	"item.megamanarmormod.viruszero": "Zero Virus",
 	"item.megamanarmormod.nightmaresoul_blue": "Blue Nightmare Soul",
 	"item.megamanarmormod.nightmaresoul_bluesmall": "Small Blue Nightmare Soul",
 	"item.megamanarmormod.nightmaresoul_green": "Green Nightmare Soul",
 	"item.megamanarmormod.nightmaresoul_red": "Red Nightmare Soul",
+	
+	"item.megamanarmormod.fake_zero_piece1": "Fake Zero Piece 1",
+	"item.megamanarmormod.fake_zero_piece2": "Fake Zero Piece 2",
+	"item.megamanarmormod.fake_zero_piece3": "Fake Zero Piece 3",
 	
 	"item.megamanarmormod.energy_bassnium": "Bassnium Energy",
 	"item.megamanarmormod.energy_evil": "Evil Energy",
@@ -126,6 +132,7 @@
 	"item.megamanarmormod.data_dark": "Dark Data",
 	"item.megamanarmormod.data_falzar": "Falzar Data",
 	"item.megamanarmormod.data_gregar": "Gregar Data",
+	"item.megamanarmormod.data_virus": "Virus Data",
 	
 	"item.megamanarmormod.mysterydatapartblue": "Blue Mystery Data Piece",
 	
@@ -133,6 +140,8 @@
 	"item.megamanarmormod.wave_fm": "FM Wave",
 	"item.megamanarmormod.wave_mu": "Mu Wave",
 	"item.megamanarmormod.wave_noise": "Noise Wave",
+	
+	"item.megamanarmormod.mega_snack": "Mega Snack",
 	
 	"item.megamanarmormod.zenny": "Zenny",
 	"item.megamanarmormod.bugfrag": "BugFrag",
@@ -849,11 +858,19 @@
 	"item.megamanarmormod.zeroarmorfirst_arms": "Zero Boots (X1) Armor",
 	"item.megamanarmormod.zeroarmorfirst_body": "Zero Body (X1) Armor",
 	"item.megamanarmormod.zeroarmorfirst_legs": "Zero Legs (X1) Armor",
+	
 	"item.megamanarmormod.zeroarmor_head": "Zero Head Armor",
 	"item.megamanarmormod.zeroarmor_arms": "Zero Boots Armor",
 	"item.megamanarmormod.zeroarmor_body": "Zero Body Armor",
 	"item.megamanarmormod.zeroarmor_legs": "Zero Legs Armor",
 	"item.megamanarmormod.ifzeroarmor_body": "IF Zero Armor",
+	
+	"item.megamanarmormod.zeroix_body": "Zero iX Armor Body",
+	
+	"item.megamanarmormod.zeroex_head": "Zero EX Armor Head",
+	"item.megamanarmormod.zeroex_arms": "Zero EX Armor Boots",
+	"item.megamanarmormod.zeroex_body": "Zero EX Armor Body",
+	"item.megamanarmormod.zeroex_legs": "Zero EX Armor Legs",
 	
 	"item.megamanarmormod.novazero_head": "Nova Corps Zero Helmet",
 	"item.megamanarmormod.novazero_arms": "Nova Corps Zero Boots",
@@ -900,6 +917,25 @@
 	"item.megamanarmormod.vilearmor_legs": "Vile Legs Armor",
 	
 	"item.megamanarmormod.vile_cannonbody": "Vile Body W. Cannon",
+	
+	"item.megamanarmormod.serges_head": "Serges Head Armor",
+	"item.megamanarmormod.serges_arms": "Serges Boots Armor",
+	"item.megamanarmormod.serges_body": "Serges Body Armor",
+	"item.megamanarmormod.serges_legs": "Serges Legs Armor",
+	
+	"item.megamanarmormod.serges_hat": "Serges Hat Armor",
+	
+	"item.megamanarmormod.violen_head": "Violen Head Armor",
+	"item.megamanarmormod.violen_arms": "Violen Boots Armor",
+	"item.megamanarmormod.violen_body": "Violen Body Armor",
+	"item.megamanarmormod.violen_legs": "Violen Legs Armor",
+	
+	"item.megamanarmormod.agile_head": "Agile Head Armor",
+	"item.megamanarmormod.agile_arms": "Agile Boots Armor",
+	"item.megamanarmormod.agile_body": "Agile Body Armor",
+	"item.megamanarmormod.agile_legs": "Agile Legs Armor",
+	
+	"item.megamanarmormod.agile_saber": "Agile's Saber",
 	
 	"item.megamanarmormod.replicapture": "Replicapture Armor",
 	
@@ -980,6 +1016,11 @@
 	"item.megamanarmormod.normnavi_body": "Normnavi Body Armor",
 	"item.megamanarmormod.normnavi_legs": "Normnavi Legs Armor",
 	
+	"item.megamanarmormod.zeroexe_head": "Zero.exe Head Armor",
+	"item.megamanarmormod.zeroexe_arms": "Zero.exe Boots Armor",
+	"item.megamanarmormod.zeroexe_body": "Zero.exe Body Armor",
+	"item.megamanarmormod.zeroexe_legs": "Zero.exe Legs Armor",
+	
 	
 	"item.megamanarmormod.starforce_head": "Starforce Megaman Head Armor",
 	"item.megamanarmormod.starforce_arms": "Starforce Megaman Boots Armor",
@@ -1008,6 +1049,11 @@
 	"item.megamanarmormod.akilight_body": "Aki Light's Body Armor",
 	"item.megamanarmormod.akilight_legs": "Aki Light's Legs Armor",
 	
+	"item.megamanarmormod.zerofc_head": "Zero (Fully Charged) Helmet",
+	"item.megamanarmormod.zerofc_arms": "Zero (Fully Charged) Boots",
+	"item.megamanarmormod.zerofc_body": "Zero (Fully Charged) Body Armor",
+	"item.megamanarmormod.zerofc_legs": "Zero (Fully Charged) Leggings",
+	
 	"item.megamanarmormod.via_head": "Via Head Armor",
 	"item.megamanarmormod.via_arms": "Via Boots Armor",
 	"item.megamanarmormod.via_body": "Via Body Armor",
@@ -1023,6 +1069,7 @@
 	"block.megamanarmormod.ceratanium_block": "Ceratanium Block",
 	"block.megamanarmormod.titanium_ore": "Titianium Ore",
 	"block.megamanarmormod.scrapblock": "Scrap Block",
+	"block.megamanarmormod.scrapblockx": "Improved Scrap Block",
 	
 	"block.megamanarmormod.deeplog_server": "Deep Log Server",
 	"block.megamanarmormod.deeplog_server_corrupted": "Corrupted Deep Log Server",
