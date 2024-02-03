@@ -5,6 +5,7 @@ import com.collecter128.megamanarmormod.blocks.BlueMysteryDataBlock;
 import com.collecter128.megamanarmormod.blocks.BlueMysterywaveBlock;
 import com.collecter128.megamanarmormod.blocks.GreenMysteryDataBlock;
 import com.collecter128.megamanarmormod.blocks.ScrapBlock;
+import com.collecter128.megamanarmormod.blocks.ScrapBlockX;
 import com.collecter128.megamanarmormod.blocks.bannerluckyblock;
 import com.collecter128.megamanarmormod.blocks.blockrotatable;
 import com.collecter128.megamanarmormod.blocks.blockrotatableLadder;
@@ -121,6 +122,11 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> ScapBlock = Blocks.register("scrapblock",
 			() -> new ScrapBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)
+					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
+	public static final RegistryObject<Block> ScapBlockX = Blocks.register("scrapblockx",
+			() -> new ScrapBlockX((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)
 					.strength(0.3F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.METAL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
