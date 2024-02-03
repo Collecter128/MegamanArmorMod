@@ -381,17 +381,17 @@ public class zeromainnew2 extends BipedModel {
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
 		this.Headglowblue.copyFrom(this.head);
-		Headglowblue.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		Headglowblue.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.Bodyglowgreen.copyFrom(this.body);
-		Bodyglowgreen.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		Bodyglowgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLegglowgreen.copyFrom(this.rightLeg);
-		RightLegglowgreen.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		RightLegglowgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegglowgreen.copyFrom(this.leftLeg);
-		LeftLegglowgreen.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
+		LeftLegglowgreen.render(matrixStack, buffer, 0xF000F0, packedOverlay, fred, fgreen, fblue, alpha);
 		
 		fred = (float)( this.SecondaryColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.SecondaryColor >> 8 & 255) / 255.0F;
