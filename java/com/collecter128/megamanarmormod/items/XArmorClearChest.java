@@ -2,15 +2,7 @@ package com.collecter128.megamanarmormod.items;
 
 import javax.annotation.Nullable;
 
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.xarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.xarmorclear_chestplate;
-import com.collecter128.megamanarmormod.client.models.zeroarmor_chestplate;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 
 import net.minecraft.client.renderer.RenderType;
