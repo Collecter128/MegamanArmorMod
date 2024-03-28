@@ -4,9 +4,6 @@ import com.collecter128.megamanarmormod.client.models.quint_legs;
 import com.collecter128.megamanarmormod.client.models.quintarmor_boots;
 import com.collecter128.megamanarmormod.client.models.quintarmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.quintarmor_main;
-import com.collecter128.megamanarmormod.client.models.zerofirst;
-import com.collecter128.megamanarmormod.client.models.zerofirstchest;
-import com.collecter128.megamanarmormod.client.models.zerofirstfeet;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;

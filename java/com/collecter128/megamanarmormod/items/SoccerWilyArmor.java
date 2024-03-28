@@ -1,7 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.duo_legs;
-import com.collecter128.megamanarmormod.client.models.duo_main;
 import com.collecter128.megamanarmormod.client.models.soccerwily_legs;
 import com.collecter128.megamanarmormod.client.models.soccerwily_main;
 

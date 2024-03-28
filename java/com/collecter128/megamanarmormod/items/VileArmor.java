@@ -1,12 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.megamanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_bootscolor;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestcolor;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_maincolor;
 import com.collecter128.megamanarmormod.client.models.vilearmor_chestplate;
 import com.collecter128.megamanarmormod.client.models.vilearmor_feet;
 import com.collecter128.megamanarmormod.client.models.vilearmor_main;

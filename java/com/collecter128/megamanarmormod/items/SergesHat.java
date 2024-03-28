@@ -1,8 +1,6 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.serges;
 import com.collecter128.megamanarmormod.client.models.serges_hat;
-import com.collecter128.megamanarmormod.client.models.serges_leggings;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;

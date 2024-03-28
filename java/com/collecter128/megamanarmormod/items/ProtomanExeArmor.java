@@ -1,17 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.newarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.newarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
 import com.collecter128.megamanarmormod.client.models.protomanexe_leggings;
 import com.collecter128.megamanarmormod.client.models.protomanexe_main;
-import com.collecter128.megamanarmormod.client.models.zeroarmor;
-import com.collecter128.megamanarmormod.client.models.zeroarmor_main;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;

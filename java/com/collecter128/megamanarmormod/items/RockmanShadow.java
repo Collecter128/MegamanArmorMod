@@ -1,13 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.breakman_helmet;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_maincolor;
 import com.collecter128.megamanarmormod.client.models.rockmanShadow;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
