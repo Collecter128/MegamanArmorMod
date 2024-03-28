@@ -2,18 +2,8 @@ package com.collecter128.megamanarmormod.items;
 
 import javax.annotation.Nonnull;
 
-import com.collecter128.megamanarmormod.client.models.newarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.newarmor_main;
-import com.collecter128.megamanarmormod.client.models.novamegaman_leggings;
-import com.collecter128.megamanarmormod.client.models.novamegaman_main;
 import com.collecter128.megamanarmormod.client.models.novazero_leggings;
 import com.collecter128.megamanarmormod.client.models.novazero_main;
-import com.collecter128.megamanarmormod.client.models.protomanNovaarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanNovaarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;

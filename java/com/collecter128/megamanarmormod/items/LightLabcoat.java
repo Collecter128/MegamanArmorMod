@@ -1,9 +1,6 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.DrWilyCoatEvilColor;
-import com.collecter128.megamanarmormod.client.models.Wily_Jacket;
 import com.collecter128.megamanarmormod.client.models.light_labcoat;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;

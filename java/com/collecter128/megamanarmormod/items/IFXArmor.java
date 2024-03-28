@@ -1,6 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.ifxarmor;
 import com.collecter128.megamanarmormod.client.models.ifxarmornew;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
