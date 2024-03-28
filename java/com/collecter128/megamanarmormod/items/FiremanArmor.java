@@ -1,7 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.elecman_legs;
-import com.collecter128.megamanarmormod.client.models.elecmanarmor;
 import com.collecter128.megamanarmormod.client.models.fireman;
 import com.collecter128.megamanarmormod.client.models.fireman_legs;
 

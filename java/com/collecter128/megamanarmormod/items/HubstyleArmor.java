@@ -1,7 +1,5 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.axlarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.axlarmor_main;
 import com.collecter128.megamanarmormod.client.models.hubstyle;
 import com.collecter128.megamanarmormod.client.models.hubstyle_leggings;
 

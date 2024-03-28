@@ -2,10 +2,6 @@ package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.bombman;
 import com.collecter128.megamanarmormod.client.models.bombman_legs;
-import com.collecter128.megamanarmormod.client.models.elecman_legs;
-import com.collecter128.megamanarmormod.client.models.elecmanarmor;
-import com.collecter128.megamanarmormod.client.models.fireman;
-import com.collecter128.megamanarmormod.client.models.fireman_legs;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;

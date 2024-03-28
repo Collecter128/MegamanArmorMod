@@ -2,12 +2,6 @@ package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.bassarmor_chestcolor;
 import com.collecter128.megamanarmormod.client.models.bassarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.megamanarmor_main;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_Boots;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_chestplate;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.protomanarmor_main;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -24,8 +18,8 @@ public class BassArmorChest extends ArmorItem{
 	
 	public int MainColorDefault = 5855577;//Main Body Color black
 	public int SecondaryColorDefault = 16763674;//Secondary
-	public int WhiteColorDefault = 16771098; //golden 
-	public int ThirdColorDefault = 16777215;//
+	public int WhiteColorDefault = 16777215; //
+	public int ThirdColorDefault = 16771098;//
 	public int GlowyColorDefault = 4032511;//
 	public int GrayColorDefault = 13750737;//
 	public int MainColor = MainColorDefault;

@@ -2,10 +2,6 @@ package com.collecter128.megamanarmormod.items;
 
 import com.collecter128.megamanarmormod.client.models.akilight;
 import com.collecter128.megamanarmormod.client.models.akilight_leggings;
-import com.collecter128.megamanarmormod.client.models.axlarmor_leggings;
-import com.collecter128.megamanarmormod.client.models.axlarmor_main;
-import com.collecter128.megamanarmormod.client.models.hubstyle;
-import com.collecter128.megamanarmormod.client.models.hubstyle_leggings;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
