@@ -1751,6 +1751,17 @@ public class ItemInit {
 							/*WhiteColor*/16777215, /*Glow Bits*/2292973, /*GreyColor*/6122100, 
 							/*FourthColor*/6122100, /*FifthColor*/2292973}));
 	
+	public static final RegistryObject<Item> BassexeColorizer = Items.register("colorizerbassexe",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/4604492, /*Secondary*/16694555, /*ThirdColor*/16694555, 
+							/*WhiteColor*/16777215, /*Glow Bits*/6651843, /*GreyColor*/11053224, 
+							/*FourthColor*/10250937, /*FifthColor*/6651843}));
+	public static final RegistryObject<Item> BassexeXXColorizer = Items.register("colorizerbassexexx",
+			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
+					new int[]{/*Main*/4604492, /*Secondary*/10250937, /*ThirdColor*/10250937, 
+							/*WhiteColor*/16777215, /*Glow Bits*/6651843, /*GreyColor*/11053224, 
+							/*FourthColor*/10250937, /*FifthColor*/6651843}));
+	
 	public static final RegistryObject<Item> StarforceMegamanColorizer = Items.register("colorizerstarforcemegaman",
 			() -> new ArmorColorizer(new Item.Properties().tab(MegamanArmorMod.ArmorColorizer), 
 					new int[]{/*Main*/708351, /*Secondary*/4013982, /*ThirdColor*/16771133, 
@@ -2204,6 +2215,15 @@ public class ItemInit {
 	public static final RegistryObject<Item> FourthArmor_Arms = Items.register("fourtharmor_arms",
 			() -> new FourthArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
+	public static final RegistryObject<Item> GaeaArmor_Head = Items.register("gaeaarmor_head",
+			() -> new GaeaArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> GaeaArmor_Body = Items.register("gaeaarmor_body",
+			() -> new GaeaArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> GaeaArmor_Legs = Items.register("gaeaarmor_legs",
+			() -> new GaeaArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> GaeaArmor_Arms = Items.register("gaeaarmor_arms",
+			() -> new GaeaArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 	public static final RegistryObject<Item> Replicapture_Body = Items.register("replicapture",
 			() -> new Replicapture(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
@@ -2474,6 +2494,24 @@ public class ItemInit {
 			() -> new NormnaviArmor(ArmorMaterials.NormnaviArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> NormnaviArmor_Arms = Items.register("normnavi_arms",
 			() -> new NormnaviArmor(ArmorMaterials.NormnaviArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> Bassexe_Head = Items.register("bassexe_head",
+			() -> new BassexeArmor(ArmorMaterials.BugfragArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Bassexe_Body = Items.register("bassexe_body",
+			() -> new BassexeArmor(ArmorMaterials.BugfragArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Bassexe_Legs = Items.register("bassexe_legs",
+			() -> new BassexeArmor(ArmorMaterials.BugfragArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Bassexe_Arms = Items.register("bassexe_arms",
+			() -> new BassexeArmor(ArmorMaterials.BugfragArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> BassexeHubstyle_Head = Items.register("bassexehubstyle_head",
+			() -> new BassexehubstyleArmor(ArmorMaterials.BassHubstyleArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> BassexeHubstyle_Body = Items.register("bassexehubstyle_body",
+			() -> new BassexehubstyleArmor(ArmorMaterials.BassHubstyleArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> BassexeHubstyle_Legs = Items.register("bassexehubstyle_legs",
+			() -> new BassexehubstyleArmor(ArmorMaterials.BassHubstyleArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> BassexeHubstyle_Arms = Items.register("bassexehubstyle_arms",
+			() -> new BassexehubstyleArmor(ArmorMaterials.BassHubstyleArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> Zeroexe_Head = Items.register("zeroexe_head",
 			() -> new ZeroexeArmor(ArmorMaterials.VirusArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
