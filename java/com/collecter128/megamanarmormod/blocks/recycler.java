@@ -77,7 +77,7 @@ public class recycler extends Block{
 		        	 if (!p_225533_2_.isClientSide) {
 			            	itemstack.shrink(1);
 			            	
-			            	newItem = new ItemStack(BlockInit.ScapBlock.get(), 3);
+			            	newItem = new ItemStack(BlockInit.ScapBlock.get(), 4);
 
 			               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
 			               p_225533_4_.inventory.add(newItem);
@@ -88,7 +88,7 @@ public class recycler extends Block{
 		        	 else if(item == ItemInit.DudBomb.get() || item == ItemInit.BrokenCutter.get()
 		        			 || item == ItemInit.ElectricBattery.get()|| item == ItemInit.FirePart.get()
 		        			 || item == ItemInit.GutsPart.get()|| item == ItemInit.IceMachine.get()
-		        					 || item == ItemInit.OilCan.get()|| item == ItemInit.TimeClock.get()
+		        			 || item == ItemInit.OilCan.get()|| item == ItemInit.TimeClock.get()
 		        			 || item == ItemInit.SoccerBall.get()) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
@@ -101,6 +101,18 @@ public class recycler extends Block{
 			        	 }
 			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
 		        	 }
+//		        	 else if(item == ItemInit.PATTERN_ITEMS) {
+//			        	 if (!p_225533_2_.isClientSide) {
+//				            	itemstack.shrink(1);
+//				            	
+//				            	newItem = new ItemStack(ItemInit.Ceratanium.get(), 1);
+//
+//				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
+//				               p_225533_4_.inventory.add(newItem);
+//			        	 
+//			        	 }
+//			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+//		        	 }
 		        	 else if(item == ItemInit.NormalData.get() || item == ItemInit.FireData.get()
 		        			 || item == ItemInit.AquaData.get()|| item == ItemInit.ElecData.get()
 		        			 || item == ItemInit.WoodData.get()|| item == ItemInit.BusterData.get()
@@ -117,7 +129,8 @@ public class recycler extends Block{
 				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1.0F, 1.0F);
 				               p_225533_4_.inventory.add(newItem);
 			        	 
-			        	 }
+			        	 }//Robot Master Items from Scrap Block
+			        	 
 			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
 		        	 }
 //		            else {
