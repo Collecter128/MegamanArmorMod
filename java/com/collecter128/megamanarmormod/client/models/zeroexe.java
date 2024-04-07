@@ -166,8 +166,10 @@ public class zeroexe extends BipedModel {
 		RightArmwhite = new ModelRenderer(this);
 		RightArmwhite.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmwhite, -0.1745F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmwhite.texOffs(40, 32).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-
+		}
+		
 		RightArmgray = new ModelRenderer(this);
 		RightArmgray.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmgray, -0.1745F, 0.0F, 0.0F);
