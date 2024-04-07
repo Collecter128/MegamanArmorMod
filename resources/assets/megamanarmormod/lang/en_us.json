@@ -510,6 +510,9 @@
 	"item.megamanarmormod.colorizernormnavitypee": "Normnavi typeE Colorizer",
 	"item.megamanarmormod.colorizernormnavitypex": "Normnavi typeX Colorizer",
 	
+	"item.megamanarmormod.colorizerbassexe": "Bass.exe Colorizer",
+	"item.megamanarmormod.colorizerbassexexx": "Bass.exe XX Colorizer",
+	
 	"item.megamanarmormod.colorizerstarforcemegaman": "Megaman (Starforce) Colorizer",
 	"item.megamanarmormod.colorizerstarforcegeoversion": "Starforce (Geo Version) Colorizer",
 	
@@ -848,6 +851,11 @@
 	"item.megamanarmormod.fourtharmor_body": "Fourth Armor Body",
 	"item.megamanarmormod.fourtharmor_legs": "Fourth Armor Legs",
 	
+	"item.megamanarmormod.gaeaarmor_head": "Gaea Head Armor",
+	"item.megamanarmormod.gaeaarmor_arms": "Gaea Boots Armor",
+	"item.megamanarmormod.gaeaarmor_body": "Gaea Body Armor",
+	"item.megamanarmormod.gaeaarmor_legs": "Gaea Legs Armor",
+	
 	"item.megamanarmormod.ifxarmor_body": "IFX Armor",
 	"item.megamanarmormod.xtransparentarmor_head": "Transparent X Head Armor",
 	"item.megamanarmormod.xtransparentarmor_arms": "Transparent X Boots Armor",
@@ -1015,6 +1023,16 @@
 	"item.megamanarmormod.normnavi_arms": "Normnavi Boots Armor",
 	"item.megamanarmormod.normnavi_body": "Normnavi Body Armor",
 	"item.megamanarmormod.normnavi_legs": "Normnavi Legs Armor",
+	
+	"item.megamanarmormod.bassexe_head": "Bass.exe Head Armor",
+	"item.megamanarmormod.bassexe_arms": "Bass.exe Boots Armor",
+	"item.megamanarmormod.bassexe_body": "Bass.exe Body Armor",
+	"item.megamanarmormod.bassexe_legs": "Bass.exe Legs Armor",
+	
+	"item.megamanarmormod.bassexehubstyle_head": "Hubstyle Bass.exe Helmet",
+	"item.megamanarmormod.bassexehubstyle_arms": "Hubstyle Bass.exe Boots",
+	"item.megamanarmormod.bassexehubstyle_body": "Hubstyle Bass.exe Body Armor",
+	"item.megamanarmormod.bassexehubstyle_legs": "Hubstyle Bass.exe Leggings",
 	
 	"item.megamanarmormod.zeroexe_head": "Zero.exe Head Armor",
 	"item.megamanarmormod.zeroexe_arms": "Zero.exe Boots Armor",
