@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:bugfrag"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:bassexe_body",
+		"count": 1
+	}
+}

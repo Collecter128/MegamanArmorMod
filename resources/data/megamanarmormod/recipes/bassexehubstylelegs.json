@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"G",
+		"X"
+	],
+	"key": {
+		"X": {
+			"item": "megamanarmormod:bassexe_legs"
+		},
+		"G": {
+			"item": "megamanarmormod:hubbatch"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:bassexehubstyle_legs",
+		"count": 1
+	}
+}

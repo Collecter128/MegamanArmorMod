@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"s"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizerwoodstyle"
+		},
+		"s": {
+			"item": "megamanarmormod:bugfrag"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerwoodbugstyle",
+		"count": 1
+	}
+}

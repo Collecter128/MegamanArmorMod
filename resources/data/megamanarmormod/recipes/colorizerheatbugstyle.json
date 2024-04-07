@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"s"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizerheatstyle"
+		},
+		"s": {
+			"item": "megamanarmormod:bugfrag"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerheatbugstyle",
+		"count": 1
+	}
+}

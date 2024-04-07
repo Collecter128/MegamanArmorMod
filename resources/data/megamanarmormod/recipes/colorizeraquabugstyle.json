@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"s"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizeraquastyle"
+		},
+		"s": {
+			"item": "megamanarmormod:bugfrag"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizeraquabugstyle",
+		"count": 1
+	}
+}
