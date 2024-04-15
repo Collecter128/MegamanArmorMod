@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TST",
+		"T T"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"S": {
+			"item": "megamanarmormod:stormeagle_feather"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:stormeagle_arms",
+		"count": 1
+	}
+}
