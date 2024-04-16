@@ -110,6 +110,10 @@
 	"item.megamanarmormod.oil_can": "Oil Can",
 	"item.megamanarmormod.time_clock": "Time Clock",
 	
+	"item.megamanarmormod.enker_mirror": "Enker Mirror",
+	
+	"item.megamanarmormod.stormeagle_feather": "Storm Eagle's Feather",
+	
 	"item.megamanarmormod.saberplusone": "Saber +1",
 	"item.megamanarmormod.saberplustwo": "Saber +2",
 	
@@ -177,6 +181,8 @@
 	"item.megamanarmormod.colorizerelecman": "Elecman Colorizer",
 	"item.megamanarmormod.colorizergutsman": "Gutsman Colorizer",
 	
+	"item.megamanarmormod.colorizerenker": "Enker Colorizer",
+	
 	"item.megamanarmormod.colorizermegamangoalie": "Megaman Goalie Colorizer",
 	"item.megamanarmormod.colorizermegaman2pgoalie": "Megaman 2P Goalie Colorizer",
 	"item.megamanarmormod.colorizerprotomangoalie": "Protoman Goalie Colorizer",
@@ -185,6 +191,8 @@
 	"item.megamanarmormod.colorizercutmangoalie": "Cutman Goalie Colorizer",
 	"item.megamanarmormod.colorizerbombmangoalie": "Bombman Goalie Colorizer",
 	"item.megamanarmormod.colorizerelecmangoalie": "Elecman Goalie Colorizer",
+	
+	"item.megamanarmormod.colorizerenkergoalie": "Enker Goalie Colorizer",
 	
 	"item.megamanarmormod.colorizersoccerwily": "Soccer Wily Colorizer",
 	"item.megamanarmormod.colorizersoccerwilygoalie": "Soccer Wily Goalie Colorizer",
@@ -466,6 +474,36 @@
 	"item.megamanarmormod.colorizerhadoken": "Hadoken Colorizer",
 	
 	"item.megamanarmormod.colorizermegamanzero": "Zero (Megaman Zero) Colorizer",
+	"item.megamanarmormod.colorizermegamanzero2psvcchaos": "Zero P2 (SVC Chaos) Colorizer",
+	"item.megamanarmormod.colorizermegamanzerorplus": "Zero (R+) Colorizer",
+	
+	"item.megamanarmormod.colorizerformenergymz2": "Energy Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformxmz2": "X Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformdefencemz2": "Defence Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformerasemz2": "Erase Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformactivemz2": "Active Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformpowermz2": "Power Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformrisemz2": "Rise Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformprotomz2": "Proto Form (MZ2) Colorizer",
+	"item.megamanarmormod.colorizerformultimatemz2": "Ultimate Form (MZ2) Colorizer",
+	
+	"item.megamanarmormod.colorizerchipicemz3": "Ice Chip (MZ3) Colorizer",
+	"item.megamanarmormod.colorizerchipthundermz3": "Thunder Chip (MZ3) Colorizer",
+	"item.megamanarmormod.colorizerchipflamemz3": "Flame Chip (MZ3) Colorizer",
+	"item.megamanarmormod.colorizerchiplightmz3": "Light Chip (MZ3) Colorizer",
+	"item.megamanarmormod.colorizerchipabsorbermz3": "Absorber Chip (MZ3) Colorizer",
+	"item.megamanarmormod.colorizermegamanzero3hardmode": "Hard Mode (MZ3) Colorizer",
+	
+	"item.megamanarmormod.colorizerchipabsorbermz4": "Absorber Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchiprollingmz4": "Rolling Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchiperasemz4": "Erase Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipstrongmz4": "Strong Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipstrongermz4": "Stronger Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipstrongestmz4": "Strongest Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipreflectmz4": "Reflect Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipextendmz4": "Extend Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipelfmz4": "Elf Chip (MZ4) Colorizer",
+	"item.megamanarmormod.colorizerchipjunkmz4": "Junk Chips (MZ4) Colorizer",
 	
 	"item.megamanarmormod.colorizermegamanexe": "Megaman.exe Colorizer",
 	"item.megamanarmormod.colorizermegamanexedark": "Dark Megaman.exe(Dive) Colorizer",
@@ -799,6 +837,11 @@
 	"item.megamanarmormod.timeman_body": "Timeman Body Armor",
 	"item.megamanarmormod.timeman_legs": "Timeman Legs Armor",
 	
+	"item.megamanarmormod.enker_head": "Enker Head Armor",
+	"item.megamanarmormod.enker_arms": "Enker Boots Armor",
+	"item.megamanarmormod.enker_body": "Enker Body Armor",
+	"item.megamanarmormod.enker_legs": "Enker Legs Armor",
+	
 	"item.megamanarmormod.xarmor_head": "X Head Armor",
 	"item.megamanarmormod.xbuster": "X Buster",
 	"item.megamanarmormod.xarmor_arms": "X Boots Armor",
@@ -926,6 +969,11 @@
 	
 	"item.megamanarmormod.vile_cannonbody": "Vile Body W. Cannon",
 	
+	"item.megamanarmormod.stormeagle_head": "Storm Eagle Head Armor",
+	"item.megamanarmormod.stormeagle_arms": "Storm Eagle Boots Armor",
+	"item.megamanarmormod.stormeagle_body": "Storm Eagle Body Armor",
+	"item.megamanarmormod.stormeagle_legs": "Storm Eagle Legs Armor",
+	
 	"item.megamanarmormod.serges_head": "Serges Head Armor",
 	"item.megamanarmormod.serges_arms": "Serges Boots Armor",
 	"item.megamanarmormod.serges_body": "Serges Body Armor",
@@ -1046,9 +1094,9 @@
 	"item.megamanarmormod.starforce_legs": "Starforce Megaman Legs Armor",
 	
 	"item.megamanarmormod.harpnote_head": "Harp Note Head Armor",
-	"item.megamanarmormod.harpnote_arms": "Harp Note Megaman Boots Armor",
-	"item.megamanarmormod.harpnote_body": "Harp Note Megaman Body Armor",
-	"item.megamanarmormod.harpnote_legs": "Harp Note Megaman Legs Armor",
+	"item.megamanarmormod.harpnote_arms": "Harp Note Boots Armor",
+	"item.megamanarmormod.harpnote_body": "Harp Note Body Armor",
+	"item.megamanarmormod.harpnote_legs": "Harp Note Legs Armor",
 	
 	"item.megamanarmormod.lyra_weapon": "Lyra (weapon)",
 	
@@ -1056,6 +1104,11 @@
 	"item.megamanarmormod.over0_arms": "Over-0 Boots Armor",
 	"item.megamanarmormod.over0_body": "Over-0 Body Armor",
 	"item.megamanarmormod.over0_legs": "Over-0 Legs Armor",
+	
+	"item.megamanarmormod.over1_head": "Over-1 Head Armor",
+	"item.megamanarmormod.over1_arms": "Over-1 Boots Armor",
+	"item.megamanarmormod.over1_body": "Over-1 Body Armor",
+	"item.megamanarmormod.over1_legs": "Over-1 Legs Armor",
 	
 	"item.megamanarmormod.pachislot_head": "Megaman Ability Head Armor",
 	"item.megamanarmormod.pachislot_arms": "Megaman Ability Boots Armor",
