@@ -33,7 +33,7 @@ public class colorizerluckyblock extends Block{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.DefaultColorizer.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(324);
+	    	 int RandomInt = random.nextInt(353);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case -1: //like fireworks? Also Custom Name like potion or spawn egg. Spawn Eggstyle coloring???
@@ -110,6 +110,10 @@ public class colorizerluckyblock extends Block{
 	    	 	case 277: 
 	    	 		itemstackIn = new ItemStack(ItemInit.GutsmanColorizer.get());
 	    	 		break;
+	    	 		
+	    	 	case 351: 
+	    	 		itemstackIn = new ItemStack(ItemInit.EnkerColorizer.get());
+	    	 		break;
 
 	    	 //Megaman Soccer
 	    	 	case 278: 
@@ -135,6 +139,10 @@ public class colorizerluckyblock extends Block{
 	    	 		break;
 	    	 	case 285: 
 	    	 		itemstackIn = new ItemStack(ItemInit.ElecmanGoalieColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 352: 
+	    	 		itemstackIn = new ItemStack(ItemInit.EnkerGoalieColorizer.get());
 	    	 		break;
 	    	 		
 	    	 	case 313: 
@@ -882,6 +890,90 @@ public class colorizerluckyblock extends Block{
 	    	 		
 	    	 	case 270: 
 	    	 		itemstackIn = new ItemStack(ItemInit.MegamanZeroColorizer.get());
+	    	 		break;
+	    	 	case 324: 
+	    	 		itemstackIn = new ItemStack(ItemInit.MegamanZero2pSVCChaosColorizer.get());
+	    	 		break;
+	    	 	case 325: 
+	    	 		itemstackIn = new ItemStack(ItemInit.MegamanZeroRPlusColorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 326: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroEnergyFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 327: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroXFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 328: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroDefenceFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 329: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroEraseFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 330: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroActiveFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 331: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroPowerFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 332: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroRiseFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 333: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroProtoFormMZ2Colorizer.get());
+	    	 		break;
+	    	 	case 334: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroUltimateFormMZ2Colorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 335: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroIceChipMZ3Colorizer.get());
+	    	 		break;
+	    	 	case 336: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroThunderChipMZ3Colorizer.get());
+	    	 		break;
+	    	 	case 337: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroFlameChipMZ3Colorizer.get());
+	    	 		break;
+	    	 	case 338: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroLightChipMZ3Colorizer.get());
+	    	 		break;
+	    	 	case 339: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroAbsorberChipMZ3Colorizer.get());
+	    	 		break;
+	    	 	case 340: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroHardModeMZ3Colorizer.get());
+	    	 		break;
+	    	 		
+	    	 	case 341: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroAbsorberChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 342: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroRollingChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 343: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroEraseChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 344: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroStrongChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 345: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroStrongerChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 346: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroStrongestChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 347: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroReflectChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 348: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroExtendChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 349: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroElfChipMZ4Colorizer.get());
+	    	 		break;
+	    	 	case 350: 
+	    	 		itemstackIn = new ItemStack(ItemInit.ZeroJunkChipsMZ4Colorizer.get());
 	    	 		break;
 	    	 		
 	    	 	case 251: 

@@ -77,7 +77,7 @@ public class recycler extends Block{
 		        	 if (!p_225533_2_.isClientSide) {
 			            	itemstack.shrink(1);
 			            	
-			            	newItem = new ItemStack(BlockInit.ScapBlock.get(), 4);
+			            	newItem = new ItemStack(BlockInit.ScapBlock.get(), 8);
 
 			               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
 			               p_225533_4_.inventory.add(newItem);
@@ -89,18 +89,37 @@ public class recycler extends Block{
 		        			 || item == ItemInit.ElectricBattery.get()|| item == ItemInit.FirePart.get()
 		        			 || item == ItemInit.GutsPart.get()|| item == ItemInit.IceMachine.get()
 		        			 || item == ItemInit.OilCan.get()|| item == ItemInit.TimeClock.get()
+		        			 || item == ItemInit.EnkerMirror.get()
+		        			 || item == ItemInit.AlienEnergy.get()|| item == ItemInit.EvilEnergy.get()
 		        			 || item == ItemInit.SoccerBall.get()) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
 				            	
-				            	newItem = new ItemStack(Items.IRON_INGOT, 2);
+				            	newItem = new ItemStack(Items.IRON_INGOT, 1);
 
 				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
 				               p_225533_4_.inventory.add(newItem);
 			        	 
 			        	 }
 			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
-		        	 }
+		        	 }//End of Else if Regular Scrap Boss Item
+		         
+		        	 else if(item == ItemInit.FakeZeroPiece1.get() || item == ItemInit.FakeZeroPiece2.get()
+		        			 || item == ItemInit.FakeZeroPiece3.get()|| item == ItemInit.SigmaVirus.get()
+		        			 || item == ItemInit.StormEagleFeather.get()
+		        			 ) {
+			        	 if (!p_225533_2_.isClientSide) {
+				            	itemstack.shrink(1);
+				            	
+				            	newItem = new ItemStack(Items.LAPIS_LAZULI, 1);
+
+				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
+				               p_225533_4_.inventory.add(newItem);
+			        	 
+			        	 }
+			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+		        	 }//End of Else if Improved Scrap Boss Item
+		         
 //		        	 else if(item == ItemInit.PATTERN_ITEMS) {
 //			        	 if (!p_225533_2_.isClientSide) {
 //				            	itemstack.shrink(1);
