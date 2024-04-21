@@ -98,6 +98,7 @@
 	"item.megamanarmormod.biometal_blank": "Blank Biometal",
 	"item.megamanarmormod.biometal_x": "Model X Biometal",
 	"item.megamanarmormod.biometal_z": "Model Z Biometal",
+	"item.megamanarmormod.biometal_p": "Model P Biometal",
 	"item.megamanarmormod.coldpearl": "Cold Pearl",
 	
 	"item.megamanarmormod.bomb_dud": "Dud Bomb",
@@ -113,6 +114,7 @@
 	"item.megamanarmormod.enker_mirror": "Enker Mirror",
 	
 	"item.megamanarmormod.stormeagle_feather": "Storm Eagle's Feather",
+	"item.megamanarmormod.bit_card": "Nightmare Police ID: Bit",
 	
 	"item.megamanarmormod.saberplusone": "Saber +1",
 	"item.megamanarmormod.saberplustwo": "Saber +2",
@@ -894,6 +896,11 @@
 	"item.megamanarmormod.fourtharmor_body": "Fourth Armor Body",
 	"item.megamanarmormod.fourtharmor_legs": "Fourth Armor Legs",
 	
+	"item.megamanarmormod.falconarmor_head": "Falcon Armor Head",
+	"item.megamanarmormod.falconarmor_arms": "Falcon Armor Boots",
+	"item.megamanarmormod.falconarmor_body": "Falcon Armor Body",
+	"item.megamanarmormod.falconarmor_legs": "Falcon Armor Legs",
+	
 	"item.megamanarmormod.gaeaarmor_head": "Gaea Head Armor",
 	"item.megamanarmormod.gaeaarmor_arms": "Gaea Boots Armor",
 	"item.megamanarmormod.gaeaarmor_body": "Gaea Body Armor",
@@ -993,6 +1000,11 @@
 	
 	"item.megamanarmormod.agile_saber": "Agile's Saber",
 	
+	"item.megamanarmormod.bit_head": "Bit Head Armor",
+	"item.megamanarmormod.bit_arms": "Bit Boots Armor",
+	"item.megamanarmormod.bit_body": "Bit Body Armor",
+	"item.megamanarmormod.bit_legs": "Bit Legs Armor",
+	
 	"item.megamanarmormod.replicapture": "Replicapture Armor",
 	
 	"item.megamanarmormod.ixarmor_head": "iX Head Armor",
@@ -1022,6 +1034,11 @@
 	"item.megamanarmormod.copyx_body": "Copy X Body Armor",
 	"item.megamanarmormod.copyx_legs": "Copy X Legs Armor",
 	
+	"item.megamanarmormod.phantom_head": "Phantom Head Armor",
+	"item.megamanarmormod.phantom_arms": "Phantom Boots Armor",
+	"item.megamanarmormod.phantom_body": "Phantom Body Armor",
+	"item.megamanarmormod.phantom_legs": "Phantom Legs Armor",
+	
 	"item.megamanarmormod.modelx_head": "Model X Head Armor",
 	"item.megamanarmormod.modelx_arms": "Model X Boots Armor",
 	"item.megamanarmormod.modelx_body": "Model X Body Armor",
@@ -1036,6 +1053,11 @@
 	"item.megamanarmormod.modelzx_arms": "Model ZX Boots Armor",
 	"item.megamanarmormod.modelzx_body": "Model ZX Body Armor",
 	"item.megamanarmormod.modelzx_legs": "Model ZX Legs Armor",
+	
+	"item.megamanarmormod.modelpx_head": "Model PX Head Armor",
+	"item.megamanarmormod.modelpx_arms": "Model PX Boots Armor",
+	"item.megamanarmormod.modelpx_body": "Model PX Body Armor",
+	"item.megamanarmormod.modelpx_legs": "Model PX Legs Armor",
 	
 	"item.megamanarmormod.megamanexe_head": "Megaman.exe Head Armor",
 	"item.megamanarmormod.megamanexe_arms": "Megaman.exe Boots Armor",
