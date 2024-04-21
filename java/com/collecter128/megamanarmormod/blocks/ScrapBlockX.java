@@ -37,7 +37,7 @@ public class ScrapBlockX extends BreakableBlock{
 	      if (!worldIn.isClientSide) {
 	    	 ItemStack itemstackIn = new ItemStack(ItemInit.SigmaVirus.get());
 	    	 Random random = new Random();
-	    	 int RandomInt = random.nextInt(5);
+	    	 int RandomInt = random.nextInt(6);
 	    	 
 	    	 switch(RandomInt) {
 	    	 	case 0: 
@@ -54,6 +54,9 @@ public class ScrapBlockX extends BreakableBlock{
 	    	 		break;
 	    	 	case 4: 
 	    	 		itemstackIn = new ItemStack(ItemInit.StormEagleFeather.get());
+	    	 		break;
+	    	 	case 5: 
+	    	 		itemstackIn = new ItemStack(ItemInit.BitCard.get());
 	    	 		break;
 	    	 	
 	    	 		

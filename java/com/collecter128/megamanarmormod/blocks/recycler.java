@@ -106,7 +106,7 @@ public class recycler extends Block{
 		         
 		        	 else if(item == ItemInit.FakeZeroPiece1.get() || item == ItemInit.FakeZeroPiece2.get()
 		        			 || item == ItemInit.FakeZeroPiece3.get()|| item == ItemInit.SigmaVirus.get()
-		        			 || item == ItemInit.StormEagleFeather.get()
+		        			 || item == ItemInit.StormEagleFeather.get()|| item == ItemInit.BitCard.get()
 		        			 ) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
@@ -115,6 +115,7 @@ public class recycler extends Block{
 
 				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.IRON_DOOR_CLOSE, SoundCategory.BLOCKS, 1.0F, 1.0F);
 				               p_225533_4_.inventory.add(newItem);
+				               p_225533_4_.inventory.add(new ItemStack(Items.IRON_NUGGET, 9));
 			        	 
 			        	 }
 			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
@@ -139,7 +140,8 @@ public class recycler extends Block{
 		        			 || item == ItemInit.CurserData.get()|| item == ItemInit.BreakData.get()
 		        			 || item == ItemInit.RecoverData.get()|| item == ItemInit.PlusData.get()
 		        			 || item == ItemInit.InvisData.get()|| item == ItemInit.PanelData.get()
-		        			 || item == ItemInit.ObstacleData.get()|| item == ItemInit.DarkData.get()) {
+		        			 || item == ItemInit.ObstacleData.get()|| item == ItemInit.DarkData.get()
+		        			 || item == ItemInit.VirusData.get()|| item == ItemInit.BugFrag.get()) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
 				            	
