@@ -243,6 +243,8 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> ZBiometal = Items.register("biometal_z",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	public static final RegistryObject<Item> PBiometal = Items.register("biometal_p",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> ColdPearl = Items.register("coldpearl",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
@@ -283,6 +285,9 @@ public class ItemInit {
 	public static final RegistryObject<Item> FakeZeroPiece2 = Items.register("fake_zero_piece2",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	public static final RegistryObject<Item> FakeZeroPiece3 = Items.register("fake_zero_piece3",
+			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
+	
+	public static final RegistryObject<Item> BitCard = Items.register("bit_card",
 			() -> new Item(new Item.Properties().tab(MegamanArmorMod.MMMaterialsTab)));
 	
 	public static final RegistryObject<Item> Zenny = Items.register("zenny",
@@ -2381,6 +2386,15 @@ public class ItemInit {
 	public static final RegistryObject<Item> FourthArmor_Arms = Items.register("fourtharmor_arms",
 			() -> new FourthArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
+	public static final RegistryObject<Item> FalconArmor_Head = Items.register("falconarmor_head",
+			() -> new FalconArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> FalconArmor_Body = Items.register("falconarmor_body",
+			() -> new FalconArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> FalconArmor_Legs = Items.register("falconarmor_legs",
+			() -> new FalconArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> FalconArmor_Arms = Items.register("falconarmor_arms",
+			() -> new FalconArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 	public static final RegistryObject<Item> GaeaArmor_Head = Items.register("gaeaarmor_head",
 			() -> new GaeaArmor(ArmorMaterials.ThirdXArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> GaeaArmor_Body = Items.register("gaeaarmor_body",
@@ -2562,6 +2576,15 @@ public class ItemInit {
 	public static final RegistryObject<Item> AgileSaber = Items.register("agile_saber",
 			() -> new SwordItem(ItemTier.DIAMOND, 3, -2.4F, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
+	public static final RegistryObject<Item> Bit_Head = Items.register("bit_head",
+			() -> new BitArmor(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Bit_Body = Items.register("bit_body",
+			() -> new BitArmor(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Bit_Legs = Items.register("bit_legs",
+			() -> new BitArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Bit_Arms = Items.register("bit_arms",
+			() -> new BitArmor(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
 	public static final RegistryObject<Item> MegamanZero_Head = Items.register("megamanzero_head",
 			() -> new MegamanZeroArmor(ArmorMaterials.ZeroArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));//MegamanArmorMod.ArmorItems_Group
 	public static final RegistryObject<Item> MegamanZero_Body = Items.register("megamanzero_body",
@@ -2579,6 +2602,15 @@ public class ItemInit {
 			() -> new CopyXArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> CopyX_Arms = Items.register("copyx_arms",
 			() -> new CopyXArmor(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> Phantom_Head = Items.register("phantom_head",
+			() -> new PhantomArmor(ArmorMaterials.XArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Phantom_Body = Items.register("phantom_body",
+			() -> new PhantomArmor(ArmorMaterials.XArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Phantom_Legs = Items.register("phantom_legs",
+			() -> new PhantomArmor(ArmorMaterials.XArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> Phantom_Arms = Items.register("phantom_arms",
+			() -> new PhantomArmor(ArmorMaterials.XArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> ModelX_Head = Items.register("modelx_head",
 			() -> new ModelXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
@@ -2606,6 +2638,15 @@ public class ItemInit {
 			() -> new ModelZXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	public static final RegistryObject<Item> ModelZX_Arms = Items.register("modelzx_arms",
 			() -> new ModelZXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	
+	public static final RegistryObject<Item> ModelPX_Head = Items.register("modelpx_head",
+			() -> new ModelPXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> ModelPX_Body = Items.register("modelpx_body",
+			() -> new ModelPXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.CHEST, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> ModelPX_Legs = Items.register("modelpx_legs",
+			() -> new ModelPXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.LEGS, new Item.Properties().tab(MegamanArmorMod.MMTab)));
+	public static final RegistryObject<Item> ModelPX_Arms = Items.register("modelpx_arms",
+			() -> new ModelPXArmor(ArmorMaterials.BiometalArmor, EquipmentSlotType.FEET, new Item.Properties().tab(MegamanArmorMod.MMTab)));
 	
 	public static final RegistryObject<Item> megamanexeArmor_Head = Items.register("megamanexe_head",
 			() -> new megamanexeArmor(ArmorMaterials.MegamanExeArmor, EquipmentSlotType.HEAD, new Item.Properties().tab(MegamanArmorMod.MMTab)));
