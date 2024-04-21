@@ -161,7 +161,8 @@ public class modelzx extends BipedModel {
 		RightArmred.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmred, 0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		RightArmred.texOffs(44, 42).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+		//RightArmred.texOffs(44, 42).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+			RightArmred.texOffs(44, 32).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
 		RightArmred.texOffs(1, 166).addBox(-3.0F, -2.3609F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 		}
 		
@@ -169,7 +170,8 @@ public class modelzx extends BipedModel {
 		RightArmgold.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmgold, 0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		RightArmgold.texOffs(44, 32).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+		//RightArmgold.texOffs(44, 32).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+			RightArmgold.texOffs(44, 42).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
 		}
 		
 		RightArmgreenglow = new ModelRenderer(this);
@@ -198,7 +200,8 @@ public class modelzx extends BipedModel {
 		LeftArmred.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmred, -0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmred.texOffs(61, 42).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+		//LeftArmred.texOffs(61, 42).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+			LeftArmred.texOffs(61, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
 		LeftArmred.texOffs(18, 167).addBox(-1.0F, -2.3609F, -2.0F, 4.0F, 2.0F, 4.0F, 0.75F, false);
 		}
 		
@@ -206,14 +209,15 @@ public class modelzx extends BipedModel {
 		LeftArmgold.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmgold, -0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmgold.texOffs(61, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+		//LeftArmgold.texOffs(61, 32).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
+			LeftArmgold.texOffs(61, 42).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 5.0F, 4.0F, 0.75F, false);
 		}
 		
 		LeftArmgreenglow = new ModelRenderer(this);
 		LeftArmgreenglow.setPos(5.0F, 2.0F, 1.0F);
 		setRotationAngle(LeftArmgreenglow, -0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmgreenglow.texOffs(46, 53).addBox(2.2F, 5.5F, -2.5F, 1.0F, 3.0F, 3.0F, 0.75F, false);
+		LeftArmgreenglow.texOffs(46, 53).addBox(2.2F, 5.5F, -1.5F, 1.0F, 3.0F, 3.0F, 0.75F, false);
 		}
 		
 		LeftArmblack = new ModelRenderer(this);
@@ -243,14 +247,16 @@ public class modelzx extends BipedModel {
 		RightLegblack.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegblack, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLegblack.texOffs(0, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		//RightLegblack.texOffs(0, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+			RightLegblack.texOffs(34, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 		}
 		
 		RightLeggold = new ModelRenderer(this);
 		RightLeggold.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeggold, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLeggold.texOffs(34, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+		//RightLeggold.texOffs(34, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
+			RightLeggold.texOffs(0, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, false);
 		}
 		
 		RightLegglow = new ModelRenderer(this);
@@ -272,14 +278,16 @@ public class modelzx extends BipedModel {
 		LeftLegblack.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegblack, -0.1745F, 0.0F, -0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		LeftLegblack.texOffs(17, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		//LeftLegblack.texOffs(17, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+			LeftLegblack.texOffs(51, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 		}
 		
 		LeftLeggold = new ModelRenderer(this);
 		LeftLeggold.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLeggold, -0.1745F, 0.0F, -0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		LeftLeggold.texOffs(51, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+		//LeftLeggold.texOffs(51, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
+			LeftLeggold.texOffs(17, 187).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 1.0F, true);
 		}
 		
 		LeftLegglow = new ModelRenderer(this);

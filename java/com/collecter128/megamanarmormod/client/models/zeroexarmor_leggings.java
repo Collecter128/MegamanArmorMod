@@ -2,7 +2,6 @@ package com.collecter128.megamanarmormod.client.models;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -72,7 +71,7 @@ public class zeroexarmor_leggings extends BipedModel {
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
-		Bodygray.texOffs(16, 148).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodygray.texOffs(16, 148).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		Bodygold = new ModelRenderer(this);
 		Bodygold.setPos(0.0F, 1.0F, 0.0F);

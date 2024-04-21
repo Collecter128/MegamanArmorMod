@@ -193,7 +193,7 @@ public class modelz extends BipedModel {
 		LeftArmgreenglow.setPos(5.0F, 2.0F, 1.0F);
 		setRotationAngle(LeftArmgreenglow, -0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmgreenglow.texOffs(46, 53).addBox(2.2F, 5.5F, -2.5F, 1.0F, 3.0F, 3.0F, 0.75F, false);
+		LeftArmgreenglow.texOffs(46, 53).addBox(2.2F, 5.5F, -1.5F, 1.0F, 3.0F, 3.0F, 0.75F, false);
 		}
 		
 		LeftArmblack = new ModelRenderer(this);

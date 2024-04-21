@@ -2,7 +2,6 @@ package com.collecter128.megamanarmormod.client.models;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -65,22 +64,22 @@ public class modelzx_leggings extends BipedModel {
 
 		Bodyblack = new ModelRenderer(this);
 		Bodyblack.setPos(0.0F, 0.0F, 0.0F);
-		Bodyblack.texOffs(16, 124).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodyblack.texOffs(16, 124).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		Bodywhite = new ModelRenderer(this);
 		Bodywhite.setPos(0.0F, 0.0F, 0.0F);
-		Bodywhite.texOffs(36, 112).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.7F, false);
-		Bodywhite.texOffs(65, 94).addBox(1.0F, 9.0F, -3.3F, 3.0F, 3.0F, 1.0F, -0.2F, false);
-		Bodywhite.texOffs(65, 94).addBox(-4.0F, 9.0F, -3.3F, 3.0F, 3.0F, 1.0F, -0.2F, false);
+		Bodywhite.texOffs(36, 112).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.7F, false);
+		Bodywhite.texOffs(65, 94).addBox(1.0F, 8.0F, -3.3F, 3.0F, 3.0F, 1.0F, -0.2F, false);
+		Bodywhite.texOffs(65, 94).addBox(-4.0F, 8.0F, -3.3F, 3.0F, 3.0F, 1.0F, -0.2F, false);
 
 		Bodygreenglow = new ModelRenderer(this);
 		Bodygreenglow.setPos(0.0F, 0.0F, 0.0F);
-		Bodygreenglow.texOffs(63, 113).addBox(1.5F, 9.5F, -3.1F, 2.0F, 2.0F, 1.0F, -0.2F, false);
-		Bodygreenglow.texOffs(28, 112).addBox(-3.5F, 9.5F, -3.1F, 2.0F, 2.0F, 1.0F, -0.2F, false);
+		Bodygreenglow.texOffs(63, 113).addBox(1.5F, 8.5F, -3.1F, 2.0F, 2.0F, 1.0F, -0.2F, false);
+		Bodygreenglow.texOffs(28, 112).addBox(-3.5F, 8.5F, -3.1F, 2.0F, 2.0F, 1.0F, -0.2F, false);
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
-		Bodygray.texOffs(16, 136).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.4F, false);
+		Bodygray.texOffs(16, 136).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.4F, false);
 
 		RightLegblack = new ModelRenderer(this);
 		RightLegblack.setPos(-2.9F, 12.0F, 0.0F);

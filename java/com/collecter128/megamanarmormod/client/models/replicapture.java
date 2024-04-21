@@ -4,7 +4,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -101,9 +100,10 @@ public class replicapture extends BipedModel {
 
 		Bodygreen = new ModelRenderer(this);
 		Bodygreen.setPos(0.0F, -2.0F, 0.0F);
-		Bodygreen.texOffs(1, 94).addBox(-4.5F, 0.0F, -2.5F, 9.0F, 8.0F, 5.0F, 0.9F, false);
+		Bodygreen.texOffs(1, 94).addBox(-4.5F, -0.2F, -2.5F, 9.0F, 8.0F, 5.0F, 0.9F, false);
 		Bodygreen.texOffs(45, 0).addBox(-4.5F, 0.0F, -2.5F, 9.0F, 10.0F, 5.0F, 0.95F, false);
-		//-4.5, 2, -2.5
+		//-4.5, 0, -2.5
+		//-4.5, 0, -2.5
 		Body2 = new ModelRenderer(this);
 		Body2.setPos(0.0F, 0.0F, 0.0F);
 		Body2.texOffs(16, 32).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.51F, false);
@@ -173,7 +173,7 @@ public class replicapture extends BipedModel {
 		LeftArmgreen = new ModelRenderer(this);
 		LeftArmgreen.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmgreen, 0.2094F, 0.0F, 0.0F);
-		LeftArmgreen.texOffs(57, 16).addBox(0.0F, -2.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArmgreen.texOffs(57, 16).addBox(0.0F, -3.3974F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
 
 		LeftArmwhite = new ModelRenderer(this);
 		LeftArmwhite.setPos(5.0F, 2.0F, 0.0F);
@@ -190,7 +190,7 @@ public class replicapture extends BipedModel {
 		LeftArmyellow = new ModelRenderer(this);
 		LeftArmyellow.setPos(6.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmyellow, 0.2094F, 0.0F, 0.0F);
-		LeftArmyellow.texOffs(27, 101).addBox(2.0F, 3.6391F, -2.0F, 1.0F, 4.0F, 4.0F, 0.3F, false);
+		LeftArmyellow.texOffs(27, 101).addBox(3.0F, 3.6391F, -2.0F, 1.0F, 4.0F, 4.0F, 0.3F, false);
 
 		LeftArmred = new ModelRenderer(this);
 		LeftArmred.setPos(6.0F, 2.0F, 0.0F);

@@ -71,7 +71,7 @@ public class Zero_leggings_new2 extends BipedModel {
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
-		Bodygray.texOffs(16, 155).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodygray.texOffs(16, 155).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		Bodygold = new ModelRenderer(this);
 		Bodygold.setPos(0.0F, 1.0F, 0.0F);

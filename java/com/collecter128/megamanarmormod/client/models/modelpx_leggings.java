@@ -8,12 +8,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 
-// Made with Blockbench 4.7.0
+// Made with Blockbench 4.9.4
 // Exported for Minecraft version 1.15 - 1.16 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
 @OnlyIn(Dist.CLIENT)
-public class modelx_leggings extends BipedModel {
+public class modelpx_leggings extends BipedModel {
 	private final ModelRenderer Bodyblack;
 	private final ModelRenderer Bodywhite;
 	private final ModelRenderer Bodyredglow;
@@ -34,6 +34,7 @@ public class modelx_leggings extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -41,19 +42,21 @@ public class modelx_leggings extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 
-	public modelx_leggings(float modelSize) {
+	public modelpx_leggings(float modelSize) {
 		super(modelSize);
 		texWidth = 78;
-		texHeight = 203;
+		texHeight = 243;
 		
-		MainColorDefault = 4024831;//Main Body Blue
-		SecondaryColorDefault = 7261149;//Secondary Light blue
+		MainColorDefault = 14354054;//Main Purple
+		SecondaryColorDefault = 16641486;//Secondary cream white
 		ThirdColorDefault = 16761907; //Gold Color
 		WhiteColorDefault = 16641486;//Cream White
-		GlowyColorDefault = 16722262;// Redish color
+		GlowyColorDefault = 16454464;//Glow? red
 		GrayColorDefault = 13287110;//Gray
 		FourthColorDefault = 8611706;//Blackish color
+		FifthColorDefault = 16724835; //Red
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
@@ -61,6 +64,7 @@ public class modelx_leggings extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Bodyblack = new ModelRenderer(this);
 		Bodyblack.setPos(0.0F, 0.0F, 0.0F);
@@ -90,6 +94,7 @@ public class modelx_leggings extends BipedModel {
 		RightLegwhite.setPos(-2.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegwhite, 0.192F, 0.0F, 0.0349F);
 		RightLegwhite.texOffs(60, 125).addBox(-2.0F, -0.5F, -2.0F, 4.0F, 5.0F, 4.0F, 0.6F, false);
+		RightLegwhite.texOffs(60, 208).addBox(-3.0F, -0.5F, -1.0F, 1.0F, 3.0F, 2.0F, 0.6F, false);
 
 		RightLeggray = new ModelRenderer(this);
 		RightLeggray.setPos(-2.9F, 12.0F, 0.0F);
@@ -110,6 +115,7 @@ public class modelx_leggings extends BipedModel {
 		LeftLegwhite.setPos(1.9F, 12.0F, 0.0F);
 		setRotationAngle(LeftLegwhite, -0.1745F, 0.0F, -0.0349F);
 		LeftLegwhite.texOffs(60, 135).addBox(-2.0F, -0.5F, -2.0F, 4.0F, 5.0F, 4.0F, 0.6F, true);
+		LeftLegwhite.texOffs(67, 208).addBox(2.0F, -0.5F, -1.0F, 1.0F, 3.0F, 2.0F, 0.6F, true);
 
 		LeftLeggray = new ModelRenderer(this);
 		LeftLeggray.setPos(1.9F, 12.0F, 0.0F);
@@ -131,8 +137,8 @@ public class modelx_leggings extends BipedModel {
 	public void renderToBuffer(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 		
 		float fred = (float)( this.FourthColor >> 16 & 255) / 255.0F;
-		float fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
-		float fblue = (float)(this.FourthColor & 255) / 255.0F;
+        float fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
+        float fblue = (float)(this.FourthColor & 255) / 255.0F;
 		this.Bodyblack.copyFrom(this.body);
 		Bodyblack.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLegblack.copyFrom(this.rightLeg);
@@ -149,7 +155,7 @@ public class modelx_leggings extends BipedModel {
 		RightLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLegwhite.copyFrom(this.leftLeg);
 		LeftLegwhite.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-			
+		
 		fred = (float)( this.GlowyColor >> 16 & 255) / 255.0F;
         fgreen = (float)(this.GlowyColor >> 8 & 255) / 255.0F;
         fblue = (float)(this.GlowyColor & 255) / 255.0F;
@@ -169,7 +175,6 @@ public class modelx_leggings extends BipedModel {
 		RightLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftLeggray.copyFrom(this.leftLeg);
 		LeftLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
-
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
