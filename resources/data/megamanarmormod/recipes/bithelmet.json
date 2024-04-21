@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"TTT",
+		"TST"
+	],
+	"key": {
+		"T": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"S": {
+			"item": "megamanarmormod:bit_card"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:bit_head",
+		"count": 1
+	}
+}

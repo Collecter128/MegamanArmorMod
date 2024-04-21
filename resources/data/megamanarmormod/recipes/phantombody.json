@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"XgX",
+		"iXi",
+		"XiX"
+	],
+	"key": {
+		"i": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"X": {
+			"item": "megamanarmormod:titaniumx"
+		},
+		"g": {
+			"item": "minecraft:gray_dye"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:phantom_body",
+		"count": 1
+	}
+}
