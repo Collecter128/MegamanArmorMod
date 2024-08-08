@@ -141,7 +141,10 @@ public class recycler extends Block{
 		        			 || item == ItemInit.RecoverData.get()|| item == ItemInit.PlusData.get()
 		        			 || item == ItemInit.InvisData.get()|| item == ItemInit.PanelData.get()
 		        			 || item == ItemInit.ObstacleData.get()|| item == ItemInit.DarkData.get()
-		        			 || item == ItemInit.VirusData.get()|| item == ItemInit.BugFrag.get()) {
+		        			 || item == ItemInit.VirusData.get()|| item == ItemInit.BugFrag.get()
+		        			 || item == ItemInit.AsteroidData.get()|| item == ItemInit.LightData.get()
+		        			 || item == ItemInit.World3Data.get()
+		        			 ) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
 				            	
@@ -150,10 +153,26 @@ public class recycler extends Block{
 				               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1.0F, 1.0F);
 				               p_225533_4_.inventory.add(newItem);
 			        	 
-			        	 }//Robot Master Items from Scrap Block
+			        	 }
+				         return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+			        }//Data Items from Mystery Data
 			        	 
-			        	 return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
-		        	 }
+			        	 else if(item == ItemInit.AMWave.get() || item == ItemInit.FMWave.get()
+			        			 || item == ItemInit.MUWave.get()|| item == ItemInit.NoiseWave.get()
+			        			 ) {
+				        	 if (!p_225533_2_.isClientSide) {
+					            	itemstack.shrink(1);
+					            	
+					            	newItem = new ItemStack(ItemInit.MysteryWavePartBlue.get(), 1);
+
+					               p_225533_2_.playSound((PlayerEntity)null, p_225533_3_, SoundEvents.EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+					               p_225533_4_.inventory.add(newItem);
+				        	 
+				        	 }
+					         return ActionResultType.sidedSuccess(p_225533_2_.isClientSide);
+				        }//Wave items from Mystery Wave End
+			        	 
+			        	 
 //		            else {
 //		            if (i > 0 && item instanceof IDyeableArmorItem) {
 //		               IDyeableArmorItem idyeablearmoritem = (IDyeableArmorItem)item;
