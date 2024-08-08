@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"W",
+		"Z"
+	],
+	"key": {
+		"Z": {
+			"item": "megamanarmormod:zeroarmor_head"
+		},
+		"W": {
+			"item": "minecraft:yellow_wool"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:zeroawakened_head",
+		"count": 1
+	}
+}

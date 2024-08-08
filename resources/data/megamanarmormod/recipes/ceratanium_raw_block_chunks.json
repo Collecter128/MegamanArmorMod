@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ccc",
+		"ccc",
+		"ccc"
+	],
+	"key": {
+		"c": {
+			"item": "megamanarmormod:ceratanium_raw"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:ceratanium_raw_block",
+		"count": 1
+	}
+}
