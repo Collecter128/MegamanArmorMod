@@ -2,7 +2,7 @@ package com.collecter128.megamanarmormod.items;
 
 import java.awt.Color;
 
-import com.collecter128.megamanarmormod.client.models.helmet_mettaur;
+import com.collecter128.megamanarmormod.client.models.helmet_mettaurnew;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_bootscolor;
 import com.collecter128.megamanarmormod.client.models.megamanarmor_chestcolor;
 import com.collecter128.megamanarmormod.core.Imorecolorfularmor;
@@ -42,7 +42,7 @@ public class MettaurHelmet extends ArmorItem implements IDyeableArmorItem{//Armo
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		if(slot == EquipmentSlotType.HEAD) {
-			helmet_mettaur model = new helmet_mettaur(1.0f);
+			helmet_mettaurnew model = new helmet_mettaurnew(1.0f);
 			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
         
 			model.young = _default.young;
