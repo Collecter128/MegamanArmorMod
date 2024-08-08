@@ -84,6 +84,15 @@
 	"item.megamanarmormod.token_lucky": "Lucky Token",
 	
 	"item.megamanarmormod.deep_element": "Deep Element",
+	
+	"item.megamanarmormod.christmas_bell": "Christmas Bell",
+	"item.megamanarmormod.christmas_stocking": "Christmas Stocking",
+		
+	"item.megamanarmormod.halloween_candy": "Halloween Candy",
+	
+	"item.megamanarmormod.newyear_koban": "New Years Koban Coin",
+		
+	"item.megamanarmormod.valentines_chocolate": "Valentines Chocolate",
 		
 	"item.megamanarmormod.ore_crimson": "Crimson Ore",
 	"item.megamanarmormod.ore_amber": "Amber Ore",
@@ -116,6 +125,8 @@
 	"item.megamanarmormod.stormeagle_feather": "Storm Eagle's Feather",
 	"item.megamanarmormod.bit_card": "Nightmare Police ID: Bit",
 	
+	"item.megamanarmormod.ciel_system": "Ciel System",
+	
 	"item.megamanarmormod.saberplusone": "Saber +1",
 	"item.megamanarmormod.saberplustwo": "Saber +2",
 	
@@ -136,16 +147,24 @@
 	"item.megamanarmormod.data_panel": "Panel Data",
 	"item.megamanarmormod.data_obstacle": "Obstacle Data",
 	"item.megamanarmormod.data_dark": "Dark Data",
+	"item.megamanarmormod.data_light": "Light Data",
 	"item.megamanarmormod.data_falzar": "Falzar Data",
 	"item.megamanarmormod.data_gregar": "Gregar Data",
 	"item.megamanarmormod.data_virus": "Virus Data",
 	
+	"item.megamanarmormod.data_world3": "World 3 Data",
+	"item.megamanarmormod.data_asteroid": "Asteroid Data",
+	
+	"item.megamanarmormod.mysterydatafragmentblue": "Blue Mystery Data Fragment",
 	"item.megamanarmormod.mysterydatapartblue": "Blue Mystery Data Piece",
 	
 	"item.megamanarmormod.wave_am": "AM Wave",
 	"item.megamanarmormod.wave_fm": "FM Wave",
 	"item.megamanarmormod.wave_mu": "Mu Wave",
 	"item.megamanarmormod.wave_noise": "Noise Wave",
+	
+	"item.megamanarmormod.mysterywavefragmentblue": "Blue Mystery Wave Fragment",
+	"item.megamanarmormod.mysterywavepartblue": "Blue Mystery Wave Piece",
 	
 	"item.megamanarmormod.mega_snack": "Mega Snack",
 	
@@ -477,7 +496,7 @@
 	
 	"item.megamanarmormod.colorizermegamanzero": "Zero (Megaman Zero) Colorizer",
 	"item.megamanarmormod.colorizermegamanzero2psvcchaos": "Zero P2 (SVC Chaos) Colorizer",
-	"item.megamanarmormod.colorizermegamanzerorplus": "Zero (R+) Colorizer",
+	"item.megamanarmormod.colorizermegamanzerorplus": "Zero (SF X All Capcom) Colorizer",
 	
 	"item.megamanarmormod.colorizerformenergymz2": "Energy Form (MZ2) Colorizer",
 	"item.megamanarmormod.colorizerformxmz2": "X Form (MZ2) Colorizer",
@@ -556,9 +575,11 @@
 	"item.megamanarmormod.colorizerstarforcemegaman": "Megaman (Starforce) Colorizer",
 	"item.megamanarmormod.colorizerstarforcegeoversion": "Starforce (Geo Version) Colorizer",
 	
-	"item.megamanarmormod.colorizervolnutt": "Megaman (Legends) Colorizer",
-	"item.megamanarmormod.colorizervolnutt2p": "Megaman 2P (Legends) Colorizer",
-	"item.megamanarmormod.colorizervolnuttbad": "Bad Megaman (Legends) Colorizer",
+	"item.megamanarmormod.colorizerharpnotedx": "Harp Note DX Colorizer",
+	
+	"item.megamanarmormod.colorizervolnutt": "Megaman Volnutt Colorizer",
+	"item.megamanarmormod.colorizervolnutt2p": "Megaman Volnutt (SF X All Capcom) Colorizer",
+	"item.megamanarmormod.colorizervolnuttbad": "Bad Megaman Volnutt Colorizer",
 	
 	"item.megamanarmormod.colorizerpachislot": "Megaman Ability Colorizer",
 	
@@ -923,6 +944,8 @@
 	"item.megamanarmormod.zeroarmor_legs": "Zero Legs Armor",
 	"item.megamanarmormod.ifzeroarmor_body": "IF Zero Armor",
 	
+	"item.megamanarmormod.zeroawakened_head": "Zero Awakened Head Armor",
+	
 	"item.megamanarmormod.zeroix_body": "Zero iX Armor Body",
 	
 	"item.megamanarmormod.zeroex_head": "Zero EX Armor Head",
@@ -949,6 +972,9 @@
 	"item.megamanarmormod.redlotussaber": "Red Lotus Saber",
 	
 	"item.megamanarmormod.zsabermz": "Z Saber (Megaman Zero)",
+	"item.megamanarmormod.zsabermzplus1": "Z Saber +1 (Megaman Zero)",
+	"item.megamanarmormod.zsabermzplus2": "Z Saber +2 (Megaman Zero)",
+	
 	"item.megamanarmormod.triangular_saber": "Triangular Saber",
 	
 	"item.megamanarmormod.modelzsaber": "Model Z Saber",
@@ -1028,6 +1054,11 @@
 	"item.megamanarmormod.megamanzero_arms": "Zero(MegamanZero) Boots Armor",
 	"item.megamanarmormod.megamanzero_body": "Zero(MegamanZero) Body Armor",
 	"item.megamanarmormod.megamanzero_legs": "Zero(MegamanZero) Legs Armor",
+	
+	"item.megamanarmormod.ciel_head": "Ciel Head Armor",
+	"item.megamanarmormod.ciel_arms": "Ciel Boots Armor",
+	"item.megamanarmormod.ciel_body": "Ciel Body Armor",
+	"item.megamanarmormod.ciel_legs": "Ciel Legs Armor",
 	
 	"item.megamanarmormod.copyx_head": "Copy X Head Armor",
 	"item.megamanarmormod.copyx_arms": "Copy X Boots Armor",
@@ -1121,6 +1152,7 @@
 	"item.megamanarmormod.harpnote_legs": "Harp Note Legs Armor",
 	
 	"item.megamanarmormod.lyra_weapon": "Lyra (weapon)",
+	"item.megamanarmormod.lyra_weapondx": "Lyra DX (weapon)",
 	
 	"item.megamanarmormod.over0_head": "Over-0 Head Armor",
 	"item.megamanarmormod.over0_arms": "Over-0 Boots Armor",
@@ -1152,6 +1184,16 @@
 	"item.megamanarmormod.via_body": "Via Body Armor",
 	"item.megamanarmormod.via_legs": "Via Legs Armor",
 	
+	"item.megamanarmormod.christmas_bit_head": "Christmas Bit Head Armor",
+	"item.megamanarmormod.christmas_bit_arms": "Christmas Bit Boots Armor",
+	"item.megamanarmormod.christmas_bit_body": "Christmas Bit Body Armor",
+	"item.megamanarmormod.christmas_bit_legs": "Christmas Bit Legs Armor",
+	
+	"item.megamanarmormod.flamingstormeagle_head": "Flaming Storm Eagle Head Armor",
+	"item.megamanarmormod.flamingstormeagle_arms": "Flaming Storm Eagle Boots Armor",
+	"item.megamanarmormod.flamingstormeagle_body": "Flaming Storm Eagle Body Armor",
+	"item.megamanarmormod.flamingstormeagle_legs": "Flaming Storm Eagle Legs Armor",
+	
 	"key.category.megamanarmormod": "Megaman Armor Mod",
 	"key.category.megamanarmormod.dashkey": "Dash",
 	
@@ -1159,6 +1201,7 @@
 	"block.megamanarmormod.bannerluckyblock": "Banner Lucky Block",
 	"block.megamanarmormod.ceratanium_ore": "Ceratanium Ore",
 	"block.megamanarmormod.limited_ore": "Limited Ore",
+	"block.megamanarmormod.ceratanium_raw_block": "Raw Ceratanium Block",
 	"block.megamanarmormod.ceratanium_block": "Ceratanium Block",
 	"block.megamanarmormod.titanium_ore": "Titianium Ore",
 	"block.megamanarmormod.scrapblock": "Scrap Block",
