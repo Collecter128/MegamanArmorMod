@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"b",
+		"b"
+	],
+	"key": {
+		"b": {
+			"item": "megamanarmormod:mysterydatafragmentblue"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:mysterydatapartblue",
+		"count": 1
+	}
+}

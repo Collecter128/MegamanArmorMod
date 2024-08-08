@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"b",
+		"b"
+	],
+	"key": {
+		"b": {
+			"item": "megamanarmormod:mysterywavepartblue"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:bluemysterywave",
+		"count": 1
+	}
+}

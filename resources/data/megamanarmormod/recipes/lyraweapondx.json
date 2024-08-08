@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GLG"
+	],
+	"key": {
+		"L": {
+			"item": "megamanarmormod:lyra_weapon"
+		},
+		"G": {
+			"item": "minecraft:gold_ingot"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:lyra_weapondx",
+		"count": 1
+	}
+}

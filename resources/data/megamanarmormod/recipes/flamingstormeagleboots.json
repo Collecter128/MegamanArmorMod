@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"c",
+		"B"
+	],
+	"key": {
+		"B": {
+			"item": "megamanarmormod:stormeagle_arms"
+		},
+		"c": {
+			"item": "megamanarmormod:newyear_koban"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:flamingstormeagle_arms",
+		"count": 1
+	}
+}
