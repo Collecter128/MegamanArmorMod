@@ -33,16 +33,38 @@ public class InputEvents {
 	
 	private static void onInput(Minecraft mc, int key, int action) {
 		if(mc.screen == null && KeybindInit.Dashkey.isDown()) {
-			if((mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ZeroArmor_Arms.get()|| 
+					//Bass
+			if((mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.BassArmor_Arms.get() ||
+					//Zero
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ZeroArmor_Arms.get()|| 
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ZeroArmorFirst_Arms.get() || 
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.NovaZeroArmor_Arms.get() || 
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.MegamanZero_Arms.get() || 
+					//Vile
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.VileArmor_Arms.get()|| 
+					//X
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.XArmor_Arms.get()|| 
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.FirstArmor_Arms.get()|| 
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.SecondArmor_Arms.get()|| 
-					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ThirdArmor_Arms.get()|| 
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ThirdArmor_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.FourthArmor_Arms.get()||
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.NewArmor_Arms.get()|| 
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.XTeppenArmor_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.XKeArmor_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.XKeBoostArmor_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.XKaiArmor_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.XTransparentArmor_Arms.get()||
+					//Not X
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.AxlArmor_Arms.get()|| 
 					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.SigmaArmor_Arms.get()|| 
-					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.iXArmor_Arms.get()) 
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.iXArmor_Arms.get() ||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.CopyX_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ModelX_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ModelZ_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.ModelZX_Arms.get()||
+					mc.player.getItemBySlot(EquipmentSlotType.FEET).getItem() == ItemInit.Via_Arms.get()
+							
+					) 
 					&& mc.player.isOnGround()) {
 				int DashPower = 1;
 				float Maxspeed = 16f;

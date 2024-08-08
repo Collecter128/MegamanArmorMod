@@ -92,15 +92,18 @@ public class VillagerInit {
 		};
 		VillagerTrades.ITrade[] deepLoggerLevel2 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
 				//Cost, Amount, Trades, Exp, 
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.ChristmasBell.get()), 1, 1, 99, 3),
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.HalloweenCandy.get()), 1, 1, 99, 3)
 				
 		};
 		VillagerTrades.ITrade[] deepLoggerLevel3 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
 				//Cost, Amount, Trades, Exp, 
-				
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.NewYearKoban.get()), 1, 1, 99, 3),
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.ValentinesChocolate.get()), 1, 1, 99, 3)
 		};
 		VillagerTrades.ITrade[] deepLoggerLevel4 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
 				//Cost, Amount, Trades, Exp, 
-				
+				new VillagerTrades.ItemsForEmeraldsTrade(new ItemStack(ItemInit.ElementMetal.get()), 1, 1, 99, 3)
 		};
 		VillagerTrades.ITrade[] deepLoggerLevel5 = new VillagerTrades.ITrade[]{ //Item, Cost, #oftrades
 				//Cost, Amount, Trades, Exp, 
