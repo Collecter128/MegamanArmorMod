@@ -123,7 +123,7 @@ public class firstarmorx_chest extends BipedModel {
 		RightArmblue = new ModelRenderer(this);
 		RightArmblue.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmblue, -0.1745F, 0.0F, 0.0F);
-		RightArmblue.texOffs(41, 32).addBox(-6.0F, -3.2019F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
+		RightArmblue.texOffs(41, 80).addBox(-6.0F, -3.2019F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
 		RightArmblue.texOffs(40, 16).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightArmteal = new ModelRenderer(this);
@@ -134,7 +134,7 @@ public class firstarmorx_chest extends BipedModel {
 		RightArmwhite = new ModelRenderer(this);
 		RightArmwhite.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmwhite, -0.1745F, 0.0F, 0.0F);
-		RightArmwhite.texOffs(41, 80).addBox(-6.0F, -3.2019F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
+		RightArmwhite.texOffs(41, 32).addBox(-6.0F, -3.2019F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
 		RightArmwhite.texOffs(40, 40).addBox(-3.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		RightArmwhite2 = new ModelRenderer(this);
@@ -146,7 +146,7 @@ public class firstarmorx_chest extends BipedModel {
 		LeftArmblue = new ModelRenderer(this);
 		LeftArmblue.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmblue, 0.2094F, 0.0F, 0.0F);
-		LeftArmblue.texOffs(61, 32).addBox(0.0F, -2.3974F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArmblue.texOffs(61, 80).addBox(0.0F, -2.3974F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
 		LeftArmblue.texOffs(60, 16).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, true);
 
 		LeftArmteal = new ModelRenderer(this);
@@ -157,7 +157,7 @@ public class firstarmorx_chest extends BipedModel {
 		LeftArmwhite = new ModelRenderer(this);
 		LeftArmwhite.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmwhite, 0.2094F, 0.0F, 0.0F);
-		LeftArmwhite.texOffs(61, 80).addBox(0.0F, -2.3974F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
+		LeftArmwhite.texOffs(61, 32).addBox(0.0F, -2.3974F, -2.0F, 6.0F, 4.0F, 4.0F, 0.8F, false);
 		LeftArmwhite.texOffs(60, 40).addBox(-1.0F, 3.6391F, -2.0F, 4.0F, 4.0F, 4.0F, 0.75F, false);
 
 		LeftArmgray = new ModelRenderer(this);

@@ -301,7 +301,7 @@ public class rollexe extends BipedModel {
 		RightLegpaleyellow.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLegpaleyellow, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLegpaleyellow.texOffs(40, 35).addBox(-2.0F, 4.0F, -2.0F, 4.0F, 1.0F, 4.0F, 1.25F, false);
+		RightLegpaleyellow.texOffs(40, 35).addBox(-2.0F, 4.0F, -2.0F, 4.0F, 1.0F, 4.0F, 1.5F, false);
 		}
 		
 		RightLegblack = new ModelRenderer(this);

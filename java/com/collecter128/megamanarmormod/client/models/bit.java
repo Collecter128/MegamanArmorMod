@@ -303,7 +303,7 @@ public class bit extends BipedModel {
 		RightLegglow.setPos(-1.9F, 12.0F, -1.9632F);
 		setRotationAngle(RightLegglow, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLegglow.texOffs(15, 99).addBox(-2.0F, 8.5F, -0.0368F, 4.0F, 4.0F, 4.0F, 1.0F, false);
+		RightLegglow.texOffs(15, 99).addBox(-2.0F, 8.5F, -2.0368F, 4.0F, 4.0F, 4.0F, 1.0F, false);
 		}
 		
 		LeftLeggold = new ModelRenderer(this);
