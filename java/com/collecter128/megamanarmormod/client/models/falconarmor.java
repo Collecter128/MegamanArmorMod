@@ -107,6 +107,7 @@ public class falconarmor extends BipedModel {
 		setRotationAngle(Headyellow, -0.1047F, 0.0873F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.HEAD) {
 		Headyellow.texOffs(0, 148).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 11.0F, 1.5F, false);
+		Headyellow.texOffs(0, 236).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 		}
 		
 		Headwhite = new ModelRenderer(this);

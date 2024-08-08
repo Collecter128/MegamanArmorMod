@@ -65,16 +65,16 @@ public class serges_leggings extends BipedModel {
 
 		Bodyblue = new ModelRenderer(this);
 		Bodyblue.setPos(0.0F, 0.0F, 0.0F);
-		Bodyblue.texOffs(43, 65).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 6.0F, 4.0F, 0.7F, false);
-		Bodyblue.texOffs(16, 88).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodyblue.texOffs(43, 65).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 6.0F, 4.0F, 0.7F, false);
+		Bodyblue.texOffs(16, 88).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		Bodyyellow = new ModelRenderer(this);
 		Bodyyellow.setPos(0.0F, 0.0F, 0.0F);
-		Bodyyellow.texOffs(43, 76).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 6.0F, 4.0F, 0.7F, false);
+		Bodyyellow.texOffs(43, 76).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 6.0F, 4.0F, 0.7F, false);
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
-		Bodygray.texOffs(16, 96).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodygray.texOffs(16, 96).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		RightLegblack = new ModelRenderer(this);
 		RightLegblack.setPos(-1.9F, 12.0F, 0.0F);

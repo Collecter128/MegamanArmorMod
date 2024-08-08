@@ -77,7 +77,7 @@ public class quint_legs extends BipedModel {
 		RightLeg2 = new ModelRenderer(this);
 		RightLeg2.setPos(-1.9F, 12.0F, 0.0F);
 		setRotationAngle(RightLeg2, 0.192F, 0.0F, 0.0349F);
-		RightLeg2.texOffs(39, 97).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
+		RightLeg2.texOffs(40, 97).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 
 		RightLegorange = new ModelRenderer(this);
 		RightLegorange.setPos(-1.9F, 12.0F, 0.0F);

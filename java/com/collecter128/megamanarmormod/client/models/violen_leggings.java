@@ -68,16 +68,16 @@ public class violen_leggings extends BipedModel {
 
 		Bodybrown = new ModelRenderer(this);
 		Bodybrown.setPos(0.0F, 0.0F, 0.0F);
-		Bodybrown.texOffs(16, 81).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 1.01F, false);
+		Bodybrown.texOffs(16, 81).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 1.01F, false);
 
 		Bodygray = new ModelRenderer(this);
 		Bodygray.setPos(0.0F, 0.0F, 0.0F);
-		Bodygray.texOffs(16, 104).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
-		Bodygray.texOffs(16, 89).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 1.01F, false);
+		Bodygray.texOffs(16, 104).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodygray.texOffs(16, 89).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 1.01F, false);
 
 		Bodyred = new ModelRenderer(this);
 		Bodyred.setPos(0.0F, 0.0F, 0.0F);
-		Bodyred.texOffs(16, 96).addBox(-4.0F, 10.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
+		Bodyred.texOffs(16, 96).addBox(-4.0F, 9.0F, -2.0F, 8.0F, 3.0F, 4.0F, 0.51F, false);
 
 		RightLegblack = new ModelRenderer(this);
 		RightLegblack.setPos(-1.9F, 12.0F, 0.0F);
