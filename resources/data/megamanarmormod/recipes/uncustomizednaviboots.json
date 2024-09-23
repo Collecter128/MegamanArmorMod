@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"i i",
+		"X X"
+	],
+	"key": {
+		"i": {
+			"item": "megamanarmormod:data_normal"
+		},
+		"X": {
+			"item": "megamanarmormod:data_buster"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:uncustomizednavi_arms",
+		"count": 1
+	}
+}

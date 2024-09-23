@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" C ",
+		"GSG",
+		" R "
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:glass"
+		},
+		"S": {
+			"item": "minecraft:soul_sand"
+		},
+		"R": {
+			"item": "minecraft:redstone"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:limited",
+		"count": 1
+	}
+}

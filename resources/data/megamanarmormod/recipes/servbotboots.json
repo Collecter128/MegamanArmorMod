@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CrC"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:refractershard_small"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:servbot_arms",
+		"count": 1
+	}
+}

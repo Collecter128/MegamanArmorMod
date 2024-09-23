@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"r",
+		"r"
+	],
+	"key": {
+		"r": {
+			"item": "megamanarmormod:refractershard_small"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:refractershard_medium",
+		"count": 1
+	}
+}
