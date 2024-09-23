@@ -182,7 +182,7 @@ public class xkeboost extends BipedModel {
 		setRotationAngle(RightArmblue, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmblue.texOffs(41, 16).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
-		RightArmblue.texOffs(41, 46).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
+		RightArmblue.texOffs(41, 46).addBox(-3.5F, 0.6391F, -2.5F, 5.0F, 8.0F, 5.0F, 0.2F, false);
 		}
 		
 		RightArmwhite = new ModelRenderer(this);
@@ -190,7 +190,7 @@ public class xkeboost extends BipedModel {
 		setRotationAngle(RightArmwhite, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmwhite.texOffs(76, 26).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
-		RightArmwhite.texOffs(67, 110).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
+		RightArmwhite.texOffs(67, 110).addBox(-3.5F, 0.6391F, -2.5F, 5.0F, 8.0F, 5.0F, 0.2F, false);
 		}
 		
 		RightArmlightblue = new ModelRenderer(this);
@@ -206,14 +206,14 @@ public class xkeboost extends BipedModel {
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmgray.texOffs(41, 77).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 		RightArmgray.texOffs(35, 208).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArmgray.texOffs(49, 244).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
+		RightArmgray.texOffs(49, 244).addBox(-3.5F, 0.6391F, -2.5F, 5.0F, 8.0F, 5.0F, 0.2F, false);
 		}
 		
 		RightArmglowlightgreen = new ModelRenderer(this);
 		RightArmglowlightgreen.setPos(-5.0F, 2.0F, 0.0F);
 		setRotationAngle(RightArmglowlightgreen, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		RightArmglowlightgreen.texOffs(67, 128).addBox(-4.5F, 3.6391F, -2.5F, 6.0F, 6.0F, 5.0F, 0.2F, false);
+		RightArmglowlightgreen.texOffs(67, 128).addBox(-3.5F, 3.6391F, -2.5F, 5.0F, 6.0F, 5.0F, 0.2F, false);
 		RightArmglowlightgreen.texOffs(76, 64).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
 		}
 		

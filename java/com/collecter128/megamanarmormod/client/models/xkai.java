@@ -172,7 +172,7 @@ public class xkai extends BipedModel {
 		setRotationAngle(RightArmblack, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmblack.texOffs(41, 16).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
-		RightArmblack.texOffs(41, 48).addBox(-4.5F, 2.6391F, -2.5F, 6.0F, 6.0F, 5.0F, 0.2F, false);
+		RightArmblack.texOffs(41, 48).addBox(-3.5F, 2.6391F, -2.5F, 5.0F, 6.0F, 5.0F, 0.2F, false);
 		RightArmblack.texOffs(35, 208).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
 		}
 		
@@ -196,7 +196,7 @@ public class xkai extends BipedModel {
 		setRotationAngle(RightArmgold, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmgold.texOffs(1, 208).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.5F, false);
-		RightArmgold.texOffs(67, 110).addBox(-4.5F, 0.6391F, -2.5F, 6.0F, 8.0F, 5.0F, 0.2F, false);
+		RightArmgold.texOffs(67, 110).addBox(-3.5F, 0.6391F, -2.5F, 5.0F, 8.0F, 5.0F, 0.2F, false);
 		RightArmgold.texOffs(76, 26).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
 		}
 		
@@ -205,7 +205,7 @@ public class xkai extends BipedModel {
 		setRotationAngle(RightArmorangeglow, -0.1745F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
 		RightArmorangeglow.texOffs(76, 64).addBox(-4.0F, -3.2019F, -2.0F, 4.0F, 4.0F, 4.0F, 0.8F, false);
-		RightArmorangeglow.texOffs(67, 128).addBox(-4.5F, 3.6391F, -2.5F, 6.0F, 6.0F, 5.0F, 0.2F, false);
+		RightArmorangeglow.texOffs(67, 128).addBox(-3.5F, 3.6391F, -2.5F, 5.0F, 6.0F, 5.0F, 0.2F, false);
 		}
 		
 		LeftArmblack = new ModelRenderer(this);
