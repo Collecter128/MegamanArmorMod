@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "megamanarmormod:block/bluemysterywave_generator",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "megamanarmormod:block/bluemysterywave_generator"
+    },
+    "facing=south": {
+      "model": "megamanarmormod:block/bluemysterywave_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "megamanarmormod:block/bluemysterywave_generator",
+      "y": 270
+    }
+  }
+}
