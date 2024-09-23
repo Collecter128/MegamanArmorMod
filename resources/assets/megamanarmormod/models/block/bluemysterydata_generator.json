@@ -1,0 +1,9 @@
+{
+  "parent": "megamanarmormod:block/orientable_with_bottomnew",
+  "textures": {
+    "top": "megamanarmormod:block/generator_datablue_top",
+    "bottom": "megamanarmormod:block/generator_databluebottom",
+    "front": "megamanarmormod:block/generator_databluesidea",
+    "side": "megamanarmormod:block/generator_datablue_sideb"
+  }
+}
