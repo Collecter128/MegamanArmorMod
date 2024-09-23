@@ -2,6 +2,8 @@ package com.collecter128.megamanarmormod.core;
 
 import com.collecter128.megamanarmormod.MegamanArmorMod;
 import com.collecter128.megamanarmormod.blocks.BlueMysteryDataBlock;
+import com.collecter128.megamanarmormod.blocks.BlueMysteryDataGeneratorBlock;
+import com.collecter128.megamanarmormod.blocks.BlueMysteryWaveGeneratorBlock;
 import com.collecter128.megamanarmormod.blocks.BlueMysterywaveBlock;
 import com.collecter128.megamanarmormod.blocks.GreenMysteryDataBlock;
 import com.collecter128.megamanarmormod.blocks.ScrapBlock;
@@ -157,6 +159,16 @@ public class BlockInit {
 	
 	public static final RegistryObject<Block> Recycler = Blocks.register("recycler",
 			() -> new recycler((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_GREEN).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.ANVIL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
+	public static final RegistryObject<Block> BlueMysteryDataGenerator = Blocks.register("bluemysterydata_generator",
+			() -> new BlueMysteryDataGeneratorBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
+					.sound(SoundType.ANVIL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
+	
+	public static final RegistryObject<Block> BlueMysteryWaveGenerator = Blocks.register("bluemysterywave_generator",
+			() -> new BlueMysteryWaveGeneratorBlock((AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_BLUE).harvestTool(ToolType.PICKAXE)
 					.requiresCorrectToolForDrops().strength(3.0F, 3.0F)) //.group(MegamanArmorMod.MMTab)
 					.sound(SoundType.ANVIL)));//MegamanArmorMod.ArmorItems_Group  .group(MegamanArmorMod.MMTab)
 	
