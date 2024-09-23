@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"dC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizermegamanexe"
+		},
+		"d": {
+			"item": "megamanarmormod:data_wood"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerwoodstyle",
+		"count": 1
+	}
+}

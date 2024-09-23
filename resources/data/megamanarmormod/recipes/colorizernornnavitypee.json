@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"dC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizernormnavi"
+		},
+		"d": {
+			"item": "megamanarmormod:data_elec"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizernormnavitypee",
+		"count": 1
+	}
+}

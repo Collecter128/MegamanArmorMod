@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"e"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizerryu"
+		},
+		"e": {
+			"item": "megamanarmormod:energy_evil"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizerryuevil",
+		"count": 1
+	}
+}

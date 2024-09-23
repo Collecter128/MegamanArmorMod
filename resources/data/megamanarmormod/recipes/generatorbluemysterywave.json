@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"i i",
+		"CFC",
+		"iRi"
+	],
+	"key": {
+		"i": {
+			"item": "minecraft:iron_ingot"
+		},
+		"C": {
+			"item": "megamanarmormod:ceratanium"
+		},
+		"R": {
+			"item": "minecraft:glowstone_dust"
+		},
+		"F": {
+			"item": "minecraft:comparator"
+		}
+		
+	},
+	"result": {
+		"item": "megamanarmormod:bluemysterywave_generator",
+		"count": 1
+	}
+}

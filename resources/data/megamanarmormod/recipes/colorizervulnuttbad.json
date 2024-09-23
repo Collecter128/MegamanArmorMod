@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"e"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizervolnutt"
+		},
+		"e": {
+			"item": "minecraft:emerald"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizervolnuttbad",
+		"count": 1
+	}
+}
