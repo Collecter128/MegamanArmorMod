@@ -106,7 +106,8 @@ public class recycler extends Block{
 		         
 		        	 else if(item == ItemInit.FakeZeroPiece1.get() || item == ItemInit.FakeZeroPiece2.get()
 		        			 || item == ItemInit.FakeZeroPiece3.get()|| item == ItemInit.SigmaVirus.get()
-		        			 || item == ItemInit.StormEagleFeather.get()|| item == ItemInit.BitCard.get()
+		        			 || item == ItemInit.StormEagleFeather.get()|| item == ItemInit.KuwangerBoomerang.get()
+		        			 || item == ItemInit.BitCard.get()
 		        			 ) {
 			        	 if (!p_225533_2_.isClientSide) {
 				            	itemstack.shrink(1);
