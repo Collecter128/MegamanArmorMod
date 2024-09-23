@@ -123,6 +123,7 @@
 	"item.megamanarmormod.enker_mirror": "Enker Mirror",
 	
 	"item.megamanarmormod.stormeagle_feather": "Storm Eagle's Feather",
+	"item.megamanarmormod.kuwanger_boomerang": "Kuwanger's Boomerang",
 	"item.megamanarmormod.bit_card": "Nightmare Police ID: Bit",
 	
 	"item.megamanarmormod.ciel_system": "Ciel System",
@@ -171,6 +172,11 @@
 	"item.megamanarmormod.zenny": "Zenny",
 	"item.megamanarmormod.bugfrag": "BugFrag",
 	"item.megamanarmormod.hubbatch": "Hub.bat",
+	
+	"item.megamanarmormod.refractershard_small": "Small Refracter Shard",
+	"item.megamanarmormod.refractershard_medium": "Refracter Shard",
+	"item.megamanarmormod.refractershard_large": "Large Refracter Shard",
+	"item.megamanarmormod.refractershard_verylarge": "Very large Refracter Shard",
 	
 	"item.megamanarmormod.soccer_ball": "Soccer Ball",
 	"item.megamanarmormod.rcan": "R Can",
@@ -927,6 +933,11 @@
 	"item.megamanarmormod.gaeaarmor_body": "Gaea Body Armor",
 	"item.megamanarmormod.gaeaarmor_legs": "Gaea Legs Armor",
 	
+	"item.megamanarmormod.bladearmor_head": "Blade Armor Head",
+	"item.megamanarmormod.bladearmor_arms": "Blade Armor Boots",
+	"item.megamanarmormod.bladearmor_body": "Blade Armor Body",
+	"item.megamanarmormod.bladearmor_legs": "Blade Armor Legs",
+	
 	"item.megamanarmormod.ifxarmor_body": "IFX Armor",
 	"item.megamanarmormod.xtransparentarmor_head": "Transparent X Head Armor",
 	"item.megamanarmormod.xtransparentarmor_arms": "Transparent X Boots Armor",
@@ -1007,6 +1018,11 @@
 	"item.megamanarmormod.stormeagle_body": "Storm Eagle Body Armor",
 	"item.megamanarmormod.stormeagle_legs": "Storm Eagle Legs Armor",
 	
+	"item.megamanarmormod.boomerkuwanger_head": "Boomer Kuwanger Head Armor",
+	"item.megamanarmormod.boomerkuwanger_arms": "Boomer Kuwanger Boots Armor",
+	"item.megamanarmormod.boomerkuwanger_body": "Boomer Kuwanger Body Armor",
+	"item.megamanarmormod.boomerkuwanger_legs": "Boomer Kuwanger Legs Armor",
+	
 	"item.megamanarmormod.serges_head": "Serges Head Armor",
 	"item.megamanarmormod.serges_arms": "Serges Boots Armor",
 	"item.megamanarmormod.serges_body": "Serges Body Armor",
@@ -1043,12 +1059,20 @@
 	"item.megamanarmormod.megaarmorbase_body": "Mega Armor Base Body",
 	"item.megamanarmormod.megaarmorbase_legs": "Mega Armor Base Legs",
 	
+	
 	"item.megamanarmormod.legendsarmor_head": "Vulnutt's Head Armor",
 	"item.megamanarmormod.legendsarmor_arms": "Vulnutt's Boots Armor",
 	"item.megamanarmormod.legendsarmor_body": "Vulnutt's Body Armor",
 	"item.megamanarmormod.legendsarmor_legs": "Vulnutt's Legs Armor",
 	
-	"item.megamanarmormod.shades": "Shades",
+		"item.megamanarmormod.shades": "Shades",
+	
+	"item.megamanarmormod.servbot_head": "Servbot Head Armor",
+	"item.megamanarmormod.servbot_arms": "Servbot Boots Armor",
+	"item.megamanarmormod.servbot_body": "Servbot Body Armor",
+	"item.megamanarmormod.servbot_legs": "Servbot Legs Armor",
+	
+
 	
 	"item.megamanarmormod.megamanzero_head": "Zero(MegamanZero) Head Armor",
 	"item.megamanarmormod.megamanzero_arms": "Zero(MegamanZero) Boots Armor",
@@ -1124,6 +1148,11 @@
 	"item.megamanarmormod.normnavi_arms": "Normnavi Boots Armor",
 	"item.megamanarmormod.normnavi_body": "Normnavi Body Armor",
 	"item.megamanarmormod.normnavi_legs": "Normnavi Legs Armor",
+	
+	"item.megamanarmormod.uncustomizednavi_head": "Uncustomized Navi Head Armor",
+	"item.megamanarmormod.uncustomizednavi_arms": "Uncustomized Navi Boots Armor",
+	"item.megamanarmormod.uncustomizednavi_body": "Uncustomized Navi Body Armor",
+	"item.megamanarmormod.uncustomizednavi_legs": "Uncustomized Navi Legs Armor",
 	
 	"item.megamanarmormod.bassexe_head": "Bass.exe Head Armor",
 	"item.megamanarmormod.bassexe_arms": "Bass.exe Boots Armor",
@@ -1232,6 +1261,8 @@
 	"block.megamanarmormod.bluemysterywave": "Blue Mystery Wave",
 	
 	"block.megamanarmormod.recycler": "Recycler",
+	"block.megamanarmormod.bluemysterydata_generator": "Redstone to Blue Mystery Data Generator",
+	"block.megamanarmormod.bluemysterywave_generator": "Redstone to Blue Mystery Wave Generator",
 	
 	"block.megamanarmormod.ladder_bomb": "Bombman Ladder",
 	"block.megamanarmormod.ladder_cut": "Cutman Ladder",
