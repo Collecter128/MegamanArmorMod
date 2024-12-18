@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C",
+		"s"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:colorizernumbermanexe"
+		},
+		"s": {
+			"item": "megamanarmormod:data_dark"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:colorizernumbermanexeds",
+		"count": 1
+	}
+}

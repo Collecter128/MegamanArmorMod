@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"c",
+		"B"
+	],
+	"key": {
+		"B": {
+			"item": "megamanarmormod:vilearmor_legs"
+		},
+		"c": {
+			"item": "megamanarmormod:halloween_candy"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:halloweenvile_legs",
+		"count": 1
+	}
+}

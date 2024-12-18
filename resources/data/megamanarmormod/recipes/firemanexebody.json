@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"C C",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "megamanarmormod:data_fire"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:firemanexe_body",
+		"count": 1
+	}
+}

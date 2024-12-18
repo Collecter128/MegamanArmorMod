@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"FbF"
+	],
+	"key": {
+		"b": {
+			"item": "megamanarmormod:mysterydatapartblue"
+		},
+		"F": {
+			"item": "megamanarmormod:mysterydatafragmentblue"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:data_light",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"i i",
+		"X X"
+	],
+	"key": {
+		"i": {
+			"item": "megamanarmormod:data_virus"
+		},
+		"X": {
+			"item": "megamanarmormod:wave_fm"
+		}
+	},
+	"result": {
+		"item": "megamanarmormod:jammer_arms",
+		"count": 1
+	}
+}
