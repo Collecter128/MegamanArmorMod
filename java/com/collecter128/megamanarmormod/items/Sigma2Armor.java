@@ -1,7 +1,7 @@
 package com.collecter128.megamanarmormod.items;
 
-import com.collecter128.megamanarmormod.client.models.duo_legs;
-import com.collecter128.megamanarmormod.client.models.duo_main;
+import com.collecter128.megamanarmormod.client.models.sigma2;
+import com.collecter128.megamanarmormod.client.models.sigma2_leggings;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
@@ -14,16 +14,16 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class DuoArmor extends ArmorItem{
+public class Sigma2Armor extends ArmorItem{
 	
-	public int MainColorDefault = 7417599;//Main Body Color Dark Blue
-	public int SecondaryColorDefault = 16724014;//Secondary Red
-	public int ThirdColorDefault = 9028255; //green
+	public int MainColorDefault = 7534849;//Main Body Color Green
+	public int SecondaryColorDefault = 964859;//Secondary Blue
+	public int ThirdColorDefault = 16507918; //Yellow
 	public int WhiteColorDefault = 16777215;//Basic White
-	public int GlowyColorDefault = 15095080;//Glow? red
-	public int GrayColorDefault = 11906711;//Gray
-	public int FourthColorDefault = 16417822; // orange
-	public int FifthColorDefault = 16443934; //Yellow
+	public int GlowyColorDefault = 16726559;//Glow? red
+	public int GrayColorDefault = 14277081;//gray
+	public int FourthColorDefault = 4671303; //Black
+	public int FifthColorDefault = 9528480; //Purple
 	public int MainColor = MainColorDefault;
 	public int SecondaryColor = SecondaryColorDefault;
 	public int ThirdColor = ThirdColorDefault;
@@ -31,18 +31,18 @@ public class DuoArmor extends ArmorItem{
 	public int GlowyColor = GlowyColorDefault;
 	public int GrayColor = GrayColorDefault;
 	public int FourthColor = FourthColorDefault;
+	public int FifthColor = FifthColorDefault;
 
-	public DuoArmor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
+	public Sigma2Armor(IArmorMaterial materialIn, EquipmentSlotType slot, Properties builderIn) {
 		super(materialIn, slot, builderIn);
 		
 	}
-	
 	@OnlyIn(Dist.CLIENT)
 	@Override
 	public <A extends BipedModel<?>> A getArmorModel(LivingEntity entityLiving, ItemStack itemStack, EquipmentSlotType armorSlot, A _default) {
 		
 		if(armorSlot != EquipmentSlotType.LEGS) {
-			duo_main model = new duo_main(1.0f, armorSlot);
+		sigma2 model = new sigma2(1.0f, armorSlot);
 		model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 		model.young = _default.young;
@@ -54,42 +54,42 @@ public class DuoArmor extends ArmorItem{
         CompoundNBT compoundnbt = itemStack.getTagElement("displaymm");
 
 	      if(compoundnbt != null && compoundnbt.contains("MainColor", 99)) {
+	    	  //CompoundNBT maincompund = itemStack.getChildTag("MainColor");
+	    	  //armorcolorer = compoundnbt.getInt("MainColor");
 	    	  model.MainColor = compoundnbt.getInt("MainColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("MainColor", MainColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("SecondaryColor", 99)) {
+
 	    	  model.SecondaryColor = compoundnbt.getInt("SecondaryColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("SecondaryColor", SecondaryColorDefault);
+	      
 	      if(compoundnbt != null && compoundnbt.contains("WhiteColor", 99)) {
+
 	    	  model.WhiteColor = compoundnbt.getInt("WhiteColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("WhiteColor", WhiteColorDefault);
+	      
 	      if(compoundnbt != null && compoundnbt.contains("ThirdColor", 99)) {
+
 	    	  model.ThirdColor = compoundnbt.getInt("ThirdColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("ThirdColor", ThirdColorDefault);
+	      
 	      if(compoundnbt != null && compoundnbt.contains("GlowyColor", 99)) {
+
 	    	  model.GlowyColor = compoundnbt.getInt("GlowyColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GlowyColor", GlowyColorDefault);
+	      
 	      if(compoundnbt != null && compoundnbt.contains("GrayColor", 99)) {
+
 	    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("GrayColor", GrayColorDefault);
 	      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
+
 	    	  model.FourthColor = compoundnbt.getInt("FourthColor");
 
 	      }
@@ -98,9 +98,7 @@ public class DuoArmor extends ArmorItem{
 	    	  model.FifthColor = compoundnbt.getInt("FifthColor");
 
 	      }
-//	      else
-//	    	  itemStack.getOrCreateTagElement("displaymm").putInt("FourthColor", FourthColorDefault);
-	      
+      
 		this.MainColor = model.MainColor;
 		this.SecondaryColor = model.SecondaryColor;
 		this.WhiteColor = model.WhiteColor;
@@ -111,7 +109,7 @@ public class DuoArmor extends ArmorItem{
         return (A) model;
 		}
 		else {
-			duo_legs model = new duo_legs(1.0f);
+			sigma2_leggings model = new sigma2_leggings(1.0f);
 			model.hat.visible = armorSlot == EquipmentSlotType.HEAD;
 
 			model.young = _default.young;
@@ -157,7 +155,6 @@ public class DuoArmor extends ArmorItem{
 		    	  model.GrayColor = compoundnbt.getInt("GrayColor");
 
 		      }
-		      
 		      if(compoundnbt != null && compoundnbt.contains("FourthColor", 99)) {
 
 		    	  model.FourthColor = compoundnbt.getInt("FourthColor");
@@ -206,7 +203,7 @@ public class DuoArmor extends ArmorItem{
 //	@Nullable
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-        return "megamanarmormod:textures/armor/duonew.png";
+        return "megamanarmormod:textures/armor/sigma2armor.png";
     }
 	
 }
