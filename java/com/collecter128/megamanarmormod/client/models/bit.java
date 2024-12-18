@@ -245,7 +245,7 @@ public class bit extends BipedModel {
 		LeftArmblue.setPos(5.0F, 2.0F, 0.0F);
 		setRotationAngle(LeftArmblue, -0.1309F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.CHEST) {
-		LeftArmblue.texOffs(59, 41).addBox(-1.0F, 5.6391F, -2.0F, 4.0F, 2.0F, 4.0F, 0.75F, false);
+		LeftArmblue.texOffs(59, 42).addBox(-1.0F, 5.6391F, -2.0F, 4.0F, 2.0F, 4.0F, 0.75F, false);
 		}
 		
 		LeftArmgray = new ModelRenderer(this);

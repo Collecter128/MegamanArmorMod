@@ -32,6 +32,7 @@ public class duo_legs extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -39,11 +40,12 @@ public class duo_legs extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 
 	public duo_legs(float modelSize) {
 		super(modelSize);
 		texWidth = 77;
-		texHeight = 205;
+		texHeight = 225;//used to be 205
 		
 		MainColorDefault = 7417599;//Main Body Color Dark Blue
 		SecondaryColorDefault = 16724014;//Secondary Red
@@ -51,7 +53,8 @@ public class duo_legs extends BipedModel {
 		WhiteColorDefault = 16777215;//Basic White
 		GlowyColorDefault = 15095080;//Glow? red
 		GrayColorDefault = 11906711;//Gray
-		FourthColorDefault = 16753167; // orange
+		FourthColorDefault = 16417822; // orange
+		FifthColorDefault = 16443934; //Yellow
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
@@ -59,6 +62,7 @@ public class duo_legs extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Bodyblue = new ModelRenderer(this);
 		Bodyblue.setPos(0.0F, 0.0F, 0.0F);
@@ -137,9 +141,9 @@ public class duo_legs extends BipedModel {
 		this.LeftLeggray.copyFrom(this.leftLeg);
 		LeftLeggray.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
-		fred = (float)( this.FourthColor >> 16 & 255) / 255.0F;
-        fgreen = (float)(this.FourthColor >> 8 & 255) / 255.0F;
-        fblue = (float)(this.FourthColor & 255) / 255.0F;
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
 		this.Bodyyellow.copyFrom(this.body);
 		Bodyyellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightLegyellow.copyFrom(this.rightLeg);

@@ -16,6 +16,7 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 @OnlyIn(Dist.CLIENT)
 public class duo_main extends BipedModel {
 	private final ModelRenderer Headblue;
+	private final ModelRenderer Headyellow;
 	private final ModelRenderer Headgreen;
 	private final ModelRenderer Head4_r1;
 	private final ModelRenderer Headwhite;
@@ -52,6 +53,7 @@ public class duo_main extends BipedModel {
 	public int GlowyColor;
 	public int GrayColor;
 	public int FourthColor;
+	public int FifthColor;
 	public int MainColorDefault;
 	public int SecondaryColorDefault;
 	public int WhiteColorDefault;
@@ -59,13 +61,14 @@ public class duo_main extends BipedModel {
 	public int GlowyColorDefault;
 	public int GrayColorDefault;
 	public int FourthColorDefault;
+	public int FifthColorDefault;
 	
 	EquipmentSlotType equipmentslot;
 
 	public duo_main(float modelSize, EquipmentSlotType slot) {
 		super(modelSize);
 		texWidth = 77;
-		texHeight = 205;
+		texHeight = 225;//used to be 205
 		
 		equipmentslot = slot;
 		
@@ -75,7 +78,8 @@ public class duo_main extends BipedModel {
 		WhiteColorDefault = 16777215;//Basic White
 		GlowyColorDefault = 15095080;//Glow? red
 		GrayColorDefault = 11906711;//Gray
-		FourthColorDefault = 16753167; // orange
+		FourthColorDefault = 16417822; // orange
+		FifthColorDefault = 16443934; //Yellow
 		MainColor = MainColorDefault;
 		SecondaryColor = SecondaryColorDefault;
 		ThirdColor = ThirdColorDefault;
@@ -83,11 +87,18 @@ public class duo_main extends BipedModel {
 		GlowyColor = GlowyColorDefault;
 		GrayColor = GrayColorDefault;
 		FourthColor = FourthColorDefault;
+		FifthColor = FifthColorDefault;
 
 		Headblue = new ModelRenderer(this);
 		Headblue.setPos(0.0F, 0.0F, 0.0F);
 		if(equipmentslot == EquipmentSlotType.HEAD) {
 		Headblue.texOffs(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
+		}
+		
+		Headyellow = new ModelRenderer(this);
+		Headyellow.setPos(0.0F, 0.0F, 0.0F);
+		if(equipmentslot == EquipmentSlotType.HEAD) {
+		Headyellow.texOffs(0, 209).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 1.0F, false);
 		}
 		
 		Headgreen = new ModelRenderer(this);
@@ -271,7 +282,7 @@ public class duo_main extends BipedModel {
 		RightLegglow.setPos(-1.9F, 12.0F, -1.9632F);
 		setRotationAngle(RightLegglow, 0.192F, 0.0F, 0.0349F);
 		if(equipmentslot == EquipmentSlotType.FEET) {
-		RightLegglow.texOffs(0, 52).addBox(-2.0F, 8.5F, -0.0368F, 4.0F, 4.0F, 4.0F, 1.0F, false);
+		RightLegglow.texOffs(0, 52).addBox(-2.0F, 8.5F, -2.0368F, 4.0F, 4.0F, 4.0F, 1.0F, false);
 		}
 		LeftLegblue = new ModelRenderer(this);
 		LeftLegblue.setPos(1.9F, 12.0F, 0.0F);
@@ -341,6 +352,11 @@ public class duo_main extends BipedModel {
 		this.LeftArmorange.copyFrom(this.leftArm);
 		LeftArmorange.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		
+		fred = (float)( this.FifthColor >> 16 & 255) / 255.0F;
+        fgreen = (float)(this.FifthColor >> 8 & 255) / 255.0F;
+        fblue = (float)(this.FifthColor & 255) / 255.0F;
+		this.Headyellow.copyFrom(this.head);
+		Headyellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.RightArmyellow.copyFrom(this.rightArm);
 		RightArmyellow.render(matrixStack, buffer, packedLight, packedOverlay, fred, fgreen, fblue, alpha);
 		this.LeftArmyellow.copyFrom(this.leftArm);
