@@ -103,7 +103,21 @@ public class MegamanArmorMod
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+        //LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+    	RenderTypeLookup.setRenderLayer(BlockInit.RuinsBlockGLadder.get(), RenderType.cutout());
+    	
+    	RenderTypeLookup.setRenderLayer(BlockInit.BombLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.CutLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.ElecLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.FireLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.GutsLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.IceLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.OilLadder.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.TimeLadder.get(), RenderType.cutout());
+    	
+    	RenderTypeLookup.setRenderLayer(BlockInit.BlueMysteryData.get(), RenderType.cutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.GreenMysteryData.get(), RenderType.cutout());
+    	
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
@@ -144,20 +158,6 @@ public class MegamanArmorMod
         		blockRegistryEvent.getRegistry().register(new BlockItem(block, new Item.Properties().tab(MegamanArmorMod.MMTab)).setRegistryName(block.getRegistryName()));
         	});;
         	
-        	RenderTypeLookup.setRenderLayer(BlockInit.RuinsBlockGLadder.get(), RenderType.cutout());
-        	
-        	RenderTypeLookup.setRenderLayer(BlockInit.BombLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.CutLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.ElecLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.FireLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.GutsLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.IceLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.OilLadder.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.TimeLadder.get(), RenderType.cutout());
-        	
-        	RenderTypeLookup.setRenderLayer(BlockInit.BlueMysteryData.get(), RenderType.cutout());
-        	RenderTypeLookup.setRenderLayer(BlockInit.GreenMysteryData.get(), RenderType.cutout());
-        	
         	//net.minecraft.client.renderer.color.ItemColors.register(itemColor, itemsIn);
         	//CustomItemColors.init(blockColorsC);
         	//Minecraft.blockColors = BlockColors.init();
@@ -171,20 +171,40 @@ public class MegamanArmorMod
         	//CustomItemColors.init(getBlockColors());
         }
         
-        @SubscribeEvent
-        public void registerCustomItemColors(final ColorHandlerEvent.Item event) {
-
-               event.getItemColors().register(
-            		   (stack, colorIn) -> colorIn < 0 ? -1 : ((IDyeableArmorItem) stack.getItem()).getColor(stack),
-                    		   ItemInit.MegamanArmor_Body.get()
-               );
-               event.getItemColors().register(
-            		   (stack, colorIn) -> colorIn < 0 ? -1 : ((IDyeableArmorItem) stack.getItem()).getColor(stack),
-                    		   ItemInit.MainColorColorizer.get()
-//                       (stack, colorIn) -> colorIn < 0 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
+//      //@OnlyIn(Dist.CLIENT)
+//        @SubscribeEvent
+//        public void doClientStuff(final FMLClientSetupEvent event) {
+//
+//        	RenderTypeLookup.setRenderLayer(BlockInit.RuinsBlockGLadder.get(), RenderType.cutout());
+//        	
+//        	RenderTypeLookup.setRenderLayer(BlockInit.BombLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.CutLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.ElecLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.FireLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.GutsLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.IceLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.OilLadder.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.TimeLadder.get(), RenderType.cutout());
+//        	
+//        	RenderTypeLookup.setRenderLayer(BlockInit.BlueMysteryData.get(), RenderType.cutout());
+//        	RenderTypeLookup.setRenderLayer(BlockInit.GreenMysteryData.get(), RenderType.cutout());
+//
+//        }//Register Item Colors End
+        
+//        @SubscribeEvent
+//        public void registerCustomItemColors(final ColorHandlerEvent.Item event) {
+//
+//               event.getItemColors().register(
+//            		   (stack, colorIn) -> colorIn < 0 ? -1 : ((IDyeableArmorItem) stack.getItem()).getColor(stack),
+//                    		   ItemInit.MegamanArmor_Body.get()
+//               );
+//               event.getItemColors().register(
+//            		   (stack, colorIn) -> colorIn < 0 ? -1 : ((IDyeableArmorItem) stack.getItem()).getColor(stack),
 //                    		   ItemInit.MainColorColorizer.get()
-               );
-        }//Register Item Colors End
+////                       (stack, colorIn) -> colorIn < 0 ? -1 : ((ArmorColorizerCustom) stack.getItem()).getColor(stack),
+////                    		   ItemInit.MainColorColorizer.get()
+//               );
+//        }//Register Item Colors End
         
     }
     
