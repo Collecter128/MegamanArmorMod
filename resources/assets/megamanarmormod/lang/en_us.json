@@ -575,6 +575,14 @@
 	"item.megamanarmormod.colorizernormnavitypee": "Normnavi typeE Colorizer",
 	"item.megamanarmormod.colorizernormnavitypex": "Normnavi typeX Colorizer",
 	
+	"item.megamanarmormod.colorizernumbermanexe": "Numberman.exe Colorizer",
+	"item.megamanarmormod.colorizernumbermanexeds": "Numberman.exe DS Colorizer",
+	"item.megamanarmormod.colorizernumbermanexesp": "Numberman.exe SP Colorizer",
+	
+	"item.megamanarmormod.colorizerfiremanexe": "Fireman.exe Colorizer",
+	"item.megamanarmormod.colorizerfiremanexeds": "Fireman.exe DS Colorizer",
+	"item.megamanarmormod.colorizerfiremanexesp": "Fireman.exe SP Colorizer",
+	
 	"item.megamanarmormod.colorizerbassexe": "Bass.exe Colorizer",
 	"item.megamanarmormod.colorizerbassexexx": "Bass.exe XX Colorizer",
 	
@@ -1006,6 +1014,11 @@
 	"item.megamanarmormod.sigmaarmor_legs": "Sigma Legs Armor",
 	"item.megamanarmormod.sigmasaber": "Sigma Beam Sword",
 	
+	"item.megamanarmormod.sigma2_head": "Neo Sigma Head Armor",
+	"item.megamanarmormod.sigma2_arms": "Neo Sigma Boots Armor",
+	"item.megamanarmormod.sigma2_body": "Neo Sigma Body Armor",
+	"item.megamanarmormod.sigma2_legs": "Neo Sigma Legs Armor",
+	
 	"item.megamanarmormod.vilearmor_head": "Vile Head Armor",
 	"item.megamanarmormod.vilearmor_arms": "Vile Boots Armor",
 	"item.megamanarmormod.vilearmor_body": "Vile Body Armor",
@@ -1154,6 +1167,16 @@
 	"item.megamanarmormod.uncustomizednavi_body": "Uncustomized Navi Body Armor",
 	"item.megamanarmormod.uncustomizednavi_legs": "Uncustomized Navi Legs Armor",
 	
+	"item.megamanarmormod.numbermanexe_head": "Numberman.exe Head Armor",
+	"item.megamanarmormod.numbermanexe_arms": "Numberman.exe Boots Armor",
+	"item.megamanarmormod.numbermanexe_body": "Numberman.exe Body Armor",
+	"item.megamanarmormod.numbermanexe_legs": "Numberman.exe Legs Armor",
+	
+	"item.megamanarmormod.firemanexe_head": "Fireman.exe Head Armor",
+	"item.megamanarmormod.firemanexe_arms": "Fireman.exe Boots Armor",
+	"item.megamanarmormod.firemanexe_body": "Fireman.exe Body Armor",
+	"item.megamanarmormod.firemanexe_legs": "Fireman.exe Legs Armor",
+	
 	"item.megamanarmormod.bassexe_head": "Bass.exe Head Armor",
 	"item.megamanarmormod.bassexe_arms": "Bass.exe Boots Armor",
 	"item.megamanarmormod.bassexe_body": "Bass.exe Body Armor",
@@ -1182,6 +1205,11 @@
 	
 	"item.megamanarmormod.lyra_weapon": "Lyra (weapon)",
 	"item.megamanarmormod.lyra_weapondx": "Lyra DX (weapon)",
+	
+	"item.megamanarmormod.jammer_head": "Jammer Head Armor",
+	"item.megamanarmormod.jammer_arms": "Jammer Boots Armor",
+	"item.megamanarmormod.jammer_body": "Jammer Body Armor",
+	"item.megamanarmormod.jammer_legs": "Jammer Legs Armor",
 	
 	"item.megamanarmormod.over0_head": "Over-0 Head Armor",
 	"item.megamanarmormod.over0_arms": "Over-0 Boots Armor",
@@ -1212,6 +1240,11 @@
 	"item.megamanarmormod.via_arms": "Via Boots Armor",
 	"item.megamanarmormod.via_body": "Via Body Armor",
 	"item.megamanarmormod.via_legs": "Via Legs Armor",
+	
+	"item.megamanarmormod.halloweenvile_head": "Halloween Vile Head Armor",
+	"item.megamanarmormod.halloweenvile_arms": "Halloween Vile Boots Armor",
+	"item.megamanarmormod.halloweenvile_body": "Halloween Vile Body Armor",
+	"item.megamanarmormod.halloweenvile_legs": "Halloween Vile Legs Armor",
 	
 	"item.megamanarmormod.christmas_bit_head": "Christmas Bit Head Armor",
 	"item.megamanarmormod.christmas_bit_arms": "Christmas Bit Boots Armor",
